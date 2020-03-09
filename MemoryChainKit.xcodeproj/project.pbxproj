@@ -67,7 +67,7 @@
 		A6DDD55724168D1C008E1703 /* Dictionary+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54E24168D1B008E1703 /* Dictionary+KeyPath.swift */; };
 		A6DDD55824168D1C008E1703 /* ErrorReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54F24168D1B008E1703 /* ErrorReason.swift */; };
 		A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */; };
-		A6DDD5632416954E008E1703 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD5622416954E008E1703 /* UIView+Constraints.swift */; };
+		A6DDD5632416954E008E1703 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD5622416954E008E1703 /* UIViewExtension.swift */; };
 		A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD56424169610008E1703 /* UIImageExtension.swift */; };
 		A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD566241696D5008E1703 /* UICollectionExtension.swift */; };
 		A6E331FC2414C96E00381D4B /* MemoryChainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */; };
@@ -145,7 +145,7 @@
 		A6DDD54E24168D1B008E1703 /* Dictionary+KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyPath.swift"; sourceTree = "<group>"; };
 		A6DDD54F24168D1B008E1703 /* ErrorReason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorReason.swift; sourceTree = "<group>"; };
 		A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
-		A6DDD5622416954E008E1703 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		A6DDD5622416954E008E1703 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A6DDD56424169610008E1703 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		A6DDD566241696D5008E1703 /* UICollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionExtension.swift; sourceTree = "<group>"; };
 		A6E331F22414C96D00381D4B /* MemoryChainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryChainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */,
-				A6DDD5622416954E008E1703 /* UIView+Constraints.swift */,
+				A6DDD5622416954E008E1703 /* UIViewExtension.swift */,
 				A6DDD56424169610008E1703 /* UIImageExtension.swift */,
 				A6DDD566241696D5008E1703 /* UICollectionExtension.swift */,
 			);
@@ -493,7 +493,7 @@
 				A6DDD55424168D1C008E1703 /* Dictionary+JSONKey.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A6DDD54224168D12008E1703 /* NSLayoutAnchor+Extension.swift in Sources */,
-				A6DDD5632416954E008E1703 /* UIView+Constraints.swift in Sources */,
+				A6DDD5632416954E008E1703 /* UIViewExtension.swift in Sources */,
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
 				A6DDD53624168D0A008E1703 /* NSManagedObjectContext+Extension.swift in Sources */,
 				A6DDD46324168C6E008E1703 /* Responder.swift in Sources */,

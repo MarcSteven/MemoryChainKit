@@ -9,6 +9,15 @@
 import UIKit
 
 public extension UIView {
+    func findViewController() ->UIViewController? {
+        if let nextResponder = self.next as? UIViewController {
+            return nextResponder
+        }else if let nextResponder = self.next as? UIView {
+            return nextResponder.findViewController()
+        }else {
+            return nil
+        }
+    }
     func addConstraintsWithFormat(_ format:String,views:UIView...) {
         var viewDictionary = [String:UIView]()
         for (index,view)in views.enumerated() {
