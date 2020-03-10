@@ -36,6 +36,7 @@
 		A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310B82417100D004ADF4F /* Double+Extensions.swift */; };
 		A69310DC2417100E004ADF4F /* Bundle+DecodeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */; };
 		A69310DE2417100E004ADF4F /* DispatchQueue+IsMainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */; };
+		A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310DF24171507004ADF4F /* UIResponderExtension.swift */; };
 		A6DDD42D241667D6008E1703 /* Info.plist in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F62414C96D00381D4B /* Info.plist */; };
 		A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43024168C6E008E1703 /* Scrollable.swift */; };
 		A6DDD44F24168C6E008E1703 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43124168C6E008E1703 /* Observer.swift */; };
@@ -144,6 +145,7 @@
 		A69310B82417100D004ADF4F /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+DecodeJSON.swift"; sourceTree = "<group>"; };
 		A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+IsMainThread.swift"; sourceTree = "<group>"; };
+		A69310DF24171507004ADF4F /* UIResponderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
 		A6DDD43024168C6E008E1703 /* Scrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
 		A6DDD43124168C6E008E1703 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		A6DDD43224168C6E008E1703 /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				A69310A92417100C004ADF4F /* Sequence+Extension.swift */,
 				A69310B22417100D004ADF4F /* String+Base64.swift */,
 				A69310B42417100D004ADF4F /* String+Extension.swift */,
+				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
 				A693109A2417100A004ADF4F /* String+Localized.swift */,
 				A69310A32417100B004ADF4F /* String+Prefix.swift */,
 				A69310B62417100D004ADF4F /* String+Validation.swift */,
@@ -609,6 +612,7 @@
 				A6DDD55424168D1C008E1703 /* Dictionary+JSONKey.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A6DDD54224168D12008E1703 /* NSLayoutAnchor+Extension.swift in Sources */,
+				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
 				A6DDD5632416954E008E1703 /* UIViewExtension.swift in Sources */,
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
 				A6DDD53624168D0A008E1703 /* NSManagedObjectContext+Extension.swift in Sources */,
