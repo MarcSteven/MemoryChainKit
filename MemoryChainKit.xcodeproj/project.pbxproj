@@ -37,6 +37,8 @@
 		A69310DC2417100E004ADF4F /* Bundle+DecodeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */; };
 		A69310DE2417100E004ADF4F /* DispatchQueue+IsMainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */; };
 		A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310DF24171507004ADF4F /* UIResponderExtension.swift */; };
+		A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A68032241754E0004C0C97 /* NSObjectExtension.swift */; };
+		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6DDD42D241667D6008E1703 /* Info.plist in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F62414C96D00381D4B /* Info.plist */; };
 		A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43024168C6E008E1703 /* Scrollable.swift */; };
 		A6DDD44F24168C6E008E1703 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43124168C6E008E1703 /* Observer.swift */; };
@@ -146,6 +148,8 @@
 		A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+DecodeJSON.swift"; sourceTree = "<group>"; };
 		A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+IsMainThread.swift"; sourceTree = "<group>"; };
 		A69310DF24171507004ADF4F /* UIResponderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
+		A6A68032241754E0004C0C97 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6DDD43024168C6E008E1703 /* Scrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
 		A6DDD43124168C6E008E1703 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		A6DDD43224168C6E008E1703 /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
+				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
+				A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */,
 				A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */,
 				A69310A22417100B004ADF4F /* Bundle+Helpers.swift */,
 				A69310AA2417100C004ADF4F /* CGPoint+Extenision.swift */,
@@ -631,6 +637,7 @@
 				A69310DC2417100E004ADF4F /* Bundle+DecodeJSON.swift in Sources */,
 				A6DDD45424168C6E008E1703 /* DataContaining.swift in Sources */,
 				A69310BD2417100E004ADF4F /* String+Localized.swift in Sources */,
+				A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */,
 				A6DDD46124168C6E008E1703 /* Cancellable.swift in Sources */,
 				A69310CC2417100E004ADF4F /* Sequence+Extension.swift in Sources */,
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
@@ -658,6 +665,7 @@
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
 				A6DDD44F24168C6E008E1703 /* Observer.swift in Sources */,
 				A6DDD45A24168C6E008E1703 /* Stylable.swift in Sources */,
+				A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */,
 				A69310BF2417100E004ADF4F /* Data+Hex.swift in Sources */,
 				A69310C62417100E004ADF4F /* String+Prefix.swift in Sources */,
 				A6DDD46824168C6E008E1703 /* KeyboardInfo.swift in Sources */,

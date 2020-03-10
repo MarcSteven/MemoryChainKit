@@ -9,6 +9,15 @@
 import Foundation
 //MARK: - method
 public extension Date {
+    func next() ->Date? {
+        let calendar = Calendar.current
+        let daysComponents = calendar.dateComponents([.month,.day], from: self)
+        return calendar.nextDate(after: Date(), matching: daysComponents, matchingPolicy: .nextTime)
+    }
+    func at(_ hours:Int,minutes:Int = 0) ->Date {
+        return  Calendar.current.date(bySettingHour: hours, minute: minutes, second: 0, of: self)!
+        
+    }
     static func data_form(string:String?) ->Date? {
         return self.data_form(string: string, formatter: "yyyy-MM-dd HH:mm:ss")
     }
