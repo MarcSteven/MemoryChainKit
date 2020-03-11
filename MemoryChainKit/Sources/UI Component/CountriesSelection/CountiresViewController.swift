@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 
 public final class CountriesViewController:UIViewController,UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource {

@@ -32,12 +32,12 @@ open class MCLabel:UIView {
         return gradientLayer
         
     }()
-    let textAttributesForLabel:[NSAttributedStringKey:Any] = {
+    let textAttributesForLabel:[NSAttributedString.Key:Any] = {
        let ps = NSMutableParagraphStyle()
         ps.alignment = .center
         
         return [
-            (kCTParagraphStyleAttributeName as NSString) as NSAttributedStringKey: ps
+            (kCTParagraphStyleAttributeName as NSString) as NSAttributedString.Key: ps
         ]
     }()
     @IBInspectable var text:String! {
@@ -45,7 +45,7 @@ open class MCLabel:UIView {
             setNeedsDisplay()
             let image = UIGraphicsImageRenderer(size: bounds.size)
                 .image { _  in
-                    text.draw(in: bounds, withAttributes: textAttributesForLabel as [NSAttributedStringKey : Any])
+                    text.draw(in: bounds, withAttributes: textAttributesForLabel as [NSAttributedString.Key : Any])
                     
             }
             let maskLayer = CALayer()

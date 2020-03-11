@@ -9,6 +9,7 @@
 import Foundation
 import CoreGraphics
 import Accelerate
+import UIKit
 
 
 public extension UIImage {

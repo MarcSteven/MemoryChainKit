@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 //MCDropdown view delegate method
 public protocol MCDropdownViewDelegate:class {
     //将要展示

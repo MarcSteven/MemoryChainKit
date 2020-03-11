@@ -63,6 +63,7 @@ open class MCInformationTipView :UIView {
         
         textSize.width = ceil(textSize.width)
         textSize.height = ceil(textSize.height)
+        return textSize
     }()
     private lazy var buttonSize: CGSize = { [unowned self] in
         var attributes = [NSAttributedString.Key.font : self.preferences.drawing.button.font]

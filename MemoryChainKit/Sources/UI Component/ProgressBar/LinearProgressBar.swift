@@ -11,7 +11,7 @@ import UIKit
 //MARK: - Line progress bar 
 open class LinearProgressBar:UIView, UIGestureRecognizerDelegate {
     //背景区域的颜色和透明度
-    var backgroundColor1:UIColor  = UIColor(hexString: "4A4A4A")!
+    var backgroundColor1:UIColor  = UIColor(named: "4A4A4A")!
     //进度条view
     var progressView: UIView =  UIView()
     //提示按钮
@@ -40,22 +40,23 @@ open class LinearProgressBar:UIView, UIGestureRecognizerDelegate {
 //        progressView.layer.cornerRadius = 7.5
         progressView.backgroundColor = backgroundColor1
         self.addSubview(progressView)
-        progressView.snp.makeConstraints { make in
-            make.left.right.top.bottom.equalTo(0)
-        }
+        
+//        progressView.snp.makeConstraints { make in
+//            make.left.right.top.bottom.equalTo(0)
+//        }
         hintBtn = UIButton.init(type: UIButton.ButtonType.custom)
         hintBtn.setBackgroundImage(UIImage.init(named: "progressHint"), for: UIControl.State.normal)
         hintBtn.setTitle("", for: UIControl.State.normal)
-        hintBtn.titleLabel?.font = MemoryChainFont.light.of(size: .tiny)
+        hintBtn.titleLabel?.font = UIFont.init(name: "", size: 14)
         hintBtn.contentHorizontalAlignment = .left
         hintBtn.setTitleColor(UIColor.black, for: UIControl.State.normal)
         self.addSubview(hintBtn)
-        hintBtn.snp.makeConstraints { make in
-            make.left.equalTo(getWidth(0))
-            make.top.equalTo(progressView.snp.bottom).offset(getHeight(10))
-            make.width.equalTo(getWidth(30))
-            make.height.equalTo(getHeight(20))
-        }
+//        hintBtn.snp.makeConstraints { make in
+//            make.left.equalTo(getWidth(0))
+//            make.top.equalTo(progressView.snp.bottom).offset(getHeight(10))
+//            make.width.equalTo(getWidth(30))
+//            make.height.equalTo(getHeight(20))
+//        }
     
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.gradentWith(frame: self.progressView.frame)
@@ -70,7 +71,7 @@ open class LinearProgressBar:UIView, UIGestureRecognizerDelegate {
         path.stroke()//添加遮罩
         progressLayer = CAShapeLayer.init()
         progressLayer.frame = progressView.bounds
-        progressLayer.strokeColor = allColor.mainColor.value.cgColor
+        progressLayer.strokeColor = UIColor.darkGray.cgColor
         progressLayer.lineCap =  CAShapeLayerLineCap.init(rawValue: "kCALineCapRound")
         progressLayer.lineWidth = progressView.frame.size.height //渐变图层
         let grain:CALayer = CALayer.init()
@@ -80,8 +81,7 @@ open class LinearProgressBar:UIView, UIGestureRecognizerDelegate {
         gradientLayer.colors = [preColor.cgColor,fixColor.cgColor] */ 
         gradientLayer.frame = CGRect.init(x: 0, y: 0, width: progressView.frame.size.width, height: progressView.frame.size.height)
 
-        gradientLayer.backgroundColor = allColor.mainColor.value.cgColor
-        // 开始点
+        gradientLayer.backgroundColor = UIColor.darkGray.cgColor        // 开始点
         gradientLayer.startPoint = CGPoint.init(x: 0, y: 0)
         // 结束点
         gradientLayer.endPoint = CGPoint.init(x: 1, y: 1)
@@ -96,6 +96,12 @@ open class LinearProgressBar:UIView, UIGestureRecognizerDelegate {
         pathAnimation.autoreverses = false
         pathAnimation.repeatCount = 1
         progressLayer.add(pathAnimation, forKey: "strokeEndAnimation")
+    }
+    fileprivate func getHeight(_ height:CGFloat)->CGFloat {
+        return UIScreen.main.bounds.size.height / height * 736
+    }
+    fileprivate func getWidth(_ width:CGFloat)->CGFloat {
+        return UIScreen.main.bounds.size.width / width / 414
     }
     //当前进度
     func passValue(currentValue: CGFloat,allValue: CGFloat) {

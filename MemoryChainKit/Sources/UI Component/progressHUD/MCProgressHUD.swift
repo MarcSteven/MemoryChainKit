@@ -108,7 +108,7 @@ open class MCProgressHUD:UIView {
     private func startRefresh() {
         let crocAnimationPostion = CAKeyframeAnimation(keyPath: "position")
         crocAnimationPostion.path = shapeLayerForCroc.path
-        crocAnimationPostion.calculationMode = kCAAnimationLinear
+        crocAnimationPostion.calculationMode = CAAnimationCalculationMode.linear
         
         let croOrientationAnimation = CABasicAnimation(keyPath: "transform.rotation")
         croOrientationAnimation.fromValue = 0

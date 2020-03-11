@@ -14,7 +14,7 @@ open  class NavigationController: UINavigationController {
     
     var backBtn:UIButton = {
         // 设置返回按钮属性
-        let backBtn = UIButton.navBackBtn()
+        let backBtn = UIButton()
         backBtn.addTarget(self, action:#selector(goBack), for: .touchUpInside)
         return backBtn
     }()

@@ -6,8 +6,7 @@
 //  Copyright © 2019 Marc Steven. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 
 open class PopingNavigationController:UINavigationController {
     var interactivePopTransition:UIPercentDrivenInteractiveTransition!

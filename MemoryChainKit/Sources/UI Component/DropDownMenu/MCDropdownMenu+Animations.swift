@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // MARK: - 动画相关方法
 public extension MCDropdownView {

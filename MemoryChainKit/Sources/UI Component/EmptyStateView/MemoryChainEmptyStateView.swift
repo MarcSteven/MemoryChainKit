@@ -86,7 +86,7 @@ open class MemoryChainEmptyStateView:UIControl {
         super.init(coder: aDecoder)
         setupView()
     }
-    final override public func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) {
+    final override public func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) {
         button.addTarget(target, action: action, for: controlEvents)
     }
     //set up uilabel

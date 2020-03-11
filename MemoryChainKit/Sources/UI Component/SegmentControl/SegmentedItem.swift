@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 private let padding:CGFloat = 5
 private let badgeMargin:CGFloat = 5

@@ -6,14 +6,14 @@
 //  Copyright © 2019 Memory Chain technology(China) co,LTD. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 open class HUD:UIView {
     private lazy var progressIndicator: UIActivityIndicatorView = {
         let activityIndictor = UIActivityIndicatorView()
         activityIndictor.translatesAutoresizingMaskIntoConstraints = false
-        activityIndictor.style = .whiteLarge
+        activityIndictor.style = .large
         activityIndictor.startAnimating()
         
         

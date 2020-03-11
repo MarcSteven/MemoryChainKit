@@ -8,19 +8,3 @@
 
 import UIKit
 
-@available(iOS 9.0,*)
-public extension NSLayoutAnchor {
-    @objc
-    func constraint(equalTo   anchor:NSLayoutAnchor<AnchorType>,constant:CGFloat = 0 ) {
-        constraint(equalTo: anchor, constant: constant).activate()
-    }
-    @objc
-    func constrain(lessThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>, constant: CGFloat = 0) {
-        constraint(lessThanOrEqualTo: anchor, constant: constant).activate()
-    }
-    
-    @objc
-    func constrain(greaterThanOrEqualTo anchor: NSLayoutAnchor<AnchorType>, constant: CGFloat = 0) {
-        constraint(greaterThanOrEqualTo: anchor, constant: constant).activate()
-    }
-}
