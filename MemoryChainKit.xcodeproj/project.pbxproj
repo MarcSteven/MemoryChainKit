@@ -81,7 +81,6 @@
 		A69310DC2417100E004ADF4F /* Bundle+DecodeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */; };
 		A69310DE2417100E004ADF4F /* DispatchQueue+IsMainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */; };
 		A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310DF24171507004ADF4F /* UIResponderExtension.swift */; };
-		A6A439A6241A3745009FC4E1 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A5241A3745009FC4E1 /* AudioPlayer.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -119,7 +118,6 @@
 		A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BAD2417B6B400A88B5B /* MCInformationTipView.swift */; };
 		A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BAE2417B6B400A88B5B /* ThermostatSlider.swift */; };
 		A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BB02417B6B400A88B5B /* CaptchaButton.swift */; };
-		A6D40C052417B6B500A88B5B /* MemoryChainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BB92417B6B400A88B5B /* MemoryChainButton.swift */; };
 		A6D40C062417B6B500A88B5B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BBB2417B6B400A88B5B /* RoundedView.swift */; };
 		A6D40C072417B6B500A88B5B /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BBD2417B6B400A88B5B /* LongPressRecordButton.swift */; };
 		A6D40C082417B6B500A88B5B /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BBF2417B6B500A88B5B /* HorizontalScrollView.swift */; };
@@ -294,7 +292,6 @@
 		A69310B92417100D004ADF4F /* Bundle+DecodeJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+DecodeJSON.swift"; sourceTree = "<group>"; };
 		A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+IsMainThread.swift"; sourceTree = "<group>"; };
 		A69310DF24171507004ADF4F /* UIResponderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
-		A6A439A5241A3745009FC4E1 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -332,7 +329,6 @@
 		A6D40BAD2417B6B400A88B5B /* MCInformationTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCInformationTipView.swift; sourceTree = "<group>"; };
 		A6D40BAE2417B6B400A88B5B /* ThermostatSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatSlider.swift; sourceTree = "<group>"; };
 		A6D40BB02417B6B400A88B5B /* CaptchaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptchaButton.swift; sourceTree = "<group>"; };
-		A6D40BB92417B6B400A88B5B /* MemoryChainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryChainButton.swift; sourceTree = "<group>"; };
 		A6D40BBB2417B6B400A88B5B /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		A6D40BBD2417B6B400A88B5B /* LongPressRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressRecordButton.swift; sourceTree = "<group>"; };
 		A6D40BBF2417B6B500A88B5B /* HorizontalScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
@@ -579,7 +575,6 @@
 				A6D40BA52417B6B400A88B5B /* InformationTipsView */,
 				A6D40BAE2417B6B400A88B5B /* ThermostatSlider.swift */,
 				A6D40BAF2417B6B400A88B5B /* CaptchaButton */,
-				A6D40BB82417B6B400A88B5B /* Button */,
 				A6D40BBA2417B6B400A88B5B /* RoundedView */,
 				A6D40BBC2417B6B400A88B5B /* LongPressRecordButton */,
 				A6D40BBE2417B6B400A88B5B /* HorizontalScrollView */,
@@ -587,7 +582,6 @@
 				A6D40BC72417B6B500A88B5B /* Introducation */,
 				A6D40BCC2417B6B500A88B5B /* SegmentControl */,
 				A6D40BCE2417B6B500A88B5B /* TabBarController */,
-				A6A439A5241A3745009FC4E1 /* AudioPlayer.swift */,
 			);
 			path = "UI Component";
 			sourceTree = "<group>";
@@ -695,14 +689,6 @@
 				A6D40BB02417B6B400A88B5B /* CaptchaButton.swift */,
 			);
 			path = CaptchaButton;
-			sourceTree = "<group>";
-		};
-		A6D40BB82417B6B400A88B5B /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				A6D40BB92417B6B400A88B5B /* MemoryChainButton.swift */,
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 		A6D40BBA2417B6B400A88B5B /* RoundedView */ = {
@@ -1080,7 +1066,6 @@
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
 				A63D39552419298000937CCD /* UIView+Animations.swift in Sources */,
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
-				A6A439A6241A3745009FC4E1 /* AudioPlayer.swift in Sources */,
 				A69310D52417100E004ADF4F /* String+Base64.swift in Sources */,
 				A63D39652419298000937CCD /* UIAlertExtension.swift in Sources */,
 				A63D396B2419298000937CCD /* UIView+ApplyGradient.swift in Sources */,
@@ -1114,7 +1099,6 @@
 				A6DDD46424168C6E008E1703 /* Copying.swift in Sources */,
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
-				A6D40C052417B6B500A88B5B /* MemoryChainButton.swift in Sources */,
 				A69310D92417100E004ADF4F /* String+Validation.swift in Sources */,
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
