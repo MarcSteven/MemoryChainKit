@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UITableViewCell {
-    override public  var layoutMargins:UIEdgeInsets {
+    override  var layoutMargins:UIEdgeInsets {
         get {
             return UIEdgeInsets.zero
         }
