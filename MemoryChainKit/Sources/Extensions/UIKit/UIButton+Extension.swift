@@ -12,6 +12,36 @@ import UIKit
 #if !os(watchOS)
 // MARK: - Properties
 public extension UIButton {
+    var mc_hasText:Bool {
+        guard let label = titleLabel else {
+            return false
+        }
+        return label.mc_hasText
+    }
+    var mc_hasNonWhitespaceText:Bool {
+        guard let label = titleLabel else {
+        return false
+        }
+        return label.mc_hasNonWhitespaceText
+    }
+    var mc_hasNonWhitespaceAttributedText:Bool {
+        guard let label = titleLabel else {
+            return false
+        }
+        return label.mc_hasNonWhitespaceText
+    }
+    var mc_hasAttributeText:Bool {
+        guard let label = titleLabel else {
+            return false
+        }
+        return label.mc_hasText
+    }
+    var mc_hasAnyText:Bool {
+        return mc_hasText || mc_hasAttributeText
+    }
+    var mc_hasAnyNonWhitespaceText:Bool {
+        return mc_hasNonWhitespaceText || mc_hasNonWhitespaceAttributedText
+    }
     
     ///  Image of disabled state for button; also inspectable from Storyboard.
     @IBInspectable var imageForDisabled: UIImage? {

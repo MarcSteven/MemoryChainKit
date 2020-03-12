@@ -12,7 +12,33 @@ import UIKit
 #if !os(watchOS)
 // MARK: - Enums
 public extension UITextField {
-    
+    var mc_hasText:Bool {
+        guard let text = text else{
+            return false
+        }
+        return text.mc_hasText
+    }
+    var mc_hasNonWhiteSpaceText:Bool {
+        guard let text = text else {
+            return false
+        }
+        return text.mc_hasNonWhitespaceText
+    }
+    var mc_hasNonWhitespaceAttributedText:Bool {
+        guard let attributedText = attributedText else {
+            return false
+        }
+        return attributedText.mc_hasNonWhitespaceText
+    }
+    var mc_hasAttributedText:Bool {
+        guard let attributedText = attributedText else {
+            return false
+        }
+        return attributedText.mc_hasText
+    }
+    var nc_hasAnyText:Bool {
+        return mc_hasNonWhiteSpaceText || mc_hasAttributedText
+    }
     ///  UITextField text type.
     ///
     /// - emailAddress: UITextField is used to enter email addresses.
