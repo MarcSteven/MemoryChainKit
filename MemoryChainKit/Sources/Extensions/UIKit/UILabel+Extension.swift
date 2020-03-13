@@ -7,7 +7,8 @@
 //
 import UIKit
 
-extension UILabel {
+public extension UILabel {
+   
     func setAttributeColor(_ color: UIColor, _ string: String) {
         let text = self.text!
         if (text.isEmpty || !text.contains(text)) {
