@@ -6,7 +6,7 @@
 //  Copyright © 2019 Memory Chain technology(China) co,LTD. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 //Extend UIBezier path to create a triangular path

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Memory Chain network technology(Shenzhen) co,LTD. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 

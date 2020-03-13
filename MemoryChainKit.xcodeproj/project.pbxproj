@@ -18,7 +18,6 @@
 		A63D394A2419298000937CCD /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39172419297700937CCD /* UILabel+Extension.swift */; };
 		A63D394B2419298000937CCD /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39182419297800937CCD /* UIScreen+Extension.swift */; };
 		A63D394C2419298000937CCD /* UIViewController+HideKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39192419297800937CCD /* UIViewController+HideKeyboardOnTap.swift */; };
-		A63D394D2419298000937CCD /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D391A2419297800937CCD /* UINavigationItem+Extension.swift */; };
 		A63D39502419298000937CCD /* CGAffineTRansform+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */; };
 		A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D391F2419297900937CCD /* UIColor+Extension.swift */; };
 		A63D39532419298000937CCD /* UIButton+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39202419297900937CCD /* UIButton+Animations.swift */; };
@@ -229,7 +228,6 @@
 		A63D39172419297700937CCD /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		A63D39182419297800937CCD /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		A63D39192419297800937CCD /* UIViewController+HideKeyboardOnTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideKeyboardOnTap.swift"; sourceTree = "<group>"; };
-		A63D391A2419297800937CCD /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTRansform+Extension.swift"; sourceTree = "<group>"; };
 		A63D391F2419297900937CCD /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A63D39202419297900937CCD /* UIButton+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Animations.swift"; sourceTree = "<group>"; };
@@ -492,7 +490,6 @@
 				A63D39242419297900937CCD /* UILable+Animatable.swift */,
 				A63D392D2419297A00937CCD /* UILayoutPriority+Extension.swift */,
 				A63D39412419298000937CCD /* UINavigationBar+HideHairLine.swift */,
-				A63D391A2419297800937CCD /* UINavigationItem+Extension.swift */,
 				A63D39182419297800937CCD /* UIScreen+Extension.swift */,
 				A63D393E2419298000937CCD /* UIScrollView+Extension.swift */,
 				A63D39142419297700937CCD /* UIStackView+Extension.swift */,
@@ -1212,7 +1209,6 @@
 				A6D40BE42417B6B500A88B5B /* MCLabel.swift in Sources */,
 				A6D40BD82417B6B500A88B5B /* GradientView.swift in Sources */,
 				A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */,
-				A63D394D2419298000937CCD /* UINavigationItem+Extension.swift in Sources */,
 				A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */,
 				A6DDD46B24168C6E008E1703 /* TextValidation.swift in Sources */,
 				A6D40C062417B6B500A88B5B /* RoundedView.swift in Sources */,

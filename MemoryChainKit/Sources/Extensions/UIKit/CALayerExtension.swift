@@ -12,9 +12,9 @@ public extension CALayer {
     func applyAnimation(animation:CABasicAnimation) {
         let copy = animation.copy() as! CABasicAnimation
         if copy.fromValue == nil {
-            copy.fromValue = self.presentation()?.value(forKeyPath: copy.keyPath)
+            copy.fromValue = self.presentation()?.value(forKeyPath: copy.keyPath!)
         }
         self.add(copy, forKey: copy.keyPath)
-        self.setValue(copy.toValue, forKey: copy.keyPath)
+        self.setValue(copy.toValue, forKey: copy.keyPath!)
     }
 }

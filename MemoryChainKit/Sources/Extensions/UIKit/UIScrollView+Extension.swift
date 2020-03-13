@@ -8,7 +8,7 @@
 
 #if canImport(UIKit)
 import UIKit
-import CoreGraphics
+
 #if !os(watchOS)
 
 // MARK: - Methods
