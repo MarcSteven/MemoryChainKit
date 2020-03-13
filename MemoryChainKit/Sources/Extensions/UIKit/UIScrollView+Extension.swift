@@ -8,6 +8,7 @@
 
 #if canImport(UIKit)
 import UIKit
+import CoreGraphics
 #if !os(watchOS)
 
 // MARK: - Methods
@@ -45,9 +46,15 @@ extension UIScrollView {
         }
     }
 }
-//MARK: - extension for UIScrollView
 public extension UIScrollView {
-    
+    func scrollToBottom(_ animated:Bool)  {
+        if self.contentSize.height < self.bounds.height {
+            return
+        }
+        let bottomOffset = CGPoint(x: 0, y: self.contentSize.height - self.bounds.height)
+        
+        self.setContentOffset(bottomOffset, animated: animated)
+    }
 }
 public extension UIScrollView {
     func stopScrolling() {
