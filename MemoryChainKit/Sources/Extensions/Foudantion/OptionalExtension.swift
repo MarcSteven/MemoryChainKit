@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public extension Optional where Wrapped ==String {
+    var isBlank:Bool {
+        return self?.isBlank ?? true 
+    }
+}
