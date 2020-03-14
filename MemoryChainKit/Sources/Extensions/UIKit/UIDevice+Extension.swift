@@ -41,6 +41,9 @@ public enum DeviceType: String, CaseIterable {
     case iPhoneXs
     case iPhoneXr
     case iPhoneXsMax
+    case iPhone11
+    case iPhone11Pro
+    case iPhone11ProMax
     
     case iPodTouch1G
     case iPodTouch2G
@@ -48,6 +51,7 @@ public enum DeviceType: String, CaseIterable {
     case iPodTouch4G
     case iPodTouch5G
     case iPodTouch6G
+    case iPodTouch7G
     
     case iPad
     case iPad2
@@ -114,12 +118,17 @@ public enum DeviceType: String, CaseIterable {
         case .iPhoneXr: return "iPhoneXr"
         case .iPhoneXs: return "iPhoneXs"
         case .iPhoneXsMax: return "iPhoneXsMax"
+        case .iPhone11: return "iPhone11"
+        case .iPhone11Pro: return "iPhone11Pro"
+        case .iPhone11ProMax: return "iPhone11ProMax"
+            
         case .iPodTouch1G: return "iPod Touch 1G"
         case .iPodTouch2G: return "iPod Touch 2G"
         case .iPodTouch3G: return "iPod Touch 3G"
         case .iPodTouch4G: return "iPod Touch 4G"
         case .iPodTouch5G: return "iPod Touch 5G"
         case .iPodTouch6G: return "iPod Touch 6G"
+        case .iPodTouch7G: return "iPod Touch 7G"
         case .iPad: return "iPad"
         case .iPad2: return "iPad 2"
         case .iPad3: return "iPad 3"
@@ -163,9 +172,12 @@ public enum DeviceType: String, CaseIterable {
         case .iPhone8: return ["iPhone10,1", "iPhone10,4"]
         case .iPhone8Plus: return ["iPhone10,2", "iPhone10,5"]
         case .iPhoneX: return ["iPhone10,3", "iPhone10,6"]
-        case .iPhoneXsMax: return []
-        case .iPhoneXs: return []
-        case .iPhoneXr: return []
+        case .iPhoneXsMax: return ["iPhone11,6"]
+        case .iPhoneXs: return ["iPhone11,2"]
+        case .iPhoneXr: return ["iPhone11,8"]
+        case .iPhone11: return ["iPhone12,1"]
+        case .iPhone11Pro: return ["iPhone12,3"]
+        case .iPhone11ProMax: return ["iPhone12,5"]
             
         case .iPodTouch1G: return ["iPod1,1"]
         case .iPodTouch2G: return ["iPod2,1"]
@@ -173,6 +185,7 @@ public enum DeviceType: String, CaseIterable {
         case .iPodTouch4G: return ["iPod4,1"]
         case .iPodTouch5G: return ["iPod5,1"]
         case .iPodTouch6G: return ["iPod7,1"]
+        case .iPodTouch7G: return ["iPod9,1"]
             
         case .iPad: return ["iPad1,1", "iPad1,2"]
         case .iPad2: return ["iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4"]
@@ -240,8 +253,19 @@ internal extension CaseIterable where Self: Hashable {
 
 #endif
 
-extension UIDevice {
-    
+public extension UIDevice {
+    class var isIpad:Bool {
+        return UIDevice().userInterfaceIdiom == .pad
+    }
+    class var isIPhone:Bool {
+        return UIDevice().userInterfaceIdiom == .phone
+    }
+    class var isCarPlay:Bool {
+        return UIDevice().userInterfaceIdiom == .carPlay
+    }
+    class var isTV:Bool {
+        return UIDevice().userInterfaceIdiom == .tv
+    }
     
     /**
  
@@ -249,7 +273,7 @@ extension UIDevice {
     return a "bool ' whether the device is plugged in ,return false if not an iOS device
  
     */
-    @objc public var isPluggedIn:Bool {
+    @objc  var isPluggedIn:Bool {
         #if os(iOS)
         return [.charging,.full].contains(UIDevice.current.batteryState)
         #else
