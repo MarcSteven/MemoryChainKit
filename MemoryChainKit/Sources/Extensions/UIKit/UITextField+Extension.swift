@@ -12,6 +12,32 @@ import UIKit
 #if !os(watchOS)
 // MARK: - Enums
 public extension UITextField {
+    /**
+     add bottomLine
+     */
+    func addBottomLine() {
+        let border = CALayer()
+        let borderWidth = CGFloat(1.0)
+        border.borderColor = UIColor.lightGray.cgColor
+        border.frame = CGRect(origin: CGPoint(x: 0, y: self.frame.size.height - borderWidth), size: CGSize(width: self.frame.size.width, height: self.frame.size.height))
+        border.borderWidth = borderWidth
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+    func togglePasswordVisibility() {
+        isSecureTextEntry = !isSecureTextEntry
+        if let existingText = text,
+            isSecureTextEntry{
+            deleteBackward()
+            if let textRange = textRange(from: beginningOfDocument, to: endOfDocument) {
+                replace(textRange, withText: existingText)
+            }
+        }
+        if let existingSelectedTextRange = selectedTextRange {
+            selectedTextRange = nil
+            selectedTextRange = existingSelectedTextRange
+        }
+    }
     var mc_hasText:Bool {
         guard let text = text else{
             return false
