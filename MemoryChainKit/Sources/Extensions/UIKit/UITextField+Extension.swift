@@ -13,6 +13,19 @@ import UIKit
 // MARK: - Enums
 public extension UITextField {
     /**
+     Shake
+     */
+    func shake(_ duration:TimeInterval,repeatCount:Float) {
+        let animation = CABasicAnimation(keyPath: "postion")
+        animation.duration = duration
+        animation.repeatCount = repeatCount
+        animation.autoreverses = true
+        animation.fromValue = CGPoint(self.center.x - 4.0, self.center.y)
+        animation.toValue = CGPoint(self.center.x + 4.0, self.center.y)
+        layer.add(animation, forKey: "position")
+    }
+     
+    /**
      add bottomLine
      */
     func addBottomLine(_ lineWidth:CGFloat,lineColor:UIColor) {

@@ -22,7 +22,6 @@
 		A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D391F2419297900937CCD /* UIColor+Extension.swift */; };
 		A63D39532419298000937CCD /* UIButton+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39202419297900937CCD /* UIButton+Animations.swift */; };
 		A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39212419297900937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift */; };
-		A63D39552419298000937CCD /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39222419297900937CCD /* UIView+Animations.swift */; };
 		A63D39562419298000937CCD /* UICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39232419297900937CCD /* UICollectionViewFlowLayout.swift */; };
 		A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39242419297900937CCD /* UILable+Animatable.swift */; };
 		A63D39582419298000937CCD /* UITableView+ConfigureProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39252419297900937CCD /* UITableView+ConfigureProtocols.swift */; };
@@ -41,7 +40,6 @@
 		A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39352419297C00937CCD /* UIControl+Extension.swift */; };
 		A63D39692419298000937CCD /* NSLayoutConstraints+Active.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */; };
 		A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39372419297C00937CCD /* UIViewController+Extension.swift */; };
-		A63D396B2419298000937CCD /* UIView+ApplyGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39382419297C00937CCD /* UIView+ApplyGradient.swift */; };
 		A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */; };
 		A63D396D2419298100937CCD /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D393A2419297C00937CCD /* UIDevice+Extension.swift */; };
 		A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D393B2419297D00937CCD /* UIImage+Extension.swift */; };
@@ -233,7 +231,6 @@
 		A63D391F2419297900937CCD /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A63D39202419297900937CCD /* UIButton+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Animations.swift"; sourceTree = "<group>"; };
 		A63D39212419297900937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+TapAttributedTextInLabel.swift"; sourceTree = "<group>"; };
-		A63D39222419297900937CCD /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		A63D39232419297900937CCD /* UICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A63D39242419297900937CCD /* UILable+Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Animatable.swift"; sourceTree = "<group>"; };
 		A63D39252419297900937CCD /* UITableView+ConfigureProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ConfigureProtocols.swift"; sourceTree = "<group>"; };
@@ -252,7 +249,6 @@
 		A63D39352419297C00937CCD /* UIControl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraints+Active.swift"; sourceTree = "<group>"; };
 		A63D39372419297C00937CCD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		A63D39382419297C00937CCD /* UIView+ApplyGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ApplyGradient.swift"; sourceTree = "<group>"; };
 		A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
 		A63D393A2419297C00937CCD /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		A63D393B2419297D00937CCD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -501,8 +497,6 @@
 				A63D39212419297900937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift */,
 				A63D392A2419297A00937CCD /* UITextField+Extension.swift */,
 				A63D392F2419297B00937CCD /* UITextFiled+ConfigureDatePicker.swift */,
-				A63D39222419297900937CCD /* UIView+Animations.swift */,
-				A63D39382419297C00937CCD /* UIView+ApplyGradient.swift */,
 				A63D39342419297C00937CCD /* UIView+Extension.swift */,
 				A63D39372419297C00937CCD /* UIViewController+Extension.swift */,
 				A63D39192419297800937CCD /* UIViewController+HideKeyboardOnTap.swift */,
@@ -1072,11 +1066,9 @@
 				A6DDD45724168C6E008E1703 /* Configurable.swift in Sources */,
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
-				A63D39552419298000937CCD /* UIView+Animations.swift in Sources */,
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
 				A69310D52417100E004ADF4F /* String+Base64.swift in Sources */,
 				A63D39652419298000937CCD /* UIAlertExtension.swift in Sources */,
-				A63D396B2419298000937CCD /* UIView+ApplyGradient.swift in Sources */,
 				A63D39622419298000937CCD /* UITextFiled+ConfigureDatePicker.swift in Sources */,
 				A6D40BF42417B6B500A88B5B /* LinearProgressBar.swift in Sources */,
 				A6DDD55624168D1C008E1703 /* URL+JSONPrimitiveConvertible.swift in Sources */,
