@@ -148,6 +148,8 @@ public enum DeviceType: String, CaseIterable {
     }
     
     /// The identifiers associated with each device type
+    
+    //for more details, you can visit here(https://everyi.com/by-identifier/ipod-iphone-ipad-specs-by-model-identifier.html)
     internal var identifiers: [String] {
         
         switch self {
