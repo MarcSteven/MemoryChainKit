@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
+    var isBlank:Bool {
+        return allSatisfy({$0.isWhitespace})
+    }
     // 获取字符串的行数
     var lines: [String] {
         return self.components(separatedBy: NSCharacterSet.newlines)
