@@ -136,7 +136,6 @@
 		A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD22417B6B500A88B5B /* TabBarButton.swift */; };
 		A6D40C182417B6B500A88B5B /* TabBarButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD32417B6B500A88B5B /* TabBarButtonDelegate.swift */; };
 		A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD42417B6B500A88B5B /* TabBarController.swift */; };
-		A6D40C1B2417B6C700A88B5B /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40C1A2417B6C700A88B5B /* UnderlineTextField.swift */; };
 		A6DDD42D241667D6008E1703 /* Info.plist in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F62414C96D00381D4B /* Info.plist */; };
 		A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43024168C6E008E1703 /* Scrollable.swift */; };
 		A6DDD44F24168C6E008E1703 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43124168C6E008E1703 /* Observer.swift */; };
@@ -345,7 +344,6 @@
 		A6D40BD22417B6B500A88B5B /* TabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		A6D40BD32417B6B500A88B5B /* TabBarButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonDelegate.swift; sourceTree = "<group>"; };
 		A6D40BD42417B6B500A88B5B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		A6D40C1A2417B6C700A88B5B /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		A6DDD43024168C6E008E1703 /* Scrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
 		A6DDD43124168C6E008E1703 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		A6DDD43224168C6E008E1703 /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
@@ -745,7 +743,6 @@
 			isa = PBXGroup;
 			children = (
 				A6D40BCD2417B6B500A88B5B /* SegmentedItem.swift */,
-				A6D40C1A2417B6C700A88B5B /* UnderlineTextField.swift */,
 			);
 			path = SegmentControl;
 			sourceTree = "<group>";
@@ -1168,7 +1165,6 @@
 				A6DDD54124168D12008E1703 /* NSLayoutConstraint+Extension.swift in Sources */,
 				A6D40BDE2417B6B500A88B5B /* MCDropDownDirection.swift in Sources */,
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
-				A6D40C1B2417B6C700A88B5B /* UnderlineTextField.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
 				A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */,
 				A69310CE2417100E004ADF4F /* Data+Helpers.swift in Sources */,

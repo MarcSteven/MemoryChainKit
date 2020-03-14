@@ -209,6 +209,8 @@ public extension UIView.AnimationCurve {
         case .linear:
             return "Linear"
         
+        @unknown default:
+            fatalError()
         }
     }
     //convert this curve into it's correspoing uiviewAniamtionOptions value for use in Animations
@@ -222,6 +224,8 @@ public extension UIView.AnimationCurve {
             return .curveLinear
         case .easeOut:
             return .curveEaseOut
+        @unknown default:
+            fatalError()
         }
     }
 }
