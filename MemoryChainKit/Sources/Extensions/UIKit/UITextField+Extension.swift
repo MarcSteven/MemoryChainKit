@@ -15,12 +15,12 @@ public extension UITextField {
     /**
      add bottomLine
      */
-    func addBottomLine() {
+    func addBottomLine(_ lineWidth:CGFloat,lineColor:UIColor) {
         let border = CALayer()
-        let borderWidth = CGFloat(1.0)
-        border.borderColor = UIColor.lightGray.cgColor
+     
+        border.borderColor = lineColor.cgColor
         border.frame = CGRect(origin: CGPoint(x: 0, y: self.frame.size.height - borderWidth), size: CGSize(width: self.frame.size.width, height: self.frame.size.height))
-        border.borderWidth = borderWidth
+        border.borderWidth = lineWidth
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
     }
@@ -232,13 +232,7 @@ public extension UITextField {
         self.borderColor = color
     }
     
-    func addLineView(_ viewColor: UIColor, _ margin: CGFloat) {
-        let view = UIView()
-        view.backgroundColor = viewColor
-        self.addSubview(view)
-        #warning("TO DO add constraints")
-        }
-    }
+}
 
 
 #endif
