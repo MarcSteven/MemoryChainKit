@@ -13,10 +13,12 @@ open class HUD:UIView {
     private lazy var progressIndicator: UIActivityIndicatorView = {
         let activityIndictor = UIActivityIndicatorView()
         activityIndictor.translatesAutoresizingMaskIntoConstraints = false
+        if #available(iOS 13, *) {
         activityIndictor.style = .large
+        } else {
+            activityIndictor.style = .whiteLarge
+        }
         activityIndictor.startAnimating()
-        
-        
         return activityIndictor
     }()
     
