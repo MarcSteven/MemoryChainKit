@@ -6,4 +6,13 @@
 //  Copyright © 2020 Marc Zhao(https://github.com/MarcSteven). All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public typealias CompletionHandler = () -> Void
+public typealias JSONDictionary = [String:Any]
+
+public typealias JSONArray = [Any]
+
+public typealias JSONType = String
+
+public typealias View = UIView
