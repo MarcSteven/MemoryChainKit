@@ -13,7 +13,7 @@ import CoreData
 
 @available(iOS 8.4, watchOS 2.0, tvOS 9.0, *)
 public final class MCCoreDataStack {
-    public typealias Callback = () -> Void
+   
     
     /// Until this is true, data store is not available.
     ///    Do **not** attempt to access any of the Core Data objects until `isReady=true`
@@ -32,7 +32,7 @@ public final class MCCoreDataStack {
     /// - parameter callback: A block to call once setup is completed. MCCoreDataStack.isReady is set to true before callback is executed.
     ///
     /// - returns: Instance of MCCoreDataStack
-    public init(withDataModelNamed dataModel: String? = nil, storeURL: URL? = nil, callback: @escaping Callback = {}) {
+    public init(withDataModelNamed dataModel: String? = nil, storeURL: URL? = nil, callback: @escaping CompletionHandler = {}) {
         DispatchQueue.main.async { [unowned self] in
             self.setup(withDataModelNamed: dataModel, storeURL: storeURL, callback: callback)
         }
@@ -65,7 +65,7 @@ public final class MCCoreDataStack {
         NotificationCenter.default.removeObserver(self)
     }
     
-    private var callback: Callback?
+    private var completionHandler: CompletionHandler?
     private var setupFlags: SetupFlags = .none
 }
 
@@ -138,9 +138,9 @@ private extension MCCoreDataStack {
         if setupFlags != .done { return }
         //    if done, execute the callback and clear it
         isReady = true
-        if let callback = callback {
+        if let callback = completionHandler {
             callback()
-            self.callback = nil
+            self.completionHandler = nil
         }
     }
     
@@ -149,8 +149,8 @@ private extension MCCoreDataStack {
     /// - parameter dataModelName: String representing the name (without extension) of the model file to use. If not supplied,
     /// - parameter storeURL: Full URL where to create the .sqlite file. Must include the file at the end as well (can't be just directory). If not supplied, user's Documents directory will be used + alphanumerics from app's name. Possible use: when you want to setup the store file into completely custom location. Like say shared container in App Group.
     /// - parameter callback: A block to call once setup is completed. RTCoreDataStack.isReady is set to true before callback is executed.
-    func setup(withDataModelNamed dataModelName: String? = nil, storeURL: URL? = nil, callback: @escaping Callback = {}) {
-        self.callback = callback
+    func setup(withDataModelNamed dataModelName: String? = nil, storeURL: URL? = nil, callback: @escaping CompletionHandler = {}) {
+        self.completionHandler = callback
         
         let url: URL
         if let storeURL = storeURL {    //    if the target URL is supplied
@@ -392,7 +392,7 @@ public extension MCCoreDataStack {
 
 //    MARK: Migration
 extension MCCoreDataStack {
-    public convenience init(withDataModelNamed dataModel: String? = nil, migratingFrom oldStoreURL: URL? = nil, to storeURL: URL, callback: @escaping Callback = {}) {
+    public convenience init(withDataModelNamed dataModel: String? = nil, migratingFrom oldStoreURL: URL? = nil, to storeURL: URL, callback: @escaping CompletionHandler = {}) {
         let fm = FileManager.default
         
         //    what's the old URL?
@@ -447,7 +447,7 @@ extension MCCoreDataStack {
                 
                 //    successful migration, so update the value of store URL
                 self.storeURL = storeURL
-                self.callback = callback
+                self.completionHandler = callback
                 
                 //    setup persistent store coordinators
                 setupPersistentStoreCoordinators(using: mom)

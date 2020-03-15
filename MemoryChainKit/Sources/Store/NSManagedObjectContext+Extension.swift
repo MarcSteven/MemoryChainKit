@@ -11,9 +11,9 @@ import CoreData
 
 
 public extension NSManagedObjectContext {
-    func save(_ callback:@escaping (CoreDataError?) ->Void = {_  in}) {
+    func save(_ completionHandler:@escaping (CoreDataError?) ->Void = {_  in}) {
         if !self.hasChanges {
-            callback(nil)
+            completionHandler(nil)
         }
         //async save
         self.performAndWait {
@@ -21,12 +21,12 @@ public extension NSManagedObjectContext {
                 try self.save()
                 // if there is a parentContext,save that one
                 if let parentContext = self.parent {
-                    parentContext.save(callback)
+                    parentContext.save(completionHandler)
                     return
                 }
-                callback(nil)
+                completionHandler(nil)
             }catch (let error ) {
-                callback(CoreDataError.saveFailed(error))
+                completionHandler(CoreDataError.saveFailed(error))
             }
         }
     }

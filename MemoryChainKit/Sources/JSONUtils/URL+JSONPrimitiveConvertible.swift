@@ -9,7 +9,7 @@
 import Foundation
 
 extension URL:JSONPrimitiveConvertible {
-    public typealias JSONType = String
+   
     
     
     ///Creates a url from a string

@@ -8,8 +8,8 @@
 
 import UIKit
 
-typealias view = UIView
-internal class SetupView: view {
+
+internal class SetupView: View {
     //Subclass should override setup instead of any of the initializers,subclassers must call super.setup()
     open func setupView() {
         

@@ -79,6 +79,7 @@
 		A69310DE2417100E004ADF4F /* DispatchQueue+IsMainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */; };
 		A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310DF24171507004ADF4F /* UIResponderExtension.swift */; };
 		A695CBB5241C86C6007C68DD /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CBB4241C86C6007C68DD /* OptionalExtension.swift */; };
+		A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CBF2241E52B3007C68DD /* Typealias.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -181,11 +182,9 @@
 		A6DDD53824168D0A008E1703 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53024168D0A008E1703 /* LocalStorage.swift */; };
 		A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53124168D0A008E1703 /* LocalStorageImpl.swift */; };
 		A6DDD53A24168D0A008E1703 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53224168D0A008E1703 /* Store.swift */; };
-		A6DDD54124168D12008E1703 /* NSLayoutConstraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53C24168D12008E1703 /* NSLayoutConstraint+Extension.swift */; };
-		A6DDD54224168D12008E1703 /* NSLayoutAnchor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53D24168D12008E1703 /* NSLayoutAnchor+Extension.swift */; };
-		A6DDD54324168D12008E1703 /* NSLayoutDimension+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53E24168D12008E1703 /* NSLayoutDimension+Extension.swift */; };
+		A6DDD54124168D12008E1703 /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53C24168D12008E1703 /* NSLayoutConstraintExtension.swift */; };
 		A6DDD54424168D12008E1703 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53F24168D12008E1703 /* UIView+Constraint.swift */; };
-		A6DDD54524168D12008E1703 /* NSLayoutConstraint+ConstraintIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54024168D12008E1703 /* NSLayoutConstraint+ConstraintIssues.swift */; };
+		A6DDD54524168D12008E1703 /* NSLayoutConstraint+Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54024168D12008E1703 /* NSLayoutConstraint+Debugging.swift */; };
 		A6DDD55024168D1C008E1703 /* JSONPrimitiveConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54724168D1B008E1703 /* JSONPrimitiveConvertible.swift */; };
 		A6DDD55124168D1C008E1703 /* InvalidItemBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54824168D1B008E1703 /* InvalidItemBehaviour.swift */; };
 		A6DDD55224168D1C008E1703 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD54924168D1B008E1703 /* DecodingError.swift */; };
@@ -287,6 +286,7 @@
 		A69310BB2417100E004ADF4F /* DispatchQueue+IsMainThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+IsMainThread.swift"; sourceTree = "<group>"; };
 		A69310DF24171507004ADF4F /* UIResponderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
 		A695CBB4241C86C6007C68DD /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
+		A695CBF2241E52B3007C68DD /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -388,11 +388,9 @@
 		A6DDD53024168D0A008E1703 /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		A6DDD53124168D0A008E1703 /* LocalStorageImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageImpl.swift; sourceTree = "<group>"; };
 		A6DDD53224168D0A008E1703 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		A6DDD53C24168D12008E1703 /* NSLayoutConstraint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extension.swift"; sourceTree = "<group>"; };
-		A6DDD53D24168D12008E1703 /* NSLayoutAnchor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+Extension.swift"; sourceTree = "<group>"; };
-		A6DDD53E24168D12008E1703 /* NSLayoutDimension+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutDimension+Extension.swift"; sourceTree = "<group>"; };
+		A6DDD53C24168D12008E1703 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
 		A6DDD53F24168D12008E1703 /* UIView+Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
-		A6DDD54024168D12008E1703 /* NSLayoutConstraint+ConstraintIssues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+ConstraintIssues.swift"; sourceTree = "<group>"; };
+		A6DDD54024168D12008E1703 /* NSLayoutConstraint+Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Debugging.swift"; sourceTree = "<group>"; };
 		A6DDD54724168D1B008E1703 /* JSONPrimitiveConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONPrimitiveConvertible.swift; sourceTree = "<group>"; };
 		A6DDD54824168D1B008E1703 /* InvalidItemBehaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvalidItemBehaviour.swift; sourceTree = "<group>"; };
 		A6DDD54924168D1B008E1703 /* DecodingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
@@ -784,6 +782,7 @@
 				A6DDD46F24168C88008E1703 /* Extensions */,
 				A6DDD46C24168C7F008E1703 /* BaseView */,
 				A6DDD42F24168C6E008E1703 /* Protocols */,
+				A695CBF2241E52B3007C68DD /* Typealias.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -879,11 +878,9 @@
 		A6DDD53B24168D12008E1703 /* LayoutConstraintsUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A6DDD53C24168D12008E1703 /* NSLayoutConstraint+Extension.swift */,
-				A6DDD53D24168D12008E1703 /* NSLayoutAnchor+Extension.swift */,
-				A6DDD53E24168D12008E1703 /* NSLayoutDimension+Extension.swift */,
+				A6DDD53C24168D12008E1703 /* NSLayoutConstraintExtension.swift */,
 				A6DDD53F24168D12008E1703 /* UIView+Constraint.swift */,
-				A6DDD54024168D12008E1703 /* NSLayoutConstraint+ConstraintIssues.swift */,
+				A6DDD54024168D12008E1703 /* NSLayoutConstraint+Debugging.swift */,
 			);
 			path = LayoutConstraintsUtils;
 			sourceTree = "<group>";
@@ -1092,7 +1089,6 @@
 				A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */,
 				A69310D02417100E004ADF4F /* URL+PrintFileSize.swift in Sources */,
 				A6D40BF82417B6B500A88B5B /* MCInformationTipPreferences.swift in Sources */,
-				A6DDD54324168D12008E1703 /* NSLayoutDimension+Extension.swift in Sources */,
 				A6DDD46424168C6E008E1703 /* Copying.swift in Sources */,
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
@@ -1139,7 +1135,6 @@
 				A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */,
 				A63D396D2419298100937CCD /* UIDevice+Extension.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
-				A6DDD54224168D12008E1703 /* NSLayoutAnchor+Extension.swift in Sources */,
 				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
 				A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */,
 				A6DDD5632416954E008E1703 /* UIViewExtension.swift in Sources */,
@@ -1153,6 +1148,7 @@
 				A69310CA2417100E004ADF4F /* CGSize+Extension.swift in Sources */,
 				A63D39582419298000937CCD /* UITableView+ConfigureProtocols.swift in Sources */,
 				A6D40BF92417B6B500A88B5B /* CGPoint+Extension.swift in Sources */,
+				A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */,
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
 				A63D39442419298000937CCD /* UIAlertController+Extension.swift in Sources */,
@@ -1162,7 +1158,7 @@
 				A63D39502419298000937CCD /* CGAffineTRansform+Extension.swift in Sources */,
 				A6DDD53424168D0A008E1703 /* CoreDataError.swift in Sources */,
 				A6DDD46224168C6E008E1703 /* NotSignedInResponder.swift in Sources */,
-				A6DDD54124168D12008E1703 /* NSLayoutConstraint+Extension.swift in Sources */,
+				A6DDD54124168D12008E1703 /* NSLayoutConstraintExtension.swift in Sources */,
 				A6D40BDE2417B6B500A88B5B /* MCDropDownDirection.swift in Sources */,
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
@@ -1221,7 +1217,7 @@
 				A6D40BDB2417B6B500A88B5B /* MemoryChainEmptyStateView.swift in Sources */,
 				A63D39722419298100937CCD /* CALayer+Border.swift in Sources */,
 				A63D395E2419298000937CCD /* UIWindow+PrintKeyWindowHierarchy.swift in Sources */,
-				A6DDD54524168D12008E1703 /* NSLayoutConstraint+ConstraintIssues.swift in Sources */,
+				A6DDD54524168D12008E1703 /* NSLayoutConstraint+Debugging.swift in Sources */,
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A6DDD55224168D1C008E1703 /* DecodingError.swift in Sources */,
 				A6D40BE12417B6B500A88B5B /* NSCalendar+Extension.swift in Sources */,

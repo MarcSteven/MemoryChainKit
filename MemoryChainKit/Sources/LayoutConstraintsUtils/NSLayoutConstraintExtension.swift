@@ -1,5 +1,5 @@
 //
-//  NSLayoutAnchor+Extension.swift
+//  NSLayoutConstraint+Extension.swift
 //  MemoryChainKit
 //
 //  Created by Marc Zhao on 2019/1/3.
@@ -8,3 +8,10 @@
 
 import UIKit
 
+
+public extension NSLayoutConstraint {
+    func activate() {
+        isActive  = true
+        
+    }
+}
