@@ -12,6 +12,11 @@ import UIKit
 #if !os(watchOS)
 // MARK: - Properties
 public extension UIButton {
+    func underline() {
+        let attributedString = NSMutableAttributedString(string: (self.titleLabel?.text!)!)
+        attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: NSRange(location: 0, length: (self.titleLabel?.text!.string.count)!))
+        self.setAttributedTitle(attributedString, for: .normal)
+    }
     var mc_hasText:Bool {
         guard let label = titleLabel else {
             return false

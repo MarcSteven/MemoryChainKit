@@ -24,6 +24,7 @@ public extension UITextField {
         animation.toValue = CGPoint(self.center.x + 4.0, self.center.y)
         layer.add(animation, forKey: "position")
     }
+    
      
     /**
      add bottomLine

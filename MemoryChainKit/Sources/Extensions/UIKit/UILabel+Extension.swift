@@ -8,6 +8,13 @@
 import UIKit
 
 public extension UILabel {
+    func underLine() {
+        if let textString = self.text {
+            let attributedString = NSMutableAttributedString(string: textString)
+            attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: NSRange(location: 0, length: textString.count))
+            self.attributedText = attributedString
+        }
+    }
    
     func setAttributeColor(_ color: UIColor, _ string: String) {
         let text = self.text!
