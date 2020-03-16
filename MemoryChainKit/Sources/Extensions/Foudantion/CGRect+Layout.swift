@@ -6,4 +6,10 @@
 //  Copyright © 2020 Marc Steven(https://github.com/MarcSteven). All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public extension CGRect {
+    func layoutHeight(width spacing:CGFloat)->CGFloat {
+        return height > 0 ? height + spacing : 0
+    }
+}
