@@ -7,3 +7,7 @@
 //
 
 import Foundation
+/** You can visit here(https://www.tutorialspoint.com/http/http_status_codes.htm)*/
+public enum StatusCodeType {
+    case informational,success,redirection,clientError,serverError,cancelled,unknown
+}

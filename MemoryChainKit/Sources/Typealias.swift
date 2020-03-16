@@ -13,7 +13,6 @@ public typealias JSONDictionary = [String:Any]
 
 public typealias JSONArray = [Any]
 
-public typealias JSONType = String
 
 public typealias View = UIView
 

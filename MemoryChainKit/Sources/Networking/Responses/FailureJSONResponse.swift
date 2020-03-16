@@ -7,3 +7,13 @@
 //
 
 import Foundation
+public class SucessfulJSONResponse:JSONResponse {}
+public class FailureJSONResponse:JSONResponse {
+    public let error:NSError
+    init(json:JSONType,
+         response:HTTPURLResponse,
+         error:NSError) {
+        self.error = error
+        super.init(json: json, response: response)
+    }
+}

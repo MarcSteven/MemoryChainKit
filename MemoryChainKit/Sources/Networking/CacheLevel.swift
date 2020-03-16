@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public enum CacheLevel {
+    case memory
+    case memoryAndFile
+    case none 
+}

@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+public enum ParsingError:Error {
+    case notFound,failed
+}
+
