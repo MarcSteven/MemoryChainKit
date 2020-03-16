@@ -109,6 +109,9 @@
 		A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC43241F635A007C68DD /* CharacterSet+URLQueryParameters.swift */; };
 		A695CC46241F65E3007C68DD /* Dictionary+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC45241F65E3007C68DD /* Dictionary+Encode.swift */; };
 		A695CC48241F6A69007C68DD /* TestCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC47241F6A69007C68DD /* TestCheck.swift */; };
+		A695CC4C241F91B4007C68DD /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */; };
+		A695CC4E241F9930007C68DD /* CGRect+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC4D241F9930007C68DD /* CGRect+Layout.swift */; };
+		A695CC50241F99F8007C68DD /* FileManager+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -336,6 +339,9 @@
 		A695CC43241F635A007C68DD /* CharacterSet+URLQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLQueryParameters.swift"; sourceTree = "<group>"; };
 		A695CC45241F65E3007C68DD /* Dictionary+Encode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Encode.swift"; sourceTree = "<group>"; };
 		A695CC47241F6A69007C68DD /* TestCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCheck.swift; sourceTree = "<group>"; };
+		A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
+		A695CC4D241F9930007C68DD /* CGRect+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Layout.swift"; sourceTree = "<group>"; };
+		A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Cache.swift"; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -550,6 +556,9 @@
 		A693109824170FF3004ADF4F /* Foudantion */ = {
 			isa = PBXGroup;
 			children = (
+				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
+				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
+				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
 				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
 				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
 				A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */,
@@ -1168,6 +1177,7 @@
 				A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */,
 				A6DDD46624168C6E008E1703 /* AlertPresenting.swift in Sources */,
 				A69310C52417100E004ADF4F /* Bundle+Helpers.swift in Sources */,
+				A695CC4C241F91B4007C68DD /* NSAttributedStringExtension.swift in Sources */,
 				A6D40C082417B6B500A88B5B /* HorizontalScrollView.swift in Sources */,
 				A63D39692419298000937CCD /* NSLayoutConstraints+Active.swift in Sources */,
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
@@ -1206,6 +1216,7 @@
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* String+Extension.swift in Sources */,
+				A695CC4E241F9930007C68DD /* CGRect+Layout.swift in Sources */,
 				A6D40C0B2417B6B500A88B5B /* Country.swift in Sources */,
 				A69310C42417100E004ADF4F /* FileManager+Extension.swift in Sources */,
 				A6DDD46A24168C6E008E1703 /* SignInUserInterface.swift in Sources */,
@@ -1268,6 +1279,7 @@
 				A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */,
 				A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */,
 				A695CC0B241F41AF007C68DD /* Reachability.swift in Sources */,
+				A695CC50241F99F8007C68DD /* FileManager+Cache.swift in Sources */,
 				A69310C32417100E004ADF4F /* CGRect+Helper.swift in Sources */,
 				A69310DC2417100E004ADF4F /* Bundle+DecodeJSON.swift in Sources */,
 				A6D40BE62417B6B500A88B5B /* MCProgressHUD.swift in Sources */,
