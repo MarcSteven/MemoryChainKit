@@ -1,5 +1,5 @@
 //
-//  UITableViewCell+ZeroLayoutMargins.swift
+//  UITableViewCellExtension.swift
 //  MemoryChainKit
 //
 //  Created by Marc Zhao on 2019/1/30.
@@ -14,5 +14,8 @@ public extension UITableViewCell {
             return UIEdgeInsets.zero
         }
         set {}
+    }
+    var tableView:UITableView? {
+        return parentView(of: UITableView.self)
     }
 }

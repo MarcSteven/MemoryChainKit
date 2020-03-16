@@ -16,3 +16,5 @@ public typealias JSONArray = [Any]
 public typealias JSONType = String
 
 public typealias View = UIView
+
+public typealias ResponseHandler = (Data?,URL?,URLResponse?)
