@@ -26,7 +26,7 @@
 		A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39242419297900937CCD /* UILable+Animatable.swift */; };
 		A63D39582419298000937CCD /* UITableView+ConfigureProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39252419297900937CCD /* UITableView+ConfigureProtocols.swift */; };
 		A63D395B2419298000937CCD /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39282419297A00937CCD /* UICollectionView+Extension.swift */; };
-		A63D395C2419298000937CCD /* UITableViewCell+ZeroLayoutMargins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39292419297A00937CCD /* UITableViewCell+ZeroLayoutMargins.swift */; };
+		A63D395C2419298000937CCD /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39292419297A00937CCD /* UITableViewCellExtension.swift */; };
 		A63D395D2419298000937CCD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392A2419297A00937CCD /* UITextField+Extension.swift */; };
 		A63D395E2419298000937CCD /* UIWindow+PrintKeyWindowHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392B2419297A00937CCD /* UIWindow+PrintKeyWindowHierarchy.swift */; };
 		A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */; };
@@ -233,7 +233,7 @@
 		A63D39242419297900937CCD /* UILable+Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Animatable.swift"; sourceTree = "<group>"; };
 		A63D39252419297900937CCD /* UITableView+ConfigureProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ConfigureProtocols.swift"; sourceTree = "<group>"; };
 		A63D39282419297A00937CCD /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		A63D39292419297A00937CCD /* UITableViewCell+ZeroLayoutMargins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ZeroLayoutMargins.swift"; sourceTree = "<group>"; };
+		A63D39292419297A00937CCD /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		A63D392A2419297A00937CCD /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		A63D392B2419297A00937CCD /* UIWindow+PrintKeyWindowHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+PrintKeyWindowHierarchy.swift"; sourceTree = "<group>"; };
 		A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
@@ -489,7 +489,7 @@
 				A63D39142419297700937CCD /* UIStackView+Extension.swift */,
 				A63D39252419297900937CCD /* UITableView+ConfigureProtocols.swift */,
 				A63D39122419297700937CCD /* UITableView+Extension.swift */,
-				A63D39292419297A00937CCD /* UITableViewCell+ZeroLayoutMargins.swift */,
+				A63D39292419297A00937CCD /* UITableViewCellExtension.swift */,
 				A63D39212419297900937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift */,
 				A63D392A2419297A00937CCD /* UITextField+Extension.swift */,
 				A63D392F2419297B00937CCD /* UITextFiled+ConfigureDatePicker.swift */,
@@ -555,6 +555,13 @@
 			children = (
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		A695CBF4241F1740007C68DD /* IM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IM;
 			sourceTree = "<group>";
 		};
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
@@ -770,6 +777,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A695CBF4241F1740007C68DD /* IM */,
 				A63D390F241928A100937CCD /* Device */,
 				A63D390A2419251A00937CCD /* Debugging */,
 				A63D3907241923DD00937CCD /* Transitions */,
@@ -1053,7 +1061,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D40C182417B6B500A88B5B /* TabBarButtonDelegate.swift in Sources */,
-				A63D395C2419298000937CCD /* UITableViewCell+ZeroLayoutMargins.swift in Sources */,
+				A63D395C2419298000937CCD /* UITableViewCellExtension.swift in Sources */,
 				A6DDD45F24168C6E008E1703 /* SingleValueEncodingContainer.swift in Sources */,
 				A63D394A2419298000937CCD /* UILabel+Extension.swift in Sources */,
 				A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */,
