@@ -713,9 +713,17 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
+		A695CC6F2420D756007C68DD /* SeparatorLineView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SeparatorLineView;
+			sourceTree = "<group>";
+		};
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A695CC6F2420D756007C68DD /* SeparatorLineView */,
 				A695CC6A2420BECC007C68DD /* AlertView */,
 				A695CC612420B1C9007C68DD /* Router */,
 				A695CBB1241B81D9007C68DD /* UILabel */,
