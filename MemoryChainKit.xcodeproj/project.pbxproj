@@ -112,6 +112,11 @@
 		A695CC4C241F91B4007C68DD /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */; };
 		A695CC4E241F9930007C68DD /* CGRect+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC4D241F9930007C68DD /* CGRect+Layout.swift */; };
 		A695CC50241F99F8007C68DD /* FileManager+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */; };
+		A695CC52241FB90E007C68DD /* AVCaptureDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */; };
+		A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */; };
+		A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC55242073F6007C68DD /* AVAssetExtension.swift */; };
+		A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */; };
+		A695CC5C2420819B007C68DD /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -342,6 +347,11 @@
 		A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		A695CC4D241F9930007C68DD /* CGRect+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Layout.swift"; sourceTree = "<group>"; };
 		A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Cache.swift"; sourceTree = "<group>"; };
+		A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceExtension.swift; sourceTree = "<group>"; };
+		A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		A695CC55242073F6007C68DD /* AVAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
+		A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionExtension.swift; sourceTree = "<group>"; };
+		A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITabBarControllerExtension.swift; path = MemoryChainKit/Sources/Extensions/UIKit/UITabBarControllerExtension.swift; sourceTree = SOURCE_ROOT; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -559,6 +569,11 @@
 				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
+				A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */,
+				A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */,
+				A695CC55242073F6007C68DD /* AVAssetExtension.swift */,
+				A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */,
+				A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */,
 				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
 				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
 				A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */,
@@ -1203,6 +1218,7 @@
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
 				A695CC24241F5377007C68DD /* JSON.swift in Sources */,
 				A695CC31241F59AA007C68DD /* FormData.swift in Sources */,
+				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
 				A695CC3A241F5D27007C68DD /* Image.swift in Sources */,
 				A69310CF2417100E004ADF4F /* String+WordCount.swift in Sources */,
 				A6DDD54424168D12008E1703 /* UIView+Constraint.swift in Sources */,
@@ -1216,8 +1232,10 @@
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* String+Extension.swift in Sources */,
+				A695CC52241FB90E007C68DD /* AVCaptureDeviceExtension.swift in Sources */,
 				A695CC4E241F9930007C68DD /* CGRect+Layout.swift in Sources */,
 				A6D40C0B2417B6B500A88B5B /* Country.swift in Sources */,
+				A695CC5C2420819B007C68DD /* UITabBarControllerExtension.swift in Sources */,
 				A69310C42417100E004ADF4F /* FileManager+Extension.swift in Sources */,
 				A6DDD46A24168C6E008E1703 /* SignInUserInterface.swift in Sources */,
 				A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */,
@@ -1262,6 +1280,7 @@
 				A6D40BF92417B6B500A88B5B /* CGPoint+Extension.swift in Sources */,
 				A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */,
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
+				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
 				A63D39442419298000937CCD /* UIAlertController+Extension.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
@@ -1288,6 +1307,7 @@
 				A63D39472419298000937CCD /* UIStackView+Extension.swift in Sources */,
 				A6D40BFA2417B6B500A88B5B /* MCRaidalGradientBackgroundLayer.swift in Sources */,
 				A6D40C0F2417B6B500A88B5B /* IntroducationImageProtocol.swift in Sources */,
+				A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */,
 				A63D39672419298000937CCD /* UIView+Extension.swift in Sources */,
 				A69310BD2417100E004ADF4F /* String+Localized.swift in Sources */,
 				A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */,

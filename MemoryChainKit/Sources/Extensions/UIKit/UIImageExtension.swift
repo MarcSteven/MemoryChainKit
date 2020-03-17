@@ -8,6 +8,7 @@
 
 import UIKit
 public extension UIImageView {
+    
     func load(url:URL) {
         let serialQueue = DispatchQueue(label: "serial")
         serialQueue.async {

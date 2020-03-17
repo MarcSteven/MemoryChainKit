@@ -284,3 +284,17 @@ public extension UIDevice {
         
     }
 }
+//MARK: - check hasTopNotch and bottom indicator
+public extension UIDevice {
+    var hasTopNotch: Bool {
+        // Notch: 44 on iPhone X, XS, XS Max, XR.
+        // No Notch: 24 on iPad Pro 12.9" 3rd generation, 20 on iPhone 8
+        UIApplication.sharedOrNil?.delegate?.window??.safeAreaInsets.top ?? 0 > 24
+    }
+
+    var hasHomeIndicator: Bool {
+        // Home indicator: 34 on iPhone X, XS, XS Max, XR.
+        // Home indicator: 20 on iPad Pro 12.9" 3rd generation.
+        UIApplication.sharedOrNil?.delegate?.window??.safeAreaInsets.bottom ?? 0 > 0
+    }
+}

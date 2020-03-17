@@ -5,7 +5,7 @@
 //  Created by Marc Steven on 2020/3/16.
 //  Copyright © 2020 Marc Steven(https://github.com/MarcSteven). All rights reserved.
 //
-#if os(WatchOS)
+#if os(watchOS)
 #else
 import SystemConfiguration
 import Foundation

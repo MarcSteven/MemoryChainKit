@@ -7,22 +7,58 @@
 //
 
 import Foundation
-
+import MobileCoreServices
 
 
 //Utility to print file size to console
 
 public extension URL {
-    func verboseFileSizeInMemory()-> String {
-        let p = self.path
-        let attr = try? FileManager.default.attributesOfItem(atPath: p)
-        
-        if let attr = attr {
-            let fileSize = Float(attr[FileAttributeKey.size] as! UInt64) / (1024.0 * 1024.0)
-//            print(String(format: "FILE SIZE: %.2f MB", fileSize))
-            return String(format: "%.2f MB", fileSize)
-        } else {
-            return  "0"
+    func mimeType() -> String {
+            let pathExtension = self.pathExtension
+            if let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, pathExtension as NSString, nil)?.takeRetainedValue() {
+                if let mimetype = UTTypeCopyPreferredTagWithClass(uti, kUTTagClassMIMEType)?.takeRetainedValue() {
+                    return mimetype as String
+                }
+            }
+            return "application/octet-stream"
+        }
+        var containsImage: Bool {
+            let mimeType = self.mimeType()
+            guard let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassMIMEType, mimeType as CFString, nil)?.takeRetainedValue() else {
+                return false
+            }
+            return UTTypeConformsTo(uti, kUTTypeImage)
+        }
+        var containsAudio: Bool {
+            let mimeType = self.mimeType()
+            guard let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassMIMEType, mimeType as CFString, nil)?.takeRetainedValue() else {
+                return false
+            }
+            return UTTypeConformsTo(uti, kUTTypeAudio)
+        }
+        var containsVideo: Bool {
+            let mimeType = self.mimeType()
+            guard  let uti = UTTypeCreatePreferredIdentifierForTag(kUTTagClassMIMEType, mimeType as CFString, nil)?.takeRetainedValue() else {
+                return false
+            }
+            return UTTypeConformsTo(uti, kUTTypeMovie)
+        }
+
+    //Get current mime type of url w.r.t its url
+        var currentMimeType: String {
+
+            if self.containsImage{
+                return "image/png"
+            }else if self.containsAudio{
+                return "audio/mp3"
+            }else if self.containsVideo{
+                return "video/mp4"
+            }
+
+            return ""
         }
     }
-}
+
+    
+    
+
