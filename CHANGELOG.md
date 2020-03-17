@@ -1,4 +1,10 @@
+#[0.0.7]
+* 1, fixed the errors(^_^ I used Xcode to build successfully but now shows more errors, so Xcode is weird, sometimes it's crazy)
+* 2, Extend **UIApplication** to support to find topViewController and give a useful properties to check whether shared is nil 
+* 3,Add 'UINavigationController' rootViewController property
 
+#[0.0.6]
+* update podspec to make the features(0.0.5) available- sorry for my mistake , forget to update podspec 
 #[v0.0.5]
 * 1,Add method to ensure UITabBarController hasViewController and hide TabBar
 * 2, Give UIDevice two properties to check whether it has topNotch or bottom indicator, only for iPhoneX +

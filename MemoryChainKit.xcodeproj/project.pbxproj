@@ -28,7 +28,6 @@
 		A63D395B2419298000937CCD /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39282419297A00937CCD /* UICollectionView+Extension.swift */; };
 		A63D395C2419298000937CCD /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39292419297A00937CCD /* UITableViewCellExtension.swift */; };
 		A63D395D2419298000937CCD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392A2419297A00937CCD /* UITextField+Extension.swift */; };
-		A63D395E2419298000937CCD /* UIWindow+PrintKeyWindowHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392B2419297A00937CCD /* UIWindow+PrintKeyWindowHierarchy.swift */; };
 		A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */; };
 		A63D39602419298000937CCD /* UILayoutPriority+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392D2419297A00937CCD /* UILayoutPriority+Extension.swift */; };
 		A63D39612419298000937CCD /* UIViewController+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392E2419297B00937CCD /* UIViewController+URL.swift */; };
@@ -117,6 +116,8 @@
 		A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC55242073F6007C68DD /* AVAssetExtension.swift */; };
 		A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */; };
 		A695CC5C2420819B007C68DD /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */; };
+		A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */; };
+		A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -263,7 +264,6 @@
 		A63D39282419297A00937CCD /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		A63D39292419297A00937CCD /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		A63D392A2419297A00937CCD /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
-		A63D392B2419297A00937CCD /* UIWindow+PrintKeyWindowHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+PrintKeyWindowHierarchy.swift"; sourceTree = "<group>"; };
 		A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		A63D392D2419297A00937CCD /* UILayoutPriority+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+Extension.swift"; sourceTree = "<group>"; };
 		A63D392E2419297B00937CCD /* UIViewController+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+URL.swift"; sourceTree = "<group>"; };
@@ -352,6 +352,8 @@
 		A695CC55242073F6007C68DD /* AVAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
 		A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionExtension.swift; sourceTree = "<group>"; };
 		A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITabBarControllerExtension.swift; path = MemoryChainKit/Sources/Extensions/UIKit/UITabBarControllerExtension.swift; sourceTree = SOURCE_ROOT; };
+		A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -525,6 +527,7 @@
 				A63D39322419297B00937CCD /* UIAlertExtension.swift */,
 				A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */,
 				A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */,
+				A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */,
 				A63D39202419297900937CCD /* UIButton+Animations.swift */,
 				A63D39132419297700937CCD /* UIButton+Extension.swift */,
 				A63D39282419297A00937CCD /* UICollectionView+Extension.swift */,
@@ -554,7 +557,7 @@
 				A63D39192419297800937CCD /* UIViewController+HideKeyboardOnTap.swift */,
 				A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */,
 				A63D392E2419297B00937CCD /* UIViewController+URL.swift */,
-				A63D392B2419297A00937CCD /* UIWindow+PrintKeyWindowHierarchy.swift */,
+				A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */,
 				A6DDD5622416954E008E1703 /* UIViewExtension.swift */,
 				A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */,
 				A6DDD56424169610008E1703 /* UIImageExtension.swift */,
@@ -1213,6 +1216,7 @@
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
 				A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */,
+				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
@@ -1252,6 +1256,7 @@
 				A6DDD45C24168C6E008E1703 /* RxNill.swift in Sources */,
 				A695CC2C241F5804007C68DD /* FileManagerExtensions.swift in Sources */,
 				A6DDD46E24168C7F008E1703 /* SetupView.swift in Sources */,
+				A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */,
 				A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */,
 				A69310D32417100E004ADF4F /* NSArray+Extension.swift in Sources */,
 				A695CC42241F629D007C68DD /* String+EncodedUTF8.swift in Sources */,
@@ -1357,7 +1362,6 @@
 				A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */,
 				A6D40BDB2417B6B500A88B5B /* MemoryChainEmptyStateView.swift in Sources */,
 				A63D39722419298100937CCD /* CALayer+Border.swift in Sources */,
-				A63D395E2419298000937CCD /* UIWindow+PrintKeyWindowHierarchy.swift in Sources */,
 				A6DDD54524168D12008E1703 /* NSLayoutConstraint+Debugging.swift in Sources */,
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A695CC20241F530E007C68DD /* FailureResponse.swift in Sources */,

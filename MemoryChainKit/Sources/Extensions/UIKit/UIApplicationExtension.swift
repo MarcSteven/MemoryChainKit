@@ -10,6 +10,16 @@ import UIKit
 
 
 public extension UIApplication {
+    static var sharedOrNil:UIApplication? {
+        let sharedApplicaitonSelector = NSSelectorFromString("sharedApplication")
+        guard UIApplication.responds(to: sharedApplicaitonSelector) else {
+            return nil
+        }
+        guard let unmanagedSharedApplication = UIApplication.perform(sharedApplicaitonSelector) else {
+            return nil
+        }
+        return unmanagedSharedApplication.takeUnretainedValue() as? UIApplication
+    }
     class func isFirstToLaunch() ->Bool {
         if !UserDefaults.standard.bool(forKey: "HasAtLeastLaunchedOnce") {
             UserDefaults.standard.set(true, forKey: "HasAtLeastLaunchedOnce")
@@ -19,7 +29,21 @@ public extension UIApplication {
         return false
         
     }
-
+        
+func topViewController(_ base:UIViewController? = UIApplication.sharedOrNil?.keyWindow?.rootViewController) ->UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selectedViewController = tab.selectedViewController {
+                return topViewController(selectedViewController)
+            }
+        }
+        if let presentedViewController = base?.presentedViewController {
+            return topViewController(presentedViewController)
+        }
+        return base
+    }
     var isKeyboardPresented:Bool {
         if let keyboardWindowClass = NSClassFromString("UIRemoteKeyboardWindow"),
             self.windows.contains(where: {$0.isKind(of: keyboardWindowClass)}) {
@@ -29,14 +53,15 @@ public extension UIApplication {
         }
     }
 
-    class func showNetworkActivity() {
+func showNetworkActivity() {
         DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
         }
     }
-    class func hideNetworkActivity() {
+func hideNetworkActivity() {
         DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false 
         }
     }
+
 }
