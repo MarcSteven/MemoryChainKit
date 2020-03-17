@@ -120,6 +120,7 @@
 		A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */; };
 		A695CC692420BEB2007C68DD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC682420BEB2007C68DD /* UIColor+Hex.swift */; };
 		A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC6B2420BF0B007C68DD /* MSAlertView.swift */; };
+		A695CC6E2420C1FC007C68DD /* DeviceVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -358,6 +359,7 @@
 		A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		A695CC682420BEB2007C68DD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		A695CC6B2420BF0B007C68DD /* MSAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAlertView.swift; sourceTree = "<group>"; };
+		A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceVersion.swift; path = MemoryChainKit/Sources/Transitions/DeviceVersion.swift; sourceTree = SOURCE_ROOT; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 		A63D390F241928A100937CCD /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -1269,6 +1272,7 @@
 				A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */,
 				A695CBB5241C86C6007C68DD /* OptionalExtension.swift in Sources */,
 				A63D39712419298100937CCD /* UIScrollView+Extension.swift in Sources */,
+				A695CC6E2420C1FC007C68DD /* DeviceVersion.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
 				A6D40BE22417B6B500A88B5B /* NSDate+CalendarView.swift in Sources */,
