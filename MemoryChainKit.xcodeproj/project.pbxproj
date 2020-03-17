@@ -118,6 +118,8 @@
 		A695CC5C2420819B007C68DD /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */; };
 		A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */; };
 		A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */; };
+		A695CC692420BEB2007C68DD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC682420BEB2007C68DD /* UIColor+Hex.swift */; };
+		A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC6B2420BF0B007C68DD /* MSAlertView.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -354,6 +356,8 @@
 		A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITabBarControllerExtension.swift; path = MemoryChainKit/Sources/Extensions/UIKit/UITabBarControllerExtension.swift; sourceTree = SOURCE_ROOT; };
 		A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		A695CC682420BEB2007C68DD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		A695CC6B2420BF0B007C68DD /* MSAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAlertView.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -527,6 +531,7 @@
 				A63D39322419297B00937CCD /* UIAlertExtension.swift */,
 				A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */,
 				A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */,
+				A695CC682420BEB2007C68DD /* UIColor+Hex.swift */,
 				A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */,
 				A63D39202419297900937CCD /* UIButton+Animations.swift */,
 				A63D39132419297700937CCD /* UIButton+Extension.swift */,
@@ -690,9 +695,26 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		A695CC612420B1C9007C68DD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A695CC6A2420BECC007C68DD /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				A695CC6B2420BF0B007C68DD /* MSAlertView.swift */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A695CC6A2420BECC007C68DD /* AlertView */,
+				A695CC612420B1C9007C68DD /* Router */,
 				A695CBB1241B81D9007C68DD /* UILabel */,
 				A6D40B7B2417B6B400A88B5B /* SideBar */,
 				A6D40B7D2417B6B400A88B5B /* Gradient */,
@@ -1213,6 +1235,7 @@
 				A695CC1E241F528E007C68DD /* HTTPResponse.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
 				A69310D92417100E004ADF4F /* String+Validation.swift in Sources */,
+				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
 				A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */,
@@ -1228,6 +1251,7 @@
 				A6DDD54424168D12008E1703 /* UIView+Constraint.swift in Sources */,
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
 				A695CC3C241F5D83007C68DD /* FalseRequest.swift in Sources */,
+				A695CC692420BEB2007C68DD /* UIColor+Hex.swift in Sources */,
 				A6D40C0E2417B6B500A88B5B /* CountriesViewControllerDelegate.swift in Sources */,
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
 				A6D40C102417B6B500A88B5B /* PageControl.swift in Sources */,
