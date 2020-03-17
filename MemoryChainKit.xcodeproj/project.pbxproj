@@ -585,6 +585,8 @@
 				A695CC55242073F6007C68DD /* AVAssetExtension.swift */,
 				A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */,
 				A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */,
+				A6D40B8C2417B6B400A88B5B /* NSCalendar+Extension.swift */,
+				A6D40B8D2417B6B400A88B5B /* NSDate+CalendarView.swift */,
 				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
 				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
 				A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */,
@@ -807,8 +809,6 @@
 		A6D40B8B2417B6B400A88B5B /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
-				A6D40B8C2417B6B400A88B5B /* NSCalendar+Extension.swift */,
-				A6D40B8D2417B6B400A88B5B /* NSDate+CalendarView.swift */,
 			);
 			path = CalendarView;
 			sourceTree = "<group>";
