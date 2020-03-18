@@ -12,6 +12,23 @@ import UIKit
 #if !os(watchOS)
 // MARK: - Enums
 public extension UITextField {
+    //MARK: - set up input view dataPicker
+    func setupInputViewDataPicker(target:Any,selector:Selector) {
+        
+        let screenWidth = UIScreen.main.bounds.width
+        let dataPicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
+        dataPicker.datePickerMode = .date
+        self.inputView = dataPicker
+        
+        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 44.0))
+        let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancle = UIBarButtonItem(title: "Cancel", style: .plain, target: nil, action: #selector(tapCancel))
+        let done = UIBarButtonItem(title: "Done", style: .plain, target: target, action: selector)
+        toolBar.setItems([cancle,flexible,done], animated: false)
+    }
+    @objc func tapCancel() {
+        self.resignFirstResponder()
+    }
     /**
      Shake
      */
@@ -50,6 +67,30 @@ public extension UITextField {
         if let existingSelectedTextRange = selectedTextRange {
             selectedTextRange = nil
             selectedTextRange = existingSelectedTextRange
+        }
+    }
+    func chooseKeyboardType(_ keyboardType:UIKeyboardType) {
+        switch keyboardType {
+        case .emailAddress:
+            self.keyboardType = .emailAddress
+        case .twitter:
+            self.keyboardType = .twitter
+        case .numberPad:
+            self.keyboardType = .numberPad
+        case .numbersAndPunctuation:
+            self.keyboardType = .numbersAndPunctuation
+        case .asciiCapable:
+            self.keyboardType = .asciiCapable
+        case .URL:
+            self.keyboardType = .URL
+        case .decimalPad:
+            self.keyboardType = .decimalPad
+        case .namePhonePad:
+            self.keyboardType = .namePhonePad
+        
+            
+        default:
+            self.keyboardType = .default
         }
     }
     var mc_hasText:Bool {
