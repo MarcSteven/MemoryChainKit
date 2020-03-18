@@ -50,6 +50,8 @@
 		A63D39752419298100937CCD /* CAGradientLayer+AnimationChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */; };
 		A65417992421CA2E00077AD8 /* ImageSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417982421CA2E00077AD8 /* ImageSourceType.swift */; };
 		A65417AB2421D30E00077AD8 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417AA2421D30E00077AD8 /* ImageDownloader.swift */; };
+		A65417AD2421E4BF00077AD8 /* CGContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417AC2421E4BE00077AD8 /* CGContextExtension.swift */; };
+		A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BD2417100E004ADF4F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109A2417100A004ADF4F /* String+Localized.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
@@ -292,6 +294,8 @@
 		A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AnimationChange.swift"; sourceTree = "<group>"; };
 		A65417982421CA2E00077AD8 /* ImageSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourceType.swift; sourceTree = "<group>"; };
 		A65417AA2421D30E00077AD8 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		A65417AC2421E4BE00077AD8 /* CGContextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGContextExtension.swift; sourceTree = "<group>"; };
+		A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109A2417100A004ADF4F /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
@@ -560,6 +564,7 @@
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */,
+				A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */,
 				A63D39112419297600937CCD /* UIAlertController+Extension.swift */,
 				A63D39322419297B00937CCD /* UIAlertExtension.swift */,
 				A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */,
@@ -617,6 +622,7 @@
 				A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */,
 				A6D40B8C2417B6B400A88B5B /* NSCalendar+Extension.swift */,
 				A6D40B8D2417B6B400A88B5B /* NSDate+CalendarView.swift */,
+				A65417AC2421E4BE00077AD8 /* CGContextExtension.swift */,
 				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
 				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
 				A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */,
@@ -1266,6 +1272,7 @@
 				A6DDD45724168C6E008E1703 /* Configurable.swift in Sources */,
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
+				A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */,
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
 				A69310D52417100E004ADF4F /* String+Base64.swift in Sources */,
 				A63D39652419298000937CCD /* UIAlertExtension.swift in Sources */,
@@ -1393,6 +1400,7 @@
 				A69310CE2417100E004ADF4F /* Data+Helpers.swift in Sources */,
 				A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */,
 				A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */,
+				A65417AD2421E4BF00077AD8 /* CGContextExtension.swift in Sources */,
 				A65417992421CA2E00077AD8 /* ImageSourceType.swift in Sources */,
 				A695CC0B241F41AF007C68DD /* Reachability.swift in Sources */,
 				A695CC50241F99F8007C68DD /* FileManager+Cache.swift in Sources */,
