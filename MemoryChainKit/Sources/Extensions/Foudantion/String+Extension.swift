@@ -9,6 +9,22 @@
 import Foundation
 import UIKit
 
+extension String {
+    private var nsString:NSString {
+        return self as NSString
+    }
+    public var lastPathComponent:String {
+        return nsString.lastPathComponent
+    }
+    public var deletingLastPathComponent:String {
+        return nsString.deletingLastPathComponent
+    }
+    
+    public var deletingPathExtension:String {
+        return nsString.deletingPathExtension
+    }
+}
+
 public extension String {
     
     var isBlank:Bool {

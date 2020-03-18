@@ -75,3 +75,16 @@ public func fatalError(
     fatalError("\(function): \(reason)", file: file, line: line)
 }
 
+/**Print a warning message in debug mode*/
+
+@_transparent
+
+public func warnUnknown(_ value:Any,
+                        file:String = #file,
+                        function:String = #function,
+                        line:Int = #line)  {
+    #if DEBUG
+    Console.warn("Unknown value detected: \(value)", className: file, functionName: function, lineNumber: line)
+
+    #endif
+}

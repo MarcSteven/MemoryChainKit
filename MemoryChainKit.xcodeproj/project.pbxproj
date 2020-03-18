@@ -59,6 +59,7 @@
 		A65417BB2421ECE400077AD8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A65417BA2421ECE400077AD8 /* SnapKit */; };
 		A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417BD2421ED1200077AD8 /* SnapKitExtension.swift */; };
 		A65417C32421F6A800077AD8 /* FatalReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C22421F6A800077AD8 /* FatalReason.swift */; };
+		A65417C52421FB2800077AD8 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C42421FB2800077AD8 /* Console.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BD2417100E004ADF4F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109A2417100A004ADF4F /* String+Localized.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
@@ -309,6 +310,7 @@
 		A65417B72421EB7600077AD8 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
 		A65417BD2421ED1200077AD8 /* SnapKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitExtension.swift; sourceTree = "<group>"; };
 		A65417C22421F6A800077AD8 /* FatalReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatalReason.swift; sourceTree = "<group>"; };
+		A65417C42421FB2800077AD8 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109A2417100A004ADF4F /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
@@ -558,6 +560,7 @@
 				A65417C22421F6A800077AD8 /* FatalReason.swift */,
 				A63D390D2419268700937CCD /* LoggerUtils.swift */,
 				A65417B02421E7F700077AD8 /* Debugger.swift */,
+				A65417C42421FB2800077AD8 /* Console.swift */,
 			);
 			path = Debugging;
 			sourceTree = "<group>";
@@ -1505,6 +1508,7 @@
 				A695CC16241F4ED5007C68DD /* ResponseType.swift in Sources */,
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
+				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
 				A695CC33241F5A0E007C68DD /* Result.swift in Sources */,
