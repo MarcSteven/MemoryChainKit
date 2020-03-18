@@ -8,6 +8,39 @@
 
 import UIKit
 
+@objc public extension UIView {
+/// Takes a snapshot of the complete view hierarchy as visible onscreen.
+///
+/// - Parameter afterScreenUpdates:
+///     A boolean value that indicates whether the snapshot should be rendered
+///     after recent changes have been incorporated. Specify the value false if
+///     you want to render a snapshot in the view hierarchy’s current state, which
+///     might not include recent changes. A Boolean value that indicates whether the
+///     snapshot should be rendered after recent changes have been incorporated.
+///     Specify the value `false` if you want to render a snapshot in the view hierarchy’s
+///     current state, which might not include recent changes. The default value is `false`.
+/// - Returns: `UIImage` of the snapshot.
+    func snapshotImage(afterScreenUpdates: Bool = false) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(frame.size, false, 0)
+    drawHierarchy(in: bounds, afterScreenUpdates: afterScreenUpdates)
+    let snapshot = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return snapshot
+    }
+    func snapshotImageView(afterScreenUpdates: Bool = false) -> UIImageView {
+        let image = snapshotImage(afterScreenUpdates: afterScreenUpdates)
+        let imageView = UIImageView(image: image)
+        imageView.clipsToBounds = true
+        imageView.borderColor = borderColor
+        imageView.borderWidth = borderWidth
+        imageView.cornerRadius = cornerRadius
+        imageView.contentMode = contentMode
+        return imageView
+        
+       
+    }
+}
+
 public extension UIView {
     func findViewController() ->UIViewController? {
         if let nextResponder = self.next as? UIViewController {
