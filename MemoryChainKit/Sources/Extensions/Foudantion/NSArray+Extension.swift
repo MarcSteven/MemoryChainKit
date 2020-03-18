@@ -9,7 +9,7 @@
 import Foundation
 
 
-extension NSArray {
+public extension NSArray {
     func uniq<S:Sequence,T:Hashable>(source :S) ->[T] where S.Iterator.Element == T {
         var buffer = [T]()
         var added = Set<T>()

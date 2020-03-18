@@ -24,3 +24,9 @@ public extension Data {
         self.append(UnsafePointer<UInt8>(bytes), count: bytes.count)
     }
 }
+
+public extension Data {
+    func hexEncodedString() ->String {
+        return map {String(format: "%02hhx",$0)}.joined()
+    }
+}
