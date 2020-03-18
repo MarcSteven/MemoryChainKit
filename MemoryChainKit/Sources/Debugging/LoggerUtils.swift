@@ -15,6 +15,7 @@ open class LoggerUtils {
     
     func d(_ message: String) {
         
+        
         logger?.log(.debug, message: message)
     }
     
