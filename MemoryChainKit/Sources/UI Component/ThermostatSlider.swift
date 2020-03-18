@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import SDWebImage
+
 
 class ThermostatSlider:UIControl {
     //MARK: - public vars
