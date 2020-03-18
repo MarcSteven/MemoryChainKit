@@ -1,3 +1,14 @@
+#[0.0.9]
+* 1, update dependency -add RxSwift/SnapKit
+* 2, Add extension for SnapKit
+* 3, Add extensions for UITableView/UIScrollView
+* 4, Add class to manager the download of image using SDWebImage
+* 5, Add UserDefaultsStore
+* 6, Add methods for UIBarButtonItem
+* 7, Adjust the project folder
+#[0.0.8]
+* add dependency **SDWebImage**
+* add github action to build
 #[0.0.7]
 * 1, fixed the errors(^_^ I used Xcode to build successfully but now shows more errors, so Xcode is weird, sometimes it's crazy)
 * 2, Extend **UIApplication** to support to find topViewController and give a useful properties to check whether shared is nil 
