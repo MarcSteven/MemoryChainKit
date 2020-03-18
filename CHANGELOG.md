@@ -1,5 +1,8 @@
 #[0.1.0]
 * Add class to print warning in debug mode
+* Add Transition Animation 
+* Add smart way to print waring in debug mode
+* Refactor the code to solve the file 
 
 #[0.0.9]
 * 1, update dependency -add RxSwift/SnapKit
