@@ -15,8 +15,9 @@ MemoryChainKit is a super tool to make the development fast. It includes all the
 
 platform:ios,"12.0"
 use_frameworks!
-target "Test"do
-	pod 'MemoryChainKit'
+target "#yourProjectName#"do
+		pod 'MemoryChainKit','~>0.0.9'
+
 end
 ```
 And then please enter the command order as below
