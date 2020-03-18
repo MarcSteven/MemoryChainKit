@@ -33,6 +33,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = ['UIKit','Foundation']
   spec.dependency 'SDWebImage'
   spec.dependency 'RxSwift'
+  spec.dependency 'SnapKit'
   
 
   
