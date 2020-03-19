@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60AF28C24211D1700072975 /* LocalImageCache.swift */; };
 		A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */; };
+		A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */; };
+		A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEA2423475A00B46CDF /* CGColorExtension.swift */; };
+		A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEC2423479700B46CDF /* CALayer+Color.swift */; };
+		A6356CEF2423492200B46CDF /* CAMediaTimingFunction+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
@@ -264,6 +268,10 @@
 /* Begin PBXFileReference section */
 		A60AF28C24211D1700072975 /* LocalImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageCache.swift; sourceTree = "<group>"; };
 		A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
+		A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAtranscationExtension.swift; sourceTree = "<group>"; };
+		A6356CEA2423475A00B46CDF /* CGColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorExtension.swift; sourceTree = "<group>"; };
+		A6356CEC2423479700B46CDF /* CALayer+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Color.swift"; sourceTree = "<group>"; };
+		A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Properties.swift"; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
@@ -682,6 +690,10 @@
 				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
+				A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */,
+				A6356CEA2423475A00B46CDF /* CGColorExtension.swift */,
+				A6356CEC2423479700B46CDF /* CALayer+Color.swift */,
+				A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */,
 				A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */,
 				A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */,
 				A695CC55242073F6007C68DD /* AVAssetExtension.swift */,
@@ -1384,6 +1396,7 @@
 				A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */,
 				A695CC18241F4FEE007C68DD /* APIClient.swift in Sources */,
 				A69310D02417100E004ADF4F /* URL+PrintFileSize.swift in Sources */,
+				A6356CEF2423492200B46CDF /* CAMediaTimingFunction+Properties.swift in Sources */,
 				A6D40BF82417B6B500A88B5B /* MCInformationTipPreferences.swift in Sources */,
 				A6DDD46424168C6E008E1703 /* Copying.swift in Sources */,
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
@@ -1410,6 +1423,7 @@
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
 				A6D40C102417B6B500A88B5B /* PageControl.swift in Sources */,
 				A6DDD45B24168C6E008E1703 /* Encoder.swift in Sources */,
+				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
@@ -1539,12 +1553,14 @@
 				A63D395B2419298000937CCD /* UICollectionView+Extension.swift in Sources */,
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
+				A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */,
 				A695CC16241F4ED5007C68DD /* ResponseType.swift in Sources */,
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
 				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
+				A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */,
 				A695CC33241F5A0E007C68DD /* Result.swift in Sources */,
 				A695CC46241F65E3007C68DD /* Dictionary+Encode.swift in Sources */,
 				A6D40BDF2417B6B500A88B5B /* MCDropDownMenu.swift in Sources */,
