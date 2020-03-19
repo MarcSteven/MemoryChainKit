@@ -224,3 +224,8 @@ extension Date {
         return dateFormat.string(from: date)
     }
 }
+
+extension TimeZone {
+    public static let utc = TimeZone(identifier: "UTC")
+    
+}

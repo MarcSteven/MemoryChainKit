@@ -13,6 +13,15 @@
 		A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEA2423475A00B46CDF /* CGColorExtension.swift */; };
 		A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEC2423479700B46CDF /* CALayer+Color.swift */; };
 		A6356CEF2423492200B46CDF /* CAMediaTimingFunction+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */; };
+		A6356CF62423537D00B46CDF /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CF52423537D00B46CDF /* Colorable.swift */; };
+		A6356CF82423540D00B46CDF /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CF72423540D00B46CDF /* Swizzle.swift */; };
+		A6356CFB242354DE00B46CDF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CFA242354DE00B46CDF /* AppConstants.swift */; };
+		A6356CFE242360D500B46CDF /* MCBLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CFD242360D500B46CDF /* MCBLEManager.swift */; };
+		A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CFF2423610D00B46CDF /* MCBLEScanner.swift */; };
+		A6356D022423640300B46CDF /* MCBLEConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D012423640300B46CDF /* MCBLEConnector.swift */; };
+		A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */; };
+		A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */; };
+		A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
@@ -272,6 +281,15 @@
 		A6356CEA2423475A00B46CDF /* CGColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorExtension.swift; sourceTree = "<group>"; };
 		A6356CEC2423479700B46CDF /* CALayer+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Color.swift"; sourceTree = "<group>"; };
 		A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Properties.swift"; sourceTree = "<group>"; };
+		A6356CF52423537D00B46CDF /* Colorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorable.swift; sourceTree = "<group>"; };
+		A6356CF72423540D00B46CDF /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
+		A6356CFA242354DE00B46CDF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		A6356CFD242360D500B46CDF /* MCBLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEManager.swift; sourceTree = "<group>"; };
+		A6356CFF2423610D00B46CDF /* MCBLEScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEScanner.swift; sourceTree = "<group>"; };
+		A6356D012423640300B46CDF /* MCBLEConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEConnector.swift; sourceTree = "<group>"; };
+		A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDeviceProperty.swift; sourceTree = "<group>"; };
+		A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDiscoverableDeviceService.swift; sourceTree = "<group>"; };
+		A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDeviceRSSI.swift; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
@@ -564,6 +582,27 @@
 			children = (
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		A6356CF9242354CB00B46CDF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A6356CFA242354DE00B46CDF /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A6356CFC242360A000B46CDF /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				A6356CFD242360D500B46CDF /* MCBLEManager.swift */,
+				A6356CFF2423610D00B46CDF /* MCBLEScanner.swift */,
+				A6356D012423640300B46CDF /* MCBLEConnector.swift */,
+				A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */,
+				A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */,
+				A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 		A63D3907241923DD00937CCD /* Transitions */ = {
@@ -1068,6 +1107,8 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A6356CFC242360A000B46CDF /* BLE */,
+				A6356CF9242354CB00B46CDF /* Constants */,
 				A6967F902423160F006C377A /* DataSource */,
 				A65417C624220C6500077AD8 /* Animator */,
 				A65417B42421EAEC00077AD8 /* Environment */,
@@ -1086,6 +1127,7 @@
 				A6DDD46C24168C7F008E1703 /* BaseView */,
 				A6DDD42F24168C6E008E1703 /* Protocols */,
 				A695CBF2241E52B3007C68DD /* Typealias.swift */,
+				A6356CF72423540D00B46CDF /* Swizzle.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1095,6 +1137,7 @@
 			children = (
 				A6DDD43024168C6E008E1703 /* Scrollable.swift */,
 				A6DDD43124168C6E008E1703 /* Observer.swift */,
+				A6356CF52423537D00B46CDF /* Colorable.swift */,
 				A6DDD43224168C6E008E1703 /* BackgroundColor.swift */,
 				A6DDD43324168C6E008E1703 /* BindableType.swift */,
 				A6DDD43424168C6E008E1703 /* StoryboardLoadable.swift */,
@@ -1383,6 +1426,7 @@
 				A6DDD46624168C6E008E1703 /* AlertPresenting.swift in Sources */,
 				A65417B82421EB7600077AD8 /* NotificationCenterExtension.swift in Sources */,
 				A695CC4C241F91B4007C68DD /* NSAttributedStringExtension.swift in Sources */,
+				A6356CFB242354DE00B46CDF /* AppConstants.swift in Sources */,
 				A65417AB2421D30E00077AD8 /* ImageDownloader.swift in Sources */,
 				A6D40C082417B6B500A88B5B /* HorizontalScrollView.swift in Sources */,
 				A63D39692419298000937CCD /* NSLayoutConstraints+Active.swift in Sources */,
@@ -1448,6 +1492,7 @@
 				A6D40BF72417B6B500A88B5B /* UIView+DisplayInformationTipView.swift in Sources */,
 				A6DDD45C24168C6E008E1703 /* RxNill.swift in Sources */,
 				A695CC2C241F5804007C68DD /* FileManagerExtensions.swift in Sources */,
+				A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */,
 				A6DDD46E24168C7F008E1703 /* MSView.swift in Sources */,
 				A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */,
 				A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */,
@@ -1455,6 +1500,7 @@
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
 				A65417D12422104100077AD8 /* ZoomAnimatorSourceDestination.swift in Sources */,
 				A695CC42241F629D007C68DD /* String+EncodedUTF8.swift in Sources */,
+				A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */,
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
 				A6D40BF32417B6B500A88B5B /* NavigationController.swift in Sources */,
 				A6A439B0241A3EF5009FC4E1 /* NSAttributedString+HasText.swift in Sources */,
@@ -1474,6 +1520,7 @@
 				A65417CA24220CF900077AD8 /* TransitionContext.swift in Sources */,
 				A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */,
 				A6DDD52424168C90008E1703 /* KeyChainConstants.swift in Sources */,
+				A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */,
 				A65417B12421E7F700077AD8 /* Debugger.swift in Sources */,
 				A63D39662419298000937CCD /*  UIViewPropertyAnimator+Extension.swift in Sources */,
 				A69310CA2417100E004ADF4F /* CGSize+Extension.swift in Sources */,
@@ -1520,9 +1567,11 @@
 				A6D40BD92417B6B500A88B5B /* RefreshItem.swift in Sources */,
 				A69310CC2417100E004ADF4F /* Sequence+Extension.swift in Sources */,
 				A695CC10241F4B23007C68DD /* Int+StatusCode.swift in Sources */,
+				A6356CFE242360D500B46CDF /* MCBLEManager.swift in Sources */,
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
 				A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */,
 				A6967F9224231623006C377A /* MCTableViewDataSource.swift in Sources */,
+				A6356CF62423537D00B46CDF /* Colorable.swift in Sources */,
 				A6DDD45624168C6E008E1703 /* Shadowable.swift in Sources */,
 				A695CC26241F53BA007C68DD /* ParsingError.swift in Sources */,
 				A65417CC24220FF400077AD8 /* FadeAnimator.swift in Sources */,
@@ -1537,12 +1586,15 @@
 				A69310C92417100E004ADF4F /* Array+RemoveIndex.swift in Sources */,
 				A69310DA2417100E004ADF4F /* Collection+noEmpty.swift in Sources */,
 				A63D394B2419298000937CCD /* UIScreen+Extension.swift in Sources */,
+				A6356CF82423540D00B46CDF /* Swizzle.swift in Sources */,
 				A6D40C112417B6B500A88B5B /* GiftImage.swift in Sources */,
 				A6DDD45924168C6E008E1703 /* Routable.swift in Sources */,
 				A695CC28241F53E6007C68DD /* JSONType.swift in Sources */,
+				A6356D022423640300B46CDF /* MCBLEConnector.swift in Sources */,
 				A6D40BE42417B6B500A88B5B /* MCLabel.swift in Sources */,
 				A6D40BD82417B6B500A88B5B /* GradientView.swift in Sources */,
 				A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */,
+				A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */,
 				A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */,
 				A6DDD46B24168C6E008E1703 /* TextValidation.swift in Sources */,
 				A6D40C062417B6B500A88B5B /* RoundedView.swift in Sources */,
