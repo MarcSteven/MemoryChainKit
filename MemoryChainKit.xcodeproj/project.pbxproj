@@ -22,6 +22,11 @@
 		A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */; };
 		A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */; };
 		A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */; };
+		A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D112423B2CA00B46CDF /* QueueType.swift */; };
+		A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D132423B43700B46CDF /* ExecutableQueue.swift */; };
+		A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */; };
+		A6356D182423B7CE00B46CDF /* QueueQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D172423B7CE00B46CDF /* QueueQuality.swift */; };
+		A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D192423BB3400B46CDF /* Queue.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
@@ -289,6 +294,11 @@
 		A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDeviceProperty.swift; sourceTree = "<group>"; };
 		A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDiscoverableDeviceService.swift; sourceTree = "<group>"; };
 		A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDeviceRSSI.swift; sourceTree = "<group>"; };
+		A6356D112423B2CA00B46CDF /* QueueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueType.swift; sourceTree = "<group>"; };
+		A6356D132423B43700B46CDF /* ExecutableQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutableQueue.swift; sourceTree = "<group>"; };
+		A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutableQueueMode.swift; sourceTree = "<group>"; };
+		A6356D172423B7CE00B46CDF /* QueueQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueQuality.swift; sourceTree = "<group>"; };
+		A6356D192423BB3400B46CDF /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
@@ -601,6 +611,18 @@
 				A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */,
 			);
 			path = BLE;
+			sourceTree = "<group>";
+		};
+		A6356D102423B2B500B46CDF /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				A6356D112423B2CA00B46CDF /* QueueType.swift */,
+				A6356D132423B43700B46CDF /* ExecutableQueue.swift */,
+				A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */,
+				A6356D172423B7CE00B46CDF /* QueueQuality.swift */,
+				A6356D192423BB3400B46CDF /* Queue.swift */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 		A63D3907241923DD00937CCD /* Transitions */ = {
@@ -1104,6 +1126,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A6356D102423B2B500B46CDF /* Queue */,
 				A6356CFC242360A000B46CDF /* BLE */,
 				A6356CF9242354CB00B46CDF /* Constants */,
 				A6967F902423160F006C377A /* DataSource */,
@@ -1406,6 +1429,7 @@
 				A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */,
 				A6DDD45724168C6E008E1703 /* Configurable.swift in Sources */,
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
+				A6356D182423B7CE00B46CDF /* QueueQuality.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
 				A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */,
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
@@ -1464,6 +1488,7 @@
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
 				A6D40C102417B6B500A88B5B /* PageControl.swift in Sources */,
 				A6DDD45B24168C6E008E1703 /* Encoder.swift in Sources */,
+				A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */,
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
@@ -1528,6 +1553,7 @@
 				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
+				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
 				A6D40BDC2417B6B500A88B5B /* MCDropMenuState.swift in Sources */,
 				A63D39502419298000937CCD /* CGAffineTRansform+Extension.swift in Sources */,
@@ -1608,6 +1634,7 @@
 				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
+				A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */,
 				A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */,
 				A695CC33241F5A0E007C68DD /* Result.swift in Sources */,
 				A695CC46241F65E3007C68DD /* Dictionary+Encode.swift in Sources */,
@@ -1616,6 +1643,7 @@
 				A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */,
 				A6D40BDB2417B6B500A88B5B /* MemoryChainEmptyStateView.swift in Sources */,
 				A6DDD54524168D12008E1703 /* NSLayoutConstraint+Debugging.swift in Sources */,
+				A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */,
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A695CC20241F530E007C68DD /* FailureResponse.swift in Sources */,
 				A695CC2A241F55DD007C68DD /* Data+JSON.swift in Sources */,
