@@ -65,3 +65,36 @@ func hideNetworkActivity() {
     }
 
 }
+// MARK: TopViewController
+
+extension UIApplication {
+    open class func topViewController(_ base: UIViewController? = UIApplication.sharedOrNil?.keyWindow?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(nav.visibleViewController)
+        }
+
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(selected)
+            }
+        }
+
+        if let presented = base?.presentedViewController {
+            return topViewController(presented)
+        }
+
+        return base
+    }
+
+    
+    /// Iterates through `windows` from top to bottom and returns the visible window.
+    ///
+    /// - Returns: Returns an optional window object based on visibility.
+    /// - Complexity: O(_n_), where _n_ is the length of the `windows` array.
+    open var visibleWindow: UIWindow? {
+        windows.reversed().first { !$0.isHidden }
+    }
+}
+
+// MARK: UIWindow - TopViewController
+

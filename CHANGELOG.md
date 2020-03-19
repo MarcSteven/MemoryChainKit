@@ -1,3 +1,8 @@
+#[0.1.1]
+* support BLE
+* Optimized the code 
+
+
 #[0.1.0]
 * Add class to print warning in debug mode
 * Add Transition Animation 

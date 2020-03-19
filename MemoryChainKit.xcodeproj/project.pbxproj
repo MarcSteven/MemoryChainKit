@@ -25,7 +25,6 @@
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
-		A63D39442419298000937CCD /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39112419297600937CCD /* UIAlertController+Extension.swift */; };
 		A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39122419297700937CCD /* UITableView+Extension.swift */; };
 		A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39132419297700937CCD /* UIButton+Extension.swift */; };
 		A63D39472419298000937CCD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39142419297700937CCD /* UIStackView+Extension.swift */; };
@@ -293,7 +292,6 @@
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
-		A63D39112419297600937CCD /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		A63D39122419297700937CCD /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		A63D39132419297700937CCD /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		A63D39142419297700937CCD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
@@ -681,7 +679,6 @@
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */,
 				A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */,
-				A63D39112419297600937CCD /* UIAlertController+Extension.swift */,
 				A63D39322419297B00937CCD /* UIAlertExtension.swift */,
 				A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */,
 				A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */,
@@ -1530,7 +1527,6 @@
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
-				A63D39442419298000937CCD /* UIAlertController+Extension.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
 				A6D40BDC2417B6B500A88B5B /* MCDropMenuState.swift in Sources */,
