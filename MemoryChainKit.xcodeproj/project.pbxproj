@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60AF28C24211D1700072975 /* LocalImageCache.swift */; };
+		A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
@@ -262,6 +263,7 @@
 
 /* Begin PBXFileReference section */
 		A60AF28C24211D1700072975 /* LocalImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageCache.swift; sourceTree = "<group>"; };
+		A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 			isa = PBXGroup;
 			children = (
 				A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */,
+				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
@@ -652,6 +655,7 @@
 				A63D39212419297900937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift */,
 				A63D392A2419297A00937CCD /* UITextField+Extension.swift */,
 				A63D39342419297C00937CCD /* UIView+Extension.swift */,
+				A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */,
 				A63D39372419297C00937CCD /* UIViewController+Extension.swift */,
 				A63D39192419297800937CCD /* UIViewController+HideKeyboardOnTap.swift */,
 				A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */,
@@ -705,7 +709,6 @@
 				A693109F2417100A004ADF4F /* Range+Extension.swift */,
 				A69310A92417100C004ADF4F /* Sequence+Extension.swift */,
 				A69310B42417100D004ADF4F /* StringExtension.swift */,
-				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
 				A693109B2417100A004ADF4F /* Timer+Extension.swift */,
 				A69310AD2417100C004ADF4F /* URL+PrintFileSize.swift */,
 			);
@@ -1524,6 +1527,7 @@
 				A6D40C072417B6B500A88B5B /* LongPressRecordButton.swift in Sources */,
 				A63D39732419298100937CCD /* UIViewController+LifeCycleHelper.swift in Sources */,
 				A69310CB2417100E004ADF4F /* NSError+Extension.swift in Sources */,
+				A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */,
 				A63D395B2419298000937CCD /* UICollectionView+Extension.swift in Sources */,
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
