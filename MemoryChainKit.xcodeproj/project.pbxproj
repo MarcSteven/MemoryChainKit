@@ -551,6 +551,13 @@
 			path = NavigationController;
 			sourceTree = "<group>";
 		};
+		A6356CE324232C5D00B46CDF /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		A63D3907241923DD00937CCD /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -1119,6 +1126,7 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A6356CE324232C5D00B46CDF /* SwiftUI */,
 				A65417E42422234200077AD8 /* RxSwift */,
 				A65417BC2421ED0300077AD8 /* SnapKit */,
 				A693109824170FF3004ADF4F /* Foudantion */,
