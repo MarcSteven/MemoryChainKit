@@ -7,7 +7,7 @@
 //
 import UIKit
 
-extension UIAlertController {
+public extension UIAlertController {
     //在指定视图控制器上弹出普通消息提示框
     static func showAlert(message: String, in viewController: UIViewController) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
