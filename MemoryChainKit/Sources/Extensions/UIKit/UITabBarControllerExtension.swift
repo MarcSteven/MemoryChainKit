@@ -10,6 +10,15 @@ import UIKit
 
 
 public  extension UITabBarController {
+    func isRootViewController(_ viewController:UIViewController) ->Bool {
+        guard let viewControllers = viewControllers else {
+            return false
+        }
+        if let navigationController =  viewController.navigationController {
+            return viewControllers.contains(navigationController)
+        }
+        return viewControllers.contains(viewController)
+    }
     func hasRootViewController(_ viewController:UIViewController) ->Bool {
         guard let viewControllers = viewControllers else {
             return false
@@ -19,6 +28,7 @@ public  extension UITabBarController {
         }
         return viewControllers.contains(viewController)
     }
+    
     func hideTabBar(_ isHidden:Bool,animated:Bool) {
         let frame = tabBar.frame
         let offsetY = isHidden ? frame.size.height : -frame.size.height

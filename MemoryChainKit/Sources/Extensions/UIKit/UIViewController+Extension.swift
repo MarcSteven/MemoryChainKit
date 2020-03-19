@@ -21,7 +21,94 @@ public extension  UIViewController {
         ])
         child.didMove(toParent: self)
     }
-    
+    /// Removes the view controller from its parent.
+     func removeFromContainerViewController() {
+        guard parent != nil else {
+            return
+        }
+
+        willMove(toParent: nil)
+        removeFromParent()
+        view.removeFromSuperview()
+    }
+
+    /// A boolean value to determine whether the view controller is the root view controller of
+    /// `UINavigationController` or `UITabBarController`.
+     var isRootViewController: Bool {
+        if let rootViewController = navigationController?.rootViewController {
+            return rootViewController == self
+        }
+
+        return tabBarController?.isRootViewController(self) ?? false
+    }
+
+    /// A boolean value to determine whether the view controller is being popped or is showing a subview controller.
+     var isBeingPopped: Bool {
+        if isMovingFromParent || isBeingDismissed {
+            return true
+        }
+
+        if let viewControllers = navigationController?.viewControllers, viewControllers.contains(self) {
+            return false
+        }
+
+        return false
+    }
+
+     var isModal: Bool {
+        if presentingViewController != nil {
+            return true
+        }
+
+        if presentingViewController?.presentedViewController == self {
+            return true
+        }
+
+        if let navigationController = navigationController, navigationController.presentingViewController?.presentedViewController == navigationController {
+            return true
+        }
+
+        if (tabBarController?.presentingViewController?.isKind(of: UITabBarController.self)) != nil {
+            return true
+        }
+
+        return false
+    }
+
+    /// A boolean value indicating whether the view is currently loaded into memory
+    /// and presented on the screen.
+     var isPresented: Bool {
+        isViewLoaded && view.window != nil
+    }
+
+    /// A boolean value indicating whether the home indicator is currently present.
+     var isHomeIndicatorPresent: Bool {
+        view.safeAreaInsets.bottom > 0
+    }
+
+    /// Only `true` iff `isDeviceLandscape` and `isInterfaceLandscape` both are `true`; Otherwise, `false`.
+     var isLandscape: Bool {
+        isDeviceLandscape && isInterfaceLandscape
+    }
+
+     var isInterfaceLandscape: Bool {
+        UIApplication.sharedOrNil?.statusBarOrientation.isLandscape ?? false
+    }
+
+    /// Returns the physical orientation of the device.
+     var isDeviceLandscape: Bool {
+        UIDevice.current.orientation.isLandscape
+    }
+
+    /// This value represents the physical orientation of the device and may be different
+    /// from the current orientation of your application’s user interface.
+    ///
+    /// - seealso: `UIDeviceOrientation` for descriptions of the possible values.
+     var deviceOrientation: UIDeviceOrientation {
+        UIDevice.current.orientation
+    }
+
+
     func addFullScreen(childViewController child:UIViewController) {
         guard child.parent == nil else {
             return
