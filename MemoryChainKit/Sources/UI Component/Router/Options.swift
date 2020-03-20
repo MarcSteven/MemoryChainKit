@@ -1,7 +1,9 @@
 //
-// Xcore
-// Copyright © 2019 Xcore
-// MIT license, see LICENSE file for details
+//  Optionns.swift
+//  MemoryChainKit
+//
+//  Created by Marc Zhao on 2018/9/23.
+//  Copyright © 2018年 Memory Chain technology(China) co,LTD. All rights reserved.
 //
 
 import UIKit
