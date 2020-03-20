@@ -29,6 +29,11 @@
 		A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D192423BB3400B46CDF /* Queue.swift */; };
 		A6356D1C24245D8F00B46CDF /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D1B24245D8F00B46CDF /* MulticastDelegate.swift */; };
 		A6356D1E24245E4200B46CDF /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D1D24245E4200B46CDF /* Weak.swift */; };
+		A6356D252424931400B46CDF /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D1F2424931200B46CDF /* Options.swift */; };
+		A6356D262424931400B46CDF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D202424931200B46CDF /* Router.swift */; };
+		A6356D272424931400B46CDF /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D212424931300B46CDF /* RouteType.swift */; };
+		A6356D282424931400B46CDF /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D222424931300B46CDF /* Routerable.swift */; };
+		A6356D292424931400B46CDF /* Router+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D232424931300B46CDF /* Router+Route.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
@@ -303,6 +308,11 @@
 		A6356D192423BB3400B46CDF /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		A6356D1B24245D8F00B46CDF /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 		A6356D1D24245E4200B46CDF /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		A6356D1F2424931200B46CDF /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		A6356D202424931200B46CDF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A6356D212424931300B46CDF /* RouteType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
+		A6356D222424931300B46CDF /* Routerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
+		A6356D232424931300B46CDF /* Router+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Route.swift"; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
@@ -872,6 +882,11 @@
 		A695CC612420B1C9007C68DD /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A6356D202424931200B46CDF /* Router.swift */,
+				A6356D232424931300B46CDF /* Router+Route.swift */,
+				A6356D1F2424931200B46CDF /* Options.swift */,
+				A6356D222424931300B46CDF /* Routerable.swift */,
+				A6356D212424931300B46CDF /* RouteType.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1475,6 +1490,7 @@
 				A695CC1E241F528E007C68DD /* HTTPResponse.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
 				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
+				A6356D252424931400B46CDF /* Options.swift in Sources */,
 				A65417C824220C8900077AD8 /* TransitionAnimator.swift in Sources */,
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
@@ -1534,6 +1550,7 @@
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
 				A6D40BF32417B6B500A88B5B /* NavigationController.swift in Sources */,
 				A6A439B0241A3EF5009FC4E1 /* NSAttributedString+HasText.swift in Sources */,
+				A6356D282424931400B46CDF /* Routerable.swift in Sources */,
 				A695CC48241F6A69007C68DD /* TestCheck.swift in Sources */,
 				A6D40BDD2417B6B500A88B5B /* UIImage+Helpers.swift in Sources */,
 				A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */,
@@ -1587,6 +1604,7 @@
 				A695CC40241F6048007C68DD /* CacheLevel.swift in Sources */,
 				A63D39472419298000937CCD /* UIStackView+Extension.swift in Sources */,
 				A6D40BFA2417B6B500A88B5B /* MCRaidalGradientBackgroundLayer.swift in Sources */,
+				A6356D262424931400B46CDF /* Router.swift in Sources */,
 				A6D40C0F2417B6B500A88B5B /* IntroducationImageProtocol.swift in Sources */,
 				A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */,
 				A63D39672419298000937CCD /* UIView+Extension.swift in Sources */,
@@ -1599,6 +1617,7 @@
 				A695CC10241F4B23007C68DD /* Int+StatusCode.swift in Sources */,
 				A6356CFE242360D500B46CDF /* MCBLEManager.swift in Sources */,
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
+				A6356D272424931400B46CDF /* RouteType.swift in Sources */,
 				A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */,
 				A6967F9224231623006C377A /* MCTableViewDataSource.swift in Sources */,
 				A6356CF62423537D00B46CDF /* Colorable.swift in Sources */,
@@ -1628,6 +1647,7 @@
 				A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */,
 				A6DDD46B24168C6E008E1703 /* TextValidation.swift in Sources */,
 				A6D40C062417B6B500A88B5B /* RoundedView.swift in Sources */,
+				A6356D292424931400B46CDF /* Router+Route.swift in Sources */,
 				A6D40C072417B6B500A88B5B /* LongPressRecordButton.swift in Sources */,
 				A63D39732419298100937CCD /* UIViewController+LifeCycleHelper.swift in Sources */,
 				A69310CB2417100E004ADF4F /* NSError+Extension.swift in Sources */,

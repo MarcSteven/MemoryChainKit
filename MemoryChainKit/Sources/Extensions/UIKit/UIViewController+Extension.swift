@@ -21,6 +21,22 @@ public extension  UIViewController {
         ])
         child.didMove(toParent: self)
     }
+    /// embed inNavigationController
+    func embedInNavigationControllerIfNeeded() ->UIViewController {
+        guard canBeEmbededInNavigationController else {
+            return self
+        }
+        return NavigationController(rootViewController: self)
+    }
+    private var canBeEmbededInNavigationController:Bool {
+        switch self {
+        case is NavigationController, is UITabBarController:
+            return false
+            
+        default:
+            return true
+        }
+    }
     /// Removes the view controller from its parent.
      func removeFromContainerViewController() {
         guard parent != nil else {
