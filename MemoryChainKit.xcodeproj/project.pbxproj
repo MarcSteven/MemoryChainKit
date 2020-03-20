@@ -27,6 +27,8 @@
 		A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */; };
 		A6356D182423B7CE00B46CDF /* QueueQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D172423B7CE00B46CDF /* QueueQuality.swift */; };
 		A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D192423BB3400B46CDF /* Queue.swift */; };
+		A6356D1C24245D8F00B46CDF /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D1B24245D8F00B46CDF /* MulticastDelegate.swift */; };
+		A6356D1E24245E4200B46CDF /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D1D24245E4200B46CDF /* Weak.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
 		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
 		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
@@ -299,6 +301,8 @@
 		A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutableQueueMode.swift; sourceTree = "<group>"; };
 		A6356D172423B7CE00B46CDF /* QueueQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueQuality.swift; sourceTree = "<group>"; };
 		A6356D192423BB3400B46CDF /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		A6356D1B24245D8F00B46CDF /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		A6356D1D24245E4200B46CDF /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
 		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
 		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
@@ -938,6 +942,8 @@
 				A6D40BC72417B6B500A88B5B /* Introducation */,
 				A6D40BCC2417B6B500A88B5B /* SegmentControl */,
 				A6D40BCE2417B6B500A88B5B /* TabBarController */,
+				A6356D1B24245D8F00B46CDF /* MulticastDelegate.swift */,
+				A6356D1D24245E4200B46CDF /* Weak.swift */,
 			);
 			path = "UI Component";
 			sourceTree = "<group>";
@@ -1457,6 +1463,7 @@
 				A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */,
 				A63D39752419298100937CCD /* CAGradientLayer+AnimationChange.swift in Sources */,
 				A6D40C152417B6B500A88B5B /* BadgeAppearance.swift in Sources */,
+				A6356D1E24245E4200B46CDF /* Weak.swift in Sources */,
 				A6DDD53524168D0A008E1703 /* MCCoreDataStack.swift in Sources */,
 				A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */,
 				A695CC18241F4FEE007C68DD /* APIClient.swift in Sources */,
@@ -1494,6 +1501,7 @@
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* StringExtension.swift in Sources */,
+				A6356D1C24245D8F00B46CDF /* MulticastDelegate.swift in Sources */,
 				A695CC52241FB90E007C68DD /* AVCaptureDeviceExtension.swift in Sources */,
 				A695CC4E241F9930007C68DD /* CGRect+Layout.swift in Sources */,
 				A6D40C0B2417B6B500A88B5B /* Country.swift in Sources */,
