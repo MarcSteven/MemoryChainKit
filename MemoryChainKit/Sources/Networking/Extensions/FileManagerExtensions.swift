@@ -9,7 +9,22 @@
 import Foundation
 
 
+
+
+extension FileManager {
+    enum FileManagerError:Error {
+        case relativeDirectoryNotFound,pathNotFound,onlyDirectoryCreationSupported
+    }
+    
+}
 public extension FileManager {
+    
+    func removeAllCache() throws {
+        try urls(for: .cachesDirectory, in: .userDomainMask).forEach {
+            directory in
+            try removeItem(at: directory)
+        }
+    }
     func exists(at url: URL) -> Bool {
         let path = url.path
 
