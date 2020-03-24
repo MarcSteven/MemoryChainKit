@@ -104,6 +104,7 @@
 		A66F3F382429ECDC0081D52F /* StringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F372429ECDC0081D52F /* StringConverter.swift */; };
 		A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3A2429EDA80081D52F /* JSONUtils.swift */; };
 		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
+		A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -387,6 +388,7 @@
 		A66F3F372429ECDC0081D52F /* StringConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverter.swift; sourceTree = "<group>"; };
 		A66F3F3A2429EDA80081D52F /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
 		A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssertExportSessionExtension.swift; sourceTree = "<group>"; };
+		A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionViewFlowLayoutCustomizable.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		A693109F2417100A004ADF4F /* Range+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
@@ -742,6 +744,14 @@
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		A66F3F3E242A50580081D52F /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 		A693109724170FDF004ADF4F /* UIKit */ = {
@@ -1197,6 +1207,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A66F3F3E242A50580081D52F /* Adapter */,
 				A66F3F392429ED9B0081D52F /* Helper */,
 				A66F3F362429ECB10081D52F /* Converter */,
 				A6D4EC45242604C600F99211 /* Theme */,
@@ -1534,6 +1545,7 @@
 				A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */,
 				A63D39752419298100937CCD /* CAGradientLayer+AnimationChange.swift in Sources */,
 				A6D40C152417B6B500A88B5B /* BadgeAppearance.swift in Sources */,
+				A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */,
 				A6356D1E24245E4200B46CDF /* Weak.swift in Sources */,
 				A6DDD53524168D0A008E1703 /* MCCoreDataStack.swift in Sources */,
 				A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */,
