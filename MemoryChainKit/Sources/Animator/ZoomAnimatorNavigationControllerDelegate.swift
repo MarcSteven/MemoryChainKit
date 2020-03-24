@@ -1,7 +1,7 @@
 //
-// Xcore
-// Based on https://github.com/WorldDownTown/ZoomTransitioning
-// Copyright © 2017 Xcore
+// MemoryChainkIT
+
+// Copyright © 2017 Marc Steven
 // MIT license, see LICENSE file for details
 //
 

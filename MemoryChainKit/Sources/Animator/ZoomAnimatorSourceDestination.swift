@@ -1,8 +1,10 @@
 //
-// Xcore
-// Copyright © 2017 Xcore
+// MemoryChainkIT
+
+// Copyright © 2017 Marc Steven
 // MIT license, see LICENSE file for details
 //
+
 
 import UIKit
 
