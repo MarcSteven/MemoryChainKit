@@ -103,6 +103,7 @@
 		A66F3F352429E8E70081D52F /* ProcessInfoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */; };
 		A66F3F382429ECDC0081D52F /* StringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F372429ECDC0081D52F /* StringConverter.swift */; };
 		A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3A2429EDA80081D52F /* JSONUtils.swift */; };
+		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -385,6 +386,7 @@
 		A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoExtension.swift; sourceTree = "<group>"; };
 		A66F3F372429ECDC0081D52F /* StringConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverter.swift; sourceTree = "<group>"; };
 		A66F3F3A2429EDA80081D52F /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
+		A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssertExportSessionExtension.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		A693109F2417100A004ADF4F /* Range+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
@@ -798,6 +800,7 @@
 			isa = PBXGroup;
 			children = (
 				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
+				A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */,
 				A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */,
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
@@ -1553,6 +1556,7 @@
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
 				A695CC24241F5377007C68DD /* JSON.swift in Sources */,
+				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A695CC31241F59AA007C68DD /* FormData.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
 				A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */,
