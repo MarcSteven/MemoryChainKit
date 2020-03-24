@@ -1,3 +1,14 @@
+
+#[0.1.2]
+* add NSObject method to associate the object 
+* add router 
+* add textView Extension 
+* add analytic framework into the  project
+* Add method to remove all cache in FileManager
+*  add UICollectionViewFlowLayout protocol to support custo
+
+
+
 #[0.1.1]
 * support BLE
 * Optimized the code 
