@@ -105,6 +105,7 @@
 		A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3A2429EDA80081D52F /* JSONUtils.swift */; };
 		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
 		A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */; };
+		A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F41242A7D980081D52F /* SwizzleManager.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -389,6 +390,7 @@
 		A66F3F3A2429EDA80081D52F /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
 		A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssertExportSessionExtension.swift; sourceTree = "<group>"; };
 		A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionViewFlowLayoutCustomizable.swift; sourceTree = "<group>"; };
+		A66F3F41242A7D980081D52F /* SwizzleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleManager.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		A693109F2417100A004ADF4F /* Range+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
@@ -742,6 +744,7 @@
 			isa = PBXGroup;
 			children = (
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
+				A66F3F41242A7D980081D52F /* SwizzleManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1515,6 +1518,7 @@
 				A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */,
 				A6DDD45724168C6E008E1703 /* Configurable.swift in Sources */,
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
+				A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */,
 				A6356D182423B7CE00B46CDF /* QueueQuality.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
 				A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */,

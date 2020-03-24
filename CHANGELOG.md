@@ -5,7 +5,7 @@
 * add textView Extension 
 * add analytic framework into the  project
 * Add method to remove all cache in FileManager
-*  add UICollectionViewFlowLayout protocol to support custo
+*  add UICollectionViewFlowLayout protocol to support custom
 
 
 
