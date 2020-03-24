@@ -9,6 +9,17 @@
 import Foundation
 
 
+// use generic to associated different type property
+public extension NSObject {
+    func setAssociated<T>(value:T,associatedKey:UnsafeRawPointer,
+                          policy:objc_AssociationPolicy = objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC) {
+        objc_setAssociatedObject(self, associatedKey, value, policy)
+    }
+    func getAssociated<T>(associatedKey:UnsafeRawPointer) ->T? {
+        let value = objc_getAssociatedObject(self, associatedKey) as? T
+        return value
+    }
+}
 extension NSObject {
     var memoryAddress: String {
         String(describing: Unmanaged<NSObject>.passUnretained(self).toOpaque())

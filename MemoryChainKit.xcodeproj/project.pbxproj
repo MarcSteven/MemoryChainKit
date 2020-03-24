@@ -97,6 +97,12 @@
 		A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F282429C5330081D52F /* AnalyticsProvider.swift */; };
 		A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2A2429C5D10081D52F /* Analytics.swift */; };
 		A66F3F2D2429C8350081D52F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2C2429C8350081D52F /* NavigationController.swift */; };
+		A66F3F2F2429C9410081D52F /* LogAnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2E2429C9410081D52F /* LogAnalyticsProvider.swift */; };
+		A66F3F312429CA060081D52F /* CellOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F302429CA060081D52F /* CellOptions.swift */; };
+		A66F3F332429E8730081D52F /* AnimationRunloop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F322429E8730081D52F /* AnimationRunloop.swift */; };
+		A66F3F352429E8E70081D52F /* ProcessInfoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */; };
+		A66F3F382429ECDC0081D52F /* StringConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F372429ECDC0081D52F /* StringConverter.swift */; };
+		A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3A2429EDA80081D52F /* JSONUtils.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -373,6 +379,12 @@
 		A66F3F282429C5330081D52F /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		A66F3F2A2429C5D10081D52F /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		A66F3F2C2429C8350081D52F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A66F3F2E2429C9410081D52F /* LogAnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogAnalyticsProvider.swift; sourceTree = "<group>"; };
+		A66F3F302429CA060081D52F /* CellOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOptions.swift; sourceTree = "<group>"; };
+		A66F3F322429E8730081D52F /* AnimationRunloop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationRunloop.swift; sourceTree = "<group>"; };
+		A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfoExtension.swift; sourceTree = "<group>"; };
+		A66F3F372429ECDC0081D52F /* StringConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConverter.swift; sourceTree = "<group>"; };
+		A66F3F3A2429EDA80081D52F /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		A693109F2417100A004ADF4F /* Range+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
@@ -707,10 +719,27 @@
 			isa = PBXGroup;
 			children = (
 				A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */,
+				A66F3F2E2429C9410081D52F /* LogAnalyticsProvider.swift */,
 				A66F3F282429C5330081D52F /* AnalyticsProvider.swift */,
 				A66F3F2A2429C5D10081D52F /* Analytics.swift */,
 			);
 			path = Analytics;
+			sourceTree = "<group>";
+		};
+		A66F3F362429ECB10081D52F /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				A66F3F372429ECDC0081D52F /* StringConverter.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		A66F3F392429ED9B0081D52F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		A693109724170FDF004ADF4F /* UIKit */ = {
@@ -769,6 +798,7 @@
 			isa = PBXGroup;
 			children = (
 				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
+				A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */,
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
 				A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */,
@@ -968,6 +998,7 @@
 				A6D40BCE2417B6B500A88B5B /* TabBarController */,
 				A6356D1B24245D8F00B46CDF /* MulticastDelegate.swift */,
 				A6356D1D24245E4200B46CDF /* Weak.swift */,
+				A66F3F302429CA060081D52F /* CellOptions.swift */,
 			);
 			path = "UI Component";
 			sourceTree = "<group>";
@@ -1163,6 +1194,8 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A66F3F392429ED9B0081D52F /* Helper */,
+				A66F3F362429ECB10081D52F /* Converter */,
 				A6D4EC45242604C600F99211 /* Theme */,
 				A6356D102423B2B500B46CDF /* Queue */,
 				A6356CFC242360A000B46CDF /* BLE */,
@@ -1186,6 +1219,7 @@
 				A6DDD42F24168C6E008E1703 /* Protocols */,
 				A695CBF2241E52B3007C68DD /* Typealias.swift */,
 				A6356CF72423540D00B46CDF /* Swizzle.swift */,
+				A66F3F322429E8730081D52F /* AnimationRunloop.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1477,6 +1511,7 @@
 				A695CC38241F5D0B007C68DD /* SuccessfulImageResponse.swift in Sources */,
 				A6A439B2241A3F87009FC4E1 /* UILabel+HasText.swift in Sources */,
 				A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */,
+				A66F3F2F2429C9410081D52F /* LogAnalyticsProvider.swift in Sources */,
 				A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */,
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
@@ -1489,6 +1524,7 @@
 				A65417AB2421D30E00077AD8 /* ImageDownloader.swift in Sources */,
 				A6D40C082417B6B500A88B5B /* HorizontalScrollView.swift in Sources */,
 				A63D39692419298000937CCD /* NSLayoutConstraints+Active.swift in Sources */,
+				A66F3F382429ECDC0081D52F /* StringConverter.swift in Sources */,
 				A65417D22422104100077AD8 /* ZoomAnimatorInteractiveTransition.swift in Sources */,
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
 				A6D40C0A2417B6B500A88B5B /* Countries.swift in Sources */,
@@ -1614,12 +1650,14 @@
 				A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */,
 				A65417AD2421E4BF00077AD8 /* CGContextExtension.swift in Sources */,
 				A65417992421CA2E00077AD8 /* ImageSourceType.swift in Sources */,
+				A66F3F352429E8E70081D52F /* ProcessInfoExtension.swift in Sources */,
 				A695CC0B241F41AF007C68DD /* Reachability.swift in Sources */,
 				A695CC50241F99F8007C68DD /* FileManager+Cache.swift in Sources */,
 				A69310C32417100E004ADF4F /* CGRect+Helper.swift in Sources */,
 				A69310DC2417100E004ADF4F /* BundleExtension.swift in Sources */,
 				A6D40BE62417B6B500A88B5B /* MCProgressHUD.swift in Sources */,
 				A6DDD45424168C6E008E1703 /* DataContaining.swift in Sources */,
+				A66F3F332429E8730081D52F /* AnimationRunloop.swift in Sources */,
 				A695CC40241F6048007C68DD /* CacheLevel.swift in Sources */,
 				A63D39472419298000937CCD /* UIStackView+Extension.swift in Sources */,
 				A6D40BFA2417B6B500A88B5B /* MCRaidalGradientBackgroundLayer.swift in Sources */,
@@ -1675,6 +1713,7 @@
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
 				A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */,
+				A66F3F312429CA060081D52F /* CellOptions.swift in Sources */,
 				A695CC16241F4ED5007C68DD /* ResponseType.swift in Sources */,
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
@@ -1692,6 +1731,7 @@
 				A6D40BDB2417B6B500A88B5B /* MemoryChainEmptyStateView.swift in Sources */,
 				A6DDD54524168D12008E1703 /* NSLayoutConstraint+Debugging.swift in Sources */,
 				A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */,
+				A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */,
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A695CC20241F530E007C68DD /* FailureResponse.swift in Sources */,
 				A695CC2A241F55DD007C68DD /* Data+JSON.swift in Sources */,
