@@ -9,6 +9,33 @@
 import UIKit
 import Foundation
 
+extension UIDevice {
+    public struct Capability:OptionSet {
+        public let rawValue:Int
+        public init(rawValue:Int) {
+            self.rawValue = rawValue
+        }
+        public static let touchID = Capability(rawValue:1 << 0)
+        public static let faceID = Capability(rawValue: 1 << 1)
+        public static let notch = Capability(rawValue:1 << 2)
+        public static let homeIndicator = Capability(rawValue:1<<3)
+        public static let iphoneXseries:Capability = [.notch,.faceID,.homeIndicator]
+        
+    }
+}
+extension UIDevice {
+    public var Capability:Capability {
+        var capability:Capability = []
+        if hasTopNotch {
+            capability.update(with:.notch)
+        }
+        if hasHomeIndicator {
+            capability.update(with:.homeIndicator)
+        }
+       
+    }
+}
+
 // Enum representing the different types of iOS devices available
 public enum DeviceType: String, CaseIterable {
     case iPhone2G
