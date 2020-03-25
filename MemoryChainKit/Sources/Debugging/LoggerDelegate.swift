@@ -5,7 +5,7 @@
 //  Created by Marc Zhao on 2020/3/11.
 //  Copyright © 2020 Marc Zhao(https://github.com/MarcSteven). All rights reserved.
 //
-
+import AVFoundation
 import Foundation
 
 @objc public enum LogLevel:Int {
