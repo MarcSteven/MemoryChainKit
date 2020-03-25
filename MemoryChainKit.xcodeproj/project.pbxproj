@@ -360,6 +360,7 @@
 		A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LifeCycleHelper.swift"; sourceTree = "<group>"; };
 		A63D39412419298000937CCD /* UINavigationBar+HideHairLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+HideHairLine.swift"; sourceTree = "<group>"; };
 		A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AnimationChange.swift"; sourceTree = "<group>"; };
+		A63FFDB9242AE7A9002CE0F9 /* build_docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_docs.sh; sourceTree = "<group>"; };
 		A65417982421CA2E00077AD8 /* ImageSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourceType.swift; sourceTree = "<group>"; };
 		A65417AA2421D30E00077AD8 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A65417AC2421E4BE00077AD8 /* CGContextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGContextExtension.swift; sourceTree = "<group>"; };
@@ -682,6 +683,14 @@
 				A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */,
 			);
 			path = Device;
+			sourceTree = "<group>";
+		};
+		A63FFDB8242AE788002CE0F9 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				A63FFDB9242AE7A9002CE0F9 /* build_docs.sh */,
+			);
+			path = Script;
 			sourceTree = "<group>";
 		};
 		A65417B42421EAEC00077AD8 /* Environment */ = {
@@ -1210,6 +1219,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A63FFDB8242AE788002CE0F9 /* Script */,
 				A66F3F3E242A50580081D52F /* Adapter */,
 				A66F3F392429ED9B0081D52F /* Helper */,
 				A66F3F362429ECB10081D52F /* Converter */,
