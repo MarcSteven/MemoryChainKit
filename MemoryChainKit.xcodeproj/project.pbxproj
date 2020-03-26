@@ -187,6 +187,12 @@
 		A6AD551A242C6A89002DB4FE /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5515242C6A88002DB4FE /* Anchor.swift */; };
 		A6AD551B242C6A89002DB4FE /* NSLayoutConstraint+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */; };
 		A6AD551D242C6B64002DB4FE /* Anchor+Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */; };
+		A6AD551F242C6D2E002DB4FE /* MCScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */; };
+		A6AD5522242C87BB002DB4FE /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5521242C87BB002DB4FE /* MCTableViewCell.swift */; };
+		A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5523242C88DD002DB4FE /* MCToolBar.swift */; };
+		A6AD5526242C891B002DB4FE /* MCPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5525242C891B002DB4FE /* MCPageViewController.swift */; };
+		A6AD5528242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */; };
+		A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -476,6 +482,12 @@
 		A6AD5515242C6A88002DB4FE /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
 		A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Edges.swift"; sourceTree = "<group>"; };
 		A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anchor+Axis.swift"; sourceTree = "<group>"; };
+		A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCScrollViewController.swift; sourceTree = "<group>"; };
+		A6AD5521242C87BB002DB4FE /* MCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
+		A6AD5523242C88DD002DB4FE /* MCToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCToolBar.swift; sourceTree = "<group>"; };
+		A6AD5525242C891B002DB4FE /* MCPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPageViewController.swift; sourceTree = "<group>"; };
+		A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCPageViewController+PageControlPosition.swift"; sourceTree = "<group>"; };
+		A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionReusableView.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1001,6 +1013,14 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		A6AD5520242C87A4002DB4FE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD5521242C87BB002DB4FE /* MCTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -1300,7 +1320,13 @@
 		A6DDD46C24168C7F008E1703 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				A6AD5520242C87A4002DB4FE /* TableViewCell */,
 				A6DDD46D24168C7F008E1703 /* MSView.swift */,
+				A6AD5523242C88DD002DB4FE /* MCToolBar.swift */,
+				A6AD5525242C891B002DB4FE /* MCPageViewController.swift */,
+				A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */,
+				A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */,
+				A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -1555,6 +1581,7 @@
 				A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */,
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
+				A6AD5522242C87BB002DB4FE /* MCTableViewCell.swift in Sources */,
 				A6D40BDA2417B6B500A88B5B /* RefreshView.swift in Sources */,
 				A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */,
 				A6DDD46624168C6E008E1703 /* AlertPresenting.swift in Sources */,
@@ -1589,15 +1616,18 @@
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
 				A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */,
+				A6AD551F242C6D2E002DB4FE /* MCScrollViewController.swift in Sources */,
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A6AD551B242C6A89002DB4FE /* NSLayoutConstraint+Edges.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
 				A695CC24241F5377007C68DD /* JSON.swift in Sources */,
+				A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A695CC31241F59AA007C68DD /* FormData.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
+				A6AD5528242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift in Sources */,
 				A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */,
 				A6AD551A242C6A89002DB4FE /* Anchor.swift in Sources */,
 				A695CC3A241F5D27007C68DD /* Image.swift in Sources */,
@@ -1673,9 +1703,11 @@
 				A63D39582419298000937CCD /* UITableView+ConfigureProtocols.swift in Sources */,
 				A6D40BF92417B6B500A88B5B /* CGPoint+Extension.swift in Sources */,
 				A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */,
+				A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */,
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
+				A6AD5526242C891B002DB4FE /* MCPageViewController.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
 				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
