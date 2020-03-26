@@ -193,6 +193,7 @@
 		A6AD5526242C891B002DB4FE /* MCPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5525242C891B002DB4FE /* MCPageViewController.swift */; };
 		A6AD5528242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */; };
 		A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */; };
+		A6AD552C242C8C38002DB4FE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552B242C8C38002DB4FE /* SearchBarView.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -488,6 +489,7 @@
 		A6AD5525242C891B002DB4FE /* MCPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPageViewController.swift; sourceTree = "<group>"; };
 		A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCPageViewController+PageControlPosition.swift"; sourceTree = "<group>"; };
 		A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionReusableView.swift; sourceTree = "<group>"; };
+		A6AD552B242C8C38002DB4FE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1322,6 +1324,7 @@
 			children = (
 				A6AD5520242C87A4002DB4FE /* TableViewCell */,
 				A6DDD46D24168C7F008E1703 /* MSView.swift */,
+				A6AD552B242C8C38002DB4FE /* SearchBarView.swift */,
 				A6AD5523242C88DD002DB4FE /* MCToolBar.swift */,
 				A6AD5525242C891B002DB4FE /* MCPageViewController.swift */,
 				A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */,
@@ -1765,6 +1768,7 @@
 				A6D40BF52417B6B500A88B5B /* UIBarItem+Extension.swift in Sources */,
 				A6DDD46724168C6E008E1703 /* Polygon.swift in Sources */,
 				A6DDD46524168C6E008E1703 /* SegueHandleType.swift in Sources */,
+				A6AD552C242C8C38002DB4FE /* SearchBarView.swift in Sources */,
 				A695CC36241F5AFD007C68DD /* FailureJSONResponse.swift in Sources */,
 				A6DDD45524168C6E008E1703 /* CollectionViewDataSource.swift in Sources */,
 				A69310D22417100E004ADF4F /* Date+Extension.swift in Sources */,
