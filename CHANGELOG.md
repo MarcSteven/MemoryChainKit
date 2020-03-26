@@ -1,3 +1,10 @@
+#[0.1.3]
+* add AutoLayout library to write UI code 
+* add baseClass 
+* add progressView
+* add  UIDevice capability 
+* add swizzleManager to manage method swizzling in iOS
+
 
 #[0.1.2]
 * add NSObject method to associate the object 
