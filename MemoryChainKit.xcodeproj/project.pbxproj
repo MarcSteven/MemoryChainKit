@@ -194,6 +194,7 @@
 		A6AD5528242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */; };
 		A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */; };
 		A6AD552C242C8C38002DB4FE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552B242C8C38002DB4FE /* SearchBarView.swift */; };
+		A6AD552F242C8D49002DB4FE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552E242C8D49002DB4FE /* ProgressView.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -490,6 +491,7 @@
 		A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCPageViewController+PageControlPosition.swift"; sourceTree = "<group>"; };
 		A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionReusableView.swift; sourceTree = "<group>"; };
 		A6AD552B242C8C38002DB4FE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		A6AD552E242C8D49002DB4FE /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1023,9 +1025,18 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		A6AD552D242C8D35002DB4FE /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD552E242C8D49002DB4FE /* ProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A6AD552D242C8D35002DB4FE /* ProgressView */,
 				A66F3F252429C4C90081D52F /* Analytics */,
 				A60AF28E24219D5000072975 /* Image */,
 				A695CC722420EC7D007C68DD /* DataSource */,
@@ -1676,6 +1687,7 @@
 				A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */,
 				A69310D32417100E004ADF4F /* NSArray+Extension.swift in Sources */,
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
+				A6AD552F242C8D49002DB4FE /* ProgressView.swift in Sources */,
 				A65417D12422104100077AD8 /* ZoomAnimatorSourceDestination.swift in Sources */,
 				A695CC42241F629D007C68DD /* String+EncodedUTF8.swift in Sources */,
 				A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */,
