@@ -181,6 +181,12 @@
 		A6A439B2241A3F87009FC4E1 /* UILabel+HasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439B1241A3F87009FC4E1 /* UILabel+HasText.swift */; };
 		A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */; };
 		A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A68032241754E0004C0C97 /* NSObjectExtension.swift */; };
+		A6AD5517242C6A89002DB4FE /* Anchor+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5512242C6A88002DB4FE /* Anchor+Attributes.swift */; };
+		A6AD5518242C6A89002DB4FE /* NSLayoutConstraint+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5513242C6A88002DB4FE /* NSLayoutConstraint+Convenience.swift */; };
+		A6AD5519242C6A89002DB4FE /* SafeAreaLayoutGuideOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5514242C6A88002DB4FE /* SafeAreaLayoutGuideOptions.swift */; };
+		A6AD551A242C6A89002DB4FE /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5515242C6A88002DB4FE /* Anchor.swift */; };
+		A6AD551B242C6A89002DB4FE /* NSLayoutConstraint+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */; };
+		A6AD551D242C6B64002DB4FE /* Anchor+Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -464,6 +470,12 @@
 		A6A439B1241A3F87009FC4E1 /* UILabel+HasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+HasText.swift"; sourceTree = "<group>"; };
 		A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		A6A68032241754E0004C0C97 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		A6AD5512242C6A88002DB4FE /* Anchor+Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Anchor+Attributes.swift"; sourceTree = "<group>"; };
+		A6AD5513242C6A88002DB4FE /* NSLayoutConstraint+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Convenience.swift"; sourceTree = "<group>"; };
+		A6AD5514242C6A88002DB4FE /* SafeAreaLayoutGuideOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaLayoutGuideOptions.swift; sourceTree = "<group>"; };
+		A6AD5515242C6A88002DB4FE /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
+		A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Edges.swift"; sourceTree = "<group>"; };
+		A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anchor+Axis.swift"; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1344,6 +1356,12 @@
 		A6DDD53B24168D12008E1703 /* LayoutConstraintsUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A6AD5515242C6A88002DB4FE /* Anchor.swift */,
+				A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */,
+				A6AD5512242C6A88002DB4FE /* Anchor+Attributes.swift */,
+				A6AD5513242C6A88002DB4FE /* NSLayoutConstraint+Convenience.swift */,
+				A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */,
+				A6AD5514242C6A88002DB4FE /* SafeAreaLayoutGuideOptions.swift */,
 				A6DDD53C24168D12008E1703 /* NSLayoutConstraintExtension.swift */,
 				A6DDD53F24168D12008E1703 /* UIView+Constraint.swift */,
 				A6DDD54024168D12008E1703 /* NSLayoutConstraint+Debugging.swift */,
@@ -1574,12 +1592,14 @@
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
+				A6AD551B242C6A89002DB4FE /* NSLayoutConstraint+Edges.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
 				A695CC24241F5377007C68DD /* JSON.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A695CC31241F59AA007C68DD /* FormData.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
 				A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */,
+				A6AD551A242C6A89002DB4FE /* Anchor.swift in Sources */,
 				A695CC3A241F5D27007C68DD /* Image.swift in Sources */,
 				A6DDD54424168D12008E1703 /* UIView+Constraint.swift in Sources */,
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
@@ -1617,6 +1637,7 @@
 				A6DDD45C24168C6E008E1703 /* RxNill.swift in Sources */,
 				A695CC2C241F5804007C68DD /* FileManagerExtensions.swift in Sources */,
 				A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */,
+				A6AD551D242C6B64002DB4FE /* Anchor+Axis.swift in Sources */,
 				A6DDD46E24168C7F008E1703 /* MSView.swift in Sources */,
 				A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */,
 				A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */,
@@ -1669,6 +1690,7 @@
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
 				A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */,
+				A6AD5517242C6A89002DB4FE /* Anchor+Attributes.swift in Sources */,
 				A69310CE2417100E004ADF4F /* DataExtension.swift in Sources */,
 				A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */,
 				A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */,
@@ -1700,6 +1722,7 @@
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
 				A6356D272424931400B46CDF /* RouteType.swift in Sources */,
 				A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */,
+				A6AD5519242C6A89002DB4FE /* SafeAreaLayoutGuideOptions.swift in Sources */,
 				A6967F9224231623006C377A /* MCTableViewDataSource.swift in Sources */,
 				A6356CF62423537D00B46CDF /* Colorable.swift in Sources */,
 				A6DDD45624168C6E008E1703 /* Shadowable.swift in Sources */,
@@ -1766,6 +1789,7 @@
 				A65417D32422104100077AD8 /* ZoomAnimator.swift in Sources */,
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
 				A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */,
+				A6AD5518242C6A89002DB4FE /* NSLayoutConstraint+Convenience.swift in Sources */,
 				A63D39742419298100937CCD /* UINavigationBar+HideHairLine.swift in Sources */,
 				A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */,
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
