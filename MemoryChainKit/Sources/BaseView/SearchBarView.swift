@@ -136,7 +136,8 @@ final public class SearchBarView: UIView {
 
         switch style {
             case .minimal:
-                searchBar.searchBarStyle = .default
+                searchBar.style = .default
+               // searchBar.searchBarStyle = .default
                 searchBar.searchTextPositionAdjustment.horizontal = .minimumPadding
                 searchBar.backgroundImage = UIImage()
             default:

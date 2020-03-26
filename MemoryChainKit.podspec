@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   
   spec.name         = "MemoryChainKit"
-  spec.version      = "0.1.3"
+  spec.version      = "0.1.4"
   spec.summary      = "MemoryChain is a super tools to make iOS faster."
 
 

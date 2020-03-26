@@ -195,6 +195,8 @@
 		A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */; };
 		A6AD552C242C8C38002DB4FE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552B242C8C38002DB4FE /* SearchBarView.swift */; };
 		A6AD552F242C8D49002DB4FE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552E242C8D49002DB4FE /* ProgressView.swift */; };
+		A6AD5531242C9C78002DB4FE /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5530242C9C78002DB4FE /* SeparatorView.swift */; };
+		A6AD5533242CA6E2002DB4FE /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5532242CA6E2002DB4FE /* UISearchBarExtension.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -492,6 +494,8 @@
 		A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionReusableView.swift; sourceTree = "<group>"; };
 		A6AD552B242C8C38002DB4FE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		A6AD552E242C8D49002DB4FE /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		A6AD5530242C9C78002DB4FE /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		A6AD5532242CA6E2002DB4FE /* UISearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -798,6 +802,7 @@
 				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
+				A6AD5532242CA6E2002DB4FE /* UISearchBarExtension.swift */,
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */,
@@ -988,11 +993,12 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
-		A695CC6F2420D756007C68DD /* SeparatorLineView */ = {
+		A695CC6F2420D756007C68DD /* SeparatorView */ = {
 			isa = PBXGroup;
 			children = (
+				A6AD5530242C9C78002DB4FE /* SeparatorView.swift */,
 			);
-			path = SeparatorLineView;
+			path = SeparatorView;
 			sourceTree = "<group>";
 		};
 		A695CC722420EC7D007C68DD /* DataSource */ = {
@@ -1040,7 +1046,7 @@
 				A66F3F252429C4C90081D52F /* Analytics */,
 				A60AF28E24219D5000072975 /* Image */,
 				A695CC722420EC7D007C68DD /* DataSource */,
-				A695CC6F2420D756007C68DD /* SeparatorLineView */,
+				A695CC6F2420D756007C68DD /* SeparatorView */,
 				A695CC6A2420BECC007C68DD /* AlertView */,
 				A695CC612420B1C9007C68DD /* Router */,
 				A695CBB1241B81D9007C68DD /* UILabel */,
@@ -1737,6 +1743,7 @@
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
 				A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */,
+				A6AD5533242CA6E2002DB4FE /* UISearchBarExtension.swift in Sources */,
 				A6AD5517242C6A89002DB4FE /* Anchor+Attributes.swift in Sources */,
 				A69310CE2417100E004ADF4F /* DataExtension.swift in Sources */,
 				A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */,
@@ -1816,6 +1823,7 @@
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
 				A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */,
+				A6AD5531242C9C78002DB4FE /* SeparatorView.swift in Sources */,
 				A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */,
 				A695CC33241F5A0E007C68DD /* Result.swift in Sources */,
 				A695CC46241F65E3007C68DD /* Dictionary+Encode.swift in Sources */,
