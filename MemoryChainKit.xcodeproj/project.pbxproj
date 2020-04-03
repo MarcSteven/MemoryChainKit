@@ -89,6 +89,8 @@
 		A65417D32422104100077AD8 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417CF2422104000077AD8 /* ZoomAnimator.swift */; };
 		A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417D02422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift */; };
 		A6651FB32437719D00DCBF85 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FB22437719D00DCBF85 /* ColorExtension.swift */; };
+		A6651FB724378A3500DCBF85 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FB624378A3500DCBF85 /* Configurable.swift */; };
+		A6651FB924378B1200DCBF85 /* InitializableByEmptyConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FB824378B1200DCBF85 /* InitializableByEmptyConstructor.swift */; };
 		A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */; };
 		A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F282429C5330081D52F /* AnalyticsProvider.swift */; };
 		A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2A2429C5D10081D52F /* Analytics.swift */; };
@@ -376,6 +378,8 @@
 		A65417CF2422104000077AD8 /* ZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
 		A65417D02422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatorNavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		A6651FB22437719D00DCBF85 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		A6651FB624378A3500DCBF85 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		A6651FB824378B1200DCBF85 /* InitializableByEmptyConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializableByEmptyConstructor.swift; sourceTree = "<group>"; };
 		A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		A66F3F282429C5330081D52F /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		A66F3F2A2429C5D10081D52F /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
@@ -1275,6 +1279,8 @@
 				A6DDD43824168C6E008E1703 /* Shadowable.swift */,
 				A6DDD43A24168C6E008E1703 /* Reusable.swift */,
 				A6DDD43B24168C6E008E1703 /* Routable.swift */,
+				A6651FB624378A3500DCBF85 /* Configurable.swift */,
+				A6651FB824378B1200DCBF85 /* InitializableByEmptyConstructor.swift */,
 				A6DDD43C24168C6E008E1703 /* Stylable.swift */,
 				A6DDD43D24168C6E008E1703 /* Encoder.swift */,
 				A6DDD43E24168C6E008E1703 /* RxNill.swift */,
@@ -1669,12 +1675,14 @@
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
 				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
+				A6651FB924378B1200DCBF85 /* InitializableByEmptyConstructor.swift in Sources */,
 				A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */,
 				A6D40BDC2417B6B500A88B5B /* MCDropMenuState.swift in Sources */,
 				A63D39502419298000937CCD /* CGAffineTRansform+Extension.swift in Sources */,
 				A65417C32421F6A800077AD8 /* FatalReason.swift in Sources */,
 				A6DDD53424168D0A008E1703 /* CoreDataError.swift in Sources */,
 				A6DDD46224168C6E008E1703 /* NotSignedInResponder.swift in Sources */,
+				A6651FB724378A3500DCBF85 /* Configurable.swift in Sources */,
 				A6DDD54124168D12008E1703 /* NSLayoutConstraintExtension.swift in Sources */,
 				A6D40BDE2417B6B500A88B5B /* MCDropDownDirection.swift in Sources */,
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
