@@ -94,6 +94,7 @@
 		A6651FBB24378E3D00DCBF85 /* PresentationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBA24378E3D00DCBF85 /* PresentationContext.swift */; };
 		A6651FBD24378E7400DCBF85 /* ImageTitleDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */; };
 		A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBE24378ECE00DCBF85 /* Identifier.swift */; };
+		A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC22437909A00DCBF85 /* Crypto.swift */; };
 		A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */; };
 		A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F282429C5330081D52F /* AnalyticsProvider.swift */; };
 		A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2A2429C5D10081D52F /* Analytics.swift */; };
@@ -386,6 +387,7 @@
 		A6651FBA24378E3D00DCBF85 /* PresentationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContext.swift; sourceTree = "<group>"; };
 		A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleDisplayable.swift; sourceTree = "<group>"; };
 		A6651FBE24378ECE00DCBF85 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		A6651FC22437909A00DCBF85 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		A66F3F282429C5330081D52F /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		A66F3F2A2429C5D10081D52F /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
@@ -759,6 +761,7 @@
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
 				A6651FBE24378ECE00DCBF85 /* Identifier.swift */,
 				A66F3F41242A7D980081D52F /* SwizzleManager.swift */,
+				A6651FC22437909A00DCBF85 /* Crypto.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1611,6 +1614,7 @@
 				A6DDD54424168D12008E1703 /* UIView+Constraint.swift in Sources */,
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
 				A695CC3C241F5D83007C68DD /* FalseRequest.swift in Sources */,
+				A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */,
 				A695CC692420BEB2007C68DD /* UIColor+Hex.swift in Sources */,
 				A6D40C0E2417B6B500A88B5B /* CountriesViewControllerDelegate.swift in Sources */,
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
