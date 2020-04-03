@@ -33,20 +33,25 @@ final public class AnimationRunLoop {
         displayLink.add(to: .main, forMode: .common)
         self.displayLink = displayLink
     }
-
+    //MARK: - Stop
     public func stop() {
         displayLink?.invalidate()
         displayLink = nil
         beginTime = CACurrentMediaTime()
         endTime = duration + beginTime
     }
-
+    //MARK: - step
     @objc private func step(_ displayLink: CADisplayLink) {
+        // Calulate the time
         let now = CACurrentMediaTime()
+        // get the percent
         var percent = (now - beginTime) / duration
         percent = min(1, max(0, percent))
+        //display the percent on the animation
+        
         animations?(percent)
-
+        // if the time is greater than now, stop the animation
+        
         if now >= endTime {
             stop()
             completion?()

@@ -88,6 +88,7 @@
 		A65417D22422104100077AD8 /* ZoomAnimatorInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417CE2422104000077AD8 /* ZoomAnimatorInteractiveTransition.swift */; };
 		A65417D32422104100077AD8 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417CF2422104000077AD8 /* ZoomAnimator.swift */; };
 		A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417D02422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift */; };
+		A6651FB32437719D00DCBF85 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FB22437719D00DCBF85 /* ColorExtension.swift */; };
 		A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */; };
 		A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F282429C5330081D52F /* AnalyticsProvider.swift */; };
 		A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2A2429C5D10081D52F /* Analytics.swift */; };
@@ -101,11 +102,6 @@
 		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
 		A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */; };
 		A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F41242A7D980081D52F /* SwizzleManager.swift */; };
-		A6752543242BA16A00B2F1B0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A6752542242BA16A00B2F1B0 /* RxSwift */; };
-		A6752545242BA16A00B2F1B0 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = A6752544242BA16A00B2F1B0 /* RxTest */; };
-		A6752547242BA16A00B2F1B0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A6752546242BA16A00B2F1B0 /* RxRelay */; };
-		A6752549242BA16A00B2F1B0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A6752548242BA16A00B2F1B0 /* RxCocoa */; };
-		A675254B242BA16A00B2F1B0 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = A675254A242BA16A00B2F1B0 /* RxBlocking */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -181,22 +177,8 @@
 		A6A439B2241A3F87009FC4E1 /* UILabel+HasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439B1241A3F87009FC4E1 /* UILabel+HasText.swift */; };
 		A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */; };
 		A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A68032241754E0004C0C97 /* NSObjectExtension.swift */; };
-		A6AD5517242C6A89002DB4FE /* Anchor+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5512242C6A88002DB4FE /* Anchor+Attributes.swift */; };
-		A6AD5518242C6A89002DB4FE /* NSLayoutConstraint+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5513242C6A88002DB4FE /* NSLayoutConstraint+Convenience.swift */; };
-		A6AD5519242C6A89002DB4FE /* SafeAreaLayoutGuideOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5514242C6A88002DB4FE /* SafeAreaLayoutGuideOptions.swift */; };
-		A6AD551A242C6A89002DB4FE /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5515242C6A88002DB4FE /* Anchor.swift */; };
-		A6AD551B242C6A89002DB4FE /* NSLayoutConstraint+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */; };
-		A6AD551D242C6B64002DB4FE /* Anchor+Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */; };
 		A6AD551F242C6D2E002DB4FE /* MCScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */; };
-		A6AD5522242C87BB002DB4FE /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5521242C87BB002DB4FE /* MCTableViewCell.swift */; };
 		A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5523242C88DD002DB4FE /* MCToolBar.swift */; };
-		A6AD5526242C891B002DB4FE /* MCPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5525242C891B002DB4FE /* MCPageViewController.swift */; };
-		A6AD5528242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */; };
-		A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */; };
-		A6AD552C242C8C38002DB4FE /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552B242C8C38002DB4FE /* SearchBarView.swift */; };
-		A6AD552F242C8D49002DB4FE /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD552E242C8D49002DB4FE /* ProgressView.swift */; };
-		A6AD5531242C9C78002DB4FE /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5530242C9C78002DB4FE /* SeparatorView.swift */; };
-		A6AD5533242CA6E2002DB4FE /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5532242CA6E2002DB4FE /* UISearchBarExtension.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -393,6 +375,7 @@
 		A65417CE2422104000077AD8 /* ZoomAnimatorInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatorInteractiveTransition.swift; sourceTree = "<group>"; };
 		A65417CF2422104000077AD8 /* ZoomAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
 		A65417D02422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatorNavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		A6651FB22437719D00DCBF85 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		A66F3F282429C5330081D52F /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		A66F3F2A2429C5D10081D52F /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
@@ -480,22 +463,8 @@
 		A6A439B1241A3F87009FC4E1 /* UILabel+HasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+HasText.swift"; sourceTree = "<group>"; };
 		A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		A6A68032241754E0004C0C97 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
-		A6AD5512242C6A88002DB4FE /* Anchor+Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Anchor+Attributes.swift"; sourceTree = "<group>"; };
-		A6AD5513242C6A88002DB4FE /* NSLayoutConstraint+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Convenience.swift"; sourceTree = "<group>"; };
-		A6AD5514242C6A88002DB4FE /* SafeAreaLayoutGuideOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaLayoutGuideOptions.swift; sourceTree = "<group>"; };
-		A6AD5515242C6A88002DB4FE /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
-		A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Edges.swift"; sourceTree = "<group>"; };
-		A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anchor+Axis.swift"; sourceTree = "<group>"; };
 		A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCScrollViewController.swift; sourceTree = "<group>"; };
-		A6AD5521242C87BB002DB4FE /* MCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
 		A6AD5523242C88DD002DB4FE /* MCToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCToolBar.swift; sourceTree = "<group>"; };
-		A6AD5525242C891B002DB4FE /* MCPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPageViewController.swift; sourceTree = "<group>"; };
-		A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MCPageViewController+PageControlPosition.swift"; sourceTree = "<group>"; };
-		A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionReusableView.swift; sourceTree = "<group>"; };
-		A6AD552B242C8C38002DB4FE /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		A6AD552E242C8D49002DB4FE /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		A6AD5530242C9C78002DB4FE /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
-		A6AD5532242CA6E2002DB4FE /* UISearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -608,13 +577,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6752549242BA16A00B2F1B0 /* RxCocoa in Frameworks */,
-				A6752547242BA16A00B2F1B0 /* RxRelay in Frameworks */,
-				A6752545242BA16A00B2F1B0 /* RxTest in Frameworks */,
-				A6752543242BA16A00B2F1B0 /* RxSwift in Frameworks */,
 				A695CC7C24211783007C68DD /* SDWebImage in Frameworks */,
 				A65417BB2421ECE400077AD8 /* SnapKit in Frameworks */,
-				A675254B242BA16A00B2F1B0 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +613,7 @@
 		A6356CE324232C5D00B46CDF /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A6651FB22437719D00DCBF85 /* ColorExtension.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -802,7 +767,6 @@
 				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
-				A6AD5532242CA6E2002DB4FE /* UISearchBarExtension.swift */,
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */,
@@ -996,7 +960,6 @@
 		A695CC6F2420D756007C68DD /* SeparatorView */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD5530242C9C78002DB4FE /* SeparatorView.swift */,
 			);
 			path = SeparatorView;
 			sourceTree = "<group>";
@@ -1026,7 +989,6 @@
 		A6AD5520242C87A4002DB4FE /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD5521242C87BB002DB4FE /* MCTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -1034,7 +996,6 @@
 		A6AD552D242C8D35002DB4FE /* ProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD552E242C8D49002DB4FE /* ProgressView.swift */,
 			);
 			path = ProgressView;
 			sourceTree = "<group>";
@@ -1341,11 +1302,7 @@
 			children = (
 				A6AD5520242C87A4002DB4FE /* TableViewCell */,
 				A6DDD46D24168C7F008E1703 /* MSView.swift */,
-				A6AD552B242C8C38002DB4FE /* SearchBarView.swift */,
 				A6AD5523242C88DD002DB4FE /* MCToolBar.swift */,
-				A6AD5525242C891B002DB4FE /* MCPageViewController.swift */,
-				A6AD5527242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift */,
-				A6AD5529242C899A002DB4FE /* MCCollectionReusableView.swift */,
 				A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */,
 			);
 			path = BaseView;
@@ -1402,12 +1359,6 @@
 		A6DDD53B24168D12008E1703 /* LayoutConstraintsUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD5515242C6A88002DB4FE /* Anchor.swift */,
-				A6AD551C242C6B64002DB4FE /* Anchor+Axis.swift */,
-				A6AD5512242C6A88002DB4FE /* Anchor+Attributes.swift */,
-				A6AD5513242C6A88002DB4FE /* NSLayoutConstraint+Convenience.swift */,
-				A6AD5516242C6A88002DB4FE /* NSLayoutConstraint+Edges.swift */,
-				A6AD5514242C6A88002DB4FE /* SafeAreaLayoutGuideOptions.swift */,
 				A6DDD53C24168D12008E1703 /* NSLayoutConstraintExtension.swift */,
 				A6DDD53F24168D12008E1703 /* UIView+Constraint.swift */,
 				A6DDD54024168D12008E1703 /* NSLayoutConstraint+Debugging.swift */,
@@ -1483,11 +1434,6 @@
 			packageProductDependencies = (
 				A695CC7B24211783007C68DD /* SDWebImage */,
 				A65417BA2421ECE400077AD8 /* SnapKit */,
-				A6752542242BA16A00B2F1B0 /* RxSwift */,
-				A6752544242BA16A00B2F1B0 /* RxTest */,
-				A6752546242BA16A00B2F1B0 /* RxRelay */,
-				A6752548242BA16A00B2F1B0 /* RxCocoa */,
-				A675254A242BA16A00B2F1B0 /* RxBlocking */,
 			);
 			productName = MemoryChainKit;
 			productReference = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */;
@@ -1542,7 +1488,6 @@
 			packageReferences = (
 				A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = A6E331F32414C96D00381D4B /* Products */;
 			projectDirPath = "";
@@ -1601,7 +1546,6 @@
 				A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */,
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
-				A6AD5522242C87BB002DB4FE /* MCTableViewCell.swift in Sources */,
 				A6D40BDA2417B6B500A88B5B /* RefreshView.swift in Sources */,
 				A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */,
 				A6DDD46624168C6E008E1703 /* AlertPresenting.swift in Sources */,
@@ -1640,16 +1584,13 @@
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
-				A6AD551B242C6A89002DB4FE /* NSLayoutConstraint+Edges.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
 				A695CC24241F5377007C68DD /* JSON.swift in Sources */,
 				A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A695CC31241F59AA007C68DD /* FormData.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
-				A6AD5528242C894C002DB4FE /* MCPageViewController+PageControlPosition.swift in Sources */,
 				A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */,
-				A6AD551A242C6A89002DB4FE /* Anchor.swift in Sources */,
 				A695CC3A241F5D27007C68DD /* Image.swift in Sources */,
 				A6DDD54424168D12008E1703 /* UIView+Constraint.swift in Sources */,
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
@@ -1687,13 +1628,11 @@
 				A6DDD45C24168C6E008E1703 /* RxNill.swift in Sources */,
 				A695CC2C241F5804007C68DD /* FileManagerExtensions.swift in Sources */,
 				A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */,
-				A6AD551D242C6B64002DB4FE /* Anchor+Axis.swift in Sources */,
 				A6DDD46E24168C7F008E1703 /* MSView.swift in Sources */,
 				A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */,
 				A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */,
 				A69310D32417100E004ADF4F /* NSArray+Extension.swift in Sources */,
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
-				A6AD552F242C8D49002DB4FE /* ProgressView.swift in Sources */,
 				A65417D12422104100077AD8 /* ZoomAnimatorSourceDestination.swift in Sources */,
 				A695CC42241F629D007C68DD /* String+EncodedUTF8.swift in Sources */,
 				A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */,
@@ -1724,11 +1663,9 @@
 				A63D39582419298000937CCD /* UITableView+ConfigureProtocols.swift in Sources */,
 				A6D40BF92417B6B500A88B5B /* CGPoint+Extension.swift in Sources */,
 				A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */,
-				A6AD552A242C899A002DB4FE /* MCCollectionReusableView.swift in Sources */,
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
-				A6AD5526242C891B002DB4FE /* MCPageViewController.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
 				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
@@ -1743,8 +1680,6 @@
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
 				A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */,
-				A6AD5533242CA6E2002DB4FE /* UISearchBarExtension.swift in Sources */,
-				A6AD5517242C6A89002DB4FE /* Anchor+Attributes.swift in Sources */,
 				A69310CE2417100E004ADF4F /* DataExtension.swift in Sources */,
 				A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */,
 				A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */,
@@ -1776,7 +1711,6 @@
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
 				A6356D272424931400B46CDF /* RouteType.swift in Sources */,
 				A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */,
-				A6AD5519242C6A89002DB4FE /* SafeAreaLayoutGuideOptions.swift in Sources */,
 				A6967F9224231623006C377A /* MCTableViewDataSource.swift in Sources */,
 				A6356CF62423537D00B46CDF /* Colorable.swift in Sources */,
 				A6DDD45624168C6E008E1703 /* Shadowable.swift in Sources */,
@@ -1787,9 +1721,9 @@
 				A6D40BF52417B6B500A88B5B /* UIBarItem+Extension.swift in Sources */,
 				A6DDD46724168C6E008E1703 /* Polygon.swift in Sources */,
 				A6DDD46524168C6E008E1703 /* SegueHandleType.swift in Sources */,
-				A6AD552C242C8C38002DB4FE /* SearchBarView.swift in Sources */,
 				A695CC36241F5AFD007C68DD /* FailureJSONResponse.swift in Sources */,
 				A6DDD45524168C6E008E1703 /* CollectionViewDataSource.swift in Sources */,
+				A6651FB32437719D00DCBF85 /* ColorExtension.swift in Sources */,
 				A69310D22417100E004ADF4F /* Date+Extension.swift in Sources */,
 				A69310C92417100E004ADF4F /* Array+RemoveIndex.swift in Sources */,
 				A69310DA2417100E004ADF4F /* Collection+noEmpty.swift in Sources */,
@@ -1823,7 +1757,6 @@
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
 				A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */,
-				A6AD5531242C9C78002DB4FE /* SeparatorView.swift in Sources */,
 				A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */,
 				A695CC33241F5A0E007C68DD /* Result.swift in Sources */,
 				A695CC46241F65E3007C68DD /* Dictionary+Encode.swift in Sources */,
@@ -1845,7 +1778,6 @@
 				A65417D32422104100077AD8 /* ZoomAnimator.swift in Sources */,
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
 				A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */,
-				A6AD5518242C6A89002DB4FE /* NSLayoutConstraint+Convenience.swift in Sources */,
 				A63D39742419298100937CCD /* UINavigationBar+HideHairLine.swift in Sources */,
 				A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */,
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
@@ -2021,10 +1953,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64e armv7 armv7s";
+				VALID_ARCHS = "arm64e armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -2051,7 +1983,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64e armv7 armv7s";
+				VALID_ARCHS = "arm64e armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -2134,14 +2066,6 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
 		A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -2157,31 +2081,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		A6752542242BA16A00B2F1B0 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		A6752544242BA16A00B2F1B0 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
-		A6752546242BA16A00B2F1B0 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		A6752548242BA16A00B2F1B0 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		A675254A242BA16A00B2F1B0 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6752541242BA16A00B2F1B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
 		};
 		A695CC7B24211783007C68DD /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;

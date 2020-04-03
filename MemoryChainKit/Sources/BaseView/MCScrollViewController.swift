@@ -17,12 +17,15 @@ open class MCScrollViewController:UIViewController {
         super.viewDidLoad()
         
     }
+    //MARK: - set up UI here
+    
     private func setupUI() {
         view.addSubview(scrollView)
-        scrollView.anchor.edges.equalToSuperView()
+        
+        
+        
+        
         
     }
-    private func resolveContentSize() {
-        scrollView.resolve(axis:.vertical,fixedView:view)
-    }
+    
 }

@@ -24,16 +24,7 @@ extension UIDevice {
     }
 }
 extension UIDevice {
-    public var Capability:Capability {
-        var capability:Capability = []
-        if hasTopNotch {
-            capability.update(with:.notch)
-        }
-        if hasHomeIndicator {
-            capability.update(with:.homeIndicator)
-        }
-       
-    }
+   
 }
 
 // Enum representing the different types of iOS devices available
