@@ -95,6 +95,8 @@
 		A6651FBD24378E7400DCBF85 /* ImageTitleDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */; };
 		A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBE24378ECE00DCBF85 /* Identifier.swift */; };
 		A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC22437909A00DCBF85 /* Crypto.swift */; };
+		A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = A6651FC5243825B500DCBF85 /* PromiseKit */; };
+		A6651FC8243825F700DCBF85 /* Promise+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC7243825F600DCBF85 /* Promise+Extension.swift */; };
 		A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */; };
 		A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F282429C5330081D52F /* AnalyticsProvider.swift */; };
 		A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2A2429C5D10081D52F /* Analytics.swift */; };
@@ -388,6 +390,7 @@
 		A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleDisplayable.swift; sourceTree = "<group>"; };
 		A6651FBE24378ECE00DCBF85 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		A6651FC22437909A00DCBF85 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		A6651FC7243825F600DCBF85 /* Promise+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Extension.swift"; sourceTree = "<group>"; };
 		A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		A66F3F282429C5330081D52F /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		A66F3F2A2429C5D10081D52F /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
@@ -590,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A695CC7C24211783007C68DD /* SDWebImage in Frameworks */,
+				A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */,
 				A65417BB2421ECE400077AD8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1334,6 +1338,7 @@
 				A65417BC2421ED0300077AD8 /* SnapKit */,
 				A693109824170FF3004ADF4F /* Foudantion */,
 				A693109724170FDF004ADF4F /* UIKit */,
+				A6651FC7243825F600DCBF85 /* Promise+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1452,6 +1457,7 @@
 			packageProductDependencies = (
 				A695CC7B24211783007C68DD /* SDWebImage */,
 				A65417BA2421ECE400077AD8 /* SnapKit */,
+				A6651FC5243825B500DCBF85 /* PromiseKit */,
 			);
 			productName = MemoryChainKit;
 			productReference = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */;
@@ -1506,6 +1512,7 @@
 			packageReferences = (
 				A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = A6E331F32414C96D00381D4B /* Products */;
 			projectDirPath = "";
@@ -1712,6 +1719,7 @@
 				A695CC0B241F41AF007C68DD /* Reachability.swift in Sources */,
 				A695CC50241F99F8007C68DD /* FileManager+Cache.swift in Sources */,
 				A69310C32417100E004ADF4F /* CGRect+Helper.swift in Sources */,
+				A6651FC8243825F700DCBF85 /* Promise+Extension.swift in Sources */,
 				A69310DC2417100E004ADF4F /* BundleExtension.swift in Sources */,
 				A6D40BE62417B6B500A88B5B /* MCProgressHUD.swift in Sources */,
 				A6DDD45424168C6E008E1703 /* DataContaining.swift in Sources */,
@@ -2090,6 +2098,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.1;
+			};
+		};
 		A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -2105,6 +2121,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		A6651FC5243825B500DCBF85 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
 		};
 		A695CC7B24211783007C68DD /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
