@@ -97,6 +97,7 @@
 		A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC22437909A00DCBF85 /* Crypto.swift */; };
 		A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = A6651FC5243825B500DCBF85 /* PromiseKit */; };
 		A6651FC8243825F700DCBF85 /* Promise+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC7243825F600DCBF85 /* Promise+Extension.swift */; };
+		A6652022243A186700DCBF85 /* ValidRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6652021243A186700DCBF85 /* ValidRules.swift */; };
 		A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */; };
 		A66F3F292429C5330081D52F /* AnalyticsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F282429C5330081D52F /* AnalyticsProvider.swift */; };
 		A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F2A2429C5D10081D52F /* Analytics.swift */; };
@@ -237,7 +238,6 @@
 		A6D40C182417B6B500A88B5B /* TabBarButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD32417B6B500A88B5B /* TabBarButtonDelegate.swift */; };
 		A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD42417B6B500A88B5B /* TabBarController.swift */; };
 		A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43024168C6E008E1703 /* Scrollable.swift */; };
-		A6DDD44F24168C6E008E1703 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43124168C6E008E1703 /* Observer.swift */; };
 		A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43224168C6E008E1703 /* BackgroundColor.swift */; };
 		A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43324168C6E008E1703 /* BindableType.swift */; };
 		A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43424168C6E008E1703 /* StoryboardLoadable.swift */; };
@@ -391,6 +391,7 @@
 		A6651FBE24378ECE00DCBF85 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		A6651FC22437909A00DCBF85 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		A6651FC7243825F600DCBF85 /* Promise+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Extension.swift"; sourceTree = "<group>"; };
+		A6652021243A186700DCBF85 /* ValidRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidRules.swift; sourceTree = "<group>"; };
 		A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		A66F3F282429C5330081D52F /* AnalyticsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProvider.swift; sourceTree = "<group>"; };
 		A66F3F2A2429C5D10081D52F /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
@@ -530,7 +531,6 @@
 		A6D40BD32417B6B500A88B5B /* TabBarButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonDelegate.swift; sourceTree = "<group>"; };
 		A6D40BD42417B6B500A88B5B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A6DDD43024168C6E008E1703 /* Scrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
-		A6DDD43124168C6E008E1703 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		A6DDD43224168C6E008E1703 /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		A6DDD43324168C6E008E1703 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		A6DDD43424168C6E008E1703 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
@@ -763,6 +763,7 @@
 			isa = PBXGroup;
 			children = (
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
+				A6652021243A186700DCBF85 /* ValidRules.swift */,
 				A6651FBE24378ECE00DCBF85 /* Identifier.swift */,
 				A66F3F41242A7D980081D52F /* SwizzleManager.swift */,
 				A6651FC22437909A00DCBF85 /* Crypto.swift */,
@@ -1282,7 +1283,6 @@
 			isa = PBXGroup;
 			children = (
 				A6DDD43024168C6E008E1703 /* Scrollable.swift */,
-				A6DDD43124168C6E008E1703 /* Observer.swift */,
 				A6356CF52423537D00B46CDF /* Colorable.swift */,
 				A6DDD43224168C6E008E1703 /* BackgroundColor.swift */,
 				A6DDD43324168C6E008E1703 /* BindableType.swift */,
@@ -1572,6 +1572,7 @@
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
 				A6651FBB24378E3D00DCBF85 /* PresentationContext.swift in Sources */,
+				A6652022243A186700DCBF85 /* ValidRules.swift in Sources */,
 				A6D40BDA2417B6B500A88B5B /* RefreshView.swift in Sources */,
 				A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */,
 				A6DDD46624168C6E008E1703 /* AlertPresenting.swift in Sources */,
@@ -1813,7 +1814,6 @@
 				A63D39742419298100937CCD /* UINavigationBar+HideHairLine.swift in Sources */,
 				A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */,
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
-				A6DDD44F24168C6E008E1703 /* Observer.swift in Sources */,
 				A6DDD45A24168C6E008E1703 /* Stylable.swift in Sources */,
 				A6D40C132417B6B500A88B5B /* SegmentedItem.swift in Sources */,
 				A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */,
