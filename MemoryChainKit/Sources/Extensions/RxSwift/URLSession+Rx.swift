@@ -21,6 +21,16 @@ public enum StatusCodeError:Swift.Error {
         }
     }
 }
+extension StatusCodeError:LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case let .code(code):
+            return "error code is \(code)"
+        
+        
+        }
+    }
+}
 
 extension Reactive where Base:URLSession {
     public func statusCode(_ url:URL) ->Observable<Int> {
