@@ -34,6 +34,9 @@ Pod::Spec.new do |spec|
   spec.dependency 'SDWebImage'
   spec.dependency 'RxSwift'
   spec.dependency 'SnapKit'
+  spec.dependency 'SwiftyJSON'
+  spec.dependency 'PromiseKit'
+  
   
 
   
