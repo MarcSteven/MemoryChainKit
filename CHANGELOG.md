@@ -1,3 +1,17 @@
+#[0.1.6]
+* add Rx extensions
+* Solve RxSwift SPM errors 
+*  Add promise Extension
+*  Add validation functions to check password and email
+*  Add NSAttributedString extensions
+*  Add URLSession Rx Extension
+*  Add debug method for ObserableType
+*  Add global function for DispatchQueue
+*  Add algorithm to make data safer
+
+
+#[0.1.5]
+Fix SPM error from RxSwift
 #[0.1.4]
 * add separatorView
 * add constants 
