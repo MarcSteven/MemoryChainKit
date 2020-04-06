@@ -124,6 +124,7 @@
 		A6880160243B093500C16C82 /* ObservableConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688015F243B093500C16C82 /* ObservableConvertibleType.swift */; };
 		A6880162243B0BD600C16C82 /* ObservableType+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880161243B0BD600C16C82 /* ObservableType+Debug.swift */; };
 		A6880166243B35FD00C16C82 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880165243B35FD00C16C82 /* Validation.swift */; };
+		A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A6880168243B384B00C16C82 /* SwiftyJSON */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -616,6 +617,7 @@
 			files = (
 				A6880152243B03C300C16C82 /* RxCocoa in Frameworks */,
 				A6880150243B03C300C16C82 /* RxRelay in Frameworks */,
+				A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */,
 				A695CC7C24211783007C68DD /* SDWebImage in Frameworks */,
 				A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */,
 				A688014E243B03C300C16C82 /* RxSwift in Frameworks */,
@@ -1497,6 +1499,7 @@
 				A688014F243B03C300C16C82 /* RxRelay */,
 				A6880151243B03C300C16C82 /* RxCocoa */,
 				A6880153243B03C300C16C82 /* RxBlocking */,
+				A6880168243B384B00C16C82 /* SwiftyJSON */,
 			);
 			productName = MemoryChainKit;
 			productReference = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */;
@@ -1553,6 +1556,7 @@
 				A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = A6E331F32414C96D00381D4B /* Products */;
 			projectDirPath = "";
@@ -2163,6 +2167,14 @@
 				minimumVersion = 5.1.1;
 			};
 		};
+		A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -2203,6 +2215,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
+		};
+		A6880168243B384B00C16C82 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 		A695CC7B24211783007C68DD /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
