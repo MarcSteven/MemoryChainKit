@@ -112,6 +112,13 @@
 		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
 		A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */; };
 		A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F41242A7D980081D52F /* SwizzleManager.swift */; };
+		A688014B243B00F800C16C82 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */; };
+		A688014E243B03C300C16C82 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A688014D243B03C300C16C82 /* RxSwift */; };
+		A6880150243B03C300C16C82 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A688014F243B03C300C16C82 /* RxRelay */; };
+		A6880152243B03C300C16C82 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A6880151243B03C300C16C82 /* RxCocoa */; };
+		A6880154243B03C300C16C82 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = A6880153243B03C300C16C82 /* RxBlocking */; };
+		A6880156243B042C00C16C82 /* UIAlertController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */; };
+		A6880158243B04FB00C16C82 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880157243B04FB00C16C82 /* UIView+Rx.swift */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -407,6 +414,9 @@
 		A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssertExportSessionExtension.swift; sourceTree = "<group>"; };
 		A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionViewFlowLayoutCustomizable.swift; sourceTree = "<group>"; };
 		A66F3F41242A7D980081D52F /* SwizzleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleManager.swift; sourceTree = "<group>"; };
+		A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
+		A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Rx.swift"; sourceTree = "<group>"; };
+		A6880157243B04FB00C16C82 /* UIView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		A693109F2417100A004ADF4F /* Range+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
@@ -594,9 +604,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6880152243B03C300C16C82 /* RxCocoa in Frameworks */,
+				A6880150243B03C300C16C82 /* RxRelay in Frameworks */,
 				A695CC7C24211783007C68DD /* SDWebImage in Frameworks */,
 				A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */,
+				A688014E243B03C300C16C82 /* RxSwift in Frameworks */,
 				A65417BB2421ECE400077AD8 /* SnapKit in Frameworks */,
+				A6880154243B03C300C16C82 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,6 +752,9 @@
 		A65417E42422234200077AD8 /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */,
+				A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */,
+				A6880157243B04FB00C16C82 /* UIView+Rx.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -1461,6 +1478,10 @@
 				A695CC7B24211783007C68DD /* SDWebImage */,
 				A65417BA2421ECE400077AD8 /* SnapKit */,
 				A6651FC5243825B500DCBF85 /* PromiseKit */,
+				A688014D243B03C300C16C82 /* RxSwift */,
+				A688014F243B03C300C16C82 /* RxRelay */,
+				A6880151243B03C300C16C82 /* RxCocoa */,
+				A6880153243B03C300C16C82 /* RxBlocking */,
 			);
 			productName = MemoryChainKit;
 			productReference = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */;
@@ -1516,6 +1537,7 @@
 				A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = A6E331F32414C96D00381D4B /* Products */;
 			projectDirPath = "";
@@ -1602,6 +1624,7 @@
 				A6D40BF82417B6B500A88B5B /* MCInformationTipPreferences.swift in Sources */,
 				A6DDD46424168C6E008E1703 /* Copying.swift in Sources */,
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
+				A688014B243B00F800C16C82 /* UIScrollView+Rx.swift in Sources */,
 				A695CC1E241F528E007C68DD /* HTTPResponse.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
 				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
@@ -1635,6 +1658,7 @@
 				A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */,
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
+				A6880156243B042C00C16C82 /* UIAlertController+Rx.swift in Sources */,
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* StringExtension.swift in Sources */,
@@ -1679,6 +1703,7 @@
 				A63D396D2419298100937CCD /* UIDevice+Extension.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
+				A6880158243B04FB00C16C82 /* UIView+Rx.swift in Sources */,
 				A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */,
 				A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */,
 				A6DDD5632416954E008E1703 /* UIViewExtension.swift in Sources */,
@@ -2110,6 +2135,14 @@
 				minimumVersion = 6.13.1;
 			};
 		};
+		A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -2130,6 +2163,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
+		};
+		A688014D243B03C300C16C82 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A688014F243B03C300C16C82 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		A6880151243B03C300C16C82 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A6880153243B03C300C16C82 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
 		};
 		A695CC7B24211783007C68DD /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;

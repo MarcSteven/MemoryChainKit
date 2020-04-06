@@ -18,14 +18,14 @@ public func ensureMainThread(execute work:@escaping @convention(block)() ->Void)
         }
     }
 }
-public func asyncMain(_ block:(() ->Void)?) {
+public func asyncMain(_ block: (() ->Void)?) {
     DispatchQueue.main.async {
-        block()
+        block!()
     }
 }
 public func asyncMainDelay(duration:TimeInterval = 1,
-                           block:@escaping (()->Void)?) {
+                           block: (()->Void)?) {
     DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-        block()
+        block!()
     }
 }
