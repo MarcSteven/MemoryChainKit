@@ -103,5 +103,22 @@ extension UIAlertController {
             objc_setAssociatedObject(self, "alertWindow", window, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
+    public func show() {
+        show(true, completionHandler: nil)
+    }
+    public func show(_ animated:Bool) {
+        show(animated, completionHandler: nil)
+    }
+    public func show(_ animated:Bool,
+                     completionHandler:(()->Void)?) {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.alertWindow = window
+        window.rootViewController = UIViewController()
+        window.windowLevel =  UIWindow.Level.alert + 1
+        DispatchQueue.main.async {
+            window.makeKeyAndVisible()
+            window.rootViewController!.present(self, animated: animated, completion: completionHandler)
+        }
+    }
     
 }
