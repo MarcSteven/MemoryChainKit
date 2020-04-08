@@ -60,6 +60,31 @@ public extension UIButton {
         
         layer.add(shake, forKey: "position")
     }
+    //MARK: - Public Methods
+    
+    func setTitle(_ title: String?, for state: UIControlState, animated: Bool) {
+        if animated {
+            setTitle(title, for: state)
+        }
+        else {
+            UIView .performWithoutAnimation {
+                setTitle(title, for: state)
+                layoutIfNeeded()
+            }
+        }
+    }
+    
+    func setAttributedTitle(_ title: NSAttributedString?, for state: UIControlState, animated: Bool) {
+        if animated {
+            setAttributedTitle(title, for: state)
+        }
+        else {
+            UIView .performWithoutAnimation {
+                setAttributedTitle(title, for: state)
+                layoutIfNeeded()
+            }
+        }
+    }
 }
 
 //Usage： button.flash()
