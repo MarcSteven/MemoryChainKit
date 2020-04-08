@@ -303,6 +303,8 @@
 		A6E331FC2414C96E00381D4B /* MemoryChainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */; };
 		A6E332012414C96E00381D4B /* MemoryChainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E332002414C96E00381D4B /* MemoryChainKitTests.swift */; };
 		A6E332032414C96E00381D4B /* MemoryChainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F52414C96D00381D4B /* MemoryChainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6F2170E243DECC200188C23 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2170D243DECC200188C23 /* UserDefaults.swift */; };
+		A6F21711243DF01E00188C23 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21710243DF01E00188C23 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -608,6 +610,8 @@
 		A6E331FB2414C96E00381D4B /* MemoryChainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryChainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E332002414C96E00381D4B /* MemoryChainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryChainKitTests.swift; sourceTree = "<group>"; };
 		A6E332022414C96E00381D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F2170D243DECC200188C23 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A6F21710243DF01E00188C23 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -797,6 +801,7 @@
 		A66F3F392429ED9B0081D52F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				A6F2170F243DF00B00188C23 /* LocationService */,
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
 				A6652021243A186700DCBF85 /* ValidRules.swift */,
 				A6651FBE24378ECE00DCBF85 /* Identifier.swift */,
@@ -873,6 +878,7 @@
 				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
 				A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */,
 				A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */,
+				A6F2170D243DECC200188C23 /* UserDefaults.swift */,
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
 				A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */,
@@ -1463,6 +1469,14 @@
 			path = MemoryChainKitTests;
 			sourceTree = "<group>";
 		};
+		A6F2170F243DF00B00188C23 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				A6F21710243DF01E00188C23 /* LocationService.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1818,6 +1832,7 @@
 				A695CC28241F53E6007C68DD /* JSONType.swift in Sources */,
 				A6356D022423640300B46CDF /* MCBLEConnector.swift in Sources */,
 				A6D40BE42417B6B500A88B5B /* MCLabel.swift in Sources */,
+				A6F2170E243DECC200188C23 /* UserDefaults.swift in Sources */,
 				A6D40BD82417B6B500A88B5B /* GradientView.swift in Sources */,
 				A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */,
 				A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */,
@@ -1865,6 +1880,7 @@
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
 				A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */,
 				A63D39742419298100937CCD /* UINavigationBar+HideHairLine.swift in Sources */,
+				A6F21711243DF01E00188C23 /* LocationService.swift in Sources */,
 				A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */,
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
 				A6DDD45A24168C6E008E1703 /* Stylable.swift in Sources */,

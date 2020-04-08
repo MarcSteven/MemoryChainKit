@@ -93,3 +93,15 @@ public extension UIAlertController {
     }
 }
 
+
+extension UIAlertController {
+    public var alertWindow:UIWindow? {
+        get {
+            return objc_getAssociatedObject(self, "alertWindow") as? UIWindow
+        }
+        set(window) {
+            objc_setAssociatedObject(self, "alertWindow", window, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+}
