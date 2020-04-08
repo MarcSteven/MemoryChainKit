@@ -309,6 +309,7 @@
 		A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21714243E0C8000188C23 /* LocalAtomic.swift */; };
 		A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21716243E0D2E00188C23 /* GlobalFunc.swift */; };
 		A6F21719243E13AC00188C23 /* UIViewController+ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */; };
+		A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -620,6 +621,7 @@
 		A6F21714243E0C8000188C23 /* LocalAtomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAtomic.swift; sourceTree = "<group>"; };
 		A6F21716243E0D2E00188C23 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
 		A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ObjcWakeable.swift"; sourceTree = "<group>"; };
+		A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueObservationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -816,6 +818,7 @@
 				A6F21714243E0C8000188C23 /* LocalAtomic.swift */,
 				A6880165243B35FD00C16C82 /* Validation.swift */,
 				A6F21716243E0D2E00188C23 /* GlobalFunc.swift */,
+				A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */,
 				A66F3F41242A7D980081D52F /* SwizzleManager.swift */,
 				A6651FC22437909A00DCBF85 /* Crypto.swift */,
 			);
@@ -1674,6 +1677,7 @@
 				A688014B243B00F800C16C82 /* UIScrollView+Rx.swift in Sources */,
 				A695CC1E241F528E007C68DD /* HTTPResponse.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
+				A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */,
 				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
 				A6356D252424931400B46CDF /* Options.swift in Sources */,
 				A65417C824220C8900077AD8 /* TransitionAnimator.swift in Sources */,
