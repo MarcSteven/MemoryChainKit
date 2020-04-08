@@ -85,7 +85,7 @@ fileprivate extension MSAlertView {
     }
 }
 
-@available(iOS 13.0, *)
+
 @available(iOS 13.0, *)
 public extension MSAlertView {
     static func show(message:String,
@@ -123,22 +123,18 @@ public extension MSAlertView {
     static func showSuccess(message:String,
                             imageName:String,
                             duration:TimeInterval) {
-        if #available(iOS 13.0, *) {
+      
             let image = UIImage(named: imageName, in: Bundle(for: MSAlertView.self), with: nil)
             show(message: message, icon: image, duration: duration)
-        } else {
-            // Fallback on earlier versions
-        }
+        
         
     }
         static func showError(message:String,
                           imageName:String,
                           duration:TimeInterval) {
-            if #available(iOS 13.0, *) {
+           
                 let image = UIImage(named: imageName, in: Bundle(for: MSAlertView.self), with: nil)
                 show(message: message, icon: image, duration: duration)
-            } else {
-                // Fallback on earlier versions
-            }
+            
     }
 }

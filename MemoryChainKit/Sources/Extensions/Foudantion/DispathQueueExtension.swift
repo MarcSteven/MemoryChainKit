@@ -18,6 +18,20 @@ public extension DispatchQueue {
             main.async(execute: closure)
         }
     }
+    class func safeUISync(execute workItem: DispatchWorkItem) {
+           if Thread.isMainThread { workItem.perform() }
+           else                   { DispatchQueue.main.sync(execute: workItem) }
+       }
+       
+       class func safeUISync<T>(execute work: () throws -> T) rethrows -> T {
+           if Thread.isMainThread { return try work() }
+           else                   { return try DispatchQueue.main.sync(execute: work) }
+       }
+       
+       class func safeUISync<T>(flags: DispatchWorkItemFlags, execute work: () throws -> T) rethrows -> T {
+           if Thread.isMainThread { return try work() }
+           else                   { return try DispatchQueue.main.sync(flags: flags, execute: work) }
+       }
 }
 extension DispatchTime {
     /// A convenience method to convert `TimeInterval` to `DispatchTime`.
@@ -36,4 +50,5 @@ extension DispatchTime {
         let secondsElapsed = TimeInterval(Int64(currentTime) - Int64(lastTime)) / oneSecondInNanoseconds
         return secondsElapsed
     }
+    
 }
