@@ -305,6 +305,9 @@
 		A6E332032414C96E00381D4B /* MemoryChainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F52414C96D00381D4B /* MemoryChainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6F2170E243DECC200188C23 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2170D243DECC200188C23 /* UserDefaults.swift */; };
 		A6F21711243DF01E00188C23 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21710243DF01E00188C23 /* LocationService.swift */; };
+		A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21712243E0C0000188C23 /* ObjcWakeable.swift */; };
+		A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21714243E0C8000188C23 /* LocalAtomic.swift */; };
+		A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21716243E0D2E00188C23 /* GlobalFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -612,6 +615,9 @@
 		A6E332022414C96E00381D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6F2170D243DECC200188C23 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A6F21710243DF01E00188C23 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A6F21712243E0C0000188C23 /* ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcWakeable.swift; sourceTree = "<group>"; };
+		A6F21714243E0C8000188C23 /* LocalAtomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAtomic.swift; sourceTree = "<group>"; };
+		A6F21716243E0D2E00188C23 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -805,7 +811,9 @@
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
 				A6652021243A186700DCBF85 /* ValidRules.swift */,
 				A6651FBE24378ECE00DCBF85 /* Identifier.swift */,
+				A6F21714243E0C8000188C23 /* LocalAtomic.swift */,
 				A6880165243B35FD00C16C82 /* Validation.swift */,
+				A6F21716243E0D2E00188C23 /* GlobalFunc.swift */,
 				A66F3F41242A7D980081D52F /* SwizzleManager.swift */,
 				A6651FC22437909A00DCBF85 /* Crypto.swift */,
 			);
@@ -1325,6 +1333,7 @@
 			isa = PBXGroup;
 			children = (
 				A6DDD43024168C6E008E1703 /* Scrollable.swift */,
+				A6F21712243E0C0000188C23 /* ObjcWakeable.swift */,
 				A6356CF52423537D00B46CDF /* Colorable.swift */,
 				A6DDD43224168C6E008E1703 /* BackgroundColor.swift */,
 				A6DDD43324168C6E008E1703 /* BindableType.swift */,
@@ -1627,6 +1636,7 @@
 				A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */,
 				A66F3F2F2429C9410081D52F /* LogAnalyticsProvider.swift in Sources */,
 				A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */,
+				A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */,
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
 				A6880160243B093500C16C82 /* ObservableConvertibleType.swift in Sources */,
@@ -1687,6 +1697,7 @@
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
 				A695CC3C241F5D83007C68DD /* FalseRequest.swift in Sources */,
 				A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */,
+				A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */,
 				A695CC692420BEB2007C68DD /* UIColor+Hex.swift in Sources */,
 				A6D40C0E2417B6B500A88B5B /* CountriesViewControllerDelegate.swift in Sources */,
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
@@ -1696,6 +1707,7 @@
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
 				A6880156243B042C00C16C82 /* UIAlertController+Rx.swift in Sources */,
+				A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */,
 				A63D395F2419298000937CCD /* UIBarButtonItem+Extension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* StringExtension.swift in Sources */,
