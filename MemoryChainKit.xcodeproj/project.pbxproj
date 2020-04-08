@@ -308,6 +308,7 @@
 		A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21712243E0C0000188C23 /* ObjcWakeable.swift */; };
 		A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21714243E0C8000188C23 /* LocalAtomic.swift */; };
 		A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21716243E0D2E00188C23 /* GlobalFunc.swift */; };
+		A6F21719243E13AC00188C23 /* UIViewController+ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -618,6 +619,7 @@
 		A6F21712243E0C0000188C23 /* ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcWakeable.swift; sourceTree = "<group>"; };
 		A6F21714243E0C8000188C23 /* LocalAtomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAtomic.swift; sourceTree = "<group>"; };
 		A6F21716243E0D2E00188C23 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
+		A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ObjcWakeable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -848,6 +850,7 @@
 				A63D39282419297A00937CCD /* UICollectionView+Extension.swift */,
 				A63D391F2419297900937CCD /* UIColor+Extension.swift */,
 				A63D39352419297C00937CCD /* UIControl+Extension.swift */,
+				A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */,
 				A63D393A2419297C00937CCD /* UIDevice+Extension.swift */,
 				A63D39312419297B00937CCD /* UIGestureRecognizer+Extension.swift */,
 				A63D393B2419297D00937CCD /* UIImage+Extension.swift */,
@@ -1785,6 +1788,7 @@
 				A6DDD46224168C6E008E1703 /* NotSignedInResponder.swift in Sources */,
 				A6651FB724378A3500DCBF85 /* Configurable.swift in Sources */,
 				A6DDD54124168D12008E1703 /* NSLayoutConstraintExtension.swift in Sources */,
+				A6F21719243E13AC00188C23 /* UIViewController+ObjcWakeable.swift in Sources */,
 				A6D40BDE2417B6B500A88B5B /* MCDropDownDirection.swift in Sources */,
 				A63D39572419298000937CCD /* UILable+Animatable.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
