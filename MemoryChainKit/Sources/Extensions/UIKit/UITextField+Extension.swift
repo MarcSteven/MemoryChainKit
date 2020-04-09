@@ -332,3 +332,44 @@ public extension UITextField {
         }
     }
 }
+
+extension UITextField {
+    open var placeholderLabel: UILabel? {
+        value(forKey: "_placeholderLabel") as? UILabel
+    }
+}
+
+extension UITextField {
+    // Fixes text jumping
+    open override func resignFirstResponder() -> Bool {
+        let resigned = super.resignFirstResponder()
+        layoutIfNeeded()
+        return resigned
+    }
+}
+
+extension UITextField {
+    private struct AssociatedKey {
+        static var contentInset = "contentInset"
+        static var isInsertionCursorEnabled = "isInsertionCursorEnabled"
+    }
+
+    /// The default value is `0`.
+    open var contentInset: UIEdgeInsets {
+        
+        get { objc_getAssociatedObject(self, &AssociatedKey.contentInset) as! UIEdgeInsets}
+        set {
+            objc_setAssociatedObject(self, &AssociatedKey.contentInset, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+
+    /// The default value is `true`.
+    open var isInsertionCursorEnabled: Bool {
+        get { (objc_getAssociatedObject(self, &AssociatedKey.isInsertionCursorEnabled) != nil) }
+            set {
+                objc_setAssociatedObject(self, &AssociatedKey.isInsertionCursorEnabled, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+
+    }
+}
+
+}
