@@ -9,7 +9,67 @@
 
 #if canImport(UIKit)
 import UIKit
+import ObjectiveC
 #if !os(watchOS)
+
+
+
+extension UIImageView {
+    private struct AssociatedKey {
+        static var isContentModeAutomaticallyAdjusted = "isContentModeAutomaticallyAdjusted"
+    }
+    open var isContentModeAutomaticallyAdjusted:Bool {
+        get {
+            (objc_getAssociatedObject(self, &AssociatedKey.isContentModeAutomaticallyAdjusted) != nil)
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKey.isContentModeAutomaticallyAdjusted, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+}
+extension UIImageView {
+    private func adjustContentModeIfNeeded() {
+        guard isContentModeAutomaticallyAdjusted, let image = image else {
+            return
+        }
+        if image.size.width > bounds.size.width || image.size.height > bounds.size.height {
+            contentMode = .scaleAspectFit
+        }else {
+            contentMode = .center
+        }
+    }
+}
+extension UIImageView {
+    @objc private func swizzled_setHighlightedImage(_ image:UIImage?) {
+        swizzled_setHighlightedImage(image)
+        if isHighlighted {
+            isHighlighted = false
+            isHighlighted = true
+        }
+        
+    }
+}
+extension UIImageView {
+    @objc private func swizzle_layoutSubviews() {
+        swizzle_layoutSubviews()
+        adjustContentModeIfNeeded()
+    }
+    @objc private func swizzle_setImage(_ image:UIImage?) {
+        swizzle_setImage(image)
+        adjustContentModeIfNeeded()
+    }
+    @objc private func swizzled_setBounds(_ bounds:CGRect) {
+        swizzled_setBounds(bounds)
+        adjustContentModeIfNeeded()
+    }
+    static func runOnceSwapSelector() {
+        swizzle(UIImageView.self, originalSelector: #selector(setter: UIImageView.bounds), swizzledSelector: #selector(UIImageView.swizzled_setBounds(_:)))
+        swizzle(UIImageView.self, originalSelector: #selector(setter: UIImageView.image), swizzledSelector: #selector(UIImageView.swizzle_setImage(_:)))
+        swizzle(UIImageView.self, originalSelector: #selector(UIImageView.layoutSubviews), swizzledSelector: #selector(UIImageView.swizzle_layoutSubviews))
+        swizzle(UIImageView.self, originalSelector: #selector(setter: UIImageView.isHighlighted), swizzledSelector: #selector(UIImageView.swizzled_setHighlightedImage(_:)))
+        
+    }
+}
 //MARK: - method
 public extension UIImageView {
     convenience init?(named name:String,
