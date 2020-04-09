@@ -120,6 +120,34 @@ extension UITableView {
     }
 
     }
+@objc public protocol TableViewCellIdentifier:class {
+    static var reuseIdentifier:String {get}
+}
+extension UITableView {
+    public func dequeueReusableCell(ofClass cls:TableViewCellIdentifier.Type,
+                                    for indexPath:IndexPath) ->UITableViewCell {
+        let identifier = cls.reuseIdentifier
+        let cell = dequeueReusableCell(withIdentifier:identifier,for:indexPath)
+        if type(of:cell) != cls  {
+            fatalError("Expected to dequeue cell of class \"\(NSStringFromClass(cls) as String)\" for identifier \"\(identifier).\" Instead, a cell of class \"\(NSStringFromClass(type(of: cell)) as String)\" was returned.")
+        }
+        if let dataSource = dataSource {
+                let constructedMethodName = "tableView:configure\(NSStringFromClass(type(of: cell)) as String):forIndexPath:" as NSString
+                
+                let selector = sel_registerName((constructedMethodName as NSString).utf8String!)
+                let method   = class_getInstanceMethod(type(of: dataSource), selector)
+                
+                if let method = method {
+                    let implementation = method_getImplementation(method)
+                    let callable       = unsafeBitCast(implementation, to: (@convention(c) (AnyObject, Method, UITableView, UITableViewCell, IndexPath) -> Void).self)
+                    
+                    callable(dataSource, method, self, cell, indexPath)
+                }
+            }
+            
+            return cell
+        }
+    }
 
 extension UITableView {
     /// Adjust target offset so that cells are snapped to top.

@@ -62,7 +62,7 @@ public extension UIButton {
     }
     //MARK: - Public Methods
     
-    func setTitle(_ title: String?, for state: UIControlState, animated: Bool) {
+    func setTitle(_ title: String?, for state: UIControl.State, animated: Bool) {
         if animated {
             setTitle(title, for: state)
         }
@@ -74,7 +74,7 @@ public extension UIButton {
         }
     }
     
-    func setAttributedTitle(_ title: NSAttributedString?, for state: UIControlState, animated: Bool) {
+    func setAttributedTitle(_ title: NSAttributedString?, for state: UIControl.State, animated: Bool) {
         if animated {
             setAttributedTitle(title, for: state)
         }
