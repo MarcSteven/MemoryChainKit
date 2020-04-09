@@ -312,6 +312,7 @@
 		A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */; };
 		A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171C243ECD9200188C23 /* CollectionExtension.swift */; };
 		A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171E243ED46F00188C23 /* URLExtension.swift */; };
+		A6F21721243EE89B00188C23 /* UIFont+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21720243EE89B00188C23 /* UIFont+Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -626,6 +627,7 @@
 		A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueObservationInfo.swift; sourceTree = "<group>"; };
 		A6F2171C243ECD9200188C23 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		A6F2171E243ED46F00188C23 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		A6F21720243EE89B00188C23 /* UIFont+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Loader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -875,6 +877,7 @@
 				A63D39292419297A00937CCD /* UITableViewCellExtension.swift */,
 				A63D39212419297900937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift */,
 				A63D392A2419297A00937CCD /* UITextField+Extension.swift */,
+				A6F21720243EE89B00188C23 /* UIFont+Loader.swift */,
 				A63D39342419297C00937CCD /* UIView+Extension.swift */,
 				A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */,
 				A63D39372419297C00937CCD /* UIViewController+Extension.swift */,
@@ -1866,6 +1869,7 @@
 				A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */,
 				A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */,
 				A6DDD46B24168C6E008E1703 /* TextValidation.swift in Sources */,
+				A6F21721243EE89B00188C23 /* UIFont+Loader.swift in Sources */,
 				A6D40C062417B6B500A88B5B /* RoundedView.swift in Sources */,
 				A6356D292424931400B46CDF /* Router+Route.swift in Sources */,
 				A6D40C072417B6B500A88B5B /* LongPressRecordButton.swift in Sources */,
