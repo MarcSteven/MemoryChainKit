@@ -311,6 +311,7 @@
 		A6F21719243E13AC00188C23 /* UIViewController+ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */; };
 		A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */; };
 		A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171C243ECD9200188C23 /* CollectionExtension.swift */; };
+		A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171E243ED46F00188C23 /* URLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -624,6 +625,7 @@
 		A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ObjcWakeable.swift"; sourceTree = "<group>"; };
 		A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueObservationInfo.swift; sourceTree = "<group>"; };
 		A6F2171C243ECD9200188C23 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
+		A6F2171E243ED46F00188C23 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -938,6 +940,7 @@
 				A69310B42417100D004ADF4F /* StringExtension.swift */,
 				A693109B2417100A004ADF4F /* Timer+Extension.swift */,
 				A69310AD2417100C004ADF4F /* URL+PrintFileSize.swift */,
+				A6F2171E243ED46F00188C23 /* URLExtension.swift */,
 			);
 			path = Foudantion;
 			sourceTree = "<group>";
@@ -1731,6 +1734,7 @@
 				A6DDD46A24168C6E008E1703 /* SignInUserInterface.swift in Sources */,
 				A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */,
 				A695CBB5241C86C6007C68DD /* OptionalExtension.swift in Sources */,
+				A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */,
 				A63D39712419298100937CCD /* UIScrollView+Extension.swift in Sources */,
 				A695CC6E2420C1FC007C68DD /* DeviceVersion.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
