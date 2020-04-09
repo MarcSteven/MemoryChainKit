@@ -310,6 +310,7 @@
 		A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21716243E0D2E00188C23 /* GlobalFunc.swift */; };
 		A6F21719243E13AC00188C23 /* UIViewController+ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */; };
 		A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */; };
+		A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171C243ECD9200188C23 /* CollectionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -622,6 +623,7 @@
 		A6F21716243E0D2E00188C23 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
 		A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ObjcWakeable.swift"; sourceTree = "<group>"; };
 		A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueObservationInfo.swift; sourceTree = "<group>"; };
+		A6F2171C243ECD9200188C23 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -901,6 +903,7 @@
 				A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */,
 				A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */,
 				A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */,
+				A6F2171C243ECD9200188C23 /* CollectionExtension.swift */,
 				A695CC55242073F6007C68DD /* AVAssetExtension.swift */,
 				A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */,
 				A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */,
@@ -1662,6 +1665,7 @@
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
 				A6D40C0A2417B6B500A88B5B /* Countries.swift in Sources */,
 				A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */,
+				A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */,
 				A63D39752419298100937CCD /* CAGradientLayer+AnimationChange.swift in Sources */,
 				A6D40C152417B6B500A88B5B /* BadgeAppearance.swift in Sources */,
 				A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */,
