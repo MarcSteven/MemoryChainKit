@@ -313,6 +313,7 @@
 		A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171C243ECD9200188C23 /* CollectionExtension.swift */; };
 		A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171E243ED46F00188C23 /* URLExtension.swift */; };
 		A6F21721243EE89B00188C23 /* UIFont+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21720243EE89B00188C23 /* UIFont+Loader.swift */; };
+		A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21724243EEFFA00188C23 /* UIRefreshControlExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -628,6 +629,7 @@
 		A6F2171C243ECD9200188C23 /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		A6F2171E243ED46F00188C23 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		A6F21720243EE89B00188C23 /* UIFont+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Loader.swift"; sourceTree = "<group>"; };
+		A6F21724243EEFFA00188C23 /* UIRefreshControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControlExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -868,6 +870,7 @@
 				A6A439B1241A3F87009FC4E1 /* UILabel+HasText.swift */,
 				A63D39242419297900937CCD /* UILable+Animatable.swift */,
 				A63D392D2419297A00937CCD /* UILayoutPriority+Extension.swift */,
+				A6F21724243EEFFA00188C23 /* UIRefreshControlExtension.swift */,
 				A63D39412419298000937CCD /* UINavigationBar+HideHairLine.swift */,
 				A63D39182419297800937CCD /* UIScreen+Extension.swift */,
 				A63D393E2419298000937CCD /* UIScrollView+Extension.swift */,
@@ -1701,6 +1704,7 @@
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
+				A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */,
 				A695CC24241F5377007C68DD /* JSON.swift in Sources */,
 				A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,

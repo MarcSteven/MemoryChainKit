@@ -9,7 +9,27 @@
 import UIKit
 
 
+
+
+extension UITabBarController {
+    open func setTabBarHidden(_ isHidden:Bool,
+                              animated:Bool) {
+        let frame = tabBar.frame
+        let offsetY = isHidden ? frame.size.height : -frame.size.height
+        var newFrame = frame
+        newFrame.origin.y = view.frame.maxY + offsetY
+        tabBar.isHidden = false
+        UIView.animate(withDuration: animated ? 0.35 : 0.0, delay: 0, options:UIView.AnimationOptions.beginFromCurrentState , animations: {
+            self.tabBar.frame = newFrame
+        }) { complete  in
+            if complete {
+                self.tabBar.isHidden = isHidden
+            }
+        }
+    }
+}
 public  extension UITabBarController {
+    
     func isRootViewController(_ viewController:UIViewController) ->Bool {
         guard let viewControllers = viewControllers else {
             return false
