@@ -1,3 +1,19 @@
+
+#[0.1.7]
+* Add UIView debug method 
+* Add GCD Class method 
+* Add locationService to get the location
+* Add custom method to UIAlertController
+* Add protocol ObjcWakeable and then make UIViewController conform to it 
+* Add method to set title for UIButton
+* Add collection Extension
+* Add UIFont extension
+* Add new features for UITextField extension
+* Add String+URL extension
+* Add method for UITableView
+
+
+
 #[0.1.6]
 * add Rx extensions
 * Solve RxSwift SPM errors 

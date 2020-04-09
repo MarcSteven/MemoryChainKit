@@ -235,3 +235,28 @@ public extension UIView.AnimationCurve {
         }
     }
 }
+extension UIView  {
+open func printDebugSubviewsDescription() {
+    debugSubviews()
+}
+
+private func debugSubviews(_ count: Int = 0) {
+    if count == 0 {
+        print("\n\n\n")
+    }
+
+    for _ in 0...count {
+        print("--")
+    }
+
+    print("\(type(of: self))")
+
+    for view in subviews {
+        view.debugSubviews(count + 1)
+    }
+
+    if count == 0 {
+        print("\n\n\n")
+    }
+}
+}
