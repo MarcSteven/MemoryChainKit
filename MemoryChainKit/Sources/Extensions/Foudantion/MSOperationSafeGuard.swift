@@ -67,7 +67,7 @@ open class  MSOperationSafeGuard:NSObject {
             }
         }
     }
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if (keyPath == "isFinished") && (change?[NSKeyValueChangeKey.newKey] as? NSNumber)?.boolValue ?? false {
             let op = object as? Operation
             queue?.asyncAfter(deadline: DispatchTime.now() + Double(Int64(MSOperationSafetyGuardRemoveOperationAfterFinishedDelay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
