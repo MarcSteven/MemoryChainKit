@@ -202,6 +202,7 @@
 		A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A68032241754E0004C0C97 /* NSObjectExtension.swift */; };
 		A6AD551F242C6D2E002DB4FE /* MCScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */; };
 		A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD5523242C88DD002DB4FE /* MCToolBar.swift */; };
+		A6C3E322244067E900132000 /* MSOperationSafeGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E321244067E900132000 /* MSOperationSafeGuard.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -515,6 +516,7 @@
 		A6A68032241754E0004C0C97 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		A6AD551E242C6D2E002DB4FE /* MCScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCScrollViewController.swift; sourceTree = "<group>"; };
 		A6AD5523242C88DD002DB4FE /* MCToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCToolBar.swift; sourceTree = "<group>"; };
+		A6C3E321244067E900132000 /* MSOperationSafeGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSOperationSafeGuard.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -917,6 +919,7 @@
 				A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */,
 				A6D40B8C2417B6B400A88B5B /* NSCalendar+Extension.swift */,
 				A6D40B8D2417B6B400A88B5B /* NSDate+CalendarView.swift */,
+				A6C3E321244067E900132000 /* MSOperationSafeGuard.swift */,
 				A65417AC2421E4BE00077AD8 /* CGContextExtension.swift */,
 				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
 				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
@@ -1681,6 +1684,7 @@
 				A6356D1E24245E4200B46CDF /* Weak.swift in Sources */,
 				A6DDD53524168D0A008E1703 /* MCCoreDataStack.swift in Sources */,
 				A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */,
+				A6C3E322244067E900132000 /* MSOperationSafeGuard.swift in Sources */,
 				A695CC18241F4FEE007C68DD /* APIClient.swift in Sources */,
 				A69310D02417100E004ADF4F /* URL+PrintFileSize.swift in Sources */,
 				A6356CEF2423492200B46CDF /* CAMediaTimingFunction+Properties.swift in Sources */,
