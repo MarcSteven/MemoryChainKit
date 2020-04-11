@@ -207,6 +207,7 @@
 		A6C3E3262440CD4500132000 /* TargetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3252440CD4500132000 /* TargetScene.swift */; };
 		A6C3E3282440CD6A00132000 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */; };
 		A6C3E3512441C35F00132000 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3502441C35F00132000 /* BaseViewController.swift */; };
+		A6C3E3532441CEDB00132000 /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -525,6 +526,7 @@
 		A6C3E3252440CD4500132000 /* TargetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetScene.swift; sourceTree = "<group>"; };
 		A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
 		A6C3E3502441C35F00132000 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -799,6 +801,7 @@
 				A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */,
 				A688015F243B093500C16C82 /* ObservableConvertibleType.swift */,
 				A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */,
+				A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */,
 				A6880157243B04FB00C16C82 /* UIView+Rx.swift */,
 				A688015B243B06D100C16C82 /* UIBarButtonItem+Rx.swift */,
 				A688015D243B07EE00C16C82 /* URLSession+Rx.swift */,
@@ -1712,6 +1715,7 @@
 				A65417C824220C8900077AD8 /* TransitionAnimator.swift in Sources */,
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A688015E243B07EF00C16C82 /* URLSession+Rx.swift in Sources */,
+				A6C3E3532441CEDB00132000 /* ObservableTypeExtension.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
 				A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */,
 				A6AD551F242C6D2E002DB4FE /* MCScrollViewController.swift in Sources */,
