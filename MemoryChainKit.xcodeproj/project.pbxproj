@@ -208,6 +208,7 @@
 		A6C3E3282440CD6A00132000 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */; };
 		A6C3E3512441C35F00132000 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3502441C35F00132000 /* BaseViewController.swift */; };
 		A6C3E3532441CEDB00132000 /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */; };
+		A6C3E3582442F6A900132000 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3572442F6A900132000 /* LocalizationManager.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -527,6 +528,7 @@
 		A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
 		A6C3E3502441C35F00132000 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
+		A6C3E3572442F6A900132000 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1101,6 +1103,14 @@
 			path = ProgressView;
 			sourceTree = "<group>";
 		};
+		A6C3E3562442F66500132000 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A6C3E3572442F6A900132000 /* LocalizationManager.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -1329,6 +1339,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A6C3E3562442F66500132000 /* Localization */,
 				A63FFDB8242AE788002CE0F9 /* Script */,
 				A66F3F3E242A50580081D52F /* Adapter */,
 				A66F3F392429ED9B0081D52F /* Helper */,
@@ -1666,6 +1677,7 @@
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
 				A63D39652419298000937CCD /* UIAlertExtension.swift in Sources */,
 				A6D40BF42417B6B500A88B5B /* LinearProgressBar.swift in Sources */,
+				A6C3E3582442F6A900132000 /* LocalizationManager.swift in Sources */,
 				A63D395D2419298000937CCD /* UITextField+Extension.swift in Sources */,
 				A695CC38241F5D0B007C68DD /* SuccessfulImageResponse.swift in Sources */,
 				A6A439B2241A3F87009FC4E1 /* UILabel+HasText.swift in Sources */,
