@@ -209,6 +209,8 @@
 		A6C3E3582442F6A900132000 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3572442F6A900132000 /* LocalizationManager.swift */; };
 		A6C3E35A24442D8700132000 /* Flashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35924442D8700132000 /* Flashing.swift */; };
 		A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35B24442E9B00132000 /* Pulse.swift */; };
+		A6C3E35E2444339900132000 /* ZoomIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35D2444339800132000 /* ZoomIn.swift */; };
+		A6C3E3602444340300132000 /* ZoomOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35F2444340300132000 /* ZoomOut.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -529,6 +531,8 @@
 		A6C3E3572442F6A900132000 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		A6C3E35924442D8700132000 /* Flashing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashing.swift; sourceTree = "<group>"; };
 		A6C3E35B24442E9B00132000 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
+		A6C3E35D2444339800132000 /* ZoomIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomIn.swift; sourceTree = "<group>"; };
+		A6C3E35F2444340300132000 /* ZoomOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomOut.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1411,6 +1415,8 @@
 				A6DDD44924168C6E008E1703 /* Polygon.swift */,
 				A6DDD44A24168C6E008E1703 /* KeyboardInfo.swift */,
 				A6DDD44B24168C6E008E1703 /* Styled.swift */,
+				A6C3E35D2444339800132000 /* ZoomIn.swift */,
+				A6C3E35F2444340300132000 /* ZoomOut.swift */,
 				A6DDD44C24168C6E008E1703 /* SignInUserInterface.swift */,
 				A6DDD44D24168C6E008E1703 /* TextValidation.swift */,
 			);
@@ -1735,6 +1741,7 @@
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6880162243B0BD600C16C82 /* ObservableType+Debug.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
+				A6C3E35E2444339900132000 /* ZoomIn.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
 				A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */,
@@ -1830,6 +1837,7 @@
 				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
+				A6C3E3602444340300132000 /* ZoomOut.swift in Sources */,
 				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
 				A6651FB924378B1200DCBF85 /* InitializableByEmptyConstructor.swift in Sources */,
