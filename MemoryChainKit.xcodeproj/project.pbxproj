@@ -129,7 +129,7 @@
 		A69310C32417100E004ADF4F /* CGRect+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A02417100A004ADF4F /* CGRect+Helper.swift */; };
 		A69310C42417100E004ADF4F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A12417100A004ADF4F /* FileManager+Extension.swift */; };
 		A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A52417100B004ADF4F /* DispathQueueExtension.swift */; };
-		A69310C92417100E004ADF4F /* Array+RemoveIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */; };
+		A69310C92417100E004ADF4F /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A62417100B004ADF4F /* ArrayExtension.swift */; };
 		A69310CA2417100E004ADF4F /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A72417100B004ADF4F /* CGSize+Extension.swift */; };
 		A69310CB2417100E004ADF4F /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A82417100B004ADF4F /* NSError+Extension.swift */; };
 		A69310CC2417100E004ADF4F /* Sequence+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310A92417100C004ADF4F /* Sequence+Extension.swift */; };
@@ -453,7 +453,7 @@
 		A69310A02417100A004ADF4F /* CGRect+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Helper.swift"; sourceTree = "<group>"; };
 		A69310A12417100A004ADF4F /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		A69310A52417100B004ADF4F /* DispathQueueExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispathQueueExtension.swift; sourceTree = "<group>"; };
-		A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+RemoveIndex.swift"; sourceTree = "<group>"; };
+		A69310A62417100B004ADF4F /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		A69310A72417100B004ADF4F /* CGSize+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
 		A69310A82417100B004ADF4F /* NSError+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
 		A69310A92417100C004ADF4F /* Sequence+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+Extension.swift"; sourceTree = "<group>"; };
@@ -938,7 +938,7 @@
 				A6D40B8D2417B6B400A88B5B /* NSDate+CalendarView.swift */,
 				A6C3E321244067E900132000 /* MSOperationSafeGuard.swift */,
 				A65417AC2421E4BE00077AD8 /* CGContextExtension.swift */,
-				A69310A62417100B004ADF4F /* Array+RemoveIndex.swift */,
+				A69310A62417100B004ADF4F /* ArrayExtension.swift */,
 				A6A68032241754E0004C0C97 /* NSObjectExtension.swift */,
 				A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */,
 				A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */,
@@ -1905,7 +1905,7 @@
 				A6DDD45524168C6E008E1703 /* CollectionViewDataSource.swift in Sources */,
 				A6651FB32437719D00DCBF85 /* ColorExtension.swift in Sources */,
 				A69310D22417100E004ADF4F /* Date+Extension.swift in Sources */,
-				A69310C92417100E004ADF4F /* Array+RemoveIndex.swift in Sources */,
+				A69310C92417100E004ADF4F /* ArrayExtension.swift in Sources */,
 				A69310DA2417100E004ADF4F /* Collection+noEmpty.swift in Sources */,
 				A63D394B2419298000937CCD /* UIScreen+Extension.swift in Sources */,
 				A6356CF82423540D00B46CDF /* Swizzle.swift in Sources */,
