@@ -192,6 +192,7 @@
 		A695CC7C24211783007C68DD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A695CC7B24211783007C68DD /* SDWebImage */; };
 		A6967F9224231623006C377A /* MCTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6967F9124231623006C377A /* MCTableViewDataSource.swift */; };
 		A69BC0C42444518900E600FB /* Array+binarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0C32444518900E600FB /* Array+binarySearch.swift */; };
+		A69BC0C624445A6500E600FB /* TimeInterval+HasPassed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0C524445A6500E600FB /* TimeInterval+HasPassed.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -515,6 +516,7 @@
 		A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceVersion.swift; path = MemoryChainKit/Sources/Transitions/DeviceVersion.swift; sourceTree = SOURCE_ROOT; };
 		A6967F9124231623006C377A /* MCTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTableViewDataSource.swift; sourceTree = "<group>"; };
 		A69BC0C32444518900E600FB /* Array+binarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+binarySearch.swift"; sourceTree = "<group>"; };
+		A69BC0C524445A6500E600FB /* TimeInterval+HasPassed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+HasPassed.swift"; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -930,6 +932,7 @@
 				A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */,
 				A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */,
 				A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */,
+				A69BC0C524445A6500E600FB /* TimeInterval+HasPassed.swift */,
 				A6F2171C243ECD9200188C23 /* CollectionExtension.swift */,
 				A695CC55242073F6007C68DD /* AVAssetExtension.swift */,
 				A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */,
@@ -1825,6 +1828,7 @@
 				A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */,
 				A6DDD5632416954E008E1703 /* UIViewExtension.swift in Sources */,
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
+				A69BC0C624445A6500E600FB /* TimeInterval+HasPassed.swift in Sources */,
 				A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */,
 				A6DDD53624168D0A008E1703 /* NSManagedObjectContext+Extension.swift in Sources */,
 				A6DDD46324168C6E008E1703 /* Responder.swift in Sources */,
