@@ -208,6 +208,8 @@
 		A6C3E3512441C35F00132000 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3502441C35F00132000 /* BaseViewController.swift */; };
 		A6C3E3532441CEDB00132000 /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */; };
 		A6C3E3582442F6A900132000 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3572442F6A900132000 /* LocalizationManager.swift */; };
+		A6C3E35A24442D8700132000 /* Flashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35924442D8700132000 /* Flashing.swift */; };
+		A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35B24442E9B00132000 /* Pulse.swift */; };
 		A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */; };
 		A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */; };
 		A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */; };
@@ -527,6 +529,8 @@
 		A6C3E3502441C35F00132000 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
 		A6C3E3572442F6A900132000 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		A6C3E35924442D8700132000 /* Flashing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashing.swift; sourceTree = "<group>"; };
+		A6C3E35B24442E9B00132000 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
 		A6D40B762417AB5C00A88B5B /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		A6D40B7C2417B6B400A88B5B /* SideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		A6D40B7E2417B6B400A88B5B /* GradientImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
@@ -1399,6 +1403,8 @@
 				A6DDD44024168C6E008E1703 /* Animatable.swift */,
 				A6DDD44124168C6E008E1703 /* SingleValueEncodingContainer.swift */,
 				A6DDD44224168C6E008E1703 /* Shakeable.swift */,
+				A6C3E35924442D8700132000 /* Flashing.swift */,
+				A6C3E35B24442E9B00132000 /* Pulse.swift */,
 				A6DDD44324168C6E008E1703 /* Cancellable.swift */,
 				A6DDD44424168C6E008E1703 /* NotSignedInResponder.swift */,
 				A6DDD44524168C6E008E1703 /* Responder.swift */,
@@ -1700,6 +1706,7 @@
 				A65417D22422104100077AD8 /* ZoomAnimatorInteractiveTransition.swift in Sources */,
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
 				A6D40C0A2417B6B500A88B5B /* Countries.swift in Sources */,
+				A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */,
 				A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */,
 				A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */,
 				A63D39752419298100937CCD /* CAGradientLayer+AnimationChange.swift in Sources */,
@@ -1769,6 +1776,7 @@
 				A695CC5C2420819B007C68DD /* UITabBarControllerExtension.swift in Sources */,
 				A69310C42417100E004ADF4F /* FileManager+Extension.swift in Sources */,
 				A6DDD46A24168C6E008E1703 /* SignInUserInterface.swift in Sources */,
+				A6C3E35A24442D8700132000 /* Flashing.swift in Sources */,
 				A6D40BD72417B6B500A88B5B /* GradientImageView.swift in Sources */,
 				A695CBB5241C86C6007C68DD /* OptionalExtension.swift in Sources */,
 				A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */,
