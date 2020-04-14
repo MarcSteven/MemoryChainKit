@@ -19,7 +19,7 @@ import Foundation
 
 @propertyWrapper
 
-public struct UserDefaults<Value> {
+public struct UserDefault<Value> {
     public let key:String
     public let defaultValue:Value
     public var wrappedValue:Value {

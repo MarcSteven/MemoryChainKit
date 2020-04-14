@@ -11,7 +11,7 @@
 import Foundation
 import CommonCrypto
 
-public protocol DigestProtocol {
+ public  protocol DigestProtocol {
     func digest(bytes: UnsafeRawPointer, length: Int) -> [UInt8];
 }
 
