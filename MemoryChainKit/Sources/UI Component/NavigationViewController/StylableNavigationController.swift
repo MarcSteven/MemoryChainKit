@@ -20,8 +20,8 @@ public protocol NavigationBarStylable:class {
 }
 
 public extension NavigationBarStylable {
-    var NavigationBarStylable:NavigationBarStylable {
-        return .`default`
+    var NavigationBarStylable:NavigationControllerStyle? {
+        return .default
 
     }
 }
