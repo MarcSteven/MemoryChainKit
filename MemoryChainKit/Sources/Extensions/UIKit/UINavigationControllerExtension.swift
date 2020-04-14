@@ -8,8 +8,8 @@
 
 import UIKit
 
-public extension UINavigationController {
-    var rootViewController:UIViewController? {
+extension UINavigationController {
+public     var rootViewController:UIViewController? {
         get {
             viewControllers.first
         }
@@ -44,7 +44,7 @@ public extension UINavigationController {
     ///               You might specify `false` if you are setting up the navigation
     ///               controller at launch time.
     ///   - completion: The block to execute after the presentation finishes.
-     func pushViewController(_ viewControllers: [UIViewController], animated: Bool, completion: (() -> Void)? = nil) {
+    public func pushViewController(_ viewControllers: [UIViewController], animated: Bool, completion: (() -> Void)? = nil) {
         var vcs = self.viewControllers
         vcs.append(contentsOf: viewControllers)
 
@@ -52,5 +52,13 @@ public extension UINavigationController {
             setViewControllers(vcs, animated: animated)
         }, completinonHandler: completion)
     }
+    public func popViewController(animated:Bool,
+                                  completion:(() ->Void)?) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        popViewController(animated: animated)
+        CATransaction.commit()
+    }
+    
 
 }

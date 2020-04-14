@@ -8,15 +8,14 @@
 
 import UIKit
 
-public protocol Stylable {}
-extension UIView:Stylable {}
-public struct ViewStyle<T> {
-    let style:(T)->Void
+public protocol Stylable {
+    var barColor:UIColor? {get}
+    var tintColor:UIColor {get}
+    var statusBarStyle:UIStatusBarStyle {get}
 }
-extension Stylable {
+public struct BasicNavigationBarStyle:Stylable {
     
-    func apply(_ style:ViewStyle<Self>) {
-        style.style(self)
-    }
-   
+    public var barColor:UIColor? = nil
+    public var tintColor:UIColor = .black
+    public var statusBarStyle:UIStatusBarStyle = .default
 }

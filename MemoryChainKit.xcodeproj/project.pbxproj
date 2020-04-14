@@ -196,6 +196,8 @@
 		A69BC0CD2445849D00E600FB /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0CC2445849D00E600FB /* UITableView+Reusable.swift */; };
 		A69BC0CF2445855E00E600FB /* UITableViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0CE2445855E00E600FB /* UITableViewCellBuilder.swift */; };
 		A69BC0D1244588A300E600FB /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0D0244588A300E600FB /* Updatable.swift */; };
+		A69BC0D3244598FC00E600FB /* UINavigationBar+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0D2244598FC00E600FB /* UINavigationBar+Style.swift */; };
+		A69BC0D524459ADC00E600FB /* StylableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0D424459ADC00E600FB /* StylableNavigationController.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -522,6 +524,8 @@
 		A69BC0CC2445849D00E600FB /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		A69BC0CE2445855E00E600FB /* UITableViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellBuilder.swift; sourceTree = "<group>"; };
 		A69BC0D0244588A300E600FB /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		A69BC0D2244598FC00E600FB /* UINavigationBar+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Style.swift"; sourceTree = "<group>"; };
+		A69BC0D424459ADC00E600FB /* StylableNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylableNavigationController.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -909,6 +913,7 @@
 				A6F21720243EE89B00188C23 /* UIFont+Loader.swift */,
 				A63D39342419297C00937CCD /* UIView+Extension.swift */,
 				A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */,
+				A69BC0D2244598FC00E600FB /* UINavigationBar+Style.swift */,
 				A63D39372419297C00937CCD /* UIViewController+Extension.swift */,
 				A63D39192419297800937CCD /* UIViewController+HideKeyboardOnTap.swift */,
 				A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */,
@@ -1237,6 +1242,7 @@
 			children = (
 				A6D40BA02417B6B400A88B5B /* CustomNavBar.swift */,
 				A6D40BA12417B6B400A88B5B /* PopingNavigationController.swift */,
+				A69BC0D424459ADC00E600FB /* StylableNavigationController.swift */,
 				A66F3F2C2429C8350081D52F /* NavigationController.swift */,
 			);
 			path = NavigationViewController;
@@ -1783,6 +1789,7 @@
 				A6D40C0E2417B6B500A88B5B /* CountriesViewControllerDelegate.swift in Sources */,
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
 				A6D40C102417B6B500A88B5B /* PageControl.swift in Sources */,
+				A69BC0D3244598FC00E600FB /* UINavigationBar+Style.swift in Sources */,
 				A6C3E3282440CD6A00132000 /* SceneTransitionType.swift in Sources */,
 				A6DDD45B24168C6E008E1703 /* Encoder.swift in Sources */,
 				A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */,
@@ -1858,6 +1865,7 @@
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
+				A69BC0D524459ADC00E600FB /* StylableNavigationController.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
 				A6C3E3602444340300132000 /* ZoomOut.swift in Sources */,
 				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
