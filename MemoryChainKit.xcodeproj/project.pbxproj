@@ -193,6 +193,9 @@
 		A69BC0C42444518900E600FB /* Array+binarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0C32444518900E600FB /* Array+binarySearch.swift */; };
 		A69BC0C624445A6500E600FB /* TimeInterval+HasPassed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0C524445A6500E600FB /* TimeInterval+HasPassed.swift */; };
 		A69BC0C824445BF900E600FB /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0C724445BF900E600FB /* UserDefault.swift */; };
+		A69BC0CD2445849D00E600FB /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0CC2445849D00E600FB /* UITableView+Reusable.swift */; };
+		A69BC0CF2445855E00E600FB /* UITableViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0CE2445855E00E600FB /* UITableViewCellBuilder.swift */; };
+		A69BC0D1244588A300E600FB /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BC0D0244588A300E600FB /* Updatable.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -516,6 +519,9 @@
 		A69BC0C32444518900E600FB /* Array+binarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+binarySearch.swift"; sourceTree = "<group>"; };
 		A69BC0C524445A6500E600FB /* TimeInterval+HasPassed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+HasPassed.swift"; sourceTree = "<group>"; };
 		A69BC0C724445BF900E600FB /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		A69BC0CC2445849D00E600FB /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		A69BC0CE2445855E00E600FB /* UITableViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellBuilder.swift; sourceTree = "<group>"; };
+		A69BC0D0244588A300E600FB /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -1094,6 +1100,15 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		A69BC0CB2445848700E600FB /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				A69BC0CC2445849D00E600FB /* UITableView+Reusable.swift */,
+				A69BC0CE2445855E00E600FB /* UITableViewCellBuilder.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		A6AD5520242C87A4002DB4FE /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1119,6 +1134,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A69BC0CB2445848700E600FB /* UITableView */,
 				A6AD552D242C8D35002DB4FE /* ProgressView */,
 				A66F3F252429C4C90081D52F /* Analytics */,
 				A60AF28E24219D5000072975 /* Image */,
@@ -1388,6 +1404,7 @@
 				A6DDD43424168C6E008E1703 /* StoryboardLoadable.swift */,
 				A6DDD43524168C6E008E1703 /* StringRepresentable.swift */,
 				A6652023243AC3F400DCBF85 /* ViewMaskable.swift */,
+				A69BC0D0244588A300E600FB /* Updatable.swift */,
 				A6C3E3232440CCCE00132000 /* SceneCoordinatorType.swift */,
 				A6C3E3252440CD4500132000 /* TargetScene.swift */,
 				A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */,
@@ -1816,6 +1833,7 @@
 				A695CC48241F6A69007C68DD /* TestCheck.swift in Sources */,
 				A6D40BDD2417B6B500A88B5B /* UIImage+Helpers.swift in Sources */,
 				A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */,
+				A69BC0CF2445855E00E600FB /* UITableViewCellBuilder.swift in Sources */,
 				A63D396D2419298100937CCD /* UIDevice+Extension.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
@@ -1849,6 +1867,7 @@
 				A6C3E3512441C35F00132000 /* BaseViewController.swift in Sources */,
 				A6D40BDC2417B6B500A88B5B /* MCDropMenuState.swift in Sources */,
 				A63D39502419298000937CCD /* CGAffineTRansform+Extension.swift in Sources */,
+				A69BC0D1244588A300E600FB /* Updatable.swift in Sources */,
 				A65417C32421F6A800077AD8 /* FatalReason.swift in Sources */,
 				A6DDD53424168D0A008E1703 /* CoreDataError.swift in Sources */,
 				A6DDD46224168C6E008E1703 /* NotSignedInResponder.swift in Sources */,
@@ -1928,6 +1947,7 @@
 				A69310CB2417100E004ADF4F /* NSError+Extension.swift in Sources */,
 				A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */,
 				A63D395B2419298000937CCD /* UICollectionView+Extension.swift in Sources */,
+				A69BC0CD2445849D00E600FB /* UITableView+Reusable.swift in Sources */,
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
 				A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */,
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
@@ -2138,6 +2158,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2166,6 +2187,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64e armv7 armv7s arm64";

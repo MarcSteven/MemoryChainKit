@@ -17,3 +17,6 @@ public typealias JSONArray = [Any]
 public typealias View = UIView
 
 public typealias ResponseHandler = (Data?,URL?,URLResponse?)
+
+
+public typealias UpdatableCell = Updatable & UITableViewCell
