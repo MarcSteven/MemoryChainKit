@@ -319,6 +319,7 @@
 		A6E331FC2414C96E00381D4B /* MemoryChainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */; };
 		A6E332012414C96E00381D4B /* MemoryChainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E332002414C96E00381D4B /* MemoryChainKitTests.swift */; };
 		A6E332032414C96E00381D4B /* MemoryChainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F52414C96D00381D4B /* MemoryChainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6E85DA224494D0D00645A2D /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DA124494D0D00645A2D /* UITabBarExtension.swift */; };
 		A6F21711243DF01E00188C23 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21710243DF01E00188C23 /* LocationService.swift */; };
 		A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21712243E0C0000188C23 /* ObjcWakeable.swift */; };
 		A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21714243E0C8000188C23 /* LocalAtomic.swift */; };
@@ -650,6 +651,7 @@
 		A6E331FB2414C96E00381D4B /* MemoryChainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryChainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E332002414C96E00381D4B /* MemoryChainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryChainKitTests.swift; sourceTree = "<group>"; };
 		A6E332022414C96E00381D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E85DA124494D0D00645A2D /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		A6F21710243DF01E00188C23 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A6F21712243E0C0000188C23 /* ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcWakeable.swift; sourceTree = "<group>"; };
 		A6F21714243E0C8000188C23 /* LocalAtomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAtomic.swift; sourceTree = "<group>"; };
@@ -894,6 +896,7 @@
 				A63D39352419297C00937CCD /* UIControl+Extension.swift */,
 				A6F21718243E13AC00188C23 /* UIViewController+ObjcWakeable.swift */,
 				A63D393A2419297C00937CCD /* UIDevice+Extension.swift */,
+				A6E85DA124494D0D00645A2D /* UITabBarExtension.swift */,
 				A63D39312419297B00937CCD /* UIGestureRecognizer+Extension.swift */,
 				A63D393B2419297D00937CCD /* UIImage+Extension.swift */,
 				A63D39152419297700937CCD /* UIImageView+Extensions.swift */,
@@ -1913,6 +1916,7 @@
 				A6DDD46124168C6E008E1703 /* Cancellable.swift in Sources */,
 				A6D40BD92417B6B500A88B5B /* RefreshItem.swift in Sources */,
 				A69310CC2417100E004ADF4F /* Sequence+Extension.swift in Sources */,
+				A6E85DA224494D0D00645A2D /* UITabBarExtension.swift in Sources */,
 				A695CC10241F4B23007C68DD /* Int+StatusCode.swift in Sources */,
 				A6356CFE242360D500B46CDF /* MCBLEManager.swift in Sources */,
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,

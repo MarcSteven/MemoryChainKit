@@ -318,4 +318,5 @@ public extension UIDevice {
         // Home indicator: 20 on iPad Pro 12.9" 3rd generation.
         return UIApplication.sharedOrNil? .delegate? .window??.safeAreaInsets.bottom ?? 0 > 0
     }
+    
 }
