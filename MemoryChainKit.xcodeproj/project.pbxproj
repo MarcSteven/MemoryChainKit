@@ -325,6 +325,8 @@
 		A6E85DA924496A8F00645A2D /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DA824496A8F00645A2D /* NavigationCoordinator.swift */; };
 		A6E85DAB24496B0A00645A2D /* NavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DAA24496B0A00645A2D /* NavigationType.swift */; };
 		A6E85DAD24496C0500645A2D /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DAC24496C0500645A2D /* Navigator.swift */; };
+		A6E85DB02449736000645A2D /* CGContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DAF2449736000645A2D /* CGContextExtension.swift */; };
+		A6E85DB22449753A00645A2D /* TimeZone+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DB12449753A00645A2D /* TimeZone+Identifier.swift */; };
 		A6F21711243DF01E00188C23 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21710243DF01E00188C23 /* LocationService.swift */; };
 		A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21712243E0C0000188C23 /* ObjcWakeable.swift */; };
 		A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21714243E0C8000188C23 /* LocalAtomic.swift */; };
@@ -662,6 +664,8 @@
 		A6E85DA824496A8F00645A2D /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		A6E85DAA24496B0A00645A2D /* NavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationType.swift; sourceTree = "<group>"; };
 		A6E85DAC24496C0500645A2D /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		A6E85DAF2449736000645A2D /* CGContextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGContextExtension.swift; sourceTree = "<group>"; };
+		A6E85DB12449753A00645A2D /* TimeZone+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Identifier.swift"; sourceTree = "<group>"; };
 		A6F21710243DF01E00188C23 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A6F21712243E0C0000188C23 /* ObjcWakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjcWakeable.swift; sourceTree = "<group>"; };
 		A6F21714243E0C8000188C23 /* LocalAtomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAtomic.swift; sourceTree = "<group>"; };
@@ -949,6 +953,7 @@
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A695CC4F241F99F7007C68DD /* FileManager+Cache.swift */,
 				A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */,
+				A6E85DB12449753A00645A2D /* TimeZone+Identifier.swift */,
 				A6356CEA2423475A00B46CDF /* CGColorExtension.swift */,
 				A6356CEC2423479700B46CDF /* CALayer+Color.swift */,
 				A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */,
@@ -1478,6 +1483,7 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A6E85DAE2449734B00645A2D /* CoreGraphics */,
 				A6356CE324232C5D00B46CDF /* SwiftUI */,
 				A65417E42422234200077AD8 /* RxSwift */,
 				A65417BC2421ED0300077AD8 /* SnapKit */,
@@ -1581,6 +1587,14 @@
 				A6E85DAC24496C0500645A2D /* Navigator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A6E85DAE2449734B00645A2D /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				A6E85DAF2449736000645A2D /* CGContextExtension.swift */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 		A6F2170F243DF00B00188C23 /* LocationService */ = {
@@ -1796,6 +1810,7 @@
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6880162243B0BD600C16C82 /* ObservableType+Debug.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
+				A6E85DB22449753A00645A2D /* TimeZone+Identifier.swift in Sources */,
 				A6C3E35E2444339900132000 /* ZoomIn.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A695CC22241F5370007C68DD /* JSONResponse.swift in Sources */,
@@ -1867,6 +1882,7 @@
 				A6356D282424931400B46CDF /* Routerable.swift in Sources */,
 				A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */,
 				A695CC48241F6A69007C68DD /* TestCheck.swift in Sources */,
+				A6E85DB02449736000645A2D /* CGContextExtension.swift in Sources */,
 				A6D40BDD2417B6B500A88B5B /* UIImage+Helpers.swift in Sources */,
 				A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */,
 				A69BC0CF2445855E00E600FB /* UITableViewCellBuilder.swift in Sources */,

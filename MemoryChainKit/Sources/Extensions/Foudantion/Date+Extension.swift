@@ -225,7 +225,4 @@ extension Date {
     }
 }
 
-extension TimeZone {
-    public static let utc = TimeZone(identifier: "UTC")
-    
-}
+
