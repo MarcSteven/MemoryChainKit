@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public func unsafePointer<T:AnyObject>(to object:T) ->UnsafeRawPointer {
     return UnsafeRawPointer(Unmanaged<T>.passUnretained(object).toOpaque())
@@ -159,4 +160,11 @@ public func throttle<T, U>(delay: TimeInterval, queue: DispatchQueue = .main, ac
         }
         delay.hasPassed(since: lastFire) ? queue.async(execute: currentWorkItem!) : queue.asyncAfter(deadline: .now() + delay, execute: currentWorkItem!)
     }
+}
+public  func alert(title:String = "",
+                   message:String = "") {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    let cancelAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+    alert.addAction(cancelAction)
+    alert.show()
 }

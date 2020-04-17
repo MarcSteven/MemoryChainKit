@@ -55,7 +55,7 @@
 		A63D39602419298000937CCD /* UILayoutPriority+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392D2419297A00937CCD /* UILayoutPriority+Extension.swift */; };
 		A63D39612419298000937CCD /* UIViewController+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D392E2419297B00937CCD /* UIViewController+URL.swift */; };
 		A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39312419297B00937CCD /* UIGestureRecognizer+Extension.swift */; };
-		A63D39652419298000937CCD /* UIAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39322419297B00937CCD /* UIAlertExtension.swift */; };
+		A63D39652419298000937CCD /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39322419297B00937CCD /* UIAlertControllerExtension.swift */; };
 		A63D39662419298000937CCD /*  UIViewPropertyAnimator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */; };
 		A63D39672419298000937CCD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39342419297C00937CCD /* UIView+Extension.swift */; };
 		A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39352419297C00937CCD /* UIControl+Extension.swift */; };
@@ -399,7 +399,7 @@
 		A63D392D2419297A00937CCD /* UILayoutPriority+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+Extension.swift"; sourceTree = "<group>"; };
 		A63D392E2419297B00937CCD /* UIViewController+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+URL.swift"; sourceTree = "<group>"; };
 		A63D39312419297B00937CCD /* UIGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
-		A63D39322419297B00937CCD /* UIAlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertExtension.swift; sourceTree = "<group>"; };
+		A63D39322419297B00937CCD /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " UIViewPropertyAnimator+Extension.swift"; sourceTree = "<group>"; };
 		A63D39342419297C00937CCD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A63D39352419297C00937CCD /* UIControl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
@@ -901,7 +901,7 @@
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A63D39362419297C00937CCD /* NSLayoutConstraints+Active.swift */,
 				A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */,
-				A63D39322419297B00937CCD /* UIAlertExtension.swift */,
+				A63D39322419297B00937CCD /* UIAlertControllerExtension.swift */,
 				A6E85DB324497BFF00645A2D /* UICollectionViewCell.swift */,
 				A63D392C2419297A00937CCD /* UIBarButtonItem+Extension.swift */,
 				A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */,
@@ -1750,7 +1750,7 @@
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
 				A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */,
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
-				A63D39652419298000937CCD /* UIAlertExtension.swift in Sources */,
+				A63D39652419298000937CCD /* UIAlertControllerExtension.swift in Sources */,
 				A6D40BF42417B6B500A88B5B /* LinearProgressBar.swift in Sources */,
 				A6C3E3582442F6A900132000 /* LocalizationManager.swift in Sources */,
 				A63D395D2419298000937CCD /* UITextField+Extension.swift in Sources */,
