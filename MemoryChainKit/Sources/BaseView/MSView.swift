@@ -9,7 +9,7 @@
 import UIKit
 
 
-internal class MSView: View {
+public  class MSView: View {
     //Subclass should override setup instead of any of the initializers,subclassers must call super.setup()
     open func setupView() {
         
