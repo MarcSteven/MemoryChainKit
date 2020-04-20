@@ -148,6 +148,15 @@ public extension UITextField {
         textField.keyboardType = keyboardType
     }
 }
+//MARK: - make UITextField can support paster
+extension UITextField {
+    open override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        guard inputView != nil else { return super.canPerformAction(action, withSender: sender) }
+
+        return action == #selector(UIResponderStandardEditActions.paste(_:)) ?
+            false : super.canPerformAction(action, withSender: sender)
+    }
+}
 
 // MARK: - Properties
 public extension UITextField {
