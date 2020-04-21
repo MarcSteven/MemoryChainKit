@@ -8,6 +8,25 @@
 
 import Foundation
 import UIKit
+import AVFoundation
+
+//MARK: - toggleFlash
+public func toggleFlash(on:Bool) {
+    guard let device = AVCaptureDevice.default(for: AVMediaType.video) else { return }
+    guard device.hasTorch else { print("Torch isn't available"); return }
+
+    do {
+        try device.lockForConfiguration()
+        device.torchMode = on ? .on : .off
+        // Optional thing you may want when the torch it's on, is to manipulate the level of the torch
+        if on { try device.setTorchModeOn(level: AVCaptureDevice.maxAvailableTorchLevel.significand) }
+        device.unlockForConfiguration()
+    } catch {
+        print("Torch can't be used")
+    }
+}
+
+
 
 public func unsafePointer<T:AnyObject>(to object:T) ->UnsafeRawPointer {
     return UnsafeRawPointer(Unmanaged<T>.passUnretained(object).toOpaque())
