@@ -36,7 +36,7 @@ extension FatalReason {
     public static let subclassMustImplement: Self = "Must be implemented by subclass."
 }
 
-// MARK: Xcore Fatal Reasons
+// MARK:  Fatal Reasons
 
 extension FatalReason {
     static let unsupportedFallbackFormattingStyle: Self = "Fallback style shouldn't be of type `abbreviationWith`."

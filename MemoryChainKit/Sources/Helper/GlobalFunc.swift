@@ -220,3 +220,12 @@ public func insertBlurView (view: UIView, style: UIBlurEffect.Style) -> UIVisual
     view.insertSubview(blurEffectView, at: 0)
     return blurEffectView
 }
+
+//Utility method - takes a list of views and simply makes up new string names for them
+public func dictionaryOfNames(_ array:UIView...) ->[String:UIView] {
+    var dictionary = [String:UIView]()
+    for (index,v) in array.enumerated() {
+        dictionary["v\(index+1)"] = v
+    }
+    return dictionary
+}

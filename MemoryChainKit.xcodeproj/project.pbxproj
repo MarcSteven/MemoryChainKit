@@ -328,9 +328,7 @@
 		A6E85DB22449753A00645A2D /* TimeZone+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DB12449753A00645A2D /* TimeZone+Identifier.swift */; };
 		A6E85DB424497BFF00645A2D /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DB324497BFF00645A2D /* UICollectionViewCell.swift */; };
 		A6E85DB624497DB400645A2D /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DB524497DB400645A2D /* IndexPathExtension.swift */; };
-		A6E85DB92449A66000645A2D /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DB82449A66000645A2D /* BlurView.swift */; };
 		A6E85DBC2449B64400645A2D /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DBB2449B64400645A2D /* Cache.swift */; };
-		A6E85DBE2449B73400645A2D /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E85DBD2449B73400645A2D /* DiskCache.swift */; };
 		A6F21711243DF01E00188C23 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21710243DF01E00188C23 /* LocationService.swift */; };
 		A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21712243E0C0000188C23 /* ObjcWakeable.swift */; };
 		A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21714243E0C8000188C23 /* LocalAtomic.swift */; };
@@ -1856,7 +1854,6 @@
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
 				A695CC3C241F5D83007C68DD /* FalseRequest.swift in Sources */,
 				A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */,
-				A6E85DB92449A66000645A2D /* BlurView.swift in Sources */,
 				A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */,
 				A695CC692420BEB2007C68DD /* UIColor+Hex.swift in Sources */,
 				A6D40C0E2417B6B500A88B5B /* CountriesViewControllerDelegate.swift in Sources */,
@@ -2036,7 +2033,6 @@
 				A69BC0CD2445849D00E600FB /* UITableView+Reusable.swift in Sources */,
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
 				A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */,
-				A6E85DBE2449B73400645A2D /* DiskCache.swift in Sources */,
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
 				A69BC0C824445BF900E600FB /* UserDefault.swift in Sources */,
 				A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */,
