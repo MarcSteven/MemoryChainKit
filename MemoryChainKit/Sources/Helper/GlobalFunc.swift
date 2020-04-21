@@ -229,3 +229,4 @@ public func dictionaryOfNames(_ array:UIView...) ->[String:UIView] {
     }
     return dictionary
 }
+

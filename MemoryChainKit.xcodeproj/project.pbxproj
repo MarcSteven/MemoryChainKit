@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D35244F244D00B6DA00 /* ObstructableView.swift */; };
+		A6020D38244F24CC00B6DA00 /* EquatableByPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */; };
 		A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60AF28C24211D1700072975 /* LocalImageCache.swift */; };
 		A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */; };
 		A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */; };
@@ -352,6 +354,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6020D35244F244D00B6DA00 /* ObstructableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstructableView.swift; sourceTree = "<group>"; };
+		A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableByPointer.swift; sourceTree = "<group>"; };
 		A60AF28C24211D1700072975 /* LocalImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageCache.swift; sourceTree = "<group>"; };
 		A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAtranscationExtension.swift; sourceTree = "<group>"; };
@@ -1431,6 +1435,7 @@
 			children = (
 				A6DDD43024168C6E008E1703 /* Scrollable.swift */,
 				A6F21712243E0C0000188C23 /* ObjcWakeable.swift */,
+				A6020D35244F244D00B6DA00 /* ObstructableView.swift */,
 				A6356CF52423537D00B46CDF /* Colorable.swift */,
 				A6DDD43224168C6E008E1703 /* BackgroundColor.swift */,
 				A6DDD43324168C6E008E1703 /* BindableType.swift */,
@@ -1440,6 +1445,7 @@
 				A69BC0D0244588A300E600FB /* Updatable.swift */,
 				A6C3E3232440CCCE00132000 /* SceneCoordinatorType.swift */,
 				A6C3E3252440CD4500132000 /* TargetScene.swift */,
+				A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */,
 				A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */,
 				A6DDD43624168C6E008E1703 /* DataContaining.swift */,
 				A6DDD43724168C6E008E1703 /* CollectionViewDataSource.swift */,
@@ -1802,6 +1808,7 @@
 				A63D39692419298000937CCD /* NSLayoutConstraints+Active.swift in Sources */,
 				A66F3F382429ECDC0081D52F /* StringConverter.swift in Sources */,
 				A65417D22422104100077AD8 /* ZoomAnimatorInteractiveTransition.swift in Sources */,
+				A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */,
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
 				A6D40C0A2417B6B500A88B5B /* Countries.swift in Sources */,
 				A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */,
@@ -1826,6 +1833,7 @@
 				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
 				A6356D252424931400B46CDF /* Options.swift in Sources */,
 				A65417C824220C8900077AD8 /* TransitionAnimator.swift in Sources */,
+				A6020D38244F24CC00B6DA00 /* EquatableByPointer.swift in Sources */,
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
 				A688015E243B07EF00C16C82 /* URLSession+Rx.swift in Sources */,
 				A6E85DAB24496B0A00645A2D /* NavigationType.swift in Sources */,
