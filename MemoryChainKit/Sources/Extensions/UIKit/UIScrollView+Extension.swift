@@ -121,4 +121,45 @@ extension UIScrollView {
     }
 }
 
-
+extension UIScrollView {
+    private struct AssociatedKey {
+        static var msGestureHandleEnable = "MSGestureHandlerEnable"
+    }
+    var isGestureEnable:Bool {
+        get {
+            (objc_getAssociatedObject(self, &AssociatedKey.msGestureHandleEnable) != nil)
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedKey.msGestureHandleEnable, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+            
+        }
+        
+    }
+    public func ms_gestureEnable() ->Bool {
+        return (objc_getAssociatedObject(self, &AssociatedKey.msGestureHandleEnable)as? NSNumber )?.boolValue ?? false
+    }
+    public override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if !ms_gestureEnable() {
+            return true
+        }
+        if panBack(gestureRecognizer) {
+            return false
+        }
+        return true
+    }
+    private func panBack(_ gestureRecognizer:UIGestureRecognizer) ->Bool {
+        if gestureRecognizer == panGestureRecognizer {
+            let point = panGestureRecognizer.translation(in: self)
+            let state = gestureRecognizer.state
+            // set the location distance to edge
+                        let locationDistance = UIScreen.main.bounds.size.width
+                        if state == .began || state == .possible {
+                            let location = gestureRecognizer.location(in: self)
+                            if point.x > 0 && (location.x ) < locationDistance && contentOffset.x <= 0 {
+                                return true
+                           }
+                        }
+                    }
+                    return false
+        }
+    }
