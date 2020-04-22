@@ -9,6 +9,14 @@
 import UIKit
 
 
+extension UITableView {
+    public static func build(block:@escaping ((UITableView)->Void)) ->UITableView {
+        let tableView = UITableView(frame: .zero)
+        block(tableView)
+        return tableView
+    }
+}
+
 public extension UITableView {
     func scrollToLastRow() {
         let indexPath = IndexPath(row:0,section: 0)

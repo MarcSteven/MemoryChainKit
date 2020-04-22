@@ -13,6 +13,12 @@ import UIKit
 
 // MARK: - Methods
 public extension UIScrollView {
+    
+    static func build(block:((UIScrollView)->Void)) ->UIScrollView {
+        let scrollView = UIScrollView(frame: .zero)
+        block(scrollView)
+        return scrollView
+    }
     //Original Source: https://gist.github.com/thestoics/1204051
     ///  Takes a snapshot of an entire ScrollView
     ///

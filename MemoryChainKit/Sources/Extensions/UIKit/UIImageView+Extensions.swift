@@ -15,6 +15,11 @@ import ObjectiveC
 
 
 extension UIImageView {
+    public static func build(block:((UIImageView)->Void)) ->UIImageView {
+        let imageView = UIImageView(frame: .zero)
+        block(imageView)
+        return imageView
+    }
     private struct AssociatedKey {
         static var isContentModeAutomaticallyAdjusted = "isContentModeAutomaticallyAdjusted"
     }

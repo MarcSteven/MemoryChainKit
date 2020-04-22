@@ -6,6 +6,13 @@
 //  Copyright © 2019 Memory Chain technology(China) co,LTD. All rights reserved.
 //
 import UIKit
+extension UILabel {
+    public static func build(block:((UILabel)->Void)) ->UILabel {
+        let label = UILabel(frame: .zero)
+        block(label)
+        return label
+    }
+}
 
 public extension UILabel {
     func underLine() {
