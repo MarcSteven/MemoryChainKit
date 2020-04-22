@@ -66,13 +66,13 @@ final public class SwizzleManager {
         defer { didSwizzle = true }
 
         self.options = options
-        xcoreSwizzle(options: options)
+        mcSwizzle(options: options)
         additionalSelectors().forEach {
             $0()
         }
     }
 
-    private static func xcoreSwizzle(options: SwizzleOptions) {
+    private static func mcSwizzle(options: SwizzleOptions) {
         if options.contains(.view) {
             #warning("TODO")
         }
@@ -124,17 +124,17 @@ extension SwizzleManager {
             self.rawValue = rawValue
         }
 
-        public static let view = SwizzleOptions(rawValue: 1 << 0)
-        public static let button = SwizzleOptions(rawValue: 1 << 1)
-        public static let label = SwizzleOptions(rawValue: 1 << 2)
-        public static let textField = SwizzleOptions(rawValue: 1 << 3)
-        public static let textView = SwizzleOptions(rawValue: 1 << 4)
-        public static let imageView = SwizzleOptions(rawValue: 1 << 5)
-        public static let searchBar = SwizzleOptions(rawValue: 1 << 6)
-        public static let collectionViewCell = SwizzleOptions(rawValue: 1 << 7)
-        public static let viewController = SwizzleOptions(rawValue: 1 << 8)
-        public static let userContentController = SwizzleOptions(rawValue: 1 << 9)
-        public static let chrome = SwizzleOptions(rawValue: 1 << 10)
+        public static let view = Self(rawValue: 1 << 0)
+        public static let button = Self(rawValue: 1 << 1)
+        public static let label = Self(rawValue: 1 << 2)
+        public static let textField = Self(rawValue: 1 << 3)
+        public static let textView = Self(rawValue: 1 << 4)
+        public static let imageView = Self(rawValue: 1 << 5)
+        public static let searchBar = Self(rawValue: 1 << 6)
+        public static let collectionViewCell = Self(rawValue: 1 << 7)
+        public static let viewController = Self(rawValue: 1 << 8)
+        public static let userContentController = Self(rawValue: 1 << 9)
+        public static let chrome = Self(rawValue: 1 << 10)
         public static let all: SwizzleOptions = [
             view,
             button,
