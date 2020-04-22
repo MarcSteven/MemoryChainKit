@@ -1,4 +1,28 @@
 
+#[0.1.8]
+* rewrite the network 
+* Add localization manager to make international 
+* Refactor the UserDefaultsStore
+* Add global functions
+* refactor the timer extension
+* Add observableType extension
+* Add base class
+* Refactor crypoto
+* use builder protocol to build cell
+* Add new device for iPhoneSE2
+* add cache protocol 
+* add documentation
+* add helper class for DispatchQueue
+* add blur method for UIView
+* make UITextField support paster
+* add global to support toggle flash mode
+* add gesture conflict using Runtime for UIScrollView
+* Use runtime to solve UIButton duplicate click 
+* Add convenience method to data
+* Use Self type to reduce code noise
+* Add passthrough view component
+
+
 #[0.1.7]
 * Add UIView debug method 
 * Add GCD Class method 
