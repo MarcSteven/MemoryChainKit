@@ -2,99 +2,58 @@
 //  Result.swift
 //  MemoryChainKit
 //
-//  Created by Marc Steven on 2020/3/16.
+//  Created by Marc Steven on 2020/4/15.
 //  Copyright © 2020 Marc Steven(https://github.com/MarcSteven). All rights reserved.
 //
 
 import Foundation
 
+/** Result is an enum that will be sent back within the response
+ It has two states: success and failure
+ if success, it will contain the desire avlue,or it will throw the error
+ */
 
-public protocol Result {
-    init(body: Any?, response: HTTPURLResponse, error: NSError?)
-}
 
-public enum GenericResult<T> {
-    case success(T)
-    case failure(FailureJSONResponse)
-}
-
-public enum VoidResult {
-    case success
-    case failure(FailureJSONResponse)
-}
-
-public enum JSONResult: Result {
-    case success(SucessfulJSONResponse)
-
-    case failure(FailureJSONResponse)
-
-    public var error: NSError? {
+public enum Result<Value> {
+    case success(Value)
+    case failure(MemoryChainError)
+    
+    public var value:Value? {
+        switch self {
+        case .success(let value):
+            return value
+        case .failure:
+            return nil
+     
+        }
+    }
+    public var error:MemoryChainError? {
         switch self {
         case .success:
             return nil
-        case let .failure(response):
-            return response.error
+        case .failure(let error):
+            return error
+       
         }
     }
-
-    public init(body: Any?, response: HTTPURLResponse, error: NSError?) {
-        var returnedError = error
-        var json = JSONType.none
-
-        if let dictionary = body as? [String: Any] {
-            json = JSONType(dictionary)
-        } else if let array = body as? [[String: Any]] {
-            json = JSONType(array)
-        } else if let data = body as? Data, data.count > 0 {
-            do {
-                json = try JSONType(data)
-            } catch let JSONParsingError as NSError {
-                if returnedError == nil {
-                    returnedError = JSONParsingError
-                }
-            }
-        }
-
-        if let finalError = returnedError {
-            self = .failure(FailureJSONResponse(json: json, response: response, error: finalError))
-        } else {
-            self = .success(SucessfulJSONResponse(json: json, response: response))
+/** Map function, that will allow you to apply a function to a value is the result is a success*/
+    public func map<U>(_ f:((Value)->U))->Result<U> {
+        switch self {
+        case .success(let value):
+        
+            return .success(f(value))
+        case .failure(let error):
+            return .failure(error)
         }
     }
-}
-
-public enum ImageResult: Result {
-    case success(SuccessImageResponse)
-
-    case failure(FailureResponse)
-
-    public init(body: Any?, response: HTTPURLResponse, error: NSError?) {
-        let image = body as? Image
-        if let error = error {
-            self = .failure(FailureResponse(response: response, error: error))
-        } else if let image = image {
-            self = .success(SuccessImageResponse(image: image, response: response))
-        } else {
-            let error = NSError(domain: APIClient.domain, code: URLError.cannotParseResponse.rawValue, userInfo: [NSLocalizedDescriptionKey: "Malformed image"])
-            self = .failure(FailureResponse(response: response, error: error))
-        }
-    }
-}
-
-public enum DataResult: Result {
-    case success(SuccessDataResponse)
-
-    case failure(FailureResponse)
-
-    public init(body: Any?, response: HTTPURLResponse, error: NSError?) {
-        let data = body as? Data
-        if let error = error {
-            self = .failure(FailureResponse(response: response, error: error))
-        } else if let data = data {
-            self = .success(SuccessDataResponse(data: data, response: response))
-        } else {
-            let error = NSError(domain: APIClient.domain, code: URLError.cannotParseResponse.rawValue, userInfo: [NSLocalizedDescriptionKey: "Malformed data"])
-            self = .failure(FailureResponse(response: response, error: error))
+    /** FlatMap to chain different results*/
+    public func flatMap<U>(_ f:(Value)->Result<U>) ->Result<U> {
+        switch self {
+        case .success(let value):
+            return f(value)
+        case .failure(let error):
+            return .failure(error)
+        
         }
     }
 }
