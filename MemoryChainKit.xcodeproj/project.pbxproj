@@ -715,6 +715,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6020D39244F287C00B6DA00 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		A60AF28B24211CE300072975 /* ImageCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1168,6 +1175,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A6020D39244F287C00B6DA00 /* VideoPlayer */,
 				A6E85DB72449A64D00645A2D /* BlurView */,
 				A69BC0CB2445848700E600FB /* UITableView */,
 				A6AD552D242C8D35002DB4FE /* ProgressView */,

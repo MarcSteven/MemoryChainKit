@@ -327,49 +327,66 @@ extension UIButton {
 }
     
     
-//    func startCountDown(startTime:NSInteger,
-//                        startButtonColor:UIColor,
-//                        startButtonBorderColor:UIColor,
-//                        startTitleColor:UIColor,
-//                        countDownTitle:String,
-//                        countDownButtonColor:UIColor,
-//                        countDownButtonBorderColor:UIColor,
-//                        countDownTitleColor:UIColor) {
-//
-//        weak var weakSelf = self
-//        var timeOut:NSInteger = startTime
-//        let timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.global())
-//        timer.schedule(wallDeadline: DispatchWallTime.now(), repeating: .seconds(1))
-//        timer.setEventHandler {
-//            if timeOut < 0{
-//                timer.cancel()
-//                DispatchQueue.main.async(execute: {
-//                    weakSelf?.setTitle(countDownTitle, for: .normal)
-//                    weakSelf?.setTitleColor(countDownTitleColor, for: .normal)
-//                    weakSelf?.backgroundColor = countDownButtonColor
-//                    weakSelf?.borderColor = countDownButtonBorderColor
-//                    weakSelf?.isUserInteractionEnabled = true
-//                })
-//            } else {
-//                let allTime = startTime + 1
-//                let seconds = timeOut % allTime
-//                let timeString = String(seconds)
-//                DispatchQueue.main.async(execute: {
-//                    weakSelf?.setTitle(timeString, for: .normal)
-//                    weakSelf?.setTitleColor(startTitleColor, for: .normal)
-//                    weakSelf?.backgroundColor = startButtonColor
-//                    weakSelf?.borderColor = startButtonBorderColor
-//                    weakSelf?.isUserInteractionEnabled = false
-//                })
-//                timeOut -= 1
-//            }
-//        }
-//        timer.resume()
-//    }
+extension UIButton {
+    private struct AssociatedKeys {
+           static var eventInterval = "eventInterval"
+           static var eventUnavailable = "eventUnavailable"
+       }
 
+            /// Time of repeated clicks Property settings
+       var eventInterval: TimeInterval {
+           get {
+               if let interval = objc_getAssociatedObject(self, &AssociatedKeys.eventInterval) as? TimeInterval {
+                   return interval
+               }
+               return 0.5
+           }
+           set {
+               objc_setAssociatedObject(self, &AssociatedKeys.eventInterval, newValue as TimeInterval, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+           }
+       }
 
+            /// button not pointable property setting
+       private var eventUnavailable : Bool {
+           get {
+               if let unavailable = objc_getAssociatedObject(self, &AssociatedKeys.eventUnavailable) as? Bool {
+                   return unavailable
+               }
+               return false
+           }
+           set {
+               objc_setAssociatedObject(self, &AssociatedKeys.eventUnavailable, newValue as Bool, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+           }
+       }
 
+           
+      open class func initializeMethod() {
+           let selector = #selector(UIButton.sendAction(_:to:for:))
+           let newSelector = #selector(ms_sendAction(_:to:for:))
+           
+           let method: Method = class_getInstanceMethod(UIButton.self, selector)!
+           let newMethod: Method = class_getInstanceMethod(UIButton.self, newSelector)!
+           
+           if class_addMethod(UIButton.self, selector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)) {
+               class_replaceMethod(UIButton.self, newSelector, method_getImplementation(method), method_getTypeEncoding(method))
+           } else {
+               method_exchangeImplementations(method, newMethod)
+           }
+       }
 
+            /// In this method
+       @objc private func ms_sendAction(_ action: Selector, to target: Any?, for event: UIEvent?) {
+           if eventUnavailable == false {
+               eventUnavailable = true
+               ms_sendAction(action, to: target, for: event)
+                            // delay
+               DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + eventInterval, execute: {
+                   self.eventUnavailable = false
+               })
+           }
+       }
+   }
+    
 #endif
 //MARK: - build custom controls and live preview the design in the interface builder
 
