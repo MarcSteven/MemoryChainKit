@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D35244F244D00B6DA00 /* ObstructableView.swift */; };
 		A6020D38244F24CC00B6DA00 /* EquatableByPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */; };
+		A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */; };
 		A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60AF28C24211D1700072975 /* LocalImageCache.swift */; };
 		A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */; };
 		A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */; };
@@ -356,6 +357,7 @@
 /* Begin PBXFileReference section */
 		A6020D35244F244D00B6DA00 /* ObstructableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstructableView.swift; sourceTree = "<group>"; };
 		A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableByPointer.swift; sourceTree = "<group>"; };
+		A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyStoring.swift; sourceTree = "<group>"; };
 		A60AF28C24211D1700072975 /* LocalImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageCache.swift; sourceTree = "<group>"; };
 		A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAtranscationExtension.swift; sourceTree = "<group>"; };
@@ -1454,6 +1456,7 @@
 				A6C3E3232440CCCE00132000 /* SceneCoordinatorType.swift */,
 				A6C3E3252440CD4500132000 /* TargetScene.swift */,
 				A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */,
+				A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */,
 				A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */,
 				A6DDD43624168C6E008E1703 /* DataContaining.swift */,
 				A6DDD43724168C6E008E1703 /* CollectionViewDataSource.swift */,
@@ -1899,6 +1902,7 @@
 				A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */,
 				A63D39712419298100937CCD /* UIScrollView+Extension.swift in Sources */,
 				A695CC6E2420C1FC007C68DD /* DeviceVersion.swift in Sources */,
+				A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
 				A6D40BE22417B6B500A88B5B /* NSDate+CalendarView.swift in Sources */,
