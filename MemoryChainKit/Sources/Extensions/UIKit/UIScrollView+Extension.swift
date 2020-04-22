@@ -11,6 +11,17 @@ import UIKit
 
 #if !os(watchOS)
 
+extension UIScrollView {
+    public class func swizzleZoomScale() {
+        let originalMethod = class_getInstanceMethod(self, #selector(setter: minimumZoomScale))!
+        let swizzleMethod = class_getInstanceMethod(self, #selector(swizzle_setMinimumZoomScale))!
+        method_exchangeImplementations(originalMethod, swizzleMethod)
+    }
+    @objc dynamic func swizzle_setMinimumZoomScale(_ scale:CGFloat) {
+        print("new value: \(scale)")
+        self.swizzle_setMinimumZoomScale(scale)
+    }
+}
 // MARK: - Methods
 public extension UIScrollView {
     
