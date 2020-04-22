@@ -17,7 +17,7 @@ open class Request {
     /** Any data received by the request wil be put into the buffer*/
     private var buffer = Data()
     var expectedContentSize:Int?
-    private var responseJSONTmp:(HTTPURLResponse?,Data,MemoryChainError?)?
+    private var responseJSONTmp:(Response<Any>)?
     
     private var responseDataTmp:(HTTPURLResponse?,Data,MemoryChainError)?
     
@@ -144,7 +144,7 @@ open class Request {
     open func responseJSON(_ handler:@escaping ((Response<Any>) -> Void)) -> Self {
         self.onCompleteJSON = handler
         if let response = responseJSONTmp {
-            #warning("Todo ")
+            handler(response)
         }
         return self
     }
