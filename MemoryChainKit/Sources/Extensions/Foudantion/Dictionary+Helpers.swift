@@ -72,23 +72,5 @@ public extension Dictionary where Key: ExpressibleByStringLiteral, Value: Any {
     }
 }
 
-//public extension Dictionary {
-//    func mutableDeepCopy() -> NSMutableDictionary {
-//        let ret = NSMutableDictionary(capacity: self.count)
-//        let keys = self.
-//        for key in keys {
-//            let oneValue: AnyObject = self.values(forKey: key as! String) as AnyObject
-//            var oneCopy: AnyObject? = nil
-//            if (oneValue.responds(to: Selector(("mutableDeepCopy")))) {
-//                oneCopy = oneValue.mutableCopy as AnyObject?
-//            }
-//
-//            if (oneCopy == nil) {
-//                oneCopy = oneValue.copy() as AnyObject
-//            }
-//            ret.setValue(oneCopy, forKey: key as! String)
-//        }
-//        return ret
-//    }
-//
-//}
+
+
