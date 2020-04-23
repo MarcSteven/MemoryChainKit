@@ -326,6 +326,7 @@
 		A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2171E243ED46F00188C23 /* URLExtension.swift */; };
 		A6F21721243EE89B00188C23 /* UIFont+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21720243EE89B00188C23 /* UIFont+Loader.swift */; };
 		A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F21724243EEFFA00188C23 /* UIRefreshControlExtension.swift */; };
+		A6F85E852451699800F4D459 /* ClosedRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F85E842451699800F4D459 /* ClosedRangeExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -656,6 +657,7 @@
 		A6F2171E243ED46F00188C23 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		A6F21720243EE89B00188C23 /* UIFont+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Loader.swift"; sourceTree = "<group>"; };
 		A6F21724243EEFFA00188C23 /* UIRefreshControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRefreshControlExtension.swift; sourceTree = "<group>"; };
+		A6F85E842451699800F4D459 /* ClosedRangeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRangeExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -977,6 +979,7 @@
 				A69310B72417100D004ADF4F /* Collection+noEmpty.swift */,
 				A69310AB2417100C004ADF4F /* DataExtension.swift */,
 				A6A439AD241A3E94009FC4E1 /* String+hasText.swift */,
+				A6F85E842451699800F4D459 /* ClosedRangeExtension.swift */,
 				A6A439AF241A3EF5009FC4E1 /* NSAttributedString+HasText.swift */,
 				A69310AF2417100C004ADF4F /* Date+Extension.swift */,
 				A69310992417100A004ADF4F /* Dictionary+Helpers.swift */,
@@ -1897,6 +1900,7 @@
 				A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */,
 				A6DDD52424168C90008E1703 /* KeyChainConstants.swift in Sources */,
 				A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */,
+				A6F85E852451699800F4D459 /* ClosedRangeExtension.swift in Sources */,
 				A63D39662419298000937CCD /*  UIViewPropertyAnimator+Extension.swift in Sources */,
 				A69310CA2417100E004ADF4F /* CGSize+Extension.swift in Sources */,
 				A63D39582419298000937CCD /* UITableView+ConfigureProtocols.swift in Sources */,

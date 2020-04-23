@@ -11,6 +11,15 @@ import UIKit
 
 #if !os(watchOS)
 
+
+extension UIButton {
+    public func build(block:(UIButton)->Void)->UIButton {
+        let button = UIButton(frame: .zero)
+        block(button)
+        return button
+    }
+}
+
 //MARK: - animation for UIButton
 public extension UIButton {
     
