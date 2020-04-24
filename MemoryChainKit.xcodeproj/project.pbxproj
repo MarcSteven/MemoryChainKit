@@ -21,6 +21,12 @@
 		A6020D502450481000B6DA00 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D4F2450481000B6DA00 /* ParameterEncoding.swift */; };
 		A6020D522450484500B6DA00 /* MultipartForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D512450484500B6DA00 /* MultipartForm.swift */; };
 		A60AF28D24211D1700072975 /* LocalImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60AF28C24211D1700072975 /* LocalImageCache.swift */; };
+		A60F77C12452B00E007F3C61 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77C02452B00E007F3C61 /* Box.swift */; };
+		A60F77C42452E564007F3C61 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77C32452E564007F3C61 /* Event.swift */; };
+		A60F77C62452E683007F3C61 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77C52452E683007F3C61 /* EventHandler.swift */; };
+		A60F77C82452E6C4007F3C61 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77C72452E6C4007F3C61 /* EventBus.swift */; };
+		A60F77CA2452E7D9007F3C61 /* QueueDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77C92452E7D9007F3C61 /* QueueDispatcher.swift */; };
+		A60F77CC2452F3CE007F3C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77CB2452F3CE007F3C61 /* Logger.swift */; };
 		A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */; };
 		A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */; };
 		A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEA2423475A00B46CDF /* CGColorExtension.swift */; };
@@ -357,6 +363,12 @@
 		A6020D4F2450481000B6DA00 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		A6020D512450484500B6DA00 /* MultipartForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartForm.swift; sourceTree = "<group>"; };
 		A60AF28C24211D1700072975 /* LocalImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageCache.swift; sourceTree = "<group>"; };
+		A60F77C02452B00E007F3C61 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		A60F77C32452E564007F3C61 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A60F77C52452E683007F3C61 /* EventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
+		A60F77C72452E6C4007F3C61 /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		A60F77C92452E7D9007F3C61 /* QueueDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueDispatcher.swift; sourceTree = "<group>"; };
+		A60F77CB2452F3CE007F3C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAtranscationExtension.swift; sourceTree = "<group>"; };
 		A6356CEA2423475A00B46CDF /* CGColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorExtension.swift; sourceTree = "<group>"; };
@@ -725,6 +737,17 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		A60F77C22452E557007F3C61 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				A60F77C32452E564007F3C61 /* Event.swift */,
+				A60F77C52452E683007F3C61 /* EventHandler.swift */,
+				A60F77C72452E6C4007F3C61 /* EventBus.swift */,
+				A60F77CB2452F3CE007F3C61 /* Logger.swift */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
 		A6356CE324232C5D00B46CDF /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -872,6 +895,7 @@
 				A66F3F3A2429EDA80081D52F /* JSONUtils.swift */,
 				A6652021243A186700DCBF85 /* ValidRules.swift */,
 				A6651FBE24378ECE00DCBF85 /* Identifier.swift */,
+				A60F77C92452E7D9007F3C61 /* QueueDispatcher.swift */,
 				A6F21714243E0C8000188C23 /* LocalAtomic.swift */,
 				A6880165243B35FD00C16C82 /* Validation.swift */,
 				A6F21716243E0D2E00188C23 /* GlobalFunc.swift */,
@@ -1376,6 +1400,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A60F77C22452E557007F3C61 /* EventBus */,
 				A69685772452A8B0006DA075 /* JSON */,
 				A6E85DA32449683D00645A2D /* Coordinator */,
 				A6C3E3562442F66500132000 /* Localization */,
@@ -1606,6 +1631,7 @@
 			isa = PBXGroup;
 			children = (
 				A6E85DBB2449B64400645A2D /* Cache.swift */,
+				A60F77C02452B00E007F3C61 /* Box.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -1793,6 +1819,7 @@
 				A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */,
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
 				A6D40C0A2417B6B500A88B5B /* Countries.swift in Sources */,
+				A60F77C42452E564007F3C61 /* Event.swift in Sources */,
 				A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */,
 				A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */,
 				A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */,
@@ -1873,6 +1900,7 @@
 				A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
+				A60F77CC2452F3CE007F3C61 /* Logger.swift in Sources */,
 				A6D40BE22417B6B500A88B5B /* NSDate+CalendarView.swift in Sources */,
 				A695CC1A241F5065007C68DD /* HTTPMethod.swift in Sources */,
 				A6DDD45E24168C6E008E1703 /* Animatable.swift in Sources */,
@@ -1881,6 +1909,7 @@
 				A6D40BF72417B6B500A88B5B /* UIView+DisplayInformationTipView.swift in Sources */,
 				A6DDD45C24168C6E008E1703 /* RxNill.swift in Sources */,
 				A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */,
+				A60F77C82452E6C4007F3C61 /* EventBus.swift in Sources */,
 				A6DDD46E24168C7F008E1703 /* MSView.swift in Sources */,
 				A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */,
 				A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */,
@@ -1947,6 +1976,7 @@
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
 				A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */,
 				A69310CE2417100E004ADF4F /* DataExtension.swift in Sources */,
+				A60F77C12452B00E007F3C61 /* Box.swift in Sources */,
 				A63D396E2419298100937CCD /* UIImage+Extension.swift in Sources */,
 				A6DDD45224168C6E008E1703 /* StoryboardLoadable.swift in Sources */,
 				A6C3E3262440CD4500132000 /* TargetScene.swift in Sources */,
@@ -1977,6 +2007,7 @@
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
 				A6356D272424931400B46CDF /* RouteType.swift in Sources */,
 				A65417D42422104100077AD8 /* ZoomAnimatorNavigationControllerDelegate.swift in Sources */,
+				A60F77CA2452E7D9007F3C61 /* QueueDispatcher.swift in Sources */,
 				A6967F9224231623006C377A /* MCTableViewDataSource.swift in Sources */,
 				A6356CF62423537D00B46CDF /* Colorable.swift in Sources */,
 				A6020D4424503B4000B6DA00 /* Response.swift in Sources */,
@@ -2034,6 +2065,7 @@
 				A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */,
 				A66F3F2D2429C8350081D52F /* NavigationController.swift in Sources */,
 				A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */,
+				A60F77C62452E683007F3C61 /* EventHandler.swift in Sources */,
 				A6D40BDB2417B6B500A88B5B /* MemoryChainEmptyStateView.swift in Sources */,
 				A6020D4A245043D700B6DA00 /* SessionManager.swift in Sources */,
 				A6DDD54524168D12008E1703 /* NSLayoutConstraint+Debugging.swift in Sources */,
