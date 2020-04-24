@@ -97,11 +97,11 @@ extension Reactive where Base:URLSession {
             return String(data: d, encoding: .utf8) ?? ""
         }
     }
-    public func json(request:URLRequest) ->Observable<JSON> {
-        return data(request: request).map{data in
-            return try JSON(data: data)
-        }
-    }
+//    public func json(request:URLRequest) ->Observable<JSON> {
+//        return data(request: request).map{data in
+//            return try JSONSerializable(data)
+//        }
+//    }
     public func image(request:URLRequest) ->Observable<UIImage> {
         return data(request: request).map{ data in
             return UIImage(data: data) ?? UIImage()

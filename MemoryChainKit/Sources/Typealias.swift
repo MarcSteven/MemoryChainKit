@@ -9,7 +9,7 @@
 import UIKit
 
 public typealias CompletionHandler = () -> Void
-public typealias JSONDictionary = [String:Any]
+public typealias JSON = [String:Any]
 
 public typealias JSONArray = [Any]
 

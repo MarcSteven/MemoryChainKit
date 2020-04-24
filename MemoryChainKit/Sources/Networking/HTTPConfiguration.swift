@@ -132,7 +132,7 @@ public extension HTTPConfiguration {
      - parameter route: the route object that defines the request
      - returns: the request being sent
      */
-    public func request(_ route: Route) -> Request {
+     func request(_ route: Route) -> Request {
 
         let path = route.path != "" ? baseURL.appendingPathComponent(route.path) : baseURL
 
