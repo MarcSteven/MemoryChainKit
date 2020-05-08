@@ -495,3 +495,22 @@ extension String {
            }
 
 }
+
+// MARK: - Convenience Extension
+
+extension String {
+    /// Returns a boolean value indicating whether the `self` matches the conditions
+    /// specified by the `rule`.
+    ///
+    /// ```swift
+    /// "help@example.com".validate(rule: .email) // valid
+    /// "help.example.com".validate(rule: .email) // invalid
+    /// ```
+    ///
+    /// - Parameter rule: The rule against which to evaluate `self`.
+    /// - Returns: `true` if `self` matches the conditions specified by the given
+    ///            `rule`, otherwise `false`.
+    public func validate(rule: ValidationRule<String>) -> Bool {
+        rule.validate(self)
+    }
+}
