@@ -1,4 +1,13 @@
 
+#[0.1.9]
+* use runtime to method swizzle to uiscrollView
+* and closeRange extension
+* add json library into it
+* add event bus
+* add box 
+* add validation extension
+
+
 #[0.1.8]
 * rewrite the network 
 * Add localization manager to make international 

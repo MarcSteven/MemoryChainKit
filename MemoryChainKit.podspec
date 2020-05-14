@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   
   spec.name         = "MemoryChainKit"
-  spec.version      = "0.1.8"
+  spec.version      = "0.1.9"
   spec.summary      = "MemoryChain is a super tools to make iOS faster."
 
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
 
 
   spec.swift_versions = ['5.0','5.1']
-  spec.source_files  = "MemoryChainKit/Sources/**/*"
+  spec.source_files  = "MemoryChainKit/MemoryChainKit/Sources/**/*"
   spec.frameworks = ['UIKit','Foundation']
   spec.dependency 'SDWebImage'
   spec.dependency 'RxSwift'
