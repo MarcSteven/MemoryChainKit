@@ -137,7 +137,6 @@
 		A6880158243B04FB00C16C82 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880157243B04FB00C16C82 /* UIView+Rx.swift */; };
 		A688015C243B06D100C16C82 /* UIBarButtonItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688015B243B06D100C16C82 /* UIBarButtonItem+Rx.swift */; };
 		A688015E243B07EF00C16C82 /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688015D243B07EE00C16C82 /* URLSession+Rx.swift */; };
-		A6880160243B093500C16C82 /* ObservableConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688015F243B093500C16C82 /* ObservableConvertibleType.swift */; };
 		A6880162243B0BD600C16C82 /* ObservableType+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880161243B0BD600C16C82 /* ObservableType+Debug.swift */; };
 		A6880166243B35FD00C16C82 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880165243B35FD00C16C82 /* Validation.swift */; };
 		A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A6880168243B384B00C16C82 /* SwiftyJSON */; };
@@ -475,7 +474,6 @@
 		A6880157243B04FB00C16C82 /* UIView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
 		A688015B243B06D100C16C82 /* UIBarButtonItem+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Rx.swift"; sourceTree = "<group>"; };
 		A688015D243B07EE00C16C82 /* URLSession+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
-		A688015F243B093500C16C82 /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableConvertibleType.swift; sourceTree = "<group>"; };
 		A6880161243B0BD600C16C82 /* ObservableType+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Debug.swift"; sourceTree = "<group>"; };
 		A6880165243B35FD00C16C82 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
@@ -860,7 +858,6 @@
 			isa = PBXGroup;
 			children = (
 				A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */,
-				A688015F243B093500C16C82 /* ObservableConvertibleType.swift */,
 				A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */,
 				A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */,
 				A6880157243B04FB00C16C82 /* UIView+Rx.swift */,
@@ -1802,7 +1799,6 @@
 				A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */,
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
-				A6880160243B093500C16C82 /* ObservableConvertibleType.swift in Sources */,
 				A69BC0C42444518900E600FB /* Array+binarySearch.swift in Sources */,
 				A6E85DAD24496C0500645A2D /* Navigator.swift in Sources */,
 				A6651FBB24378E3D00DCBF85 /* PresentationContext.swift in Sources */,
