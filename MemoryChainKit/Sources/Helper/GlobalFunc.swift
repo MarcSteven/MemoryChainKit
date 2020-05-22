@@ -230,19 +230,3 @@ public func dictionaryOfNames(_ array:UIView...) ->[String:UIView] {
     return dictionary
 }
 
-public func setupPictureInPicture() {
-    // Ensure PiP is supported by current device
-       if AVPictureInPictureController.isPictureInPictureSupported() {
-           // Create new controller passing reference to the AVPlayerLayer
-           pictureInPictureController = AVPictureInPictureController(playerLayer: playerLayer)
-           pictureInPictureController.delegate = self
-           let keyPath = #keyPath(AVPictureInPictureController.isPictureInPicturePossible)
-           pictureInPictureController.addObserver(self,
-                                                  forKeyPath: keyPath,
-                                                  options: [.initial, .new],
-                                                  context: &pictureInPictureControllerContext)
-       } else {
-           // PiP not supported by current device. Disable PiP button.
-           pictureInPictureButton.isEnabled = false
-       }
-}
