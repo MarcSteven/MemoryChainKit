@@ -12,7 +12,16 @@ import UIKit
 import ObjectiveC
 #if !os(watchOS)
 
-
+public extension UIImageView {
+  func configureAppIconView(forImage appImage: UIImage, size: CGFloat) {
+    image = appImage
+    contentMode = .scaleAspectFit
+    layer.cornerRadius = size/5.0
+    layer.borderColor = UIColor.borderColor.cgColor
+    layer.borderWidth = 0.5
+    clipsToBounds = true
+  }
+}
 
 extension UIImageView {
     public static func build(block:((UIImageView)->Void)) ->UIImageView {
