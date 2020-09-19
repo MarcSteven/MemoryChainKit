@@ -57,7 +57,15 @@ public extension UIStackView {
         }
     }
 
-    
+
+   public extension UIStackView {
+    func configure(withAxis axis: NSLayoutConstraint.Axis, alignment: UIStackView.Alignment, spacing: CGFloat, distribution: UIStackView.Distribution = .fill) {
+        self.axis = axis
+        self.alignment = alignment
+        self.spacing = spacing
+        self.distribution = distribution
+  }
+} 
 
 #endif
 #endif
