@@ -9,6 +9,17 @@
 import UIKit
 import CoreGraphics
 import Photos
+
+public extension UIImage {
+  func imageWith(newSize: CGSize) -> UIImage {
+    let renderer = UIGraphicsImageRenderer(size:newSize)
+    let image = renderer.image {_ in
+      draw(in: CGRect.init(origin: CGPoint.zero, size: newSize))
+    }
+    
+    return image
+  }
+}
 public extension UIImage {
     
     convenience init(bundleName:String) {
@@ -28,7 +39,10 @@ public extension UIImage {
     var template: UIImage {
         return withRenderingMode(.alwaysTemplate)
     }
-    
+    var automatic:UIImage {
+        return withRenderingMode(.automatic)
+        
+    }
 }
 
 // MARK: - Methods
