@@ -514,3 +514,10 @@ extension String {
         rule.validate(self)
     }
 }
+public extension String {
+  var uppercasedFirstLetter: String {
+    guard !self.isEmpty else { return self }
+    return prefix(1).uppercased() + dropFirst()
+  }
+}
+
