@@ -167,3 +167,8 @@ public extension UIViewController {
         }
     }
 }
+public extension UIViewController {
+    func hideNavigationBackTitle() {
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            }
+}
