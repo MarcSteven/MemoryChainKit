@@ -158,3 +158,12 @@ public extension  UIViewController {
     }
 }
 
+public extension UIViewController {
+    func hideNavigationBarOnTap() {
+        if self.navigationController?.navigationBar.isHidden == true  {
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        }else if self.navigationController?.navigationBar.isHidden == false {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+    }
+}
