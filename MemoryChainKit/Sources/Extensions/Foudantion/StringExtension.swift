@@ -561,5 +561,11 @@ public  extension String {
 }
 
 }
-
+public extension String {
+  var hasWhiteSpace: Bool {
+      return self.contains(" ") 
+   }
+  
+  
+}
 
