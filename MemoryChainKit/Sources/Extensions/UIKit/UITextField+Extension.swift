@@ -382,3 +382,20 @@ extension UITextField {
 }
 
 }
+public extension UITextField {
+    private var specialCharacterKey: Void?
+
+   
+        var allowSpecialCharacters: NSNumber? {
+            get {
+
+                return objc_getAssociatedObject(self, &specialCharacterKey) as? NSNumber
+            }
+            set(allowSpecialCharacters) {
+
+                objc_setAssociatedObject(self, &specialCharacterKey, allowSpecialCharacters, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            }
+        }
+
+    
+}
