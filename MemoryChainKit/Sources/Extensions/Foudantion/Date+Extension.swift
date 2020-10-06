@@ -225,4 +225,135 @@ extension Date {
     }
 }
 
+public extension Date {
+    
+    static func formatTime(timeInterval: TimeInterval) -> String {
+        let date = Date(timeIntervalSince1970: timeInterval)
+        let fmt = DateFormatter()
+        if date.isToday() {
+            fmt.dateFormat = "HH:mm"
+        }else {
+            if date.isYesterday() {
+                fmt.dateFormat = "昨天 HH:mm"
+            }else if date.isCurrentWeek() {
+                fmt.dateFormat = "MM-dd HH:mm"
+            }else {
+                fmt.dateFormat = "yyyy-MM-dd"
+            }
+        }
+        return fmt.string(from: date)
+    }
+    
+    func isJust() -> Bool {
+        let nowTimeStamp = Date().timeIntervalSince1970
+        let selfTimeStamp = self.timeIntervalSince1970
+        return nowTimeStamp - selfTimeStamp <= 60
+    }
+    
+    func diffMins() -> String {
+        let nowTimeStamp = Date().timeIntervalSince1970
+        let selfTimeStamp = self.timeIntervalSince1970
+        if nowTimeStamp - selfTimeStamp < 60 * 60 {
+            return "\(Int(floor((nowTimeStamp - selfTimeStamp) / 60)))分钟前"
+        }
+        return ""
+    }
+    
+    func isToday() -> Bool {
+        let calendar = Calendar.current
+        let unit: Set<Calendar.Component> = [.day, .month, .year]
+        let nowComponents = calendar.dateComponents(unit, from: Date())
+        let selfComponents = calendar.dateComponents(unit, from: self)
+        return (selfComponents.year == nowComponents.year) && (selfComponents.month == nowComponents.month) && (selfComponents.day == nowComponents.day)
+    }
+    
+    func diffHours() -> String {
+        let nowTimeStamp = Date().timeIntervalSince1970
+        let selfTimeStamp = self.timeIntervalSince1970
+        if nowTimeStamp - selfTimeStamp < 60 * 60 * 24 {
+            return "\(Int(floor((nowTimeStamp - selfTimeStamp) / 60 / 60)))小时前"
+        }
+        return ""
+    }
+    
+    func isYesterday() -> Bool {
+        let nowDate = Date().dateFormatYMD()
+        let selfDate = self.dateFormatYMD()
+        let calendar = Calendar.current
+        let cmps = calendar.dateComponents([.day], from: selfDate, to: nowDate)
+        return cmps.day == 1
+    }
+    
+    func dateFormatYMD() -> Date {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyy-MM-dd"
+        let selfStr = fmt.string(from: self)
+        return fmt.date(from: selfStr)!
+    }
+    
+    func isCurrentWeek() -> Bool {
+        let nowDate = Date().dateFormatYMD()
+        let selfDate = self.dateFormatYMD()
+        let calendar = Calendar.current
+        let cmps = calendar.dateComponents([.day], from: selfDate, to: nowDate)
+        return cmps.day! <= 7
+    }
+    
+    func dateFormatYear() -> String {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyy"
+        return fmt.string(from: self)
+    }
+    
+    func isCurrentYear() -> Bool {
+        let nowDate = Date().dateFormatYear()
+        let selfDate = self.dateFormatYear()
+        return nowDate == selfDate
+    }
+    
+    static func formatTimeDetailLabel(timestamp: Int64) -> String {
+        if timestamp > 0 {
+            let date = Date(timeIntervalSince1970: TimeInterval(timestamp/1000))
+            let fmt = DateFormatter()
+            if date.isToday() {
+                fmt.dateFormat = "HH:mm:ss"
+            }else {
+                fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            }
+            return fmt.string(from: date)
+        }
+        return ""
+    }
+    
+    static func formatDateString(dateString: String) -> String {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = fmt.date(from: dateString) ?? Date()
+        if date.isJust() {
+            return "刚刚"
+        }else if !date.diffMins().isBlank {
+            return date.diffMins()
+        }else if !date.diffHours().isBlank {
+            return date.diffHours()
+        }else if date.isYesterday() {
+            fmt.dateFormat = "昨天 HH:mm"
+            return fmt.string(from: date)
+        }else if date.isThisYear() {
+            fmt.dateFormat = "MM-dd"
+            return fmt.string(from: date)
+        }else {
+            fmt.dateFormat = "yyyy-MM-dd"
+            return fmt.string(from: date)
+        }
+    }
+    
+    static func formatYYYYDateString(dateString: String) -> String {
+        let fmt = DateFormatter()
+        fmt.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let date = fmt.date(from: dateString) ?? Date()
+        fmt.dateFormat = "yyyy年MM月dd日"
+        return fmt.string(from: date)
+    }
+}
+
 
