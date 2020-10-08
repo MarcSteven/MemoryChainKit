@@ -26,6 +26,25 @@ public func toggleFlash(on:Bool) {
     }
 }
 
+public func checkAndOpenApp(_ appScheme:String,
+                            appURL:String) {
+    if UIApplication.shared.canOpenURL(URL(string: appScheme)) {
+        let url = URL(string: appScheme)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }else {
+            UIApplication.shared.canOpenURL(url)
+        }
+    }else {
+        if let url = URL(string: appURL), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+}
 
 
 public func unsafePointer<T:AnyObject>(to object:T) ->UnsafeRawPointer {
