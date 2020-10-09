@@ -382,7 +382,17 @@ public extension UIView {
     superview.addConstraint(constraint)
   }
 }
-
+public extension UIView {
+    var cornerRadius:CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds  = newValue > 0
+        }
+    }
+}
 
 
 
