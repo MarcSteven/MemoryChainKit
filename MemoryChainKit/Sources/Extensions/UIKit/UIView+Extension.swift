@@ -8,6 +8,25 @@
 import UIKit
 
 public extension UIView {
+  func instantiateNib<T: UIView>(view: T) -> UIView {
+    // 1
+    let type = T.self
+    // 2
+    let nibName = String(describing: type)
+    // 3
+    let bundle = Bundle(for: type)
+    // 4
+    let nib = UINib(nibName: nibName, bundle: bundle)
+    // 5
+    guard let view = nib.instantiate(
+      withOwner: self,
+      options: nil).first as? UIView
+      else { fatalError("Failed to instantiate: \(nibName)") }
+    // 6
+    return view
+  }
+}
+public extension UIView {
     func parentView<T:UIView>(of type:T.Type) ->T? {
         guard let view = superview else {
             return nil
