@@ -7,6 +7,45 @@
 //
 import UIKit
 
+
+
+final class ViewDescriptionLabel: UILabel {
+  // MARK: - Initializerss
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    commonInit()
+  }
+  
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    commonInit()
+  }
+  
+  private func commonInit() {
+    font = UIFont.preferredFont(forTextStyle: .largeTitle)
+    minimumScaleFactor = 0.2
+    textAlignment = .center
+    textColor = .secondaryLabel
+    backgroundColor = UIColor.secondarySystemBackground.withAlphaComponent(0.3)
+  }
+}
+
+public extension UIView {
+   func addLabelDescribing<T: UIView>(
+    view: T,
+    insideSuperview superview: UIView
+  ) {
+    // 1
+    let viewDescriptionLabel = ViewDescriptionLabel()
+    // 2
+    viewDescriptionLabel.text = String(describing: T.self)
+    // 3
+    superview.addSubview(viewDescriptionLabel)
+    // 4
+    viewDescriptionLabel.center(superview)
+  }
+
+}
 public extension UIView {
   func instantiateNib<T: UIView>(view: T) -> UIView {
     // 1
