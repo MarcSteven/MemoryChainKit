@@ -205,3 +205,15 @@ public extension UITableView {
         return visibleCells.filter { indexPath(for: $0)?.section == section }
     }
 }
+public extension UITableView {
+    func ConfigureProtocols() {
+        self.delegate = self as? UITableViewDelegate
+        self.dataSource = (self as? UITableViewDataSource)
+    }
+    func configureHeaderView() {
+        self.tableHeaderView = UIView(frame: .zero)
+    }
+    func configureFooterView() {
+        self.tableFooterView = UIView(frame: .zero)
+    }
+}
