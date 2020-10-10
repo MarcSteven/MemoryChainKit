@@ -28,6 +28,15 @@ extension UIButton {
         return button
     }
 }
+public extension UIButton {
+  
+ static func createSystemButton(withTitle title: String)
+    -> UIButton {
+      let button = UIButton(type: .system)
+      button.setTitle(title, for: .normal)
+      return button
+  } 
+}
 
 //MARK: - animation for UIButton
 public extension UIButton {
