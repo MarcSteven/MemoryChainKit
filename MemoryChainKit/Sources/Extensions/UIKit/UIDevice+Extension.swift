@@ -57,7 +57,7 @@ public extension UIDevice {
             return true
         default:
             // Verify all our IOS_DEVICE_CONSTANT tags make sense when adding a new device size.
-            owsFailDebug("unknown device format")
+           
             return false
         }
     }
@@ -89,18 +89,11 @@ public extension UIDevice {
             return true
         default:
             // Verify all our IOS_DEVICE_CONSTANT tags make sense when adding a new device size.
-            owsFailDebug("unknown device format")
             return false
         }
     }
 
-    var isNarrowerThanIPhone6: Bool {
-        return CurrentAppContext().frame.width < 375
-    }
-
-    var isIPhone5OrShorter: Bool {
-        return CurrentAppContext().frame.height <= 568
-    }
+   
 
     var isCompatabilityModeIPad: Bool {
         return userInterfaceIdiom == .phone && model.hasPrefix("iPad")
@@ -110,11 +103,7 @@ public extension UIDevice {
         return userInterfaceIdiom == .pad
     }
 
-    var isFullScreen: Bool {
-        let windowSize = CurrentAppContext().frame.size
-        let screenSize = UIScreen.main.bounds.size
-        return windowSize.largerAxis == screenSize.largerAxis && windowSize.smallerAxis == screenSize.smallerAxis
-    }
+   
 
     var defaultSupportedOrienations: UIInterfaceOrientationMask {
         return isIPad ? .all : .allButUpsideDown

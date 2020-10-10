@@ -55,44 +55,6 @@ public extension UILabel {
 }
 
 public extension UILabel {
-  
-  func configureHeaderLabel(withText text: String) {
-    configure(withText: text, size: .headerTextSize, alignment: .left, lines: 0, weight: .bold)
-  }
-  
-  func configureSubHeaderLabel(withText text: String) {
-    configure(withText: text, size: .subHeaderTextSize, alignment: .left, lines: 0, weight: .semibold)
-  }
-  
-  func configureHeroLabel(withText text: String) {
-    configure(withText: text, size: .heroTextSize, alignment: .left, lines: 0, weight: .heavy)
-  }
-  
-  func configureAppHeaderLabel(withText text: String){
-    configure(withText: text, size: .appHeaderTextSize, alignment: .left, lines: 2, weight: .medium)
-  }
-  
-  func configureAppSubHeaderLabel(withText text: String) {
-    configure(withText: text, size: .appSubHeaderTextSize, alignment: .left, lines: 2, weight: .regular)
-  }
-  
-  func configureTinyLabel(withText text: String) {
-    configure(withText: text, size: .tinyTextSize, alignment: .center, lines: 1, weight: .regular)
-  }
-  
-  private func configure(withText newText: String,
-                         size: CGFloat,
-                         alignment: NSTextAlignment,
-                         lines: Int,
-                         weight: UIFont.Weight) {
-    text = newText
-    font = UIFont.systemFont(ofSize: size, weight: weight)
-    textAlignment = alignment
-    numberOfLines = lines
-    lineBreakMode = .byTruncatingTail
-  }
-}
-public extension UILabel {
     var mc_hasText:Bool {
         guard let text = text else {
             return false

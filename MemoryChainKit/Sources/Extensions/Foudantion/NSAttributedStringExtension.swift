@@ -188,22 +188,3 @@ extension NSAttributedString {
     }
 
 }
-public extension NSAttributedString {
-func attributedStringWithoutHiddenText() -> NSAttributedString? {
-    let result = "" as? NSMutableAttributedString
-    let fullRange = NSRange(location: 0, length: length())
-    var range = NSZeroRange as? NSRange
-    if let range = range {
-        while NSMaxRange(range) < length() {
-            let attributes = self.attributes(at: range?.location ?? 0, longestEffectiveRange: &range, in: fullRange)
-            if (attributes[MyHiddenTextAttribute] as? NSNumber)?.boolValue ?? false {
-                continue
-            }
-
-            let substring = NSAttributedString(string: string().substring(with: range), attributes: attributes)
-            result?.append(substring)
-        }
-    }
-    return result
-}
-}

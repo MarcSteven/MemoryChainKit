@@ -15,7 +15,4 @@ public extension UITableViewCell {
         }
         set {}
     }
-    var tableView:UITableView? {
-        return parentView(of: UITableView.self)
-    }
 }

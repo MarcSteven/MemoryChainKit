@@ -43,18 +43,6 @@ public extension UITextField {
     }
     
      
-    /**
-     add bottomLine
-     */
-    func addBottomLine(_ lineWidth:CGFloat,lineColor:UIColor) {
-        let border = CALayer()
-     
-        border.borderColor = lineColor.cgColor
-        border.frame = CGRect(origin: CGPoint(x: 0, y: self.frame.size.height - borderWidth), size: CGSize(width: self.frame.size.width, height: self.frame.size.height))
-        border.borderWidth = lineWidth
-        self.layer.addSublayer(border)
-        self.layer.masksToBounds = true
-    }
     func togglePasswordVisibility() {
         isSecureTextEntry = !isSecureTextEntry
         if let existingText = text,
@@ -286,15 +274,6 @@ public extension UITextField {
         self.leftViewMode = UITextField.ViewMode.always
     }
     
-    /// Add border width and color
-    ///
-    /// - Parameters:
-    ///   - width: width
-    ///   - color: color
-    func setBorder(_ width: CGFloat, _ color: UIColor) {
-        self.borderWidth = width
-        self.borderColor = color
-    }
     
 }
 
@@ -382,34 +361,3 @@ extension UITextField {
 }
 
 }
-public extension UITextField {
-    private var specialCharacterKey: Void?
-
-   
-        var allowSpecialCharacters: NSNumber? {
-            get {
-
-                return objc_getAssociatedObject(self, &specialCharacterKey) as? NSNumber
-            }
-            set(allowSpecialCharacters) {
-
-                objc_setAssociatedObject(self, &specialCharacterKey, allowSpecialCharacters, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            }
-        }
-
-    
-}
-//MARK: - go the next TextField
-public extension UITextField {
-       class func jumpToNextTextFields(textFields:[UITextField]) -> Void {
-           guard let last = fields.last else {
-               return
-           }
-           for i in 0 ..< fields.count - 1 {
-               fields[i].returnKeyType = .next
-               fields[i].addTarget(fields[i+1], action: #selector(UIResponder.becomeFirstResponder), for: .editingDidEndOnExit)
-           }
-           last.returnKeyType = .go
-           last.addTarget(last, action: #selector(UIResponder.resignFirstResponder), for: .editingDidEndOnExit)
-       }
-   }

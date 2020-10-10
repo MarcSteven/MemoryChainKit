@@ -42,7 +42,7 @@ public extension UITextView {
 
 public extension UITextView {
     func ms_point(from touch: UITouch?) -> CGPoint {
-        let point = touch?.location(in: self)
+        var point = touch?.location(in: self)
         point?.x -= textContainerInset.left
         point?.y -= textContainerInset.top
         return point ?? CGPoint.zero

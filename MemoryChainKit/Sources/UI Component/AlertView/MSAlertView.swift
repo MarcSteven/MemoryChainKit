@@ -14,7 +14,7 @@ open class MSAlertView:UIView {
     //MARK: - Private properties
     private let wrapperView:UIView = {
         let view = UIView()
-        view.cornerRadius = 10
+       // view.cornerRadius = 10
         view.backgroundColor = UIColor(hexString: "#AA000000")
         
         view.translatesAutoresizingMaskIntoConstraints = false

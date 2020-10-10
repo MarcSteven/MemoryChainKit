@@ -17,7 +17,7 @@ public extension UIImageView {
     image = appImage
     contentMode = .scaleAspectFit
     layer.cornerRadius = size/5.0
-    layer.borderColor = UIColor.borderColor.cgColor
+  
     layer.borderWidth = 0.5
     clipsToBounds = true
   }

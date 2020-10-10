@@ -259,14 +259,7 @@ public extension Date {
         return ""
     }
     
-    func isToday() -> Bool {
-        let calendar = Calendar.current
-        let unit: Set<Calendar.Component> = [.day, .month, .year]
-        let nowComponents = calendar.dateComponents(unit, from: Date())
-        let selfComponents = calendar.dateComponents(unit, from: self)
-        return (selfComponents.year == nowComponents.year) && (selfComponents.month == nowComponents.month) && (selfComponents.day == nowComponents.day)
-    }
-    
+        
     func diffHours() -> String {
         let nowTimeStamp = Date().timeIntervalSince1970
         let selfTimeStamp = self.timeIntervalSince1970
@@ -338,7 +331,7 @@ public extension Date {
         }else if date.isYesterday() {
             fmt.dateFormat = "昨天 HH:mm"
             return fmt.string(from: date)
-        }else if date.isThisYear() {
+        }else if date.isCurrentYear() {
             fmt.dateFormat = "MM-dd"
             return fmt.string(from: date)
         }else {

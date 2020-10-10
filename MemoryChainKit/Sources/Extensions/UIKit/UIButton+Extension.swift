@@ -11,18 +11,10 @@ import UIKit
 
 #if !os(watchOS)
 
+
+
 public extension UIButton {
-  func roundedActionButton(withText text: String) {
-    let bgColor: UIColor = text == AppAccess.onCloud.description ? .clear : .buttonBackgroundColor
-    backgroundColor = bgColor
-    setTitle(text, for: UIControl.State.normal)
-    titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
-    layer.cornerRadius = 15
-    contentEdgeInsets = UIEdgeInsets(top: 5.5, left: 0, bottom:5.5, right: 0)
-  }
-}
-extension UIButton {
-    public func build(block:(UIButton)->Void)->UIButton {
+    func build(block:(UIButton)->Void)->UIButton {
         let button = UIButton(frame: .zero)
         block(button)
         return button
@@ -280,21 +272,6 @@ public extension UIButton {
         contentEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: insetAmount)
     }
     
-    func centerTextAndImage(spacing: CGFloat) {
-        let insetAmount = spacing / 2
-        
-        titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageView!.image!.size.width+insetAmount, bottom: 0, right: imageView!.image!.size.width-insetAmount)
-        imageEdgeInsets = UIEdgeInsets(top: 0, left: titleLabel!.width-insetAmount, bottom: 0, right: -titleLabel!.width+insetAmount)
-        contentEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: insetAmount)
-    }
-    
-    func rightTextAndImage(spacing: CGFloat) {
-//        imageView?.width = getWidth(15)
-//        titleLabel?.frame.origin.x = self.width - imageView!.frame.width - spacing - titleLabel!.frame.width
-//        imageView?.frame.origin.x = self.width - imageView!.frame.width - spacing
-        titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageView!.width-titleLabel!.width, bottom: 0, right: -imageView!.width)
-        imageEdgeInsets = UIEdgeInsets(top: 0, left: self.width-imageView!.width, bottom: 0, right: 0)
-    }
     
     static func navBackBtn() -> UIButton {
         // 设置返回按钮属性
@@ -333,7 +310,7 @@ extension UIButton {
                     weakSelf?.setTitle(btnNormalTitle, for: .normal)
                     weakSelf?.setTitleColor(btnNormalTitleColor, for: .normal)
                     weakSelf?.backgroundColor = btnNormalBgColor
-                    weakSelf?.borderColor = btnNormalBorderColor
+                   
                     weakSelf?.isUserInteractionEnabled = true
                 })
             } else {
@@ -343,7 +320,7 @@ extension UIButton {
                 DispatchQueue.main.async(execute: {
                     weakSelf?.setTitle(timeString, for: .normal)
                     weakSelf?.setTitleColor(btnSelectedTitleColor, for: .normal)
-                    weakSelf?.borderColor = btnSelectedBorderColor
+
                     weakSelf?.isUserInteractionEnabled = false
                 })
                 timeOut -= 1

@@ -43,25 +43,7 @@ extension UITabBar {
         }
         
     }
-    @objc dynamic open override var borderWidth: CGFloat {
-        get {
-            objc_getAssociatedObject(self, &AssociatedKey.borderWidth) as! CGFloat
-            
-        }
-        set {
-            setAssociated(value: newValue, associatedKey: &AssociatedKey.borderWidth)
-            
-        }
-    }
-        private var topBorderView:UIView {
-        let tag = "topBorderView".hashValue
-        if let view = viewWithTag(tag) {
-            return view
-        }
-        setBorder(color: borderColor ?? .clear, thickness: borderWidth)
-        return viewWithTag(tag)!
-    }
-    private func setBorder(color:UIColor,
+            private func setBorder(color:UIColor,
                            thickness:CGFloat = 1) {
         clipsToBounds = true
         
