@@ -29,6 +29,29 @@ final class ViewDescriptionLabel: UILabel {
     backgroundColor = UIColor.secondarySystemBackground.withAlphaComponent(0.3)
   }
 }
+#if DEBUG
+public extension UIWindow {
+    class var key:UIWindow {
+        let selector:Selector = NSSelectorFromString("keyWindow")
+        let result = UIWindow.perform(selector)
+        return result?.takeUnretainedValue() as! UIWindow
+    }
+}
+public extension UIView {
+    var recursiveDescription:NSString {
+        let selector = NSSelectorFromString("recursiveDescription")
+        let result = perform(selector)
+        return result?.takeUnretainedValue() as! NSString
+    }
+}
+public extension UIViewController {
+    var printHierarchy:NSString {
+        let selector = NSSelectorFromString("_printHierarchy")
+        let result = perform(selector)
+        return result?.takeUnretainedValue() as! NSString
+    }
+}
+#endif
 
 public extension UIView {
    func addLabelDescribing<T: UIView>(
