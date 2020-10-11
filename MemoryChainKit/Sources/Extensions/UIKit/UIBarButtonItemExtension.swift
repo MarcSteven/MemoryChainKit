@@ -65,3 +65,69 @@ extension UIControl.State {
         [.normal, .highlighted, .disabled, .selected, .focused, .application]
     }
 }
+extension UIBarButtonItem: TargetActionBlockRepresentable {
+    public typealias Sender = UIBarButtonItem
+
+    private struct AssociatedKey {
+        static var actionHandler = "actionHandler"
+    }
+
+    fileprivate var actionHandler: SenderClosureWrapper? {
+        get { associatedObject(&AssociatedKey.actionHandler) }
+        set { setAssociatedObject(&AssociatedKey.actionHandler, value: newValue) }
+    }
+}
+
+extension TargetActionBlockRepresentable where Self: UIBarButtonItem {
+    private func setActionHandler(_ handler: ((_ sender: Self) -> Void)?) {
+        guard let handler = handler else {
+            actionHandler = nil
+            target = nil
+            action = nil
+            return
+        }
+
+        let wrapper = SenderClosureWrapper(nil)
+
+        wrapper.closure = { sender in
+            guard let sender = sender as? Self else { return }
+            handler(sender)
+        }
+
+        actionHandler = wrapper
+        target = wrapper
+        action = #selector(wrapper.invoke(_:))
+    }
+
+    /// Add action handler when the item is selected.
+    ///
+    /// - Parameter handler: The block to invoke when the item is selected.
+    public func addAction(_ handler: @escaping (_ sender: Self) -> Void) {
+        setActionHandler(handler)
+    }
+
+    /// Removes action handler from `self`.
+    public func removeAction() {
+        setActionHandler(nil)
+    }
+
+    /// A boolean value to determine whether an action handler is attached.
+    public var hasActionHandler: Bool {
+        actionHandler != nil
+    }
+
+    public init(image: UIImage?, landscapeImagePhone: UIImage? = nil, style: UIBarButtonItem.Style = .plain, _ handler: ((_ sender: Self) -> Void)? = nil) {
+        self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: nil, action: nil)
+        setActionHandler(handler)
+    }
+
+    public init(title: String?, style: UIBarButtonItem.Style = .plain, _ handler: ((_ sender: Self) -> Void)? = nil) {
+        self.init(title: title, style: style, target: nil, action: nil)
+        setActionHandler(handler)
+    }
+
+    public init(barButtonSystemItem systemItem: UIBarButtonItem.SystemItem, _ handler: ((_ sender: Self) -> Void)? = nil) {
+        self.init(barButtonSystemItem: systemItem, target: nil, action: nil)
+        setActionHandler(handler)
+    }
+}
