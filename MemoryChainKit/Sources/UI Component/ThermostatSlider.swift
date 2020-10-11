@@ -89,7 +89,7 @@ class ThermostatSlider:UIControl {
     private func designHandle() {
         handleLayer.backgroundColor = UIColor.white.cgColor
         handleLayer.shadowColor = UIColor.blue.cgColor
-        handleLayer.shadowOffset = CGSize(0.0, 0.0)
+        handleLayer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         handleLayer.cornerRadius = 2
         handleLayer.shadowOpacity = 0.3
         handleLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)

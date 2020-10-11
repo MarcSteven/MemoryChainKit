@@ -93,7 +93,7 @@ public extension NSObject {
         return value
     }
 }
-extension NSObject {
+public extension NSObject {
     var memoryAddress: String {
         String(describing: Unmanaged<NSObject>.passUnretained(self).toOpaque())
     }

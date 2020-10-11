@@ -13,3 +13,8 @@ public extension CGRect {
         return height > 0 ? height + spacing : 0
     }
 }
+public extension CGRect {
+     init(_ size: CGSize) {
+        self = CGRect(origin: .zero, size: size)
+    }
+}
