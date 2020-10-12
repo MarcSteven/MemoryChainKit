@@ -10,12 +10,12 @@ import UIKit
 
 // MARK: - NSAttributedString Extension
 
-extension NSAttributedString {
-    @objc public func setLineSpacing(_ spacing: CGFloat) -> NSMutableAttributedString {
+@objc public extension NSAttributedString {
+     func setLineSpacing(_ spacing: CGFloat) -> NSMutableAttributedString {
          NSMutableAttributedString(attributedString: self).setLineSpacing(spacing)
     }
 
-    public var attributesDescription: String {
+    var attributesDescription: String {
         let text = string as NSString
         let range = NSRange(location: 0, length: length)
         var result: [String] = []
@@ -187,4 +187,12 @@ extension NSAttributedString {
         }
     }
 
+}
+public extension NSAttributedString {
+    var mc_hasText:Bool {
+        return string.mc_hasText
+    }
+    var mc_hasNonWhitespaceText:Bool {
+        return string.mc_hasNonWhitespaceText
+    }
 }
