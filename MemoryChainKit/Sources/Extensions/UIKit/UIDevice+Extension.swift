@@ -415,3 +415,9 @@ public extension UIDevice {
     }
     
 }
+public extension UIDevice {
+    class var iPhoneXOrLater:Bool {
+        return UIScreen.main.bounds.height > 812.0
+    }
+
+}
