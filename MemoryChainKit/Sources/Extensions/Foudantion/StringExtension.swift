@@ -184,9 +184,6 @@ extension String {
     private var nsString:NSString {
         return self as NSString
     }
-    public var lastPathComponent:String {
-        return nsString.lastPathComponent
-    }
     public var deletingLastPathComponent:String {
         return nsString.deletingLastPathComponent
     }
@@ -520,15 +517,15 @@ public extension String {
     return prefix(1).uppercased() + dropFirst()
   }
 }
+// see here  https://stackoverflow.com/questions/31780453/how-to-get-the-filename-from-the-filepath-in-swift/35033432
 public extension String {
-  func boolValue() -> Bool? {
-    switch lowercased() {
-    case "true", "yes", "1":
-      return true
-    case "false", "no", "0":
-      return false
-    default:
-      return nil
+    var fileURL: URL {
+        return URL(fileURLWithPath: self)
     }
-  }
+    var pathExtension: String {
+        return fileURL.pathExtension
+    }
+    var lastPathComponent: String {
+        return fileURL.lastPathComponent
+    }
 }

@@ -74,11 +74,11 @@ final public class SwizzleManager {
 
     private static func mcSwizzle(options: SwizzleOptions) {
         if options.contains(.view) {
-            #warning("TODO")
+            
         }
 
         if options.contains(.button) {
-            #warning("TODO")
+            
         }
 
         if options.contains(.label) {
