@@ -15,6 +15,18 @@ extension UITableView {
         block(tableView)
         return tableView
     }
+    public func setEditing(_ editing:Bool,
+                           animated:Bool,
+                           completion:@escaping () ->Void) {
+        CATransaction.animation({setEditing(editing, animated: animated)}, completinonHandler: completion)
+    }
+    public func setZoomScale(_ scale:CGFloat,
+                             animated:Bool,
+                             completion:@escaping () ->Void) {
+        CATransaction.animation({setZoomScale(scale, animated: animated)}, completinonHandler: completion)
+
+    }
+    
 }
 
 public extension UITableView {
