@@ -26,6 +26,10 @@ extension UITableView {
         CATransaction.animation({setZoomScale(scale, animated: animated)}, completinonHandler: completion)
 
     }
+    public func setBackgroundColor(_ color:UIColor) {
+        self.backgroundColor = color
+    }
+    
     
 }
 
