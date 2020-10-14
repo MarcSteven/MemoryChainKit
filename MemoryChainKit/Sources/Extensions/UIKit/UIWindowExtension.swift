@@ -25,3 +25,46 @@ public extension UIWindow {
         return top
     }
 }
+public extension UIWindow {
+    func setRootViewController(_ viewController:UIViewController) {
+        if rootViewController == viewController {
+            return
+        }
+        if let rootVC = (rootViewController as? UINavigationController)?.rootViewController,
+            rootVC == viewController{
+            return
+        }
+        rootViewController = viewController.embedInNavigationControllerIfNeeded()
+        makeKeyAndVisible()
+    }
+}
+
+public extension UIWindow {
+    func getVisibleViewController(_ rootViewController: UIViewController?) -> UIViewController? {
+
+        var rootVC = rootViewController
+        if rootVC == nil {
+            rootVC = UIApplication.shared.keyWindow?.rootViewController
+        }
+
+        if rootVC?.presentedViewController == nil {
+            return rootVC
+        }
+
+        if let presented = rootVC?.presentedViewController {
+            if presented.isKind(of: UINavigationController.self) {
+                let navigationController = presented as! UINavigationController
+                return navigationController.viewControllers.last!
+            }
+
+            if presented.isKind(of: UITabBarController.self) {
+                let tabBarController = presented as! UITabBarController
+                return tabBarController.selectedViewController!
+            }
+
+            return getVisibleViewController(presented)
+        }
+        return nil
+    }
+}
+
