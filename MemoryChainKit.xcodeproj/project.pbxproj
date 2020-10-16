@@ -119,15 +119,10 @@
 		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
 		A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */; };
 		A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F41242A7D980081D52F /* SwizzleManager.swift */; };
-		A688014B243B00F800C16C82 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */; };
 		A688014E243B03C300C16C82 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A688014D243B03C300C16C82 /* RxSwift */; };
 		A6880150243B03C300C16C82 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A688014F243B03C300C16C82 /* RxRelay */; };
 		A6880152243B03C300C16C82 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A6880151243B03C300C16C82 /* RxCocoa */; };
 		A6880154243B03C300C16C82 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = A6880153243B03C300C16C82 /* RxBlocking */; };
-		A6880156243B042C00C16C82 /* UIAlertController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */; };
-		A6880158243B04FB00C16C82 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880157243B04FB00C16C82 /* UIView+Rx.swift */; };
-		A688015C243B06D100C16C82 /* UIBarButtonItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688015B243B06D100C16C82 /* UIBarButtonItem+Rx.swift */; };
-		A688015E243B07EF00C16C82 /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A688015D243B07EE00C16C82 /* URLSession+Rx.swift */; };
 		A6880166243B35FD00C16C82 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6880165243B35FD00C16C82 /* Validation.swift */; };
 		A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A6880168243B384B00C16C82 /* SwiftyJSON */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
@@ -209,7 +204,6 @@
 		A6C3E3262440CD4500132000 /* TargetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3252440CD4500132000 /* TargetScene.swift */; };
 		A6C3E3282440CD6A00132000 /* SceneTransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */; };
 		A6C3E3512441C35F00132000 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3502441C35F00132000 /* BaseViewController.swift */; };
-		A6C3E3532441CEDB00132000 /* ObservableTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */; };
 		A6C3E3582442F6A900132000 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E3572442F6A900132000 /* LocalizationManager.swift */; };
 		A6C3E35A24442D8700132000 /* Flashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35924442D8700132000 /* Flashing.swift */; };
 		A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C3E35B24442E9B00132000 /* Pulse.swift */; };
@@ -459,11 +453,6 @@
 		A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssertExportSessionExtension.swift; sourceTree = "<group>"; };
 		A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCollectionViewFlowLayoutCustomizable.swift; sourceTree = "<group>"; };
 		A66F3F41242A7D980081D52F /* SwizzleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizzleManager.swift; sourceTree = "<group>"; };
-		A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
-		A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Rx.swift"; sourceTree = "<group>"; };
-		A6880157243B04FB00C16C82 /* UIView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
-		A688015B243B06D100C16C82 /* UIBarButtonItem+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Rx.swift"; sourceTree = "<group>"; };
-		A688015D243B07EE00C16C82 /* URLSession+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		A6880165243B35FD00C16C82 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A69310992417100A004ADF4F /* Dictionary+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helpers.swift"; sourceTree = "<group>"; };
 		A693109B2417100A004ADF4F /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
@@ -546,7 +535,6 @@
 		A6C3E3252440CD4500132000 /* TargetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetScene.swift; sourceTree = "<group>"; };
 		A6C3E3272440CD6A00132000 /* SceneTransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTransitionType.swift; sourceTree = "<group>"; };
 		A6C3E3502441C35F00132000 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTypeExtension.swift; sourceTree = "<group>"; };
 		A6C3E3572442F6A900132000 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		A6C3E35924442D8700132000 /* Flashing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashing.swift; sourceTree = "<group>"; };
 		A6C3E35B24442E9B00132000 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
@@ -848,19 +836,6 @@
 				A65417C924220CF900077AD8 /* TransitionContext.swift */,
 			);
 			path = Animator;
-			sourceTree = "<group>";
-		};
-		A65417E42422234200077AD8 /* RxSwift */ = {
-			isa = PBXGroup;
-			children = (
-				A688014A243B00F800C16C82 /* UIScrollView+Rx.swift */,
-				A6880155243B042C00C16C82 /* UIAlertController+Rx.swift */,
-				A6C3E3522441CEDB00132000 /* ObservableTypeExtension.swift */,
-				A6880157243B04FB00C16C82 /* UIView+Rx.swift */,
-				A688015B243B06D100C16C82 /* UIBarButtonItem+Rx.swift */,
-				A688015D243B07EE00C16C82 /* URLSession+Rx.swift */,
-			);
-			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		A66F3F252429C4C90081D52F /* Analytics */ = {
@@ -1526,7 +1501,6 @@
 				A6A0E0DF253932F600860AA3 /* AVFoundation */,
 				A6E85DAE2449734B00645A2D /* CoreGraphics */,
 				A6356CE324232C5D00B46CDF /* SwiftUI */,
-				A65417E42422234200077AD8 /* RxSwift */,
 				A65417BC2421ED0300077AD8 /* SnapKit */,
 				A693109824170FF3004ADF4F /* Foudantion */,
 				A693109724170FDF004ADF4F /* UIKit */,
@@ -1842,7 +1816,6 @@
 				A6D40BF82417B6B500A88B5B /* MCInformationTipPreferences.swift in Sources */,
 				A6DDD46424168C6E008E1703 /* Copying.swift in Sources */,
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
-				A688014B243B00F800C16C82 /* UIScrollView+Rx.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
 				A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */,
 				A6020D4E245047F400B6DA00 /* Route.swift in Sources */,
@@ -1851,9 +1824,7 @@
 				A65417C824220C8900077AD8 /* TransitionAnimator.swift in Sources */,
 				A6020D38244F24CC00B6DA00 /* EquatableByPointer.swift in Sources */,
 				A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */,
-				A688015E243B07EF00C16C82 /* URLSession+Rx.swift in Sources */,
 				A6E85DAB24496B0A00645A2D /* NavigationType.swift in Sources */,
-				A6C3E3532441CEDB00132000 /* ObservableTypeExtension.swift in Sources */,
 				A6DDD46024168C6E008E1703 /* Shakeable.swift in Sources */,
 				A6020D422450230100B6DA00 /* NetworkError.swift in Sources */,
 				A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */,
@@ -1869,7 +1840,6 @@
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
-				A688015C243B06D100C16C82 /* UIBarButtonItem+Rx.swift in Sources */,
 				A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */,
 				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
 				A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */,
@@ -1885,7 +1855,6 @@
 				A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */,
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
-				A6880156243B042C00C16C82 /* UIAlertController+Rx.swift in Sources */,
 				A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* StringExtension.swift in Sources */,
@@ -1941,7 +1910,6 @@
 				A63D396D2419298100937CCD /* UIDevice+Extension.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
-				A6880158243B04FB00C16C82 /* UIView+Rx.swift in Sources */,
 				A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */,
 				A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */,
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
