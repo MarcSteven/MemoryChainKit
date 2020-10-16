@@ -20,6 +20,59 @@ public extension UIImage {
     return image
   }
 }
+public enum ImageGradientDirection{
+    case left,right,top,bottom,bottomLeft,bottomRight,topLeft,topRight
+}
+public extension UIImage {
+    convenience init?(size:CGSize,
+                      direction:ImageGradientDirection,
+                      colors:[UIColor]) {
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        guard colors.count > 1 else {
+            return nil
+        }
+        if colors.count == 1 {
+            let color  = colors.first!
+            color.setFill()
+            let rect = CGRect(origin: .zero, size: size)
+            UIRectFill(rect)
+            
+        }else {
+            var locations :[CGFloat] = []
+            for (index,_) in colors.enumerated() {
+                let index = CGFloat(index)
+                locations.append(index / CGFloat(colors.count - 1))
+                
+            }
+            guard let gradient = CGGradient(colorSpace: CGColorSpaceCreateDeviceRGB(), colorComponents: colors.compactMap{$0.cgColor.components}.flatMap{$0}, locations: locations, count: colors.count) else {
+                return nil
+            }
+            var startPoint: CGPoint
+            var endPoint:CGPoint
+            switch direction {
+            case .left:
+                startPoint = CGPoint(x: size.width, y: size.height / 2)
+                endPoint = CGPoint(x: 0.0, y: size.height / 2)
+            case .right:
+                startPoint = CGPoint(x: 0.0, y: size.height / 2)
+                endPoint = CGPoint(x:size.width,y:size.height / 2)
+            default:
+                fatalError("not support")
+            }
+            context.drawLinearGradient(gradient, start: startPoint, end: endPoint, options: CGGradientDrawingOptions())
+        }
+        guard let image = UIGraphicsGetImageFromCurrentImageContext()?.cgImage else {
+            return nil
+        }
+        self.init(cgImage:image)
+        defer {
+            UIGraphicsEndImageContext()
+        }
+    }
+}
 public extension UIImage {
     
     convenience init(bundleName:String) {
