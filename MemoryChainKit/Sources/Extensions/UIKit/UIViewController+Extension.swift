@@ -100,7 +100,11 @@ public extension  UIViewController {
 
     /// A boolean value indicating whether the home indicator is currently present.
      var isHomeIndicatorPresent: Bool {
-        view.safeAreaInsets.bottom > 0
+        if #available(iOS 11, *) {
+            return view.safeAreaInsets.bottom > 0
+        } else {
+            return false
+        }
     }
 
     /// Only `true` iff `isDeviceLandscape` and `isInterfaceLandscape` both are `true`; Otherwise, `false`.
