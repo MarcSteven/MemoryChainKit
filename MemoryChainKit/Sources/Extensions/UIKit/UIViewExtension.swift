@@ -37,11 +37,11 @@ public extension UIView {
         UIView.animate(withDuration: duration, delay: delay, usingSpringWithDamping: damping, initialSpringVelocity: velocity, options: options, animations: animations, completion: nil)
     }
 
-     static func animateFromCurrentState(withDuration duration: TimeInterval = .fast, _ animations: @escaping () -> Void) {
+    static func animateFromCurrentState(withDuration duration: TimeInterval = 0.25, _ animations: @escaping () -> Void) {
         animateFromCurrentState(withDuration: duration, animations: animations) {}
     }
 
-     static func animateFromCurrentState(withDuration duration: TimeInterval = .fast, animations: @escaping () -> Void, completion: @escaping () -> Void) {
+    static func animateFromCurrentState(withDuration duration: TimeInterval = 0.25, animations: @escaping () -> Void, completion: @escaping () -> Void) {
         UIView.animate(withDuration: duration, delay: 0, options: .beginFromCurrentState, animations: {
             animations()
         }, completion: { _ in
@@ -116,7 +116,7 @@ extension UIView {
     @objc open func setAlpha(
         _ value: CGFloat,
         animated: Bool = false,
-        duration: TimeInterval = .fast,
+        duration: TimeInterval = 0.25,
         options: AnimationOptions = [.curveEaseInOut],
         completion: (() -> Void)? = nil
     ) {
@@ -130,41 +130,9 @@ extension UIView {
 
 // MARK: - BackgroundColor
 
-extension UIView {
-    @objc open func animateBackgroundColor(to color: UIColor?, duration: Double = .normal) {
-        guard let color = color else { return }
-        CABasicAnimation(keyPath: "fillColor").apply {
-            $0.timingFunction = .easeInEaseOut
-            $0.fromValue = backgroundColor?.cgColor
-            $0.toValue = color.cgColor
-            $0.duration = duration
-            layer.add($0, forKey: "fillColor")
-        }
-        backgroundColor = color
-    }
-}
-
 // MARK: - Rotating
 
 extension UIView {
-    @objc open func startRotating(duration: Double = 1, clockwise: Bool = true) {
-        let animationKey = "xcore.rotation"
-
-        guard layer.animation(forKey: animationKey) == nil else {
-            return
-        }
-
-        let animation = CABasicAnimation(keyPath: "transform.rotation").apply {
-            $0.duration = duration
-            $0.repeatCount = .infinity
-            $0.fromValue = 0
-            $0.toValue = Float((clockwise ? .pi : -.pi) * 2.0)
-            $0.isRemovedOnCompletion = false
-        }
-
-        layer.add(animation, forKey: animationKey)
-    }
-
     @objc open func stopRotating() {
         let animationKey = "xcore.rotation"
 
@@ -176,25 +144,7 @@ extension UIView {
     }
 }
 
-// MARK: - Fade
 
-extension NSObjectProtocol where Self: UIView {
-    public func withFadeAnimation(_ block: (_ view: Self) -> Void) {
-        CATransition().apply {
-            $0.duration = .normal
-            $0.timingFunction = .easeInEaseOut
-            $0.type = .fade
-            layer.add($0, forKey: "fade")
-            block(self)
-        }
-    }
-}
-
-extension NSObjectProtocol where Self: UILabel {
-    public func fadeText(_ text: String?) {
-        withFadeAnimation { $0.text = text }
-    }
-}
 
 extension NSObjectProtocol where Self: UIButton {
     /// Temporarily set the text.
