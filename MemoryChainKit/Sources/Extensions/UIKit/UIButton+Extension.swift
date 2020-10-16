@@ -60,16 +60,107 @@ public extension UIButton {
         }
     }
 }
+extension UIButton {
+    /// The image used for the normal state.
+       open var image: UIImage? {
+           get { image(for: .normal) }
+           set { setImage(newValue, for: .normal) }
+       }
 
+       /// The image used for the highlighted state.
+       open var highlightedImage: UIImage? {
+           get { image(for: .highlighted) }
+           set { setImage(newValue, for: .highlighted) }
+       }
+
+       /// The text used for the normal state.
+       open var text: String? {
+           get { title(for: .normal) }
+           set { setTitle(newValue, for: .normal) }
+       }
+
+       /// The text used for the highlighted state.
+       open var highlightedText: String? {
+           get { title(for: .highlighted) }
+           set { setTitle(newValue, for: .highlighted) }
+       }
+
+       /// The attributed text used for the normal state.
+       open var attributedText: NSAttributedString? {
+           get { attributedTitle(for: .normal) }
+           set { setAttributedTitle(newValue, for: .normal) }
+       }
+
+       /// The attributed text used for the highlighted state.
+       open var highlightedAttributedText: NSAttributedString? {
+           get { attributedTitle(for: .highlighted) }
+           set { setAttributedTitle(newValue, for: .highlighted) }
+       }
+
+       /// The color of the title used for the normal state.
+       open var textColor: UIColor? {
+           get { titleColor(for: .normal) }
+           set { setTitleColor(newValue, for: .normal) }
+       }
+
+       /// The color of the title used for the highlighted state.
+       open var highlightedTextColor: UIColor? {
+           get { titleColor(for: .highlighted) }
+           set { setTitleColor(newValue, for: .highlighted) }
+       }
+
+
+       /// Add space between `text` and `image` while preserving the `intrinsicContentSize` and respecting `sizeToFit`.
+       @IBInspectable
+       public var textImageSpacing: CGFloat {
+           get {
+               let (left, right) = (imageEdgeInsets.left, imageEdgeInsets.right)
+
+               if left + right == 0 {
+                   return right * 2
+               } else {
+                   return 0
+               }
+           }
+           set {
+               let insetAmount = newValue / 2
+               imageEdgeInsets = UIEdgeInsets(top: 0, left: -insetAmount, bottom: 0, right: insetAmount)
+               titleEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: -insetAmount)
+               contentEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: insetAmount)
+           }
+       }
+
+
+       // MARK: Underline
+
+       @objc open func underline() {
+           if let attributedText = titleLabel?.attributedText {
+               setAttributedTitle(NSMutableAttributedString(attributedString: attributedText).underline(attributedText.string), for: .normal)
+           } else if let text = titleLabel?.text {
+               setAttributedTitle(NSMutableAttributedString(string: text).underline(text), for: .normal)
+           }
+       }
+
+       // MARK: Reset
+
+       @objc open func removeInsets() {
+           contentEdgeInsets = 0
+           titleEdgeInsets = 0
+           imageEdgeInsets = 0
+       }
+
+       @objc open dynamic var contentTintColor: UIColor {
+           get { tintColor }
+           set {
+               tintColor = newValue
+               imageView?.tintColor = newValue
+           }
+       }
+}
 //Usage： button.flash()
 
 // MARK: - Properties
 public extension UIButton {
-    func underline() {
-        let attributedString = NSMutableAttributedString(string: (self.titleLabel?.text!)!)
-        attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: NSRange(location: 0, length: (self.titleLabel?.text?.count)!))
-        self.setAttributedTitle(attributedString, for: .normal)
-    }
     var mc_hasText:Bool {
         guard let label = titleLabel else {
             return false
@@ -233,8 +324,9 @@ public extension UIButton {
     }
     
     // 设置字体加粗
-    func setTextBold() {
-        self.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
+    func setTextBold(_ fontName:String,
+                     size:CGFloat) {
+        self.titleLabel?.font = UIFont(name: fontName  , size: size)
     }
     
     private var states: [UIControl.State] {

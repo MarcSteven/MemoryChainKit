@@ -196,6 +196,7 @@
 		A6A0E0E12539339300860AA3 /* AVAudioSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0E0E02539339300860AA3 /* AVAudioSessionExtension.swift */; };
 		A6A0E0E3253933F700860AA3 /* AVAudioSessionPortDescriptionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0E0E2253933F700860AA3 /* AVAudioSessionPortDescriptionExtension.swift */; };
 		A6A0E0E52539349F00860AA3 /* AVAudioOutputDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0E0E42539349F00860AA3 /* AVAudioOutputDeviceManager.swift */; };
+		A6A0E0E9253957E600860AA3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0E0E8253957E600860AA3 /* UIViewExtension.swift */; };
 		A6A439AA241A3AFD009FC4E1 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */; };
 		A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */; };
 		A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A439AD241A3E94009FC4E1 /* String+hasText.swift */; };
@@ -532,6 +533,7 @@
 		A6A0E0E02539339300860AA3 /* AVAudioSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioSessionExtension.swift; sourceTree = "<group>"; };
 		A6A0E0E2253933F700860AA3 /* AVAudioSessionPortDescriptionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioSessionPortDescriptionExtension.swift; sourceTree = "<group>"; };
 		A6A0E0E42539349F00860AA3 /* AVAudioOutputDeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioOutputDeviceManager.swift; sourceTree = "<group>"; };
+		A6A0E0E8253957E600860AA3 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		A6A439AB241A3C9F009FC4E1 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		A6A439AD241A3E94009FC4E1 /* String+hasText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hasText.swift"; sourceTree = "<group>"; };
@@ -955,6 +957,7 @@
 				A69BC0D2244598FC00E600FB /* UINavigationBar+Style.swift */,
 				A63D39372419297C00937CCD /* UIViewController+Extension.swift */,
 				A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */,
+				A6A0E0E8253957E600860AA3 /* UIViewExtension.swift */,
 				A63D392E2419297B00937CCD /* UIViewController+URL.swift */,
 				A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */,
 				A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */,
@@ -2087,6 +2090,7 @@
 				A63D39742419298100937CCD /* UINavigationBar+HideHairLine.swift in Sources */,
 				A6F21711243DF01E00188C23 /* LocationService.swift in Sources */,
 				A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */,
+				A6A0E0E9253957E600860AA3 /* UIViewExtension.swift in Sources */,
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
 				A6DDD45A24168C6E008E1703 /* Stylable.swift in Sources */,
 				A6D40C132417B6B500A88B5B /* SegmentedItem.swift in Sources */,
