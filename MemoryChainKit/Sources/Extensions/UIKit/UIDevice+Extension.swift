@@ -385,21 +385,7 @@ public extension UIDevice {
         return UIDevice().userInterfaceIdiom == .tv
     }
     
-    /**
- 
- 
-    return a "bool ' whether the device is plugged in ,return false if not an iOS device
- 
-    */
-    @objc  var isPluggedIn:Bool {
-        #if os(iOS)
-        return [.charging,.full].contains(UIDevice.current.batteryState)
-        #else
-        return false
-        #endif
-        
     }
-}
 //MARK: - check hasTopNotch and bottom indicator
 public extension UIDevice {
     var hasTopNotch: Bool {
