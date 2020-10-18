@@ -20,3 +20,6 @@ public typealias ResponseHandler = (Data?,URL?,URLResponse?)
 
 
 public typealias UpdatableCell = Updatable & UITableViewCell
+
+public typealias TextField = UITextField
+public typealias TextView = UITextView 

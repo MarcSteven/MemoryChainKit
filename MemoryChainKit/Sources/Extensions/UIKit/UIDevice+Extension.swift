@@ -150,6 +150,8 @@ public enum DeviceType: String, CaseIterable {
     case iPhone8
     case iPhone8Plus
     
+    
+    
     case iPhoneX
     case iPhoneXs
     case iPhoneXr
@@ -158,7 +160,6 @@ public enum DeviceType: String, CaseIterable {
     case iPhone11Pro
     case iPhone11ProMax
     case iPhoneSE2
-    
     
     case iPodTouch1G
     case iPodTouch2G
@@ -236,6 +237,7 @@ public enum DeviceType: String, CaseIterable {
         case .iPhone11: return "iPhone11"
         case .iPhone11Pro: return "iPhone11Pro"
         case .iPhone11ProMax: return "iPhone11ProMax"
+            
         case .iPhoneSE2: return "iPhoneSE2"
         case .iPodTouch1G: return "iPod Touch 1G"
         case .iPodTouch2G: return "iPod Touch 2G"
@@ -259,6 +261,9 @@ public enum DeviceType: String, CaseIterable {
         case .iPadPro12Inch: return "iPad Pro 12 Inch"
         case .simulator: return "Simulator"
         case .notAvailable: return "Not Available"
+        
+        default:
+            fatalError(because: .unsupportedFallbackFormattingStyle)
         }
     }
     
@@ -318,7 +323,8 @@ public enum DeviceType: String, CaseIterable {
         case .iPadPro9Inch: return ["iPad6,3", "iPad6,4"]
         case .iPadPro10p5Inch: return ["iPad7,3", "iPad7,4"]
         case .iPadPro12Inch: return ["iPad6,7", "iPad6,8", "iPad7,1", "iPad7,2"]
-        }
+            fatalError(because: .unsupportedFallbackFormattingStyle)
+                }
     }
     
     // MARK: Inits

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectiveC
 
 
 public extension UIView {
@@ -144,7 +145,18 @@ extension UIView {
     }
 }
 
-
+public extension UIView {
+    func allConstraints() -> [AnyHashable]? {
+        var array: [AnyHashable] = []
+        array.append(contentsOf: constraints)
+        for view in subviews {
+            if let all = view.allConstraints() {
+                array.append(contentsOf: all)
+            }
+        }
+        return array
+    }
+}
 
 extension NSObjectProtocol where Self: UIButton {
     /// Temporarily set the text.
@@ -166,4 +178,48 @@ extension NSObjectProtocol where Self: UIButton {
         }
     }
 }
+
+#if DEBUG
+public extension UIView {
+    var height:CGFloat {
+        get {
+            return frame.size.height
+        }
+        set {
+            frame.size.height = newValue
+        }
+    }
+    var width:CGFloat {
+        get {
+            return frame.size.width
+        }
+        set {
+            frame.size.width = newValue
+        }
+    }
+    var centerY:CGFloat {
+        get {
+            return center.y
+        }
+        set {
+            center.y = newValue
+            
+        }
+    }
+    var centerX:CGFloat {
+        get {
+            return center.x
+        }
+        set {
+            center.x = newValue
+        }
+    }
+    var top:CGFloat {
+        get {
+            return self.frame.origin.y
+        }
+    }
+}
+
+#endif
 
