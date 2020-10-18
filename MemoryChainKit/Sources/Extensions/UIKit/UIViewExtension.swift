@@ -179,7 +179,6 @@ extension NSObjectProtocol where Self: UIButton {
     }
 }
 
-#if DEBUG
 public extension UIView {
     var height:CGFloat {
         get {
@@ -219,7 +218,14 @@ public extension UIView {
             return self.frame.origin.y
         }
     }
+    func orientationWidth() -> CGFloat {
+        return UIApplication.shared.statusBarOrientation.isLandscape
+            ? height
+            : width
+    }
+    func orientationHeight() ->CGFloat {
+        return UIApplication.shared.statusBarOrientation.isLandscape ? width : height
+    }
 }
 
-#endif
 
