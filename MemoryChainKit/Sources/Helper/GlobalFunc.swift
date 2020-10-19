@@ -318,8 +318,31 @@ public func swizzle(_ forClass: AnyClass, originalSelector: Selector, swizzledSe
         method_exchangeImplementations(originalMethod, swizzledMethod)
     }
 }
-
+public func generateQRCode(from string:String) ->UIImage? {
+    let data = string.data(using: String.Encoding.ascii)
+    if let filter = CIFilter(name: "CIQRCodeGenerator") {
+        filter.setValue(data, forKey: "inputMessage")
+        let transform = CGAffineTransform(scaleX: 3, y: 3)
+        if let output  = filter.outputImage?.transformed(by: transform) {
+            return UIImage(ciImage: output)
+        }
+    }
+    return nil
+}
 public enum SwizzleMethodKind {
     case `class`
     case instance
+}
+/// convert media timing function name to string
+/// - Parameter input: media timing function name
+/// - Returns: return the media timing function name string
+public func convertFromCAMediaTimingFunctionName(_ input: CAMediaTimingFunctionName) -> String {
+    return input.rawValue
+}
+
+/// Convert the string to the media timing function name
+/// - Parameter input: input striong
+/// - Returns: return media Time function name
+public func convertToCAMediaTimingFunctionName(_ input: String) -> CAMediaTimingFunctionName {
+    return CAMediaTimingFunctionName(rawValue: input)
 }
