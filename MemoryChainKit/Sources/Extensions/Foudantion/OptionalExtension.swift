@@ -12,4 +12,7 @@ public extension Optional where Wrapped ==String {
     var isBlank:Bool {
         return self?.isBlank ?? true 
     }
+    var isNill:Bool {
+        return self == nil
+    }
 }
