@@ -226,6 +226,35 @@ public extension UIView {
     func orientationHeight() ->CGFloat {
         return UIApplication.shared.statusBarOrientation.isLandscape ? width : height
     }
+    /// Load Xib from name
+    static func loadFrom<T: UIView>(nibNamed: String, bundle : Bundle? = nil) -> T? {
+        let nib = UINib(nibName: nibNamed, bundle: bundle)
+        return nib.instantiate(withOwner: nil, options: nil)[0] as? T
+    }
+    func getConstraint(byAttribute attr: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
+        return constraints.filter { $0.firstAttribute == attr }.first
+    }
+    /// Clear all constraints
+    func clearConstraints() {
+        constraints.forEach { $0.autoRemove() }
+    }
+    /// clear all the subview 
+    func clearAllSubview() {
+                if let stackView = self as? UIStackView {
+            stackView.arrangedSubviews.forEach { view in
+                (view as? IDestroyable)?.destroy()
+                stackView.removeArrangedSubview(view)
+                view.removeFromSuperview()
+            }
+        } else {
+            subviews.forEach { view in
+                (view as? IDestroyable)?.destroy()
+                view.removeFromSuperview()
+            }
+        }
+
+    }
+    
 }
 
 
