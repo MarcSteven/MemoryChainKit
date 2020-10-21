@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import AdSupport
+
+public extension UIApplication {
+    //广告标识符
+    static var IDFA: String? {
+        ASIdentifierManager.shared().advertisingIdentifier.uuidString
+    }
+}
 
 
 public extension UIApplication {
