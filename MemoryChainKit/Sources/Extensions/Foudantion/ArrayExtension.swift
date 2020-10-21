@@ -249,4 +249,31 @@ public extension Array where Element == [String:Any] {
         return nil
     }
 }
+public extension Array where Element: Equatable {
+    
+    /// 移除重复元素
+     func deduplication() -> [Element] {
+        return removeRepeatedElement(where: { $0 })
+    }
+}
 
+public extension Array {
+    
+    /// 移除重复元素
+    /// - Parameter path: KeyPath条件
+    func removeRepeatedElement<E: Equatable>(for path: KeyPath<Element, E>) -> [Element] {
+        return reduce(into: [Element]()) { (result, e) in
+            let contains = result.contains { $0[keyPath: path] == e[keyPath: path] }
+            result += contains ? [] : [e]
+        }
+    }
+    
+    /// 移除重复元素
+    /// - Parameter closure: 过滤条件
+     func removeRepeatedElement<E: Equatable>(where closure: (Element) throws -> E) rethrows -> [Element] {
+        return try reduce(into: [Element]()) { (result, e) in
+            let contains = try result.contains { try closure($0) == closure(e) }
+            result += contains ? [] : [e]
+        }
+    }
+}
