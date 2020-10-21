@@ -6,14 +6,30 @@
 //  Copyright © 2019 Memory Chain technology(China) co,LTD. All rights reserved.
 //
 import UIKit
-extension UILabel {
-    public static func build(block:((UILabel)->Void)) ->UILabel {
+public extension UILabel {
+     static func build(block:((UILabel)->Void)) ->UILabel {
         let label = UILabel(frame: .zero)
         block(label)
         return label
     }
 }
+//MARK: - set line space 
+public extension UILabel {
+    func setLineSpace(_ lineSpace: CGFloat, withText text: String?) {
+        if text == nil || self == nil {
+            return
+        }
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = lineSpace //设置行间距
+        paragraphStyle.lineBreakMode = lineBreakMode
+        paragraphStyle.alignment = textAlignment
 
+        let attributedString = NSMutableAttributedString(string: text ?? "")
+        attributedString.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: text?.count ?? 0))
+        attributedText = attributedString
+    }
+
+}
 public extension UILabel {
     func underLine() {
         if let textString = self.text {
