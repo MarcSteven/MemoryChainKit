@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import AudioToolbox
 
 extension UIDevice {
     public struct Capability:OptionSet {
@@ -411,5 +412,9 @@ public extension UIDevice {
     class var iPhoneXOrLater:Bool {
         return UIScreen.main.bounds.height > 812.0
     }
-
+}
+public extension UIDevice {
+    static func vibrate() {
+        AudioServicesPlaySystemSound(1519)
+    }
 }
