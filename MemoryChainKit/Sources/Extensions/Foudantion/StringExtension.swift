@@ -256,6 +256,18 @@ public extension String {
     }
 }
 public extension String {
+    var asArray: [Any]? {
+        guard let data = self.data(using: .utf8) else { return nil }
+        return try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [Any]
+    }
+    var asDict: [String: Any]? {
+        guard let data = self.data(using: .utf8) else { return nil }
+        return try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
+    }
+    var asAttributedString: NSAttributedString? {
+        guard let data = self.data(using: .utf8) else { return nil }
+        return try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+    }
     var localized:String {
            
            return NSLocalizedString(self,comment:"")
