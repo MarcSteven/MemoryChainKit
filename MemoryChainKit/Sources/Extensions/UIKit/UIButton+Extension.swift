@@ -313,6 +313,16 @@ public extension UIButton {
     }
     
 }
+public extension UIButton {
+    func mc_enableMultiLineTitle(textAlignment:NSTextAlignment = .center) {
+        guard let titleLabel = self.titleLabel else {
+            return
+        }
+        titleLabel.lineBreakMode = .byWordWrapping
+        titleLabel.numberOfLines = 0
+        titleLabel.textAlignment = textAlignment
+    }
+}
 
 // MARK: - Methods
 public extension UIButton {
@@ -380,7 +390,7 @@ public extension UIButton {
 
 
 // timer button
-extension UIButton {
+public extension UIButton {
     func addTimerButton(time: NSInteger,
                         btnNormalBgColor: UIColor,
                         btnNormalBorderColor: UIColor,

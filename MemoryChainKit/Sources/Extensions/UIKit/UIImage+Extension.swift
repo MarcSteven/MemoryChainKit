@@ -9,7 +9,6 @@
 import UIKit
 import CoreGraphics
 import Photos
-
 public extension UIImage {
   func imageWith(newSize: CGSize) -> UIImage {
     let renderer = UIGraphicsImageRenderer(size:newSize)

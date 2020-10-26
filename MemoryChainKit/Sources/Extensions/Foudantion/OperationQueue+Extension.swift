@@ -23,4 +23,17 @@ public extension OperationQueue {
         self.isSuspended = startSuspended
         
     }
+    class func createSerialOperationQueue(name:String? = nil) ->OperationQueue {
+        let coordinatorDelegateQueue = OperationQueue()
+        coordinatorDelegateQueue.name = name
+        coordinatorDelegateQueue.maxConcurrentOperationCount = 1
+        return coordinatorDelegateQueue
+        
+    }
+    func mc_pause() {
+        self.isSuspended = true
+    }
+    func mc_resume() {
+        self.isSuspended = false 
+    }
 }
