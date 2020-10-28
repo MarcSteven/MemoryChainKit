@@ -12,12 +12,7 @@ import UIKit
 // MARK: CGPoint extension
 
 public extension CGPoint {
-    func distance(to point: CGPoint) -> CGFloat {
-        let xDist = self.x - point.x
-        let yDist = self.y - point.y
-        return CGFloat(sqrt((xDist * xDist) + (yDist * yDist)))
-    }
-    
+        
     func farCornerDistance() -> CGFloat {
         let bounds = UIScreen.main.bounds
         let leftTopCorner = CGPoint.zero
