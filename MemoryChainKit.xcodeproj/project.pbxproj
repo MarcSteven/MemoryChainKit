@@ -255,6 +255,9 @@
 		A6D40C172417B6B500A88B5B /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD22417B6B500A88B5B /* TabBarButton.swift */; };
 		A6D40C182417B6B500A88B5B /* TabBarButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD32417B6B500A88B5B /* TabBarButtonDelegate.swift */; };
 		A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D40BD42417B6B500A88B5B /* TabBarController.swift */; };
+		A6D488652548FDAA005CA39E /* MarkupText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D488622548FDAA005CA39E /* MarkupText.swift */; };
+		A6D488662548FDAA005CA39E /* MarkdownKit+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D488632548FDAA005CA39E /* MarkdownKit+UIKit.swift */; };
+		A6D488672548FDAA005CA39E /* MarkdownKit+MushParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D488642548FDAA005CA39E /* MarkdownKit+MushParser.swift */; };
 		A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43024168C6E008E1703 /* Scrollable.swift */; };
 		A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43224168C6E008E1703 /* BackgroundColor.swift */; };
 		A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43324168C6E008E1703 /* BindableType.swift */; };
@@ -586,6 +589,9 @@
 		A6D40BD22417B6B500A88B5B /* TabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		A6D40BD32417B6B500A88B5B /* TabBarButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButtonDelegate.swift; sourceTree = "<group>"; };
 		A6D40BD42417B6B500A88B5B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A6D488622548FDAA005CA39E /* MarkupText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkupText.swift; sourceTree = "<group>"; };
+		A6D488632548FDAA005CA39E /* MarkdownKit+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarkdownKit+UIKit.swift"; sourceTree = "<group>"; };
+		A6D488642548FDAA005CA39E /* MarkdownKit+MushParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarkdownKit+MushParser.swift"; sourceTree = "<group>"; };
 		A6DDD43024168C6E008E1703 /* Scrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
 		A6DDD43224168C6E008E1703 /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		A6DDD43324168C6E008E1703 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
@@ -1161,6 +1167,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A6020D39244F287C00B6DA00 /* VideoPlayer */,
 				A6E85DB72449A64D00645A2D /* BlurView */,
 				A69BC0CB2445848700E600FB /* UITableView */,
@@ -1369,6 +1376,16 @@
 				A6D40BD42417B6B500A88B5B /* TabBarController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		A6D4885D2548FD65005CA39E /* MarkDown */ = {
+			isa = PBXGroup;
+			children = (
+				A6D488642548FDAA005CA39E /* MarkdownKit+MushParser.swift */,
+				A6D488632548FDAA005CA39E /* MarkdownKit+UIKit.swift */,
+				A6D488622548FDAA005CA39E /* MarkupText.swift */,
+			);
+			path = MarkDown;
 			sourceTree = "<group>";
 		};
 		A6D4EC45242604C600F99211 /* Theme */ = {
@@ -1692,7 +1709,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Marc Steven(https://github.com/MarcSteven)";
 				TargetAttributes = {
 					A6E331F12414C96D00381D4B = {
@@ -1809,6 +1826,7 @@
 				A63D39642419298000937CCD /* UIGestureRecognizer+Extension.swift in Sources */,
 				A6C3E322244067E900132000 /* MSOperationSafeGuard.swift in Sources */,
 				A6356CEF2423492200B46CDF /* CAMediaTimingFunction+Properties.swift in Sources */,
+				A6D488662548FDAA005CA39E /* MarkdownKit+UIKit.swift in Sources */,
 				A6D40BF82417B6B500A88B5B /* MCInformationTipPreferences.swift in Sources */,
 				A6DDD46424168C6E008E1703 /* Copying.swift in Sources */,
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
@@ -1964,6 +1982,7 @@
 				A6356D262424931400B46CDF /* Router.swift in Sources */,
 				A6D40C0F2417B6B500A88B5B /* IntroducationImageProtocol.swift in Sources */,
 				A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */,
+				A6D488672548FDAA005CA39E /* MarkdownKit+MushParser.swift in Sources */,
 				A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */,
 				A63D39612419298000937CCD /* UIViewController+URL.swift in Sources */,
 				A6DDD46124168C6E008E1703 /* Cancellable.swift in Sources */,
@@ -2044,6 +2063,7 @@
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A6D40BE12417B6B500A88B5B /* NSCalendar+Extension.swift in Sources */,
 				A6DDD45324168C6E008E1703 /* StringRepresentable.swift in Sources */,
+				A6D488652548FDAA005CA39E /* MarkupText.swift in Sources */,
 				A6DDD52324168C90008E1703 /* KeyChainSwift.swift in Sources */,
 				A63D3909241923ED00937CCD /* PopTransition.swift in Sources */,
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
@@ -2107,6 +2127,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2133,7 +2154,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2170,6 +2191,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2190,7 +2212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
