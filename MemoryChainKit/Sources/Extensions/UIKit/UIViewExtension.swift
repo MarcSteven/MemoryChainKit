@@ -9,6 +9,16 @@
 import UIKit
 import ObjectiveC
 
+
+public extension UIView {
+    func createImage() ->UIImage {
+        UIGraphicsBeginImageContextWithOptions(CGSize(width:self.frame.width,height: self.frame.height), true, 1)
+        self.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+}
 public  extension UIView {
     func pinToSafeArea(top: CGFloat? = 0, left: CGFloat? = 0, bottom: CGFloat? = 0, right: CGFloat? = 0){
             guard let superview = self.superview else { return }
