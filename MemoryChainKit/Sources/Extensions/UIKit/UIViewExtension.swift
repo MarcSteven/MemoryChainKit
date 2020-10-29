@@ -8,7 +8,7 @@
 
 import UIKit
 import ObjectiveC
-
+import WebKit
 
 public extension UIView {
     func createImage() ->UIImage {
@@ -327,3 +327,58 @@ public extension UIView {
 }
 
 
+public extension UIView {
+    private struct AssoicateKey {
+        static var isCapturing = "isCapturing"
+    }
+    var isCapturing:Bool! {
+        get {
+            let num = objc_getAssociatedObject(self, &AssoicateKey.isCapturing)
+            if num == nil {
+                return false
+            }
+            if let numObj = num as? NSNumber {
+                return numObj.boolValue
+            }else {
+                return false
+            }
+        }
+        set {
+            let num = NSNumber(value: newValue as Bool)
+            objc_setAssociatedObject(self, &AssoicateKey.isCapturing, num, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+        }
+    }
+    func containsWKWebView() ->Bool {
+        if self.isKind(of: WKWebView.self) {
+            return true
+        }
+        for subview in self.subviews {
+            if subview.containsWKWebView() {
+                return true
+            }
+        }
+        return false
+    }
+    func capture(_ completionHandle:@escaping ((_ capturedImage:UIImage?)->Void)) {
+        self.isCapturing = true
+        let bounds = self.bounds
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
+        let context = UIGraphicsGetCurrentContext()
+        context?.saveGState()
+        
+        context?.translateBy(x: -self.frame.origin.x, y: -self.frame.origin.y)
+        if containsWKWebView() {
+            self.drawHierarchy(in: bounds, afterScreenUpdates: true)
+        }else {
+            self.layer.render(in: context!)
+        }
+        let capturedImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        context?.restoreGState()
+        
+        UIGraphicsEndImageContext()
+        
+        self.isCapturing = false
+        completionHandle(capturedImage)
+    }
+}
