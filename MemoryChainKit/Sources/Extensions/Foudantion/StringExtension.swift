@@ -633,3 +633,8 @@ public extension String {
         
     }
 }
+public extension String {
+  var firstLine: String {
+        return components(separatedBy: .newlines).first ?? self
+    }
+}
