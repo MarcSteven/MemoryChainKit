@@ -140,5 +140,80 @@ public extension CGRect {
     func rectIncrease(maigin: CGFloat)->CGRect {
         return CGRect(x: self.x-maigin, y: self.y-maigin, width: self.width+maigin*2, height: self.height+maigin*2)
     }
+    func rect(point: CGPoint, xRemainder: Bool, yRemainder: Bool) -> CGRect {
+        let xDiv = divided(atDistance: point.x, from: .minXEdge)
+        let x = xRemainder ? xDiv.remainder : xDiv.slice
+        let yDiv = x.divided(atDistance: point.y, from: .minYEdge)
+        return yRemainder ? yDiv.remainder : yDiv.slice
+    }
+
+    func area(corner: DestinationViewCorner) -> CGFloat {
+        let (xRemainder, yRemainder): (Bool, Bool)
+        switch corner.position {
+        case .topLeft:
+            (xRemainder, yRemainder) = (false, false)
+        case .topRight:
+            (xRemainder, yRemainder) = (true, false)
+        case .bottomLeft:
+            (xRemainder, yRemainder) = (false, true)
+        case .bottomRight:
+            (xRemainder, yRemainder) = (true, true)
+        }
+        let frame = rect(point: corner.point, xRemainder: xRemainder, yRemainder: yRemainder)
+        return frame.width * frame.height
+    }
+}
+
+
+struct DestinationViewCorner {
+
+    enum Position: Int {
+        case topLeft
+        case topRight
+        case bottomLeft
+        case bottomRight
+
+        var xModifier: CGFloat {
+            switch self {
+            case .topLeft, .bottomLeft: return -1
+            case .topRight, .bottomRight: return 1
+            }
+        }
+
+        var yModifier: CGFloat {
+            switch self {
+            case .topLeft, .topRight: return -1
+            case .bottomLeft, .bottomRight: return 1
+            }
+        }
+
+        var xSizeModifier: CGFloat {
+            switch self {
+            case .topLeft, .bottomLeft: return -1
+            case .topRight, .bottomRight: return 0
+            }
+        }
+
+        var ySizeModifier: CGFloat {
+            switch self {
+            case .topLeft, .topRight: return -1
+            case .bottomLeft, .bottomRight: return 0
+            }
+        }
+
+    }
+
+    let rect: CGRect
+    let position: Position
+
+    var point: CGPoint {
+        switch position {
+        case .topLeft: return CGPoint(x: rect.minX, y: rect.minY)
+        case .topRight: return CGPoint(x: rect.maxX, y: rect.minY)
+        case .bottomLeft: return CGPoint(x: rect.minX, y: rect.maxY)
+        case .bottomRight: return CGPoint(x: rect.maxX, y: rect.maxY)
+        }
+    }
+
 }
 
