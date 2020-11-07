@@ -130,7 +130,7 @@ public extension NSDate {
     }
 }
 
-extension Date {
+public extension Date {
     //MARK: - 获取日期各种值
     //MARK: 年
     func year() ->Int {
