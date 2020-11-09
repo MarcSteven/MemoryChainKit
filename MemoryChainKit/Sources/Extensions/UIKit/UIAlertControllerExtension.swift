@@ -210,3 +210,45 @@ extension UIAlertController {
     }
 
 }
+public extension UIAlertController {
+    @discardableResult
+    func addAction(title:String,
+                   style:UIAlertAction.Style = .default,
+                   completionHandler:((UIAlertAction)->Void)? = nil)->UIAlertAction {
+        let action = UIAlertAction(title: title, style: style, handler: completionHandler)
+        addAction(action)
+        return action
+    }
+    func addTextField(_ text:String? = nil,
+                      placeholder:String? = nil,
+                      editingChangedTarget:Any?,
+                      editingChangedSelector:Selector?) {
+        addTextField { textField in
+            textField.text = text
+            textField.placeholder = placeholder
+            if let target = editingChangedTarget,let selector = editingChangedSelector {
+                textField.addTarget(target, action: selector, for: .editingChanged)
+                
+            }
+        }
+    }
+}
+//MARK: - convenience init
+public extension UIAlertController {
+    convenience init(title:String,
+                     message:String? = nil,
+                     actionButtonTitle:String) {
+        self.init(title:title,
+                  message:message,
+                  preferredStyle:.alert)
+        let defaultAction = UIAlertAction(title: actionButtonTitle, style: .default, handler: nil)
+        addAction(defaultAction)
+    }
+    convenience init(title:String,
+                     error:NSError,
+                     actionButtonTitle:String) {
+        self.init(title:title,message:error.localizedDescription,preferredStyle:.alert)
+        let defaultAction = UIAlertAction(title: title, style: .default, handler: nil)
+        addAction(defaultAction)
+    }
+}
