@@ -30,7 +30,6 @@
 		A62C4CED255662CF00E861CC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C4CEC255662CF00E861CC /* Validator.swift */; };
 		A62C4CF1255668ED00E861CC /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C4CF0255668ED00E861CC /* UserDefaultsExtension.swift */; };
 		A62C4CF72556A40D00E861CC /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C4CF62556A40D00E861CC /* BundleExtension.swift */; };
-		A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */; };
 		A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */; };
 		A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEA2423475A00B46CDF /* CGColorExtension.swift */; };
 		A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEC2423479700B46CDF /* CALayer+Color.swift */; };
@@ -313,6 +312,10 @@
 		A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */; };
 		A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD56424169610008E1703 /* UIImageExtension.swift */; };
 		A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD566241696D5008E1703 /* UICollectionExtension.swift */; };
+		A6E15C722558E7F400FA667B /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */; };
+		A6E15C7E2558EB1100FA667B /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C7D2558EB1100FA667B /* BoolExtension.swift */; };
+		A6E15C862558EF1100FA667B /* UISliderExtesnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */; };
+		A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */; };
 		A6E331FC2414C96E00381D4B /* MemoryChainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */; };
 		A6E332012414C96E00381D4B /* MemoryChainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E332002414C96E00381D4B /* MemoryChainKitTests.swift */; };
 		A6E332032414C96E00381D4B /* MemoryChainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F52414C96D00381D4B /* MemoryChainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -373,7 +376,6 @@
 		A62C4CEC255662CF00E861CC /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		A62C4CF0255668ED00E861CC /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		A62C4CF62556A40D00E861CC /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
-		A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAtranscationExtension.swift; sourceTree = "<group>"; };
 		A6356CEA2423475A00B46CDF /* CGColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorExtension.swift; sourceTree = "<group>"; };
 		A6356CEC2423479700B46CDF /* CALayer+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Color.swift"; sourceTree = "<group>"; };
@@ -654,6 +656,10 @@
 		A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		A6DDD56424169610008E1703 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		A6DDD566241696D5008E1703 /* UICollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionExtension.swift; sourceTree = "<group>"; };
+		A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
+		A6E15C7D2558EB1100FA667B /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
+		A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderExtesnion.swift; sourceTree = "<group>"; };
+		A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectExtension.swift; sourceTree = "<group>"; };
 		A6E331F22414C96D00381D4B /* MemoryChainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryChainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E331F52414C96D00381D4B /* MemoryChainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryChainKit.h; sourceTree = "<group>"; };
 		A6E331F62414C96D00381D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -916,11 +922,14 @@
 			children = (
 				A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */,
 				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
+				A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */,
+				A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */,
 				A69B38A325319AFD007D279D /* WKWebsiteDataStoreExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
+				A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */,
 				A63D39362419297C00937CCD /* NSLayoutConstraintExtension.swift */,
 				A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */,
 				A63D39322419297B00937CCD /* UIAlertControllerExtension.swift */,
@@ -954,7 +963,6 @@
 				A63D392A2419297A00937CCD /* UITextField+Extension.swift */,
 				A6F21720243EE89B00188C23 /* UIFont+Loader.swift */,
 				A69B38A72531FD69007D279D /* NSLayoutAnchorExtension.swift */,
-				A6356CE1242329D000B46CDF /* UINavigationBarExtension.swift */,
 				A69BC0D2244598FC00E600FB /* UINavigationBar+Style.swift */,
 				A63D39372419297C00937CCD /* UIViewController+Extension.swift */,
 				A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */,
@@ -1013,6 +1021,7 @@
 				A6E85DB524497DB400645A2D /* IndexPathExtension.swift */,
 				A69310B02417100C004ADF4F /* NSArray+Extension.swift */,
 				A69BC0C32444518900E600FB /* Array+binarySearch.swift */,
+				A6E15C7D2558EB1100FA667B /* BoolExtension.swift */,
 				A69310A82417100B004ADF4F /* NSError+Extension.swift */,
 				A69310B12417100D004ADF4F /* OperationQueue+Extension.swift */,
 				A693109F2417100A004ADF4F /* Range+Extension.swift */,
@@ -1172,13 +1181,6 @@
 				A6A0E0E2253933F700860AA3 /* AVAudioSessionPortDescriptionExtension.swift */,
 			);
 			path = AVFoundation;
-			sourceTree = "<group>";
-		};
-		A6AD5520242C87A4002DB4FE /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		A6AD552D242C8D35002DB4FE /* ProgressView */ = {
@@ -1562,7 +1564,6 @@
 		A6DDD46C24168C7F008E1703 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				A6AD5520242C87A4002DB4FE /* TableViewCell */,
 				A6DDD46D24168C7F008E1703 /* MSView.swift */,
 				A6AD5523242C88DD002DB4FE /* MCToolBar.swift */,
 				A6C3E3502441C35F00132000 /* BaseViewController.swift */,
@@ -1773,7 +1774,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = "Marc Steven(https://github.com/MarcSteven)";
+				ORGANIZATIONNAME = "Marc Steven(https://marcsteven.top)";
 				TargetAttributes = {
 					A6E331F12414C96D00381D4B = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -1983,6 +1984,7 @@
 				A6356D282424931400B46CDF /* Routerable.swift in Sources */,
 				A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */,
 				A6E85DB02449736000645A2D /* CGContextExtension.swift in Sources */,
+				A6E15C7E2558EB1100FA667B /* BoolExtension.swift in Sources */,
 				A6D40BDD2417B6B500A88B5B /* UIImage+Helpers.swift in Sources */,
 				A6D40C192417B6B500A88B5B /* TabBarController.swift in Sources */,
 				A69BC0CF2445855E00E600FB /* UITableViewCellBuilder.swift in Sources */,
@@ -1995,6 +1997,7 @@
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
 				A69BC0C624445A6500E600FB /* TimeInterval+HasPassed.swift in Sources */,
 				A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */,
+				A6E15C722558E7F400FA667B /* UISegmentedControlExtension.swift in Sources */,
 				A6DDD53624168D0A008E1703 /* NSManagedObjectContext+Extension.swift in Sources */,
 				A6DDD46324168C6E008E1703 /* Responder.swift in Sources */,
 				A6020D4C2450443F00B6DA00 /* Request.swift in Sources */,
@@ -2103,7 +2106,6 @@
 				A69B38BB2532F3DA007D279D /* CGFloatExtension.swift in Sources */,
 				A63D39732419298100937CCD /* UIViewController+LifeCycleHelper.swift in Sources */,
 				A69310CB2417100E004ADF4F /* NSError+Extension.swift in Sources */,
-				A6356CE2242329D000B46CDF /* UINavigationBarExtension.swift in Sources */,
 				A63D395B2419298000937CCD /* UICollectionView+Extension.swift in Sources */,
 				A69BC0CD2445849D00E600FB /* UITableView+Reusable.swift in Sources */,
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
@@ -2117,6 +2119,7 @@
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
 				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
+				A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */,
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
 				A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */,
@@ -2148,6 +2151,7 @@
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
 				A6DDD45A24168C6E008E1703 /* Stylable.swift in Sources */,
 				A6D40C132417B6B500A88B5B /* SegmentedItem.swift in Sources */,
+				A6E15C862558EF1100FA667B /* UISliderExtesnion.swift in Sources */,
 				A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */,
 				A63D39602419298000937CCD /* UILayoutPriority+Extension.swift in Sources */,
 				A6DDD46824168C6E008E1703 /* KeyboardInfo.swift in Sources */,
