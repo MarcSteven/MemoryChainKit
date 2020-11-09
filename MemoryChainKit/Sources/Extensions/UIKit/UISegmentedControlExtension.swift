@@ -11,9 +11,16 @@ import  UIKit
 
 public extension UISegmentedControl {
     
-    var segmentTitle:[String] {
+    var segmentTitles:[String] {
         get {
-            let range = 0..<numberOfSe
+            let range = 0..<numberOfSegments
+            return range.compactMap { titleForSegment(at: $0) }
         }
+        set {
+            removeAllSegments()
+            for (index, title) in newValue.enumerated() {
+                insertSegment(withTitle: title, at: index, animated: false)
+            }
+    }
     }
 }
