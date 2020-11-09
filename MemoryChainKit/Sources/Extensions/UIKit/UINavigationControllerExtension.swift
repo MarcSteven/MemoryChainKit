@@ -59,6 +59,12 @@ public     var rootViewController:UIViewController? {
         popViewController(animated: animated)
         CATransaction.commit()
     }
-    
+    func pushViewController(_ viewController:UIViewController,
+                            completionHandler: (()->Void)? = nil) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completionHandler)
+        pushViewController(viewController, animated: true)
+        CATransaction.commit()
+    }
 
 }

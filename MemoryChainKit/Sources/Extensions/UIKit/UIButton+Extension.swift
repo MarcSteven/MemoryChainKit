@@ -35,6 +35,13 @@ public extension UIButton {
     
     
     //MARK: - Public Methods
+    func setTitleColor(color:UIColor) {
+        self.setTitleColor(color, for: .normal)
+        self.setTitleColor(color.withAlphaComponent(0.7), for: .highlighted)
+    }
+    func removeAllTargets() {
+        self.removeTarget(nil, action: nil, for: .allEvents)
+    }
     
     func setTitle(_ title: String?, for state: UIControl.State, animated: Bool) {
         if animated {
@@ -130,7 +137,7 @@ extension UIButton {
            }
        }
 
-
+     
        // MARK: Underline
 
        @objc open func underline() {
@@ -433,14 +440,14 @@ public extension UIButton {
 }
     
     
-extension UIButton {
+ extension UIButton {
     private struct AssociatedKeys {
            static var eventInterval = "eventInterval"
            static var eventUnavailable = "eventUnavailable"
        }
 
             /// Time of repeated clicks Property settings
-       var eventInterval: TimeInterval {
+      open var eventInterval: TimeInterval {
            get {
                if let interval = objc_getAssociatedObject(self, &AssociatedKeys.eventInterval) as? TimeInterval {
                    return interval

@@ -62,6 +62,12 @@ extension UIScrollView {
             setContentOffset(CGPoint(x: 0, y: -contentInset.top), animated: animated)
         }
     }
+    func scrillToLeft(animated:Bool) {
+        setContentOffset(CGPoint(x: -contentInset.left, y: contentOffset.y), animated: animated)
+    }
+    func scrollToRight(animated:Bool) {
+        setContentOffset(CGPoint(x: max(0, contentSize.width - bounds.width) + contentInset.right, y: contentOffset.y), animated: animated)
+    }
 }
 public extension UIScrollView {
     func scrollToBottom(_ animated:Bool)  {
@@ -185,3 +191,11 @@ extension UIScrollView {
         }
     }
 
+public extension UIScrollView {
+    var visiableRect:CGRect {
+        let contentWidth = contentSize.width - contentOffset.x
+        let contentHeight = contentSize.height - contentOffset.y
+        return CGRect(origin: contentOffset, size: CGSize(width: min(min(bounds.size.width, contentWidth), contentWidth), height: min(min(bounds.size.height, contentSize.height), contentHeight)))
+    }
+    
+}

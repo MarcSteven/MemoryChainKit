@@ -26,4 +26,18 @@ extension UINavigationBar {
             ]
         
     }
+    func setTitleFont(_ font:UIFont) {
+        titleTextAttributes = [.font:font]
+    }
+    func setTitleColor(_ color:UIColor) {
+        titleTextAttributes = [.foregroundColor:color]
+    }
+    func makeTransparent() {
+        isTranslucent = true
+        backgroundColor = .clear
+        barTintColor = .clear
+        setBackgroundImage(UIImage(), for: .default)
+        shadowImage = UIImage()
+    }
+    
 }

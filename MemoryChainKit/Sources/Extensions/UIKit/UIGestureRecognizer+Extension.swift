@@ -16,3 +16,8 @@ public extension UIGestureRecognizer.State {
         return self == .cancelled || self == .ended || self == .failed
     }
 }
+public extension UIGestureRecognizer {
+    func removeFromView() {
+        view?.removeGestureRecognizer(self)
+    }
+}
