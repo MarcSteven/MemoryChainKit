@@ -10,4 +10,10 @@
 import  UIKit
 
 public extension UISegmentedControl {
+    
+    var segmentTitle:[String] {
+        get {
+            let range = 0..<numberOfSe
+        }
+    }
 }

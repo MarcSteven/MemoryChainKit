@@ -57,10 +57,8 @@ open class Validator: NSObject {
         //8 character total
         let predicate = NSPredicate(format: "SELF MATCHES %@", "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}")
         return predicate.evaluate(with: passwordString)
-
         
     }
-    
-    
+        
     
 }
