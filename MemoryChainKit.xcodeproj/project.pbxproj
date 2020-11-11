@@ -316,6 +316,8 @@
 		A6E15C7E2558EB1100FA667B /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C7D2558EB1100FA667B /* BoolExtension.swift */; };
 		A6E15C862558EF1100FA667B /* UISliderExtesnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */; };
 		A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */; };
+		A6E15D39255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15D38255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift */; };
+		A6E15D3D255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15D3C255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift */; };
 		A6E331FC2414C96E00381D4B /* MemoryChainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */; };
 		A6E332012414C96E00381D4B /* MemoryChainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E332002414C96E00381D4B /* MemoryChainKitTests.swift */; };
 		A6E332032414C96E00381D4B /* MemoryChainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E331F52414C96D00381D4B /* MemoryChainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -502,7 +504,6 @@
 		A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		A695CC682420BEB2007C68DD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		A695CC6B2420BF0B007C68DD /* MSAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAlertView.swift; sourceTree = "<group>"; };
-		A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeviceVersion.swift; path = MemoryChainKit/Sources/Transitions/DeviceVersion.swift; sourceTree = SOURCE_ROOT; };
 		A695D0BC2549ADD900DE403A /* CardTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabBar.swift; sourceTree = "<group>"; };
 		A695D0C0254A444800DE403A /* Cacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
 		A695D0CA254A4CE600DE403A /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
@@ -660,6 +661,8 @@
 		A6E15C7D2558EB1100FA667B /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 		A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderExtesnion.swift; sourceTree = "<group>"; };
 		A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectExtension.swift; sourceTree = "<group>"; };
+		A6E15D38255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		A6E15D3C255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualSpaceCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A6E331F22414C96D00381D4B /* MemoryChainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryChainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E331F52414C96D00381D4B /* MemoryChainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryChainKit.h; sourceTree = "<group>"; };
 		A6E331F62414C96D00381D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -827,14 +830,6 @@
 				A65417C42421FB2800077AD8 /* Console.swift */,
 			);
 			path = Debugging;
-			sourceTree = "<group>";
-		};
-		A63D390F241928A100937CCD /* Device */ = {
-			isa = PBXGroup;
-			children = (
-				A695CC6D2420C1FC007C68DD /* DeviceVersion.swift */,
-			);
-			path = Device;
 			sourceTree = "<group>";
 		};
 		A63FFDB8242AE788002CE0F9 /* Script */ = {
@@ -1039,13 +1034,6 @@
 			children = (
 			);
 			path = UILabel;
-			sourceTree = "<group>";
-		};
-		A695CBF4241F1740007C68DD /* IM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IM;
 			sourceTree = "<group>";
 		};
 		A695CBFB241F231B007C68DD /* Networking */ = {
@@ -1439,13 +1427,6 @@
 			path = FlowLayout;
 			sourceTree = "<group>";
 		};
-		A6D4EC45242604C600F99211 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
 		A6DC0362254984D5001F3E64 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1469,6 +1450,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A6E15D37255C4ABC00FA667B /* Layout */,
 				A62C4CEB255662BA00E861CC /* Validator */,
 				A69B38A9253201FE007D279D /* Anchor */,
 				A60F77C22452E557007F3C61 /* EventBus */,
@@ -1479,7 +1461,6 @@
 				A66F3F3E242A50580081D52F /* Adapter */,
 				A66F3F392429ED9B0081D52F /* Helper */,
 				A66F3F362429ECB10081D52F /* Converter */,
-				A6D4EC45242604C600F99211 /* Theme */,
 				A6356D102423B2B500B46CDF /* Queue */,
 				A6356CFC242360A000B46CDF /* BLE */,
 				A6356CF9242354CB00B46CDF /* Constants */,
@@ -1488,8 +1469,6 @@
 				A65417B42421EAEC00077AD8 /* Environment */,
 				A695CC0C241F49F5007C68DD /* Reachability */,
 				A695CBFB241F231B007C68DD /* Networking */,
-				A695CBF4241F1740007C68DD /* IM */,
-				A63D390F241928A100937CCD /* Device */,
 				A63D390A2419251A00937CCD /* Debugging */,
 				A63D3907241923DD00937CCD /* Transitions */,
 				A6D40B782417B6B400A88B5B /* UI Component */,
@@ -1622,6 +1601,15 @@
 				A6DDD53224168D0A008E1703 /* Store.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		A6E15D37255C4ABC00FA667B /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A6E15D38255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift */,
+				A6E15D3C255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		A6E331E82414C96D00381D4B = {
@@ -1937,6 +1925,7 @@
 				A6DDD45B24168C6E008E1703 /* Encoder.swift in Sources */,
 				A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */,
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
+				A6E15D3D255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift in Sources */,
 				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
 				A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
@@ -2119,6 +2108,7 @@
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
 				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
+				A6E15D39255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift in Sources */,
 				A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */,
 				A63D39542419298000937CCD /* UITapGestureRecognizer+TapAttributedTextInLabel.swift in Sources */,
 				A6D40BD62417B6B500A88B5B /* SideBarViewController.swift in Sources */,
