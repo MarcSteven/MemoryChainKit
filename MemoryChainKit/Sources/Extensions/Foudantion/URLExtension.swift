@@ -24,9 +24,9 @@ extension URL {
 
 // MARK: - Scheme
 
-extension URL {
+public extension URL {
     /// The scheme of the `URL`.
-    public var schemeType: Scheme {
+     var schemeType: Scheme {
         guard let scheme = scheme else {
             return .none
         }
@@ -34,7 +34,29 @@ extension URL {
         return Scheme(rawValue: scheme)
     }
 }
+public extension URL {
+    func queryStringComponents() -> [String: AnyObject] {
 
+        var dict = [String: AnyObject]()
+
+        // Check for query string
+        if let query = self.query {
+
+            // Loop through pairings (separated by &)
+            for pair in query.components(separatedBy: "&") {
+
+                // Pull key, val from from pair parts (separated by =) and set dict[key] = value
+                let components = pair.components(separatedBy: "=")
+                if (components.count > 1) {
+                    dict[components[0]] = components[1] as AnyObject?
+                }
+            }
+
+        }
+
+        return dict
+    }
+}
 extension URL {
     public struct Scheme: RawRepresentable, Hashable, CustomStringConvertible {
         public let rawValue: String
