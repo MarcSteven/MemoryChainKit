@@ -9,7 +9,22 @@
 import UIKit
 import ObjectiveC
 import WebKit
+public extensio UIView {
+    /// add corner radius fo UIView 
+    func addCornerRadiusAnimation(_ from:CGFloat,
+                                  to:CGFloat,
+                                  duration:CFTimeInterval) {
+        let animation = CABasicAnimation(keyPath: "cornerRadius")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.fromValue = from
+        animation.toValue = to
+        animation.duration = duration
+        self.layer.add(animation, forKey: "cornerRadius")
+        self.layer.cornerRadius = to
+        
+    }
 
+}
 public extension UIView {
     func createImage() ->UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width:self.frame.width,height: self.frame.height), true, 1)
