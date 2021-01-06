@@ -7,8 +7,16 @@
 //
 
 import UIKit
+public extension UIBarItem {
+    var view: UIView? {
+        if let item = self as? UIBarButtonItem, let customView = item.customView {
+            return customView
+        }
+        return self.value(forKey: "view") as? UIView
+    }
+}
 
-extension UINavigationBar {
+public extension UINavigationBar {
     func apply(_ style:Stylable) {
         applyColors(barColor:style.barColor , barTintColor: style.tintColor)
     }
