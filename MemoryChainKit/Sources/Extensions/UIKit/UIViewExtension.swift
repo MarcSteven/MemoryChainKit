@@ -9,7 +9,26 @@
 import UIKit
 import ObjectiveC
 import WebKit
-public extensio UIView {
+
+
+public extension UIView {
+    func hasSuperview(_ superview: UIView) -> Bool{
+        return viewHasSuperview(self, superview: superview)
+    }
+    
+    fileprivate func viewHasSuperview(_ view: UIView, superview: UIView) -> Bool {
+        if let sview = view.superview {
+            if sview === superview {
+                return true
+            } else{
+                return viewHasSuperview(sview, superview: superview)
+            }
+        } else{
+            return false
+        }
+    }
+}
+public extension UIView {
     /// add corner radius fo UIView 
     func addCornerRadiusAnimation(_ from:CGFloat,
                                   to:CGFloat,
