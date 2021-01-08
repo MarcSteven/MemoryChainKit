@@ -394,7 +394,15 @@ public extension UIButton {
         return backBtn
     }
 }
-
+public extension UIButton {
+    func verticalCenterImageAndTitle(withSpacing spacing: CGFloat) {
+        let imageSize = imageView?.intrinsicContentSize
+        let titleSize = titleLabel?.intrinsicContentSize
+        let totalHeight = (imageSize?.height ?? 0.0) + (titleSize?.height ?? 0.0) + spacing
+        imageEdgeInsets = UIEdgeInsets(top: -(totalHeight - (imageSize?.height ?? 0.0)), left: 0.0, bottom: 0.0, right: -(titleSize?.width ?? 0.0))
+        titleEdgeInsets = UIEdgeInsets(top: 0.0, left: -(imageSize?.width ?? 0.0), bottom: -(totalHeight - (titleSize?.height ?? 0.0)), right: 0.0)
+}
+}
 
 // timer button
 public extension UIButton {
