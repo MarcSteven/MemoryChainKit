@@ -328,6 +328,7 @@ public extension UIView {
             
         }
     }
+    
     var centerX:CGFloat {
         get {
             return center.x
@@ -359,6 +360,41 @@ public extension UIView {
     }
     
 }
+public extension UIView {
+            func showToast(_ message: String?, duration: CGFloat) {
+               let label = UILabel(frame: CGRect.zero)
+               label.textColor = UIColor.white
+               label.text = message
+               label.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+               label.layer.cornerRadius = 10
+               label.layer.masksToBounds = true
+               label.textAlignment = .center
+               label.font = UIFont.boldSystemFont(ofSize: 15)
+
+               let width = label.intrinsicContentSize.width + 24
+               let height = label.intrinsicContentSize.height + 16
+               label.frame = CGRect(x: bounds.size.width / 2 - width / 2, y: bounds.size.height / 2 - height / 2, width: width, height: height)
+                UIView.transition(
+                    with: self,
+                    duration: 0.3,
+                    options: .transitionCrossDissolve,
+                    animations: { [self] in
+                        addSubview(label)
+                    })
+
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(Double(duration) * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+                    UIView.transition(
+                        with: self,
+                        duration: 0.3,
+                        options: .transitionCrossDissolve,
+                        animations: {
+                            label.removeFromSuperview()
+                        })
+
+                })
+            }
+
+    }
 
 
 public extension UIView {
