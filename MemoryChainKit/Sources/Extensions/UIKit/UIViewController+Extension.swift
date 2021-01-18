@@ -314,3 +314,13 @@ public extension UIViewController {
                return sockets
            }
    }
+public extension UIViewController {
+    @objc var topBarHeight: CGFloat {
+        if #available(*, iOS 13) {
+            return (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0) +
+                (self.navigationController?.navigationBar.frame.height ?? 0.0)
+        } else {
+            return UIApplication.shared.statusBarFrame.height + (navigationController?.navigationBar.frame.height ?? 0)
+        }
+    } 
+}
