@@ -10,6 +10,13 @@ import UIKit
 import CoreGraphics
 import Photos
 public extension UIImage {
+   static func named(_ name: String) -> UIImage {
+    if let image = UIImage(named: name) {
+      return image
+    } else {
+      fatalError("Could not initialize \(UIImage.self) named \(name).")
+    }
+  }
   
   func rotateImageByOrientation() -> UIImage {
         // No-op if the orientation is already correct
