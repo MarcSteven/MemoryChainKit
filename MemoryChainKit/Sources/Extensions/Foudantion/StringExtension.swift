@@ -638,3 +638,30 @@ public extension String {
         return components(separatedBy: .newlines).first ?? self
     }
 }
+public extension String {
+     func isImage() -> Bool {
+        // Add here your image formats.
+        let imageFormats = ["jpg", "jpeg", "png", "gif"]
+
+        if let ext = self.getExtension() {
+            return imageFormats.contains(ext)           
+        }
+
+        return false
+    }
+
+     func getExtension() -> String? {
+       let ext = (self as NSString).pathExtension
+
+       if ext.isEmpty {
+           return nil
+       }
+
+       return ext
+    }
+
+     func isURL() -> Bool {
+       return URL(string: self) != nil
+    }
+
+}
