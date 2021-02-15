@@ -26,4 +26,9 @@ public extension CGFloat {
      func radiansToDegrees() -> CGFloat {
         self * 180 / π
     }
+    
+    // convert to double 
+    func toDouble() ->Double {
+        return Double(self) 
+    }
 }
