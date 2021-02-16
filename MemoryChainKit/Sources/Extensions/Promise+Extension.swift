@@ -11,14 +11,14 @@ import Foundation
 #if canImport(PromiseKit)
 import PromiseKit
 
-extension Promise {
+public extension Promise {
     /// Like the `@discardableResult` attribute on a function declaration indicates
     /// that, although the function returns a value, the compiler shouldn’t generate
     /// a warning if the return value is unused.
-    public func discardableResult() {}
+     func discardableResult() {}
 
     /// A convenience function to make sure the promise always succeed.
-    public func asAlwaysSucceed() -> Promise<Void> {
+     func asAlwaysSucceed() -> Promise<Void> {
         .init { seal in
             ensure {
                 seal.fulfill(())
@@ -27,9 +27,9 @@ extension Promise {
     }
 }
 
-extension Promise where T: Collection, T: ExpressibleByArrayLiteral {
+public extension Promise where T: Collection, T: ExpressibleByArrayLiteral {
     /// A convenience function to make sure the promise always succeed.
-    public func asAlwaysSucceed() -> Promise<T> {
+     func asAlwaysSucceed() -> Promise<T> {
         .init { seal in
             done {
                 seal.fulfill($0)
@@ -40,7 +40,7 @@ extension Promise where T: Collection, T: ExpressibleByArrayLiteral {
     }
 }
 
-extension Array where Element: Promise<Void> {
+public extension Array where Element: Promise<Void> {
     /// Waits on all provided promises.
     ///
     /// `when(fulfilled:)` rejects as soon as one of the provided promises rejects.
@@ -58,7 +58,7 @@ extension Array where Element: Promise<Void> {
     /// ```
     /// - Returns: A new promise that resolves once all the provided promises resolve.
     /// - Note: The returned promise can be rejected if any one of the promises is rejected.
-    public func join() -> Promise<Void> {
+     func join() -> Promise<Void> {
         .init { seal in
             let promises = self
 
@@ -79,12 +79,12 @@ extension Array where Element: Promise<Void> {
     }
 }
 
-extension Array where Element == () -> Promise<Void> {
+public extension Array where Element == () -> Promise<Void> {
     /// Waits on all provided promises in **order**.
     ///
     /// - Returns: A new promise that resolves once all the provided promises resolve.
     /// - Note: The returned promise can be rejected if any one of the promises is rejected.
-    public func orderedJoin() -> Promise<Void> {
+     func orderedJoin() -> Promise<Void> {
         let promises = self
         let totalCount = promises.count
         var currentProcessIndex = 0
