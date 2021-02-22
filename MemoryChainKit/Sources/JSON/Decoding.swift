@@ -9,13 +9,13 @@
 import Foundation
 
 
-extension Dictionary where Key : StringProtocol {
+public extension Dictionary where Key : StringProtocol {
     /// Generically decode an value from a given JSON dictionary.
     ///
     /// - parameter key: key in the dictionary
     /// - returns: The expected value
     /// - throws: JSONDeserializationError
-    public func decode<T>(key: Key) throws -> T {
+     func decode<T>(key: Key) throws -> T {
         guard let value = self[key] else {
             throw JSONDeserializationError.missingAttribute(key: String(key))
         }
@@ -33,7 +33,7 @@ extension Dictionary where Key : StringProtocol {
     /// - parameter key: key in the dictionary
     /// - returns: The expected JSONDeserializable value
     /// - throws: JSONDeserializationError
-    public func decode<T: JSONDeserializable>(key: Key) throws -> T {
+     func decode<T: JSONDeserializable>(key: Key) throws -> T {
         let json: JSON = try decode(key: key)
         return try T.init(json: json)
     }
@@ -43,19 +43,19 @@ extension Dictionary where Key : StringProtocol {
     /// - parameter key: key in the dictionary
     /// - returns: The expected JSONDeserializable value
     /// - throws: JSONDeserializationError
-    public func decode<T: JSONDeserializable>(key: Key) throws -> [T] {
+     func decode<T: JSONDeserializable>(key: Key) throws -> [T] {
         let values: [JSON] = try decode(key: key)
         return try values.compactMap { try T.init(json: $0) }
     }
 }
 
-extension Dictionary where Key : StringProtocol {
+public extension Dictionary where Key : StringProtocol {
     /// Decode a `RawRepresentable` enum value from a given JSON dictionary.
     ///
     /// - parameter key: key in the dictionary
     /// - returns: The expected value
     /// - throws: JSONDeserializationError
-    public func decode<T: RawRepresentable>(key: Key) throws -> T {
+     func decode<T: RawRepresentable>(key: Key) throws -> T {
         let string: T.RawValue = try decode(key: key)
 
         guard let value = T(rawValue: string) else {
@@ -66,13 +66,13 @@ extension Dictionary where Key : StringProtocol {
         return value
     }
 }
-extension Dictionary where Key : StringProtocol {
+public extension Dictionary where Key : StringProtocol {
     /// Decode a date value from a given JSON dictionary. ISO8601 or Unix timestamps are supported.
     ///
     /// - parameter key: key in the dictionary
     /// - returns: The expected value
     /// - throws: JSONDeserializationError
-    public func decode(key: Key) throws -> Date {
+     func decode(key: Key) throws -> Date {
         let value: Any = try decode(key: key)
 
         if #available(OSXApplicationExtension 10.12, iOSApplicationExtension 10.0, watchOSApplicationExtension 3.0,
@@ -98,13 +98,13 @@ extension Dictionary where Key : StringProtocol {
     }
 }
 
-extension Dictionary where Key : StringProtocol {
+public extension Dictionary where Key : StringProtocol {
     /// Decode a URL value from a given JSON dictionary.
     ///
     /// - parameter key: key in the dictionary
     /// - returns: The expected value
     /// - throws: JSONDeserializationError
-    public func decode(key: Key) throws -> URL {
+     func decode(key: Key) throws -> URL {
         let string: String = try decode(key: key)
 
         guard let url = URL(string: string) else {
