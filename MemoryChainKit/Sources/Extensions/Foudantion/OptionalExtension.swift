@@ -15,4 +15,26 @@ public extension Optional where Wrapped ==String {
     var isNill:Bool {
         return self == nil
     }
+    
+}
+
+public extension Optional where Wrapped == String {
+    var unwrappedOrEmpty: String {
+        switch self {
+        case let .some(wrapped):
+            return wrapped
+        default:
+            return ""
+        }
+    }
+}
+public extension Optional where Wrapped: Collection {
+    var isNilOrEmpty: Bool {
+        switch self {
+        case let .some(wrapped):
+            return wrapped.isEmpty
+        default:
+            return true
+        }
+    }
 }
