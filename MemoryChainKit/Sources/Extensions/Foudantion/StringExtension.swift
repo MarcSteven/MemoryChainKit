@@ -665,3 +665,51 @@ public extension String {
     }
 
 }
+public extension String {
+    enum Regex: String {
+        case codableModelStartLine = ".+\\s*:\\s*.*(Codable|Decodable|Encodable).*\\{"
+        case openBracket = "\\{"
+        case closeBracket = "\\}"
+        case closureOrTuple = "\\(.*\\)"
+        case spaceOrTabIndent = "^(\\s|\\t)*"
+        case toggleComments = "^\\s*\\/\\/"
+
+        case codablePropertyLine = ".*(let|var)\\s+\\w+\\s*(:|=).+"
+        case codablePropertyName = "\\w+(?=\\s*:)"
+        case customKey = "\\/\\/\\s*\\w+"
+    }
+    func match(regex: Regex) -> String?  {
+            return self.match(regex: regex.rawValue)
+        }
+        
+        func match(regex: String) -> String? {
+            let matchList: [String] = match(regex: regex)
+            return matchList.first
+        }
+        
+        func match(regex: String) -> [String] {
+            if isEmpty {
+                return []
+            }
+            do {
+                let regex = try NSRegularExpression(pattern: regex, options: [])
+                let results = regex.matches(in: self, options: [], range: NSRange.init(startIndex..., in: self))
+                return results.map({ (result) -> String in
+                    let range = Range.init(result.range, in: self)
+                    return String(self[range!])
+                })
+            }
+            catch {
+                return []
+            }
+        }
+        
+        func snakeCased() -> String? {
+            let pattern = "([a-z0-9])([A-Z])"
+            
+            let regex = try? NSRegularExpression(pattern: pattern, options: [])
+            let range = NSRange(location: 0, length: count)
+            return regex?.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "$1_$2").lowercased()
+        }
+
+}
