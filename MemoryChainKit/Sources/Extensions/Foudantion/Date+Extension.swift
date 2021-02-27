@@ -8,7 +8,18 @@
 
 import Foundation
 //MARK: - method
+
+
 public extension Date {
+     func isBefore(_ date:Date,
+                  inclusive:Bool = false) ->Bool {
+        return inclusive ? self <= date : self < date
+    }
+    func isAfter(_ date:Date,
+                 inclusive:Bool = false ) ->Bool {
+        return inclusive ? self >= date : self > date
+    }
+
     func next() ->Date? {
         let calendar = Calendar.current
         let daysComponents = calendar.dateComponents([.month,.day], from: self)
