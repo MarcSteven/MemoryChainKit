@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreLocation
 //MARK: - is Valid email
-extension String {
+@objc public extension String {
   var asCoordinates: CLLocationCoordinate2D? {
         let components = self.components(separatedBy: ",")
         if components.count != 2 { return nil }
@@ -29,13 +29,13 @@ extension String {
         let notDigits = NSCharacterSet.decimalDigits.inverted
         return rangeOfCharacter(from: notDigits, options: String.CompareOptions.literal, range: nil) == nil
     }
-  public  func isValidEmail() -> Bool {
+    func isValidEmail() -> Bool {
         // here, `try!` will always succeed because the pattern is valid
         let regex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
         return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
     }
 }
-public extension String {
+@objc public extension String {
   func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
         let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
@@ -50,7 +50,7 @@ public extension String {
         return ceil(boundingBox.width)
     }
 }
-public extension NSAttributedString {
+@objc public extension NSAttributedString {
     func height(withConstrainedWidth width: CGFloat) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
         let boundingBox = boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, context: nil)
@@ -65,7 +65,7 @@ public extension NSAttributedString {
         return ceil(boundingBox.width)
     }
 }
-extension String {
+@objc public extension String {
    /// extract substrings from a string that match a regex pattern.
    
        func regex (pattern: String) -> [String] {
@@ -93,8 +93,8 @@ extension String {
 }
 }
 
-extension StringProtocol {
-    public func index(from: Int) -> Index? {
+@objc public extension StringProtocol {
+     func index(from: Int) -> Index? {
         guard
             from > -1,
             let index = self.index(startIndex, offsetBy: from, limitedBy: endIndex)
@@ -107,7 +107,7 @@ extension StringProtocol {
 
     /// Returns the element at the specified `index` iff it is within bounds,
     /// otherwise `nil`.
-    public func at(_ index: Int) -> String? {
+     func at(_ index: Int) -> String? {
         guard let index = self.index(from: index), let character = at(index) else {
             return nil
         }
@@ -118,46 +118,46 @@ extension StringProtocol {
 
 // MARK: - `at(:)`
 
-extension String {
+@objc public extension String {
     /// Returns the `Substring` at the specified range iff it is within bounds, otherwise `nil`.
     ///
     /// e.g., `"Hello world"[..<5] // → "Hello"`
-    public func at(_ range: PartialRangeUpTo<Int>) -> Substring? {
+     func at(_ range: PartialRangeUpTo<Int>) -> Substring? {
         hasIndex(range) ? self[range] : nil
     }
 
     /// Returns the `Substring` at the specified range iff it is within bounds, otherwise `nil`.
     ///
     /// e.g., `"Hello world"[...4] // → "Hello"`
-    public func at(_ range: PartialRangeThrough<Int>) -> Substring? {
+     func at(_ range: PartialRangeThrough<Int>) -> Substring? {
         hasIndex(range) ? self[range] : nil
     }
 
     /// Returns the `Substring` at the specified range iff it is within bounds, otherwise `nil`.
     ///
     /// e.g., `"Hello world"[0...] // → "Hello world"`
-    public func at(_ range: PartialRangeFrom<Int>) -> Substring? {
+     func at(_ range: PartialRangeFrom<Int>) -> Substring? {
         hasIndex(range) ? self[range] : nil
     }
 
     /// Returns the `Substring` at the specified range iff it is within bounds, otherwise `nil`.
     ///
     /// e.g., `"Hello world"[0..<5] // → "Hello"`
-    public func at(_ range: CountableRange<Int>) -> Substring? {
+     func at(_ range: CountableRange<Int>) -> Substring? {
         hasIndex(range) ? self[range] : nil
     }
 
     /// Returns the `Substring` at the specified range iff it is within bounds, otherwise `nil`.
     ///
     /// e.g., `"Hello world"[0...4] // → "Hello"`
-    public func at(range: CountableClosedRange<Int>) -> Substring? {
+     func at(range: CountableClosedRange<Int>) -> Substring? {
         hasIndex(range) ? self[range] : nil
     }
 }
 
 // MARK: - Ranges
 
-extension String {
+ extension String {
     /// e.g., `"Hello world"[..<5] // → "Hello"`
     private subscript(range: PartialRangeUpTo<Int>) -> Substring {
         self[..<index(startIndex, offsetBy: range.upperBound)]
@@ -712,4 +712,10 @@ public extension String {
             return regex?.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "$1_$2").lowercased()
         }
 
+}
+
+
+
+@objc public extension NSString {
+    
 }
