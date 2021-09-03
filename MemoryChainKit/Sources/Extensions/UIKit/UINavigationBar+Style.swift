@@ -7,14 +7,7 @@
 //
 
 import UIKit
-public extension UIBarItem {
-    var view: UIView? {
-        if let item = self as? UIBarButtonItem, let customView = item.customView {
-            return customView
-        }
-        return self.value(forKey: "view") as? UIView
-    }
-}
+
 
 public extension UINavigationBar {
     
@@ -80,9 +73,7 @@ public extension UINavigationBar {
     func setTitleFont(_ font:UIFont) {
         titleTextAttributes = [.font:font]
     }
-    func setTitleColor(_ color:UIColor) {
-        titleTextAttributes = [.foregroundColor:color]
-    }
+   
     func makeTransparent() {
         isTranslucent = true
         backgroundColor = .clear

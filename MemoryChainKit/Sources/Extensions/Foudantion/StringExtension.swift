@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreLocation
 //MARK: - is Valid email
-@objc public extension String {
+ public extension String {
   var asCoordinates: CLLocationCoordinate2D? {
         let components = self.components(separatedBy: ",")
         if components.count != 2 { return nil }
@@ -35,7 +35,7 @@ import CoreLocation
         return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
     }
 }
-@objc public extension String {
+public extension String {
   func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
         let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
@@ -65,7 +65,7 @@ import CoreLocation
         return ceil(boundingBox.width)
     }
 }
-@objc public extension String {
+public extension String {
    /// extract substrings from a string that match a regex pattern.
    
        func regex (pattern: String) -> [String] {
@@ -87,13 +87,13 @@ import CoreLocation
          }
        }
 
-      public func isMatch(_ pattern: String) -> Bool {
+    func isMatch(_ pattern: String) -> Bool {
         return  !regex(pattern: pattern).isEmpty
      
 }
 }
 
-@objc public extension StringProtocol {
+public extension StringProtocol {
      func index(from: Int) -> Index? {
         guard
             from > -1,
@@ -118,7 +118,7 @@ import CoreLocation
 
 // MARK: - `at(:)`
 
-@objc public extension String {
+public extension String {
     /// Returns the `Substring` at the specified range iff it is within bounds, otherwise `nil`.
     ///
     /// e.g., `"Hello world"[..<5] // → "Hello"`
