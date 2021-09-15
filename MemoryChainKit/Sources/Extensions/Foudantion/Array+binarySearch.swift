@@ -9,8 +9,8 @@
 import Foundation
 
 
-extension Array {
-    public func binarySearch<T>(target: T, transform: (Element) -> T, _ comparison: (T, T) -> ComparisonResult) -> Int? {
+public extension Array {
+     func binarySearch<T>(target: T, transform: (Element) -> T, _ comparison: (T, T) -> ComparisonResult) -> Int? {
         var localRange = 0..<count
 
         while localRange.startIndex < localRange.endIndex {

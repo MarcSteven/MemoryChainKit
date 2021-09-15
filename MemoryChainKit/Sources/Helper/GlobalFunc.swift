@@ -435,3 +435,8 @@ func canOpen(path: String) -> Bool {
 	}
 
 
+func getAssociatedObject<T>(_ object:Any,
+                            _ key:UnsafeRawPointer) -> T? {
+    return objc_getAssociatedObject(object,key) as? T
+}
+
