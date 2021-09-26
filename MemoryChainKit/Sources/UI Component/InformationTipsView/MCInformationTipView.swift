@@ -11,7 +11,7 @@ import UIKit
 import CoreGraphics
 import Darwin
 
-@objc public protocol MCInformationTipViewDelegate:class {
+@objc public protocol MCInformationTipViewDelegate:AnyObject {
     func informationTipsViewDidAppear( for identifier:String)
     func informationTipViewDidDisappear( for identifier:String,with timeInterval:TimeInterval)
 }

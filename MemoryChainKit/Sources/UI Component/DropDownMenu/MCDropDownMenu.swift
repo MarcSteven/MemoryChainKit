@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 //MCDropdown view delegate method
-public protocol MCDropdownViewDelegate:class {
+public protocol MCDropdownViewDelegate:AnyObject {
     //将要展示
     func dropDownViewWillShow(_ dropdownView:MCDropdownView)
     //已经展示

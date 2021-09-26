@@ -10,7 +10,7 @@ import Foundation
 
 /** Event bus
  */
-public protocol Event:class {
+public protocol Event:AnyObject {
     
     var type:String {get}
     

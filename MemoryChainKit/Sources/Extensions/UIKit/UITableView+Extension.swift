@@ -144,7 +144,7 @@ extension UITableView {
     }
 
     }
-@objc public protocol TableViewCellIdentifier:class {
+@objc public protocol TableViewCellIdentifier:AnyObject {
     static var reuseIdentifier:String {get}
 }
 extension UITableView {

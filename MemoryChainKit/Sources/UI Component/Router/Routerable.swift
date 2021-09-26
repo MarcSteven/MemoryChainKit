@@ -9,7 +9,7 @@
 
 import UIKit
 
-public protocol Routerable: class {
+public protocol Routerable: AnyObject {
     func route(to route: Router.Route<Self>, options: Router.Route<Self>.Options)
 }
 

@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
-public protocol TabBarButtonDelegate:class {
+public protocol TabBarButtonDelegate:AnyObject {
     func shouldAnimate(_ tabBarButton: TabBarButton)->Bool
     
     

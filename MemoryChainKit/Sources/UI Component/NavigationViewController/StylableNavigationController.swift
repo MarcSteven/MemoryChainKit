@@ -15,7 +15,7 @@ public enum NavigationControllerStyle {
     case custom(style: Stylable)
 }
 
-public protocol NavigationBarStylable:class {
+public protocol NavigationBarStylable:AnyObject {
     var navigationBarStyle:NavigationControllerStyle? {get}
 }
 

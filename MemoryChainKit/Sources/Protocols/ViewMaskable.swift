@@ -9,7 +9,7 @@
 import UIKit 
 
 
-public protocol ViewMaskable: class {
+public protocol ViewMaskable: AnyObject {
     static func add(to superview: UIView) -> Self
     func dismiss(_ completion: (() -> Void)?)
     var preferredNavigationBarTintColor: UIColor { get }

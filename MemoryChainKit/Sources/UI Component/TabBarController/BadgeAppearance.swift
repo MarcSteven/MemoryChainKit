@@ -138,13 +138,13 @@ extension UIView {
         self.addConstraint(NSLayoutConstraint(item: badgeLabel as Any, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: CGFloat(height)))
         
         //add width constraint
-        self.addConstraint(NSLayoutConstraint(item: badgeLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: CGFloat(width)))
+        self.addConstraint(NSLayoutConstraint(item: badgeLabel as Any, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: CGFloat(width)))
         
         //add vertical constraint
-        self.addConstraint(NSLayoutConstraint(item: badgeLabel, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1.0, constant: centerX))
+        self.addConstraint(NSLayoutConstraint(item: badgeLabel as Any, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1.0, constant: centerX))
         
         //add horizontal constraint
-        self.addConstraint(NSLayoutConstraint(item: badgeLabel, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: centerY))
+        self.addConstraint(NSLayoutConstraint(item: badgeLabel as Any, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: centerY))
         
         badgeLabel.layer.borderColor = appearance.borderColor.cgColor
         badgeLabel.layer.borderWidth = appearance.borderWidth

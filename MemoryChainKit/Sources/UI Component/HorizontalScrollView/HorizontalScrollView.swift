@@ -9,11 +9,11 @@
 import UIKit
 
 
-public protocol HorizontalScrollViewDataSource:class {
+public protocol HorizontalScrollViewDataSource:AnyObject {
     func numberOfViews( in horizontalScrollView:HorizontalScrollView) ->Int
     func horizontalScrollView(_ horizontalScrollView:HorizontalScrollView, viewAt index:Int) ->UIView
 }
-public protocol HorizontalScrollViewDelegate:class {
+public protocol HorizontalScrollViewDelegate:AnyObject {
     func horizontalScrollerView(_ horizontalScrollerView:HorizontalScrollView,didSelectViewAt index:Int)
 }
 open class HorizontalScrollView:UIView {

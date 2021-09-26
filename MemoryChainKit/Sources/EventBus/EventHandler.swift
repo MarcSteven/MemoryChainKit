@@ -9,6 +9,6 @@
 import Foundation
 
 
-public protocol EventHandler:class {
+public protocol EventHandler:AnyObject {
     func handle(_ event:Event)
 }

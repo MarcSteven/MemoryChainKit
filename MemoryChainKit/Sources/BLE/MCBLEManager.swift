@@ -10,24 +10,24 @@
 import Foundation
 import CoreBluetooth
 // DeviceScaningDelegate Protocol: Implements to get scanning devices
-protocol DeviceScaningDelegate:class {
+protocol DeviceScaningDelegate:AnyObject {
     func scanningStatus(status: Int)
     func bleManagerDiscover(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
 }
 // DeviceConnectionDelegate Protocol: Implements to get Connection/Disconnection Success or Failure
-protocol DeviceConnectionDelegate:class {
+protocol DeviceConnectionDelegate:AnyObject {
     func bleManagerConnectionFail (_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?)
     func bleManagerDidConnect(_ central: CBCentralManager, didConnect peripheral: CBPeripheral)
     func bleManagerDisConect(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?)
 }
 // ServicesDiscoveryDelegate Protocol: Implements to get Services,Characteristics and Descriptors Discovery
-protocol DiscoverableServicesDelegate:class {
+protocol DiscoverableServicesDelegate:AnyObject {
     func bleManagerDiscoverService (_ peripheral: CBPeripheral, didDiscoverServices error: Error?)
     func bleManagerDiscoverCharacteristics (_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?)
     func bleManagerDiscoverDescriptors (_ peripheral: CBPeripheral, didDiscoverDescriptorsFor characteristic: CBCharacteristic, error: Error?)
 }
 // ReadWirteCharteristicDelegate Protocol: Implements to get Read,Write and Notify Characterisctis and Descriptors
-protocol ReadWirteCharteristicDelegate:class {
+protocol ReadWirteCharteristicDelegate:AnyObject {
     
     func bleManagerDidUpdateValueForChar(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?)
     func bleManagerDidWriteValueForChar(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?)
@@ -36,7 +36,7 @@ protocol ReadWirteCharteristicDelegate:class {
     func bleManagerDidUpdateNotificationState(_ peripheral: CBPeripheral, didUpdateNotificationStateFor characteristic: CBCharacteristic, error: Error?)
 }
 // ReadRSSIValueDelegate Protocol: Implements to get RSSI Value
-protocol ReadRSSIValueDelegate:class {
+protocol ReadRSSIValueDelegate:AnyObject {
     func bleManagerReadRSSIValue(_ peripheral: CBPeripheral, didReadRSSI RSSI: NSNumber, error: Error?)
 }
 

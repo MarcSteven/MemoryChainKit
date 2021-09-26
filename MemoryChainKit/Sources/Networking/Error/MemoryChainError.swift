@@ -21,7 +21,7 @@ public protocol MemoryChainError:Error,CustomStringConvertible {
 }
 
 public extension MemoryChainError where Self:Equatable {
-    public func isEqual(error:MemoryChainError) ->Bool {
+    func isEqual(error:MemoryChainError) ->Bool {
         if let error = error as? Self {return self == error}
         return false
     }

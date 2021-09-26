@@ -7,6 +7,6 @@
 //
 
 
-public protocol InitializableByEmptyConstructor:class {
+public protocol InitializableByEmptyConstructor:AnyObject {
     init()
 }
