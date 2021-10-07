@@ -1,6 +1,34 @@
-
+#[0.2.5]
+* fix the warning about the protocol -duplicated class
+* refactor  UIColor/String extension
+* add waveForm components
+* add method to add bottom line for UINavigationController
+* fix the compile error 
+* add method to enlarge the area of the button 
+* add method to set alpha for UINavigationBar
+* add method to resize the image
+* add property for the optional
+* add method to convert CGFloat to Double
+* add method to judge whether the url is image
+* add static method for UIImage
+* add topBar height for UIViewController
+* add method to show toast in the UIView 
+* add video composition method for AVAsset
+* add UINavigationBarItem extension
+* add method to check whether UIView has super view 
+* add method to rotate via device orientation 
+* add method to query the string in the URL
+* add method to calculate the height for UIImage
+* add method to check the device is jailbroken
+* add method to check the status of VPN
+* add method to capture the page for WKWebView
+* add method to capture image for UIView
+* add method to generate thumbnail image
+* add method to convert emoji to image for string 
+* add markdown components
+* 
 #[0.1.9]
-* use runtime to method swizzle to uiscrollView
+* use runtime to method swizzle to UIScrollView
 * and closeRange extension
 * add json library into it
 * add event bus
