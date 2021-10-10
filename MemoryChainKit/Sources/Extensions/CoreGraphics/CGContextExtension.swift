@@ -9,8 +9,7 @@
 import UIKit
 import CoreGraphics
 
-
-extension CGContext {
+public extension CGContext {
     /// This method scales the image (disproportionately, if necessary) to fit the bounds
     /// specified by the rect parameter. When the `byTiling` parameter is true, the image is
     /// tiled in user space—thus, unlike when drawing with patterns, the current
@@ -26,7 +25,7 @@ extension CGContext {
     ///
     ///     If `false` (the default), this method draws a single copy of the image in the
     ///     area defined by the `rect` parameter.
-    public func draw(_ image: UIImage, in rect: CGRect, byTiling: Bool = false) {
+   func draw(_ image: UIImage, in rect: CGRect, byTiling: Bool = false) {
         draw(image.cgImage!, in: rect, byTiling: byTiling)
     }
 }
