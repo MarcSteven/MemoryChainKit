@@ -12,6 +12,13 @@ import WebKit
 
 
 public extension UIView {
+    func addSubviews(_  views:[UIView]) {
+        for view in views {
+            addSubview(view)
+        }
+    }
+
+public extension UIView {
     func hasSuperview(_ superview: UIView) -> Bool{
         return viewHasSuperview(self, superview: superview)
     }
