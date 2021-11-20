@@ -7,11 +7,23 @@
 //
 
 import UIKit
+import Foundation
 
-extension NotificationCenter {
+
+public extension NotificationCenter {
+    func postOnMainThread(name: String, object anObject: Any? = nil, userInfo aUserInfo: [AnyHashable : Any]? = nil) {
+        //        if UIApplication.shared.applicationState == .background {
+        //            return
+        //        }
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: Notification.Name.init(rawValue: name), object: anObject, userInfo: aUserInfo)
+                }
+            }
+}
+public extension NotificationCenter {
     /// Removes all entries specifying a given observer from the notification
     /// center's dispatch table.
-    public static func remove(_ observers: [NSObjectProtocol?]) {
+     static func remove(_ observers: [NSObjectProtocol?]) {
         observers.forEach {
             NotificationCenter.default.remove($0)
         }
@@ -19,13 +31,13 @@ extension NotificationCenter {
 
     /// Removes all entries specifying a given observer from the notification
     /// center's dispatch table.
-    public static func remove(_ observer: NSObjectProtocol?) {
+     static func remove(_ observer: NSObjectProtocol?) {
         NotificationCenter.default.remove(observer)
     }
 
     /// Removes all entries specifying a given observer from the notification
     /// center's dispatch table.
-    public func remove(_ observer: NSObjectProtocol?) {
+     func remove(_ observer: NSObjectProtocol?) {
         guard let observer = observer else {
             return
         }
@@ -102,7 +114,7 @@ extension NotificationCenter {
     ///     the observer registration is removed.
     /// - Returns: An opaque object to act as the observer.
     @discardableResult
-    public func observe(
+    func observe(
         _ name: Notification.Name,
         object: Any? = nil,
         queue: OperationQueue? = nil,
@@ -123,7 +135,7 @@ extension NotificationCenter {
     ///   - userInfo: Optional information about the notification.
     ///   - delayInterval: A delay interval before posting the notification. The
     ///                    default value is `0`.
-    public static func post(
+    static func post(
         _ name: Notification.Name,
         object: Any? = nil,
         userInfo: [AnyHashable: Any]? = nil,

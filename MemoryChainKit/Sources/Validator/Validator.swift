@@ -59,6 +59,4 @@ open class Validator: NSObject {
         return predicate.evaluate(with: passwordString)
         
     }
-        
-    
 }
