@@ -8,17 +8,17 @@
 
 import UIKit
 //MARK: - properties
-extension UIScreen {
-    public class var screenWidth:CGFloat {
+public extension UIScreen {
+     class var screenWidth:CGFloat {
         return UIScreen.main.bounds.size.width
     }
-    public class var screenHeight:CGFloat {
+     class var screenHeight:CGFloat {
         return UIScreen.main.bounds.size.height
     }
-    public static func screen_width() ->CGFloat {
+     static func screen_width() ->CGFloat {
         return main.bounds.size.width
     }
-    public static func screen_height() ->CGFloat {
+     static func screen_height() ->CGFloat {
         return main.bounds.size.height
     }
 }
