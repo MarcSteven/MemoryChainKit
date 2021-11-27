@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
+		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
 		A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D35244F244D00B6DA00 /* ObstructableView.swift */; };
 		A6020D38244F24CC00B6DA00 /* EquatableByPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */; };
 		A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */; };
@@ -87,7 +89,6 @@
 		A65417B32421E82D00077AD8 /* UserDefaultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417B22421E82D00077AD8 /* UserDefaultStore.swift */; };
 		A65417B62421EAF900077AD8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417B52421EAF900077AD8 /* Environment.swift */; };
 		A65417B82421EB7600077AD8 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417B72421EB7600077AD8 /* NotificationCenterExtension.swift */; };
-		A65417BB2421ECE400077AD8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A65417BA2421ECE400077AD8 /* SnapKit */; };
 		A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417BD2421ED1200077AD8 /* SnapKitExtension.swift */; };
 		A65417C32421F6A800077AD8 /* FatalReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C22421F6A800077AD8 /* FatalReason.swift */; };
 		A65417C52421FB2800077AD8 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C42421FB2800077AD8 /* Console.swift */; };
@@ -158,7 +159,6 @@
 		A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */; };
 		A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */; };
 		A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC6B2420BF0B007C68DD /* MSAlertView.swift */; };
-		A695CC7C24211783007C68DD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A695CC7B24211783007C68DD /* SDWebImage */; };
 		A695D0BD2549ADDA00DE403A /* CardTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695D0BC2549ADD900DE403A /* CardTabBar.swift */; };
 		A695D0C1254A444800DE403A /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695D0C0254A444800DE403A /* Cacheable.swift */; };
 		A695D0CB254A4CE600DE403A /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695D0CA254A4CE600DE403A /* IndicatorView.swift */; };
@@ -354,6 +354,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		A6020D35244F244D00B6DA00 /* ObstructableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstructableView.swift; sourceTree = "<group>"; };
 		A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableByPointer.swift; sourceTree = "<group>"; };
 		A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyStoring.swift; sourceTree = "<group>"; };
@@ -696,10 +698,8 @@
 				A6880150243B03C300C16C82 /* RxRelay in Frameworks */,
 				A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */,
 				A6911B6726E08A2B00D85AD9 /* Kingfisher in Frameworks */,
-				A695CC7C24211783007C68DD /* SDWebImage in Frameworks */,
 				A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */,
 				A688014E243B03C300C16C82 /* RxSwift in Frameworks */,
-				A65417BB2421ECE400077AD8 /* SnapKit in Frameworks */,
 				A6880154243B03C300C16C82 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,6 +715,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42D7998627521FDA008A7D25 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				42D7998727521FF7008A7D25 /* Currency.swift */,
+				42D799892752239F008A7D25 /* CurrencyConverter.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
 		A6020D39244F287C00B6DA00 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -867,6 +876,7 @@
 		A66F3F362429ECB10081D52F /* Converter */ = {
 			isa = PBXGroup;
 			children = (
+				42D7998627521FDA008A7D25 /* Currency */,
 				A66F3F372429ECDC0081D52F /* StringConverter.swift */,
 			);
 			path = Converter;
@@ -1705,8 +1715,6 @@
 			);
 			name = MemoryChainKit;
 			packageProductDependencies = (
-				A695CC7B24211783007C68DD /* SDWebImage */,
-				A65417BA2421ECE400077AD8 /* SnapKit */,
 				A6651FC5243825B500DCBF85 /* PromiseKit */,
 				A688014D243B03C300C16C82 /* RxSwift */,
 				A688014F243B03C300C16C82 /* RxRelay */,
@@ -1766,8 +1774,6 @@
 			);
 			mainGroup = A6E331E82414C96D00381D4B;
 			packageReferences = (
-				A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
@@ -1990,6 +1996,7 @@
 				A69BC0D524459ADC00E600FB /* StylableNavigationController.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,
 				A6C3E3602444340300132000 /* ZoomOut.swift in Sources */,
+				42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */,
 				A6356D1A2423BB3400B46CDF /* Queue.swift in Sources */,
 				A6D40C122417B6B500A88B5B /* IntroducationView.swift in Sources */,
 				A6651FB924378B1200DCBF85 /* InitializableByEmptyConstructor.swift in Sources */,
@@ -2046,6 +2053,7 @@
 				A6D40BF52417B6B500A88B5B /* UIBarItem+Extension.swift in Sources */,
 				A6DDD46724168C6E008E1703 /* Polygon.swift in Sources */,
 				A695D0BD2549ADDA00DE403A /* CardTabBar.swift in Sources */,
+				42D7998827521FF7008A7D25 /* Currency.swift in Sources */,
 				A695D0D3254A555F00DE403A /* CardTabBarController.swift in Sources */,
 				A6DDD46524168C6E008E1703 /* SegueHandleType.swift in Sources */,
 				A6DDD45524168C6E008E1703 /* CollectionViewDataSource.swift in Sources */,
@@ -2401,14 +2409,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
 		A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/PromiseKit";
@@ -2441,22 +2441,9 @@
 				minimumVersion = 6.3.1;
 			};
 		};
-		A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A65417BA2421ECE400077AD8 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A65417B92421ECE400077AD8 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
 		A6651FC5243825B500DCBF85 /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */;
@@ -2491,11 +2478,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A6911B6526E08A2B00D85AD9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		A695CC7B24211783007C68DD /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A695CC7524211690007C68DD /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

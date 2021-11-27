@@ -27,10 +27,10 @@ public struct AppConstants {
 extension AppConstants {
     
 }
-extension CGFloat {
-    public static let minimumPadding: CGFloat = 8
-    public static let defaultPadding: CGFloat = 15
-    public static let maximumPadding: CGFloat = 30
+public extension CGFloat {
+     static let minimumPadding: CGFloat = 8
+     static let defaultPadding: CGFloat = 15
+     static let maximumPadding: CGFloat = 30
 
     /// A convenience method to return `1` pixel relative to the screen scale.
     
