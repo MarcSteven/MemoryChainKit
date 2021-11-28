@@ -12,11 +12,36 @@ import WebKit
 
 
 public extension UIView {
+    func keyWindow() ->UIWindow? {
+        for window in UIApplication.shared.windows {
+            if window.isKeyWindow {
+                return window
+            }
+        }
+        return UIWindow()
+    }
+    func safeAreaTop() ->CGFloat {
+        if #available(iOS 11.0, *) {
+            return keyWindow()?.safeAreaInsets.top ?? 0.0
+        }
+        return 0
+    }
+    func safeAreaBottom() ->CGFloat {
+        if #available(iOS 11.0, *) {
+            return keyWindow()?.safeAreaInsets.bottom ?? 0.0
+        }
+        return 0
+    }
+}
+
+
+public extension UIView {
     func addSubviews(_  views:[UIView]) {
         for view in views {
             addSubview(view)
         }
     }
+}
 
 public extension UIView {
     func hasSuperview(_ superview: UIView) -> Bool{
