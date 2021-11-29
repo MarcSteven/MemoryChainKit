@@ -58,8 +58,8 @@ public struct StringConverter {
     }
 }
 
-extension StringConverter {
-    public func get<T>() -> T? {
+public extension StringConverter {
+     func get<T>() -> T? {
         switch T.self {
             case is String.Type, is Optional<String>.Type:
                 return string as? T
@@ -82,7 +82,7 @@ extension StringConverter {
         }
     }
 
-    public func get<T>() -> T? where T: RawRepresentable, T.RawValue == String {
+     func get<T>() -> T? where T: RawRepresentable, T.RawValue == String {
         T(rawValue: string)
     }
 }
