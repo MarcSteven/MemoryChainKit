@@ -35,5 +35,14 @@ public extension CALayer {
         self.add(copy, forKey: copy.keyPath)
         self.setValue(copy.toValue, forKey: copy.keyPath!)
     }
+    func addShadow(radius:CGFloat,opacity:Float,height:CGFloat,color:UIColor? = nil) {
+        shouldRasterize = true
+        rasterizationScale = UIScreen.main.scale
+        masksToBounds = false
+        shadowRadius = radius
+        shadowRadius = color?.cgColor as! CGFloat
+        shadowOffset = CGSize(width: 0, height: height)
+        shadowOpacity = opacity
+    }
 }
 
