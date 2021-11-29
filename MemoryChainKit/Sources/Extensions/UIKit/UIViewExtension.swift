@@ -10,6 +10,80 @@ import UIKit
 import ObjectiveC
 import WebKit
 
+enum LayoutPinedSide:Hashable {
+    case top(CGFloat)
+    case left(CGFloat)
+    case right(CGFloat)
+    case bottom(CGFloat)
+}
+enum LayoutDirection:Int {
+case top,left,right,bottom
+}
+
+private var isSafeAreaEnable:Bool = true
+
+
+public extension UIView {
+    var safeTopAnchor:NSLayoutYAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.topAnchor
+        }else {
+            return topAnchor
+        }
+    }
+    var safeAreaBottomAnchor:NSLayoutYAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.bottomAnchor
+        }else {
+            return bottomAnchor
+        }
+    }
+    var safeAreaLeftAnchor:NSLayoutXAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.leftAnchor
+        }else {
+            return leftAnchor
+        }
+    }
+    var safeAreaRightAnchor:NSLayoutXAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.rightAnchor
+        }else {
+            return rightAnchor
+        }
+    }
+    var safeAreaLeadingAnchor:NSLayoutXAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.leadingAnchor
+        }else {
+            return leadingAnchor
+        }
+    }
+    var safeAreaTrailingAnchor:NSLayoutXAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.trailingAnchor
+        }else {
+            return trailingAnchor
+        }
+    }
+    var safeAreaCenterXAnchor:NSLayoutXAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.centerXAnchor
+            
+        }else {
+            return centerXAnchor
+        }
+    }
+    var safeAreaCenterYAnchor:NSLayoutYAxisAnchor {
+        if isSafeAreaEnable {
+            return safeAreaLayoutGuide.centerYAnchor
+        }else {
+            return centerYAnchor
+        }
+    }
+    
+    
+}
 
 public extension UIView {
     func keyWindow() ->UIWindow? {
