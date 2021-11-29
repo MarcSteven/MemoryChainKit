@@ -25,4 +25,3 @@ public  extension Bundle {
         return Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
     }
 }
-

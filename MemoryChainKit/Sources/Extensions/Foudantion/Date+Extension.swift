@@ -119,27 +119,7 @@ public extension Date {
         }
     }
 }
-//MARK: - method for date
 
-public extension NSDate {
-    class func date_form(string:String?) ->NSDate? {
-        return self.date_from(string: string, formatter: "yyyy-MM-DD HH:mm:ss")
-      
-    }
-    class func date_from(string: String?, formatter: String?) -> NSDate? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale.current
-        dateFormatter.timeZone = TimeZone.current
-        if let da_formatter = formatter {
-            dateFormatter.dateFormat = da_formatter
-            if let time_str = string  {
-                let date = dateFormatter.date(from: time_str)
-                return date as NSDate?
-            }
-        }
-        return nil
-    }
-}
 
 public extension Date {
     //MARK: - 获取日期各种值
@@ -360,4 +340,14 @@ public extension Date {
     }
 }
 
+
+//public extension Date {
+//    func onlyDate(calendar:Calendar) ->Date {
+//        let year = calendar.component(.year, from: self)
+//        let month = calendar.component(.month, from: self)
+//        let day = calendar.component(.day, from: self)
+//        let zone = calendar.timeZone
+//        let newComponents = DateComponents(calendar: self, timeZone: zone, era: <#T##Int?#>, year: <#T##Int?#>, month: <#T##Int?#>, day: <#T##Int?#>, hour: <#T##Int?#>, minute: <#T##Int?#>, second: <#T##Int?#>, nanosecond: <#T##Int?#>, weekday: <#T##Int?#>, weekdayOrdinal: <#T##Int?#>, quarter: <#T##Int?#>, weekOfMonth: <#T##Int?#>, weekOfYear: <#T##Int?#>, yearForWeekOfYear: <#T##Int?#>)
+//    }
+//}
 

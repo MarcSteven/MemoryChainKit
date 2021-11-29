@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
+		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
+		42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE92754E2F10045E00D /* AudioPlayerManager.swift */; };
+		42999FED2754E34E0045E00D /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEC2754E34E0045E00D /* Hud.swift */; };
+		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
 		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
 		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
 		A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D35244F244D00B6DA00 /* ObstructableView.swift */; };
@@ -354,6 +359,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
+		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		42999FE92754E2F10045E00D /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		42999FEC2754E34E0045E00D /* Hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
+		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		A6020D35244F244D00B6DA00 /* ObstructableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstructableView.swift; sourceTree = "<group>"; };
@@ -715,6 +725,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42999FE82754E2CF0045E00D /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				42999FE92754E2F10045E00D /* AudioPlayerManager.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		42999FEB2754E3420045E00D /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				42999FEC2754E34E0045E00D /* Hud.swift */,
+			);
+			path = Hud;
+			sourceTree = "<group>";
+		};
+		42999FEE2755176A0045E00D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		42D7998627521FDA008A7D25 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
@@ -1009,6 +1043,7 @@
 				A6A439AD241A3E94009FC4E1 /* String+hasText.swift */,
 				A6F85E842451699800F4D459 /* ClosedRangeExtension.swift */,
 				A69310AF2417100C004ADF4F /* Date+Extension.swift */,
+				42999FE62754D2120045E00D /* NSDateExtension.swift */,
 				A69310992417100A004ADF4F /* Dictionary+Helpers.swift */,
 				A69310A52417100B004ADF4F /* DispathQueueExtension.swift */,
 				A69310B82417100D004ADF4F /* Double+Extensions.swift */,
@@ -1020,6 +1055,7 @@
 				A69BC0C32444518900E600FB /* Array+binarySearch.swift */,
 				A6E15C7D2558EB1100FA667B /* BoolExtension.swift */,
 				A69310B12417100D004ADF4F /* OperationQueue+Extension.swift */,
+				42999FE42754D0CE0045E00D /* LocaleExtension.swift */,
 				A693109F2417100A004ADF4F /* Range+Extension.swift */,
 				A69B38B82532F0D5007D279D /* CGSizeExtension.swift */,
 				A69310A92417100C004ADF4F /* Sequence+Extension.swift */,
@@ -1190,6 +1226,8 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				42999FEB2754E3420045E00D /* Hud */,
+				42999FE82754E2CF0045E00D /* AudioPlayer */,
 				A6911B7026E1E2D200D85AD9 /* DoubleSlider */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4887425490300005CA39E /* Layouts */,
@@ -1452,6 +1490,7 @@
 		A6DDD42E24167C88008E1703 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				42999FEE2755176A0045E00D /* Utils */,
 				A6E15D37255C4ABC00FA667B /* Layout */,
 				A62C4CEB255662BA00E861CC /* Validator */,
 				A69B38A9253201FE007D279D /* Anchor */,
@@ -1825,6 +1864,7 @@
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
 				A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */,
 				A6356D182423B7CE00B46CDF /* QueueQuality.swift in Sources */,
+				42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
 				A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */,
 				A696857B2452A96D006DA075 /* JSONDeserializableError.swift in Sources */,
@@ -1939,6 +1979,7 @@
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
 				A69B38B72532EBF5007D279D /* UIView+Anchor.swift in Sources */,
+				42999FED2754E34E0045E00D /* Hud.swift in Sources */,
 				A60F77CC2452F3CE007F3C61 /* Logger.swift in Sources */,
 				A6D40BE22417B6B500A88B5B /* NSDate+CalendarView.swift in Sources */,
 				A695CC1A241F5065007C68DD /* HTTPMethod.swift in Sources */,
@@ -1956,6 +1997,7 @@
 				A6E85DB624497DB400645A2D /* IndexPathExtension.swift in Sources */,
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
 				A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */,
+				42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */,
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
 				A69B38B32532DF0E007D279D /* ExtensibleAsslckatedObject.swift in Sources */,
 				A69B38BD2532F44B007D279D /* UIRectCornerExtension.swift in Sources */,
@@ -1982,6 +2024,7 @@
 				A6020D4C2450443F00B6DA00 /* Request.swift in Sources */,
 				A65417CA24220CF900077AD8 /* TransitionContext.swift in Sources */,
 				A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */,
+				42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */,
 				A69C1A05245A94A6008544B6 /* Handler.swift in Sources */,
 				A6DDD52424168C90008E1703 /* KeyChainConstants.swift in Sources */,
 				A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */,
@@ -2067,6 +2110,7 @@
 				A6E85DA72449694B00645A2D /* PresentationCoordinator.swift in Sources */,
 				A6020D402450222E00B6DA00 /* MemoryChainError.swift in Sources */,
 				A6D40C112417B6B500A88B5B /* GiftImage.swift in Sources */,
+				42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */,
 				A6DDD45924168C6E008E1703 /* Routable.swift in Sources */,
 				A6356D022423640300B46CDF /* MCBLEConnector.swift in Sources */,
 				A6D40BE42417B6B500A88B5B /* MCLabel.swift in Sources */,
