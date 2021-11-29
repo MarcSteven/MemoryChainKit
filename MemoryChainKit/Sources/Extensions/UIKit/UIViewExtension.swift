@@ -558,3 +558,16 @@ public extension UIView {
         completionHandle(capturedImage)
     }
 }
+
+
+
+
+public extension UIView {
+    static func build<T: UIView>(_ builder: ((T) -> Void)? = nil) -> T {
+           let view = T()
+           view.translatesAutoresizingMaskIntoConstraints = false
+           builder?(view)
+
+           return view
+       }
+}
