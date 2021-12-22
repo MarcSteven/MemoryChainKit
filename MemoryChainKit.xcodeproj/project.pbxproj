@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
 		42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE92754E2F10045E00D /* AudioPlayerManager.swift */; };
@@ -359,6 +360,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		42999FE92754E2F10045E00D /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
@@ -1027,6 +1029,7 @@
 				A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */,
 				A69BC0C524445A6500E600FB /* TimeInterval+HasPassed.swift */,
 				A6F2171C243ECD9200188C23 /* CollectionExtension.swift */,
+				42987361277361C70063A70D /* EncodableExtension.swift */,
 				A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */,
 				A6D40B8C2417B6B400A88B5B /* NSCalendar+Extension.swift */,
 				A6D40B8D2417B6B400A88B5B /* NSDate+CalendarView.swift */,
@@ -1929,6 +1932,7 @@
 				A6020D422450230100B6DA00 /* NetworkError.swift in Sources */,
 				A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */,
 				A6AD551F242C6D2E002DB4FE /* MCScrollViewController.swift in Sources */,
+				42987362277361C70063A70D /* EncodableExtension.swift in Sources */,
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A6E85DB22449753A00645A2D /* TimeZone+Identifier.swift in Sources */,
