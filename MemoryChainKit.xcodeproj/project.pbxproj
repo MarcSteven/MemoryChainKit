@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
+		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
+		42987366277368F10063A70D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987365277368F10063A70D /* PublisherExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
 		42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE92754E2F10045E00D /* AudioPlayerManager.swift */; };
@@ -361,6 +363,8 @@
 
 /* Begin PBXFileReference section */
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
+		42987365277368F10063A70D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		42999FE92754E2F10045E00D /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
@@ -962,6 +966,7 @@
 				A69B38A325319AFD007D279D /* WKWebsiteDataStoreExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
+				42987365277368F10063A70D /* PublisherExtension.swift */,
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */,
@@ -973,6 +978,7 @@
 				A63D39392419297C00937CCD /* UIBezierPath+Extension.swift */,
 				A69B38BE2532F6E3007D279D /* UIGestureRecognizer+Closure.swift */,
 				A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */,
+				42987363277364790063A70D /* UIPressExtension.swift */,
 				A63D39132419297700937CCD /* UIButton+Extension.swift */,
 				A63D39282419297A00937CCD /* UICollectionView+Extension.swift */,
 				A63D391F2419297900937CCD /* UIColor+Extension.swift */,
@@ -1921,6 +1927,7 @@
 				A6DDD45824168C6E008E1703 /* Reusable.swift in Sources */,
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
 				A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */,
+				42987364277364790063A70D /* UIPressExtension.swift in Sources */,
 				A6020D4E245047F400B6DA00 /* Route.swift in Sources */,
 				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
 				A6356D252424931400B46CDF /* Options.swift in Sources */,
@@ -1942,6 +1949,7 @@
 				A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */,
 				A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */,
 				A6020D4624503BFC00B6DA00 /* Result.swift in Sources */,
+				42987366277368F10063A70D /* PublisherExtension.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
