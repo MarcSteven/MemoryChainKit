@@ -108,3 +108,14 @@ public extension UINavigationBar {
         return nil
     }
 }
+
+//MARK: - Remove bottom line
+@objc public extension UINavigationBar {
+    func removeShadow(_ value:Bool) {
+        if value {
+            self.setValue(true, forKey: "hidesShadow")
+        }else {
+            self.setValue(false, forKey: "hidesShadow")
+        }
+    }
+}
