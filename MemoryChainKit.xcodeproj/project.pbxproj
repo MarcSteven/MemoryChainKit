@@ -17,6 +17,7 @@
 		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
 		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
 		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
+		42FB01962774A2D9001106C6 /* MCUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB01952774A2D9001106C6 /* MCUIHelper.swift */; };
 		A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D35244F244D00B6DA00 /* ObstructableView.swift */; };
 		A6020D38244F24CC00B6DA00 /* EquatableByPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */; };
 		A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */; };
@@ -371,6 +372,7 @@
 		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		42FB01952774A2D9001106C6 /* MCUIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUIHelper.swift; sourceTree = "<group>"; };
 		A6020D35244F244D00B6DA00 /* ObstructableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstructableView.swift; sourceTree = "<group>"; };
 		A6020D37244F24CC00B6DA00 /* EquatableByPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableByPointer.swift; sourceTree = "<group>"; };
 		A6020D3C244FE90200B6DA00 /* PropertyStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyStoring.swift; sourceTree = "<group>"; };
@@ -930,6 +932,7 @@
 				A6F21714243E0C8000188C23 /* LocalAtomic.swift */,
 				A69C1A04245A94A6008544B6 /* Handler.swift */,
 				A6F21716243E0D2E00188C23 /* GlobalFunc.swift */,
+				42FB01952774A2D9001106C6 /* MCUIHelper.swift */,
 				A6F2171A243E175700188C23 /* KeyValueObservationInfo.swift */,
 				A69BC0C724445BF900E600FB /* UserDefault.swift */,
 				A66F3F41242A7D980081D52F /* SwizzleManager.swift */,
@@ -1909,6 +1912,7 @@
 				A60F77C42452E564007F3C61 /* Event.swift in Sources */,
 				A6C3E35C24442E9B00132000 /* Pulse.swift in Sources */,
 				A6D40BFE2417B6B500A88B5B /* CaptchaButton.swift in Sources */,
+				42FB01962774A2D9001106C6 /* MCUIHelper.swift in Sources */,
 				A6F2171D243ECD9200188C23 /* CollectionExtension.swift in Sources */,
 				A63D39752419298100937CCD /* CAGradientLayer+AnimationChange.swift in Sources */,
 				A6D40C152417B6B500A88B5B /* BadgeAppearance.swift in Sources */,
