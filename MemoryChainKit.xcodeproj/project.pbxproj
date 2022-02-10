@@ -321,7 +321,6 @@
 		A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD566241696D5008E1703 /* UICollectionExtension.swift */; };
 		A6E15C722558E7F400FA667B /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */; };
 		A6E15C7E2558EB1100FA667B /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C7D2558EB1100FA667B /* BoolExtension.swift */; };
-		A6E15C862558EF1100FA667B /* UISliderExtesnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */; };
 		A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */; };
 		A6E15D39255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15D38255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift */; };
 		A6E15D3D255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15D3C255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift */; };
@@ -672,7 +671,6 @@
 		A6DDD566241696D5008E1703 /* UICollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionExtension.swift; sourceTree = "<group>"; };
 		A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
 		A6E15C7D2558EB1100FA667B /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
-		A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderExtesnion.swift; sourceTree = "<group>"; };
 		A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectExtension.swift; sourceTree = "<group>"; };
 		A6E15D38255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A6E15D3C255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualSpaceCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -962,7 +960,6 @@
 				A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */,
 				A69310DF24171507004ADF4F /* UIResponderExtension.swift */,
 				A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */,
-				A6E15C852558EF1100FA667B /* UISliderExtesnion.swift */,
 				A69B38A325319AFD007D279D /* WKWebsiteDataStoreExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
@@ -2187,7 +2184,6 @@
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
 				A6DDD45A24168C6E008E1703 /* Stylable.swift in Sources */,
 				A6D40C132417B6B500A88B5B /* SegmentedItem.swift in Sources */,
-				A6E15C862558EF1100FA667B /* UISliderExtesnion.swift in Sources */,
 				A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */,
 				A63D39602419298000937CCD /* UILayoutPriority+Extension.swift in Sources */,
 				A6DDD46824168C6E008E1703 /* KeyboardInfo.swift in Sources */,
