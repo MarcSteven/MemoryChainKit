@@ -23,10 +23,6 @@ public struct AppConstants {
     
 }
 
-//Device:
-extension AppConstants {
-    
-}
 public extension CGFloat {
      static let minimumPadding: CGFloat = 8
      static let defaultPadding: CGFloat = 15
@@ -35,9 +31,9 @@ public extension CGFloat {
     /// A convenience method to return `1` pixel relative to the screen scale.
     
 }
-extension UIColor {
+public extension UIColor {
     /// Returns default system tint color.
-    public static var systemTint: UIColor {
+     static var systemTint: UIColor {
         struct Static {
             static let tintColor = UIView().tintColor ?? .appleBlue
         }
