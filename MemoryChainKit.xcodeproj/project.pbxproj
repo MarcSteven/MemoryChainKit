@@ -318,7 +318,6 @@
 		A6DDD53A24168D0A008E1703 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53224168D0A008E1703 /* Store.swift */; };
 		A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */; };
 		A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD56424169610008E1703 /* UIImageExtension.swift */; };
-		A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD566241696D5008E1703 /* UICollectionExtension.swift */; };
 		A6E15C722558E7F400FA667B /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */; };
 		A6E15C7E2558EB1100FA667B /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C7D2558EB1100FA667B /* BoolExtension.swift */; };
 		A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */; };
@@ -668,7 +667,6 @@
 		A6DDD53224168D0A008E1703 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		A6DDD56424169610008E1703 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
-		A6DDD566241696D5008E1703 /* UICollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionExtension.swift; sourceTree = "<group>"; };
 		A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
 		A6E15C7D2558EB1100FA667B /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 		A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectExtension.swift; sourceTree = "<group>"; };
@@ -1007,7 +1005,6 @@
 				A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */,
 				A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */,
 				A6DDD56424169610008E1703 /* UIImageExtension.swift */,
-				A6DDD566241696D5008E1703 /* UICollectionExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1952,7 +1949,6 @@
 				A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
 				A66F3F2B2429C5D10081D52F /* Analytics.swift in Sources */,
-				A6DDD567241696D5008E1703 /* UICollectionExtension.swift in Sources */,
 				A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */,
 				A6F21713243E0C0000188C23 /* ObjcWakeable.swift in Sources */,
 				A6020D502450481000B6DA00 /* ParameterEncoding.swift in Sources */,

@@ -23,11 +23,10 @@ case top,left,right,bottom
 private var isSafeAreaEnable:Bool = true
 
 
-
 public extension UIView {
     static func build<T:UIView>(_ builder:((T)->Void)? = nil) ->T {
         let view = T()
-        view.translatesAutoresizingMaskIntoConstraints= false
+        view.translatesAutoresizingMaskIntoConstraints = false
         builder?(view)
         return view
     }
