@@ -162,7 +162,6 @@
 		A695CC52241FB90E007C68DD /* AVCaptureDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */; };
 		A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */; };
 		A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC55242073F6007C68DD /* AVAssetExtension.swift */; };
-		A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */; };
 		A695CC5C2420819B007C68DD /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */; };
 		A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */; };
 		A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */; };
@@ -510,7 +509,6 @@
 		A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureDeviceExtension.swift; sourceTree = "<group>"; };
 		A695CC5324206EFE007C68DD /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
 		A695CC55242073F6007C68DD /* AVAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
-		A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureSessionExtension.swift; sourceTree = "<group>"; };
 		A695CC5B2420819B007C68DD /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITabBarControllerExtension.swift; path = MemoryChainKit/Sources/Extensions/UIKit/UITabBarControllerExtension.swift; sourceTree = SOURCE_ROOT; };
 		A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		A695CC5F2420A773007C68DD /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
@@ -1202,7 +1200,6 @@
 			children = (
 				A695CC55242073F6007C68DD /* AVAssetExtension.swift */,
 				A695CC51241FB90D007C68DD /* AVCaptureDeviceExtension.swift */,
-				A695CC57242074AE007C68DD /* AVCaptureSessionExtension.swift */,
 				A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */,
 				A6A0E0E02539339300860AA3 /* AVAudioSessionExtension.swift */,
 				A6A0E0E42539349F00860AA3 /* AVAudioOutputDeviceManager.swift */,
@@ -2040,7 +2037,6 @@
 				A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */,
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A696857D2452A9A0006DA075 /* Decoding.swift in Sources */,
-				A695CC58242074AE007C68DD /* AVCaptureSessionExtension.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
 				A69BC0D524459ADC00E600FB /* StylableNavigationController.swift in Sources */,
 				A6DDD52224168C90008E1703 /* KeyChainAccessOptions.swift in Sources */,

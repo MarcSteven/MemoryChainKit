@@ -224,7 +224,7 @@ import AVFoundation
     }
 }
 
-extension AVAudioSession {
+public extension AVAudioSession {
     
     static var isHeadphonesConnected: Bool {
         return sharedInstance().isHeadphonesConnected
