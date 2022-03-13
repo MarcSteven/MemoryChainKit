@@ -570,20 +570,9 @@ public extension UIView {
 
 
 
+
+
 public extension UIView {
-    static func build<T: UIView>(_ builder: ((T) -> Void)? = nil) -> T {
-           let view = T()
-           view.translatesAutoresizingMaskIntoConstraints = false
-           builder?(view)
-
-           return view
-       }
-}
-
-
-
-
-extension UIView {
 
     func applyGradient(isVertical: Bool, colorArray: [UIColor]) { 
         layer.sublayers?.filter({ $0 is CAGradientLayer }).forEach({ $0.removeFromSuperlayer() })
