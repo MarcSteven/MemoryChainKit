@@ -693,7 +693,7 @@ public extension String {
 
 public extension String {
     func size(withFont font: UIFont) -> CGSize {
-        let attributes = [NSAttributedStringKey.font: font]
+        let attributes = [NSAttributedString.Key.font: font]
         return (self as NSString).size(withAttributes: attributes)
     }
 }
