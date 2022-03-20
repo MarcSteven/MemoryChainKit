@@ -11,36 +11,36 @@ import UIKit
 #if canImport(SnapKit)
 import SnapKit
 
-extension Array where Element: UIView {
-    public var snp: [SnapKit.ConstraintViewDSL] {
+public extension Array where Element: UIView {
+     var snp: [SnapKit.ConstraintViewDSL] {
         map { $0.snp }
     }
 }
 
-extension Array where Element == SnapKit.ConstraintViewDSL {
-    public func prepareConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) -> [[SnapKit.Constraint]] {
+public extension Array where Element == SnapKit.ConstraintViewDSL {
+     func prepareConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) -> [[SnapKit.Constraint]] {
         map { $0.prepareConstraints(closure) }
     }
 
-    public func makeConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) {
+     func makeConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) {
         forEach { $0.makeConstraints(closure) }
     }
 
-    public func remakeConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) {
+     func remakeConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) {
         forEach { $0.remakeConstraints(closure) }
     }
 
-    public func updateConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) {
+     func updateConstraints(_ closure: (SnapKit.ConstraintMaker) -> Void) {
         forEach { $0.updateConstraints(closure) }
     }
 
-    public func removeConstraints() {
+     func removeConstraints() {
         forEach { $0.removeConstraints() }
     }
 }
 
-extension ConstraintPriority {
-    public init(_ value: UILayoutPriority) {
+public extension ConstraintPriority {
+     init(_ value: UILayoutPriority) {
         self.init(value.rawValue)
     }
 }
