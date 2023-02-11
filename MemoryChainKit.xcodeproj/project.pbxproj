@@ -12,7 +12,6 @@
 		42987366277368F10063A70D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987365277368F10063A70D /* PublisherExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
-		42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE92754E2F10045E00D /* AudioPlayerManager.swift */; };
 		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
 		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
 		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
@@ -357,7 +356,6 @@
 		42987365277368F10063A70D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
-		42999FE92754E2F10045E00D /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
@@ -711,14 +709,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42999FE82754E2CF0045E00D /* AudioPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				42999FE92754E2F10045E00D /* AudioPlayerManager.swift */,
-			);
-			path = AudioPlayer;
-			sourceTree = "<group>";
-		};
 		42999FEE2755176A0045E00D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1184,7 +1174,6 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
-				42999FE82754E2CF0045E00D /* AudioPlayer */,
 				A6911B7026E1E2D200D85AD9 /* DoubleSlider */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4887425490300005CA39E /* Layouts */,
@@ -1979,7 +1968,6 @@
 				A6020D4C2450443F00B6DA00 /* Request.swift in Sources */,
 				A65417CA24220CF900077AD8 /* TransitionContext.swift in Sources */,
 				A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */,
-				42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */,
 				A69C1A05245A94A6008544B6 /* Handler.swift in Sources */,
 				A6DDD52424168C90008E1703 /* KeyChainConstants.swift in Sources */,
 				A6F85E852451699800F4D459 /* ClosedRangeExtension.swift in Sources */,
