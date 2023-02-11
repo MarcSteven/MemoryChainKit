@@ -47,12 +47,6 @@
 		A6356CEF2423492200B46CDF /* CAMediaTimingFunction+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */; };
 		A6356CF62423537D00B46CDF /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CF52423537D00B46CDF /* Colorable.swift */; };
 		A6356CFB242354DE00B46CDF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CFA242354DE00B46CDF /* AppConstants.swift */; };
-		A6356CFE242360D500B46CDF /* MCBLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CFD242360D500B46CDF /* MCBLEManager.swift */; };
-		A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CFF2423610D00B46CDF /* MCBLEScanner.swift */; };
-		A6356D022423640300B46CDF /* MCBLEConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D012423640300B46CDF /* MCBLEConnector.swift */; };
-		A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */; };
-		A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */; };
-		A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */; };
 		A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D112423B2CA00B46CDF /* QueueType.swift */; };
 		A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D132423B43700B46CDF /* ExecutableQueue.swift */; };
 		A6356D162423B67600B46CDF /* ExecutableQueueMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */; };
@@ -399,12 +393,6 @@
 		A6356CEE2423492200B46CDF /* CAMediaTimingFunction+Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Properties.swift"; sourceTree = "<group>"; };
 		A6356CF52423537D00B46CDF /* Colorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorable.swift; sourceTree = "<group>"; };
 		A6356CFA242354DE00B46CDF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		A6356CFD242360D500B46CDF /* MCBLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEManager.swift; sourceTree = "<group>"; };
-		A6356CFF2423610D00B46CDF /* MCBLEScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEScanner.swift; sourceTree = "<group>"; };
-		A6356D012423640300B46CDF /* MCBLEConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEConnector.swift; sourceTree = "<group>"; };
-		A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDeviceProperty.swift; sourceTree = "<group>"; };
-		A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDiscoverableDeviceService.swift; sourceTree = "<group>"; };
-		A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCBLEDeviceRSSI.swift; sourceTree = "<group>"; };
 		A6356D112423B2CA00B46CDF /* QueueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueType.swift; sourceTree = "<group>"; };
 		A6356D132423B43700B46CDF /* ExecutableQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutableQueue.swift; sourceTree = "<group>"; };
 		A6356D152423B67600B46CDF /* ExecutableQueueMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutableQueueMode.swift; sourceTree = "<group>"; };
@@ -810,32 +798,12 @@
 			path = Validator;
 			sourceTree = "<group>";
 		};
-		A6356CE324232C5D00B46CDF /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
 		A6356CF9242354CB00B46CDF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				A6356CFA242354DE00B46CDF /* AppConstants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		A6356CFC242360A000B46CDF /* BLE */ = {
-			isa = PBXGroup;
-			children = (
-				A6356CFD242360D500B46CDF /* MCBLEManager.swift */,
-				A6356CFF2423610D00B46CDF /* MCBLEScanner.swift */,
-				A6356D012423640300B46CDF /* MCBLEConnector.swift */,
-				A6356D032423654800B46CDF /* MCBLEDeviceProperty.swift */,
-				A6356D05242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift */,
-				A6356D072423660600B46CDF /* MCBLEDeviceRSSI.swift */,
-			);
-			path = BLE;
 			sourceTree = "<group>";
 		};
 		A6356D102423B2B500B46CDF /* Queue */ = {
@@ -1502,7 +1470,6 @@
 				A66F3F392429ED9B0081D52F /* Helper */,
 				A66F3F362429ECB10081D52F /* Converter */,
 				A6356D102423B2B500B46CDF /* Queue */,
-				A6356CFC242360A000B46CDF /* BLE */,
 				A6356CF9242354CB00B46CDF /* Constants */,
 				A6967F902423160F006C377A /* DataSource */,
 				A65417C624220C6500077AD8 /* Animator */,
@@ -1596,7 +1563,6 @@
 				A695D0D6254A7AB200DE403A /* WebKit */,
 				A6A0E0DF253932F600860AA3 /* AVFoundation */,
 				A6E85DAE2449734B00645A2D /* CoreGraphics */,
-				A6356CE324232C5D00B46CDF /* SwiftUI */,
 				A65417BC2421ED0300077AD8 /* SnapKit */,
 				A693109824170FF3004ADF4F /* Foudantion */,
 				A693109724170FDF004ADF4F /* UIKit */,
@@ -1991,7 +1957,6 @@
 				A6DDD53824168D0A008E1703 /* LocalStorage.swift in Sources */,
 				A6D40BF72417B6B500A88B5B /* UIView+DisplayInformationTipView.swift in Sources */,
 				A6DDD45C24168C6E008E1703 /* RxNill.swift in Sources */,
-				A6356D002423610D00B46CDF /* MCBLEScanner.swift in Sources */,
 				A60F77C82452E6C4007F3C61 /* EventBus.swift in Sources */,
 				A6DDD46E24168C7F008E1703 /* MSView.swift in Sources */,
 				A695CC602420A773007C68DD /* UINavigationControllerExtension.swift in Sources */,
@@ -1999,7 +1964,6 @@
 				A69310D32417100E004ADF4F /* NSArray+Extension.swift in Sources */,
 				A6E85DB624497DB400645A2D /* IndexPathExtension.swift in Sources */,
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
-				A6356D042423654800B46CDF /* MCBLEDeviceProperty.swift in Sources */,
 				42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */,
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
 				A69B38B32532DF0E007D279D /* ExtensibleAsslckatedObject.swift in Sources */,
@@ -2030,7 +1994,6 @@
 				42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */,
 				A69C1A05245A94A6008544B6 /* Handler.swift in Sources */,
 				A6DDD52424168C90008E1703 /* KeyChainConstants.swift in Sources */,
-				A6356D06242365AD00B46CDF /* MCBLEDiscoverableDeviceService.swift in Sources */,
 				A6F85E852451699800F4D459 /* ClosedRangeExtension.swift in Sources */,
 				A63D39662419298000937CCD /*  UIViewPropertyAnimator+Extension.swift in Sources */,
 				A6D40BF92417B6B500A88B5B /* CGPoint+Extension.swift in Sources */,
@@ -2084,7 +2047,6 @@
 				A6D40BD92417B6B500A88B5B /* RefreshItem.swift in Sources */,
 				A69310CC2417100E004ADF4F /* Sequence+Extension.swift in Sources */,
 				A6E85DA224494D0D00645A2D /* UITabBarExtension.swift in Sources */,
-				A6356CFE242360D500B46CDF /* MCBLEManager.swift in Sources */,
 				A6DDD53A24168D0A008E1703 /* Store.swift in Sources */,
 				A6356D272424931400B46CDF /* RouteType.swift in Sources */,
 				A60F77CA2452E7D9007F3C61 /* QueueDispatcher.swift in Sources */,
@@ -2113,12 +2075,10 @@
 				A6D40C112417B6B500A88B5B /* GiftImage.swift in Sources */,
 				42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */,
 				A6DDD45924168C6E008E1703 /* Routable.swift in Sources */,
-				A6356D022423640300B46CDF /* MCBLEConnector.swift in Sources */,
 				A6D40BE42417B6B500A88B5B /* MCLabel.swift in Sources */,
 				A62C4CF1255668ED00E861CC /* UserDefaultsExtension.swift in Sources */,
 				A6D40BD82417B6B500A88B5B /* GradientView.swift in Sources */,
 				A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */,
-				A6356D082423660600B46CDF /* MCBLEDeviceRSSI.swift in Sources */,
 				A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */,
 				A6DDD46B24168C6E008E1703 /* TextValidation.swift in Sources */,
 				A69B38B52532E8F1007D279D /* UIEdgeInsetsExtension.swift in Sources */,
