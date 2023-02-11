@@ -13,7 +13,6 @@
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
 		42999FEA2754E2F10045E00D /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE92754E2F10045E00D /* AudioPlayerManager.swift */; };
-		42999FED2754E34E0045E00D /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEC2754E34E0045E00D /* Hud.swift */; };
 		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
 		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
 		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
@@ -359,7 +358,6 @@
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		42999FE92754E2F10045E00D /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
-		42999FEC2754E34E0045E00D /* Hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
 		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
@@ -719,14 +717,6 @@
 				42999FE92754E2F10045E00D /* AudioPlayerManager.swift */,
 			);
 			path = AudioPlayer;
-			sourceTree = "<group>";
-		};
-		42999FEB2754E3420045E00D /* Hud */ = {
-			isa = PBXGroup;
-			children = (
-				42999FEC2754E34E0045E00D /* Hud.swift */,
-			);
-			path = Hud;
 			sourceTree = "<group>";
 		};
 		42999FEE2755176A0045E00D /* Utils */ = {
@@ -1194,7 +1184,6 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
-				42999FEB2754E3420045E00D /* Hud */,
 				42999FE82754E2CF0045E00D /* AudioPlayer */,
 				A6911B7026E1E2D200D85AD9 /* DoubleSlider */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
@@ -1948,7 +1937,6 @@
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
 				A69B38B72532EBF5007D279D /* UIView+Anchor.swift in Sources */,
-				42999FED2754E34E0045E00D /* Hud.swift in Sources */,
 				A60F77CC2452F3CE007F3C61 /* Logger.swift in Sources */,
 				A6D40BE22417B6B500A88B5B /* NSDate+CalendarView.swift in Sources */,
 				A695CC1A241F5065007C68DD /* HTTPMethod.swift in Sources */,
