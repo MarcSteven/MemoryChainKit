@@ -891,13 +891,6 @@
 			path = Adapter;
 			sourceTree = "<group>";
 		};
-		A6911B7026E1E2D200D85AD9 /* DoubleSlider */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DoubleSlider;
-			sourceTree = "<group>";
-		};
 		A693109724170FDF004ADF4F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1174,7 +1167,6 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
-				A6911B7026E1E2D200D85AD9 /* DoubleSlider */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4887425490300005CA39E /* Layouts */,
 				A6D4885D2548FD65005CA39E /* MarkDown */,
