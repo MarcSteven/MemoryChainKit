@@ -1149,13 +1149,6 @@
 			path = AVFoundation;
 			sourceTree = "<group>";
 		};
-		A6AD552D242C8D35002DB4FE /* ProgressView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProgressView;
-			sourceTree = "<group>";
-		};
 		A6C3E3562442F66500132000 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,7 +1164,6 @@
 				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A6020D39244F287C00B6DA00 /* VideoPlayer */,
 				A69BC0CB2445848700E600FB /* UITableView */,
-				A6AD552D242C8D35002DB4FE /* ProgressView */,
 				A66F3F252429C4C90081D52F /* Analytics */,
 				A60AF28E24219D5000072975 /* Image */,
 				A695CC722420EC7D007C68DD /* DataSource */,
