@@ -1168,7 +1168,6 @@
 			isa = PBXGroup;
 			children = (
 				A6DC0362254984D5001F3E64 /* TabBar */,
-				A6D4887425490300005CA39E /* Layouts */,
 				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A6020D39244F287C00B6DA00 /* VideoPlayer */,
 				A69BC0CB2445848700E600FB /* UITableView */,
@@ -1388,21 +1387,6 @@
 				A6D488622548FDAA005CA39E /* MarkupText.swift */,
 			);
 			path = MarkDown;
-			sourceTree = "<group>";
-		};
-		A6D4887425490300005CA39E /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				A6D4887525490312005CA39E /* FlowLayout */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
-		A6D4887525490312005CA39E /* FlowLayout */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FlowLayout;
 			sourceTree = "<group>";
 		};
 		A6DC0362254984D5001F3E64 /* TabBar */ = {
