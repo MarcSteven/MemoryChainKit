@@ -726,13 +726,6 @@
 			path = Currency;
 			sourceTree = "<group>";
 		};
-		A6020D39244F287C00B6DA00 /* VideoPlayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VideoPlayer;
-			sourceTree = "<group>";
-		};
 		A6020D3E2450221600B6DA00 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -1162,7 +1155,6 @@
 			children = (
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4885D2548FD65005CA39E /* MarkDown */,
-				A6020D39244F287C00B6DA00 /* VideoPlayer */,
 				A69BC0CB2445848700E600FB /* UITableView */,
 				A66F3F252429C4C90081D52F /* Analytics */,
 				A60AF28E24219D5000072975 /* Image */,
