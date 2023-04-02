@@ -10,7 +10,7 @@ import Foundation
 
 
 
-class CurrencyConverter {
+public class CurrencyConverter {
     
     // Private Properties:
     private var exchangeRates : [Currency : Double] = [:]
