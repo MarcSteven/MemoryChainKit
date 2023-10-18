@@ -186,7 +186,7 @@ extension MCUIHelper {
     
 }
 // rotate device
-extension MCUIHelper {
+public extension MCUIHelper {
     
     /// 是否旋转设备方向
     /// - Parameter orientation: 设备方向
@@ -199,5 +199,18 @@ extension MCUIHelper {
         }
         UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
         return true
+    }
+    func imageFromVideo( url:URL,at time:TimeInterval) ->UIImage? {
+        let asset = AVURLAsset(url: url)
+        let assetIG = AVAssetImageGenerator(asset: asset)
+        let cmTime = CMTime(seconds: time, preferredTimescale: 60)
+        let thumbImageRef:CGImage 
+        do {
+            thumbImageRef = try assetIG.copyCGImage(at: cmTime, actualTime: nil)
+        }catch let error {
+            print("error:\(error)")
+            return nil
+        }
+        return UIImage(cgImage: thumbImageRef)
     }
 }
