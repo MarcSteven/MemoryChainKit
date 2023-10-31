@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,8 +58,6 @@
 		A6356D282424931400B46CDF /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D222424931300B46CDF /* Routerable.swift */; };
 		A6356D292424931400B46CDF /* Router+Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356D232424931300B46CDF /* Router+Route.swift */; };
 		A63D3909241923ED00937CCD /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D3908241923ED00937CCD /* PopTransition.swift */; };
-		A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390B2419253900937CCD /* LoggerDelegate.swift */; };
-		A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D390D2419268700937CCD /* LoggerUtils.swift */; };
 		A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39122419297700937CCD /* UITableView+Extension.swift */; };
 		A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39132419297700937CCD /* UIButton+Extension.swift */; };
 		A63D39472419298000937CCD /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D39142419297700937CCD /* UIStackView+Extension.swift */; };
@@ -402,8 +400,6 @@
 		A6356D222424931300B46CDF /* Routerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		A6356D232424931300B46CDF /* Router+Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Route.swift"; sourceTree = "<group>"; };
 		A63D3908241923ED00937CCD /* PopTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
-		A63D390B2419253900937CCD /* LoggerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDelegate.swift; sourceTree = "<group>"; };
-		A63D390D2419268700937CCD /* LoggerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
 		A63D39122419297700937CCD /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		A63D39132419297700937CCD /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		A63D39142419297700937CCD /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
@@ -802,9 +798,7 @@
 		A63D390A2419251A00937CCD /* Debugging */ = {
 			isa = PBXGroup;
 			children = (
-				A63D390B2419253900937CCD /* LoggerDelegate.swift */,
 				A65417C22421F6A800077AD8 /* FatalReason.swift */,
-				A63D390D2419268700937CCD /* LoggerUtils.swift */,
 				A65417C42421FB2800077AD8 /* Console.swift */,
 			);
 			path = Debugging;
@@ -1917,7 +1911,6 @@
 				A63D396D2419298100937CCD /* UIDevice+Extension.swift in Sources */,
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
-				A63D390C2419253900937CCD /* LoggerDelegate.swift in Sources */,
 				A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */,
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
 				A69BC0C624445A6500E600FB /* TimeInterval+HasPassed.swift in Sources */,
@@ -2014,7 +2007,6 @@
 				A6D40BE42417B6B500A88B5B /* MCLabel.swift in Sources */,
 				A62C4CF1255668ED00E861CC /* UserDefaultsExtension.swift in Sources */,
 				A6D40BD82417B6B500A88B5B /* GradientView.swift in Sources */,
-				A63D390E2419268700937CCD /* LoggerUtils.swift in Sources */,
 				A63D39452419298000937CCD /* UITableView+Extension.swift in Sources */,
 				A6DDD46B24168C6E008E1703 /* TextValidation.swift in Sources */,
 				A69B38B52532E8F1007D279D /* UIEdgeInsetsExtension.swift in Sources */,
