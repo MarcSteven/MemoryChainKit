@@ -99,7 +99,6 @@
 		A6651FBD24378E7400DCBF85 /* ImageTitleDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */; };
 		A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBE24378ECE00DCBF85 /* Identifier.swift */; };
 		A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC22437909A00DCBF85 /* Crypto.swift */; };
-		A6651FC8243825F700DCBF85 /* Promise+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC7243825F600DCBF85 /* Promise+Extension.swift */; };
 		A6652022243A186700DCBF85 /* ValidRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6652021243A186700DCBF85 /* ValidRules.swift */; };
 		A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6652023243AC3F400DCBF85 /* ViewMaskable.swift */; };
 		A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */; };
@@ -135,7 +134,6 @@
 		A69310DB2417100E004ADF4F /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310B82417100D004ADF4F /* Double+Extensions.swift */; };
 		A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310DF24171507004ADF4F /* UIResponderExtension.swift */; };
 		A695CBB5241C86C6007C68DD /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CBB4241C86C6007C68DD /* OptionalExtension.swift */; };
-		A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CBF2241E52B3007C68DD /* Typealias.swift */; };
 		A695CC0B241F41AF007C68DD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC0A241F41AF007C68DD /* Reachability.swift */; };
 		A695CC1A241F5065007C68DD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC19241F5065007C68DD /* HTTPMethod.swift */; };
 		A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A695CC43241F635A007C68DD /* CharacterSet+URLQueryParameters.swift */; };
@@ -434,7 +432,6 @@
 		A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleDisplayable.swift; sourceTree = "<group>"; };
 		A6651FBE24378ECE00DCBF85 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		A6651FC22437909A00DCBF85 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		A6651FC7243825F600DCBF85 /* Promise+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Extension.swift"; sourceTree = "<group>"; };
 		A6652021243A186700DCBF85 /* ValidRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidRules.swift; sourceTree = "<group>"; };
 		A6652023243AC3F400DCBF85 /* ViewMaskable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMaskable.swift; sourceTree = "<group>"; };
 		A66F3F262429C4E80081D52F /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
@@ -470,7 +467,6 @@
 		A69310B82417100D004ADF4F /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		A69310DF24171507004ADF4F /* UIResponderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
 		A695CBB4241C86C6007C68DD /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
-		A695CBF2241E52B3007C68DD /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		A695CC0A241F41AF007C68DD /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A695CC19241F5065007C68DD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		A695CC43241F635A007C68DD /* CharacterSet+URLQueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLQueryParameters.swift"; sourceTree = "<group>"; };
@@ -1390,7 +1386,6 @@
 				A6DDD46F24168C88008E1703 /* Extensions */,
 				A6DDD46C24168C7F008E1703 /* BaseView */,
 				A6DDD42F24168C6E008E1703 /* Protocols */,
-				A695CBF2241E52B3007C68DD /* Typealias.swift */,
 				A66F3F322429E8730081D52F /* AnimationRunloop.swift */,
 			);
 			path = Sources;
@@ -1470,7 +1465,6 @@
 				A6E85DAE2449734B00645A2D /* CoreGraphics */,
 				A693109824170FF3004ADF4F /* Foudantion */,
 				A693109724170FDF004ADF4F /* UIKit */,
-				A6651FC7243825F600DCBF85 /* Promise+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1887,7 +1881,6 @@
 				A6F85E852451699800F4D459 /* ClosedRangeExtension.swift in Sources */,
 				A63D39662419298000937CCD /*  UIViewPropertyAnimator+Extension.swift in Sources */,
 				A6D40BF92417B6B500A88B5B /* CGPoint+Extension.swift in Sources */,
-				A695CBF3241E52B3007C68DD /* Typealias.swift in Sources */,
 				A63D39522419298000937CCD /* UIColor+Extension.swift in Sources */,
 				A696857D2452A9A0006DA075 /* Decoding.swift in Sources */,
 				A69310CD2417100E004ADF4F /* CGPoint+Extenision.swift in Sources */,
@@ -1920,7 +1913,6 @@
 				A69685792452A8CD006DA075 /* JSON.swift in Sources */,
 				A695CC0B241F41AF007C68DD /* Reachability.swift in Sources */,
 				A69310C32417100E004ADF4F /* CGRect+Helper.swift in Sources */,
-				A6651FC8243825F700DCBF85 /* Promise+Extension.swift in Sources */,
 				A6D40BE62417B6B500A88B5B /* MCProgressHUD.swift in Sources */,
 				A6DDD45424168C6E008E1703 /* DataContaining.swift in Sources */,
 				A66F3F332429E8730081D52F /* AnimationRunloop.swift in Sources */,
