@@ -88,7 +88,6 @@
 		A65417B32421E82D00077AD8 /* UserDefaultStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417B22421E82D00077AD8 /* UserDefaultStore.swift */; };
 		A65417B62421EAF900077AD8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417B52421EAF900077AD8 /* Environment.swift */; };
 		A65417B82421EB7600077AD8 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417B72421EB7600077AD8 /* NotificationCenterExtension.swift */; };
-		A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417BD2421ED1200077AD8 /* SnapKitExtension.swift */; };
 		A65417C32421F6A800077AD8 /* FatalReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C22421F6A800077AD8 /* FatalReason.swift */; };
 		A65417C52421FB2800077AD8 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C42421FB2800077AD8 /* Console.swift */; };
 		A65417C824220C8900077AD8 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65417C724220C8900077AD8 /* TransitionAnimator.swift */; };
@@ -100,7 +99,6 @@
 		A6651FBD24378E7400DCBF85 /* ImageTitleDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBC24378E7400DCBF85 /* ImageTitleDisplayable.swift */; };
 		A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FBE24378ECE00DCBF85 /* Identifier.swift */; };
 		A6651FC32437909A00DCBF85 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC22437909A00DCBF85 /* Crypto.swift */; };
-		A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = A6651FC5243825B500DCBF85 /* PromiseKit */; };
 		A6651FC8243825F700DCBF85 /* Promise+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6651FC7243825F600DCBF85 /* Promise+Extension.swift */; };
 		A6652022243A186700DCBF85 /* ValidRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6652021243A186700DCBF85 /* ValidRules.swift */; };
 		A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6652023243AC3F400DCBF85 /* ViewMaskable.swift */; };
@@ -117,13 +115,7 @@
 		A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3C242A43DE0081D52F /* AVAssertExportSessionExtension.swift */; };
 		A66F3F40242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F3F242A506F0081D52F /* MCCollectionViewFlowLayoutCustomizable.swift */; };
 		A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66F3F41242A7D980081D52F /* SwizzleManager.swift */; };
-		A688014E243B03C300C16C82 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A688014D243B03C300C16C82 /* RxSwift */; };
-		A6880150243B03C300C16C82 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A688014F243B03C300C16C82 /* RxRelay */; };
-		A6880152243B03C300C16C82 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A6880151243B03C300C16C82 /* RxCocoa */; };
-		A6880154243B03C300C16C82 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = A6880153243B03C300C16C82 /* RxBlocking */; };
-		A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A6880168243B384B00C16C82 /* SwiftyJSON */; };
 		A6911B6226D8B12100D85AD9 /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6911B6126D8B12100D85AD9 /* WaveForm.swift */; };
-		A6911B6726E08A2B00D85AD9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A6911B6626E08A2B00D85AD9 /* Kingfisher */; };
 		A69310BC2417100E004ADF4F /* Dictionary+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69310992417100A004ADF4F /* Dictionary+Helpers.swift */; };
 		A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109B2417100A004ADF4F /* Timer+Extension.swift */; };
 		A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693109F2417100A004ADF4F /* Range+Extension.swift */; };
@@ -431,7 +423,6 @@
 		A65417B22421E82D00077AD8 /* UserDefaultStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultStore.swift; sourceTree = "<group>"; };
 		A65417B52421EAF900077AD8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		A65417B72421EB7600077AD8 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
-		A65417BD2421ED1200077AD8 /* SnapKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitExtension.swift; sourceTree = "<group>"; };
 		A65417C22421F6A800077AD8 /* FatalReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatalReason.swift; sourceTree = "<group>"; };
 		A65417C42421FB2800077AD8 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		A65417C724220C8900077AD8 /* TransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
@@ -682,13 +673,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6880152243B03C300C16C82 /* RxCocoa in Frameworks */,
-				A6880150243B03C300C16C82 /* RxRelay in Frameworks */,
-				A6880169243B384B00C16C82 /* SwiftyJSON in Frameworks */,
-				A6911B6726E08A2B00D85AD9 /* Kingfisher in Frameworks */,
-				A6651FC6243825B500DCBF85 /* PromiseKit in Frameworks */,
-				A688014E243B03C300C16C82 /* RxSwift in Frameworks */,
-				A6880154243B03C300C16C82 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,14 +792,6 @@
 				A65417B52421EAF900077AD8 /* Environment.swift */,
 			);
 			path = Environment;
-			sourceTree = "<group>";
-		};
-		A65417BC2421ED0300077AD8 /* SnapKit */ = {
-			isa = PBXGroup;
-			children = (
-				A65417BD2421ED1200077AD8 /* SnapKitExtension.swift */,
-			);
-			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		A65417C624220C6500077AD8 /* Animator */ = {
@@ -1492,7 +1468,6 @@
 				A695D0D6254A7AB200DE403A /* WebKit */,
 				A6A0E0DF253932F600860AA3 /* AVFoundation */,
 				A6E85DAE2449734B00645A2D /* CoreGraphics */,
-				A65417BC2421ED0300077AD8 /* SnapKit */,
 				A693109824170FF3004ADF4F /* Foudantion */,
 				A693109724170FDF004ADF4F /* UIKit */,
 				A6651FC7243825F600DCBF85 /* Promise+Extension.swift */,
@@ -1649,13 +1624,6 @@
 			);
 			name = MemoryChainKit;
 			packageProductDependencies = (
-				A6651FC5243825B500DCBF85 /* PromiseKit */,
-				A688014D243B03C300C16C82 /* RxSwift */,
-				A688014F243B03C300C16C82 /* RxRelay */,
-				A6880151243B03C300C16C82 /* RxCocoa */,
-				A6880153243B03C300C16C82 /* RxBlocking */,
-				A6880168243B384B00C16C82 /* SwiftyJSON */,
-				A6911B6626E08A2B00D85AD9 /* Kingfisher */,
 			);
 			productName = MemoryChainKit;
 			productReference = A6E331F22414C96D00381D4B /* MemoryChainKit.framework */;
@@ -1709,10 +1677,6 @@
 			);
 			mainGroup = A6E331E82414C96D00381D4B;
 			packageReferences = (
-				A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				A6911B6526E08A2B00D85AD9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A6E331F32414C96D00381D4B /* Products */;
 			projectDirPath = "";
@@ -1918,7 +1882,6 @@
 				A6DDD46324168C6E008E1703 /* Responder.swift in Sources */,
 				A6020D4C2450443F00B6DA00 /* Request.swift in Sources */,
 				A65417CA24220CF900077AD8 /* TransitionContext.swift in Sources */,
-				A65417BE2421ED1200077AD8 /* SnapKitExtension.swift in Sources */,
 				A69C1A05245A94A6008544B6 /* Handler.swift in Sources */,
 				A6DDD52424168C90008E1703 /* KeyChainConstants.swift in Sources */,
 				A6F85E852451699800F4D459 /* ClosedRangeExtension.swift in Sources */,
@@ -2346,79 +2309,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mxcl/PromiseKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.13.1;
-			};
-		};
-		A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
-		A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		A6911B6526E08A2B00D85AD9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A6651FC5243825B500DCBF85 /* PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6651FC4243825B500DCBF85 /* XCRemoteSwiftPackageReference "PromiseKit" */;
-			productName = PromiseKit;
-		};
-		A688014D243B03C300C16C82 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		A688014F243B03C300C16C82 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		A6880151243B03C300C16C82 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		A6880153243B03C300C16C82 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A688014C243B03C300C16C82 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		A6880168243B384B00C16C82 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6880167243B384B00C16C82 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		A6911B6626E08A2B00D85AD9 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6911B6526E08A2B00D85AD9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6E331E92414C96D00381D4B /* Project object */;
 }
