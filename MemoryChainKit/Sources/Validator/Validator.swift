@@ -121,7 +121,7 @@ open class Validator: NSObject {
         return hasSuffix(validationCode)
     }
     
-    private func validateBirthDate() -> Bool {
+     func validateBirthDate() -> Bool {
         struct Static {
             static let dateFormatter: DateFormatter = {
                 let dateFormatter = DateFormatter()
