@@ -415,8 +415,6 @@
 		A63D393E2419298000937CCD /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		A63D39402419298000937CCD /* UIViewController+LifeCycleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LifeCycleHelper.swift"; sourceTree = "<group>"; };
 		A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AnimationChange.swift"; sourceTree = "<group>"; };
-		A65417982421CA2E00077AD8 /* ImageSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourceType.swift; sourceTree = "<group>"; };
-		A65417AA2421D30E00077AD8 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A65417AE2421E5FE00077AD8 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		A65417B22421E82D00077AD8 /* UserDefaultStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultStore.swift; sourceTree = "<group>"; };
 		A65417B52421EAF900077AD8 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -717,15 +715,6 @@
 			path = ImageCache;
 			sourceTree = "<group>";
 		};
-		A60AF28E24219D5000072975 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				A65417982421CA2E00077AD8 /* ImageSourceType.swift */,
-				A65417AA2421D30E00077AD8 /* ImageDownloader.swift */,
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
 		A60F77C22452E557007F3C61 /* EventBus */ = {
 			isa = PBXGroup;
 			children = (
@@ -964,13 +953,6 @@
 			path = Foudantion;
 			sourceTree = "<group>";
 		};
-		A695CBB1241B81D9007C68DD /* UILabel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UILabel;
-			sourceTree = "<group>";
-		};
 		A695CBFB241F231B007C68DD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1029,13 +1011,6 @@
 			children = (
 			);
 			path = SeparatorView;
-			sourceTree = "<group>";
-		};
-		A695CC722420EC7D007C68DD /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		A695CC7A24211783007C68DD /* Frameworks */ = {
@@ -1120,18 +1095,14 @@
 				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A69BC0CB2445848700E600FB /* UITableView */,
 				A66F3F252429C4C90081D52F /* Analytics */,
-				A60AF28E24219D5000072975 /* Image */,
-				A695CC722420EC7D007C68DD /* DataSource */,
 				A695CC6F2420D756007C68DD /* SeparatorView */,
 				A695CC6A2420BECC007C68DD /* AlertView */,
 				A695CC612420B1C9007C68DD /* Router */,
-				A695CBB1241B81D9007C68DD /* UILabel */,
 				A6D40B7B2417B6B400A88B5B /* SideBar */,
 				A6D40B7D2417B6B400A88B5B /* Gradient */,
 				A6D40B802417B6B400A88B5B /* RefreshView */,
 				A6D40B832417B6B400A88B5B /* EmptyStateView */,
 				A6D40B852417B6B400A88B5B /* DropDownMenu */,
-				A6D40B8B2417B6B400A88B5B /* CalendarView */,
 				A6D40B902417B6B400A88B5B /* progressHUD */,
 				A6D40B9F2417B6B400A88B5B /* NavigationViewController */,
 				A6D40BA32417B6B400A88B5B /* ProgressBar */,
@@ -1197,13 +1168,6 @@
 				A6D40B8A2417B6B400A88B5B /* MCDropdownMenu+Animations.swift */,
 			);
 			path = DropDownMenu;
-			sourceTree = "<group>";
-		};
-		A6D40B8B2417B6B400A88B5B /* CalendarView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CalendarView;
 			sourceTree = "<group>";
 		};
 		A6D40B902417B6B400A88B5B /* progressHUD */ = {

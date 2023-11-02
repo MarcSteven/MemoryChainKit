@@ -11,7 +11,7 @@ import UIKit
 
 
 @objcMembers
-open class XCTableViewDataSource: NSObject, UITableViewDataSource {
+open class MCTableViewDataSource: NSObject, UITableViewDataSource {
     /// UITableView has bug that ignored zero when sent as the `heightForFooterInSection`
     /// It has to be number greater then zero. Hence, this declaration.
     public static let zero: CGFloat = 0.0001
@@ -34,7 +34,7 @@ open class XCTableViewDataSource: NSObject, UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 
-extension XCTableViewDataSource {
+extension MCTableViewDataSource {
     open func heightForRow(at indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
     }
@@ -67,7 +67,7 @@ extension XCTableViewDataSource {
 
 // MARK: UITableViewDataSource
 
-extension XCTableViewDataSource {
+extension MCTableViewDataSource {
     @objc(numberOfSectionsInTableView:)
     open func numberOfSections(in tableView: UITableView) -> Int {
         1
