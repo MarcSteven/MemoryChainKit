@@ -90,9 +90,17 @@ private class ViewControllerLifecycleObserver:UIViewController,Observer {
         didMove(toParent: parent)
     }
 }
-class LoginViewController:UIViewController {
-    override func  viewDidLoad() {
-        super.viewDidLoad()
+public extension UIViewController {
+    var safeTopAnchor:NSLayoutYAxisAnchor {
+        return view.safeAreaLayoutGuide.topAnchor
     }
-    
+    var safeBottomAnchor:NSLayoutYAxisAnchor {
+        return view.safeAreaLayoutGuide.bottomAnchor
+    }
+    var safeTrailingAnchor:NSLayoutXAxisAnchor {
+        return view.safeAreaLayoutGuide.trailingAnchor
+    }
+    var safeAreaInsets:UIEdgeInsets {
+        return view.safeAreaInsets
+    }
 }
