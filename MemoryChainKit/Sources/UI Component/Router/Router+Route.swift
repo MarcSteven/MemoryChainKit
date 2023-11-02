@@ -86,7 +86,7 @@ public extension Router {
     ///     }
     /// }
     /// ```
-    public struct Route<Type: Routerable> {
+    struct Route<Type: Routerable> {
         public var id: String
         public var configure: (Type) -> RouteType
 
