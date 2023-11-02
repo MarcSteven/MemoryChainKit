@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D31E32AF3889C00E1931C /* CallbackQueue.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42987366277368F10063A70D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987365277368F10063A70D /* PublisherExtension.swift */; };
@@ -337,6 +338,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		423D31E32AF3889C00E1931C /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42987365277368F10063A70D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
@@ -683,6 +685,7 @@
 			isa = PBXGroup;
 			children = (
 				42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */,
+				423D31E32AF3889C00E1931C /* CallbackQueue.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1934,6 +1937,7 @@
 				A69BC0C824445BF900E600FB /* UserDefault.swift in Sources */,
 				A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */,
 				A66F3F312429CA060081D52F /* CellOptions.swift in Sources */,
+				423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */,
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
 				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
