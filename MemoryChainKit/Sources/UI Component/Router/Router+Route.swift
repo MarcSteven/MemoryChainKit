@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Router {
+public extension Router {
     /// A routes configuration.
     ///
     /// Simple and powerful way to create multiple routers and navigate from any
