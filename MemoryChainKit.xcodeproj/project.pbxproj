@@ -296,7 +296,6 @@
 		A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53124168D0A008E1703 /* LocalStorageImpl.swift */; };
 		A6DDD53A24168D0A008E1703 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD53224168D0A008E1703 /* Store.swift */; };
 		A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */; };
-		A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD56424169610008E1703 /* UIImageExtension.swift */; };
 		A6E15C722558E7F400FA667B /* UISegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */; };
 		A6E15C7E2558EB1100FA667B /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C7D2558EB1100FA667B /* BoolExtension.swift */; };
 		A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */; };
@@ -628,7 +627,6 @@
 		A6DDD53124168D0A008E1703 /* LocalStorageImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageImpl.swift; sourceTree = "<group>"; };
 		A6DDD53224168D0A008E1703 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		A6DDD560241694AB008E1703 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
-		A6DDD56424169610008E1703 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		A6E15C712558E7F400FA667B /* UISegmentedControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtension.swift; sourceTree = "<group>"; };
 		A6E15C7D2558EB1100FA667B /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 		A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVisualEffectExtension.swift; sourceTree = "<group>"; };
@@ -888,7 +886,6 @@
 				A63D392E2419297B00937CCD /* UIViewController+URL.swift */,
 				A695CC5D2420A51C007C68DD /* UIWindowExtension.swift */,
 				A6A439B3241A40AC009FC4E1 /* UITextViewExtension.swift */,
-				A6DDD56424169610008E1703 /* UIImageExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1769,7 +1766,6 @@
 				A6356D122423B2CA00B46CDF /* QueueType.swift in Sources */,
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6E15D3D255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift in Sources */,
-				A6DDD56524169610008E1703 /* UIImageExtension.swift in Sources */,
 				A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* StringExtension.swift in Sources */,
