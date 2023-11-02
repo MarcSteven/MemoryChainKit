@@ -1006,13 +1006,6 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
-		A695CC6F2420D756007C68DD /* SeparatorView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SeparatorView;
-			sourceTree = "<group>";
-		};
 		A695CC7A24211783007C68DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1095,7 +1088,6 @@
 				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A69BC0CB2445848700E600FB /* UITableView */,
 				A66F3F252429C4C90081D52F /* Analytics */,
-				A695CC6F2420D756007C68DD /* SeparatorView */,
 				A695CC6A2420BECC007C68DD /* AlertView */,
 				A695CC612420B1C9007C68DD /* Router */,
 				A6D40B7B2417B6B400A88B5B /* SideBar */,

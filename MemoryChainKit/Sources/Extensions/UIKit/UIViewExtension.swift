@@ -595,7 +595,15 @@ public extension UIView {
 
 }
 
-
+public extension UIView {
+    var safeLeadingAnchor: NSLayoutXAxisAnchor {
+        return safeAreaLayoutGuide.leadingAnchor
+    }
+    
+    var safeTrailingAnchor: NSLayoutXAxisAnchor {
+        return safeAreaLayoutGuide.trailingAnchor
+    }
+}
 
 
 
