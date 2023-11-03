@@ -9,12 +9,12 @@
 import UIKit
 import QuartzCore
 
-extension CALayer {
+public extension CALayer {
     /**A convenience method to return the color at the given point in 'self'
      @parameter :
      point : use to detect the color
      */
-    public func color(at point:CGPoint) ->UIColor {
+     func color(at point:CGPoint) ->UIColor {
         let width = 1
         let height = 1
         let bitsPerComponent = 8
