@@ -3,7 +3,7 @@
 //  MemoryChainKitTests
 //
 //  Created by Marc Zhao on 2020/3/8.
-//  Copyright © 2020 Marc Zhao(.com/MarcSteven). All rights reserved.
+//  Copyright © 2020 Marc Zhao(https://github.com/MarcSteven). All rights reserved.
 //
 
 import XCTest
