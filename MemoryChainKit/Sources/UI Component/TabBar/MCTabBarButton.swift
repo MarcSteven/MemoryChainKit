@@ -3,7 +3,7 @@
 //  MemoryChainKit
 //
 //  Created by Marc Steven on 2020/10/28.
-//  Copyright © 2020 Marc Steven(https://github.com/MarcSteven). All rights reserved.
+//  Copyright © 2020 Marc Steven(.com/MarcSteven). All rights reserved.
 //
 
 import UIKit

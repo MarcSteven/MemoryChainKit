@@ -3,7 +3,7 @@
 //  MemoryChainKit
 //
 //  Created by MarcSteven on 2021/12/22.
-//  Copyright © 2021 Marc Steven(https://marcsteven.top). All rights reserved.
+//  Copyright © 2021 Marc Steven(https://.com/MarcSteven). All rights reserved.
 //
 
 import Foundation

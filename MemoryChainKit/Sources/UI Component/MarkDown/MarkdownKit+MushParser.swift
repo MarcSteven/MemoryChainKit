@@ -11,7 +11,7 @@ import Haring
 
 /// Custom tags to support extra features in Markdown: Text color, background color, and font.
 /// MarkdownKit provides support to add custom tags support.
-/// https://github.com/ivanbruel/MarkdownKit#extensibility
+/// .com/ivanbruel/MarkdownKit#extensibility
 ///
 /// The following test string ensures that Markdown parser is implemented correctly with our custom tags.
 ///

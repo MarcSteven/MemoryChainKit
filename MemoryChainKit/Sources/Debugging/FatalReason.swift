@@ -3,12 +3,12 @@
 //  MemoryChainKit
 //
 //  Created by Marc Steven on 2020/3/18.
-//  Copyright © 2020 Marc Steven(https://github.com/MarcSteven). All rights reserved.
+//  Copyright © 2020 Marc Steven(.com/MarcSteven). All rights reserved.
 //
 
 import Foundation
 
-// See: https://github.com/apple/swift-evolution/pull/861/files
+// See: .com/apple/swift-evolution/pull/861/files
 
 /// Reasons why code should abort at runtime
 public struct FatalReason: CustomStringConvertible {
