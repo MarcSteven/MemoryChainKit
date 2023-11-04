@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D31E32AF3889C00E1931C /* CallbackQueue.swift */; };
+		4270E0552AF6750900173FC3 /* ExportableAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0542AF6750900173FC3 /* ExportableAsset.swift */; };
+		4270E0582AF6759500173FC3 /* CLPlacemarkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */; };
+		4270E05B2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */; };
+		4270E05D2AF6768800173FC3 /* NSManagedObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42987366277368F10063A70D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987365277368F10063A70D /* PublisherExtension.swift */; };
@@ -336,6 +340,10 @@
 
 /* Begin PBXFileReference section */
 		423D31E32AF3889C00E1931C /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
+		4270E0542AF6750900173FC3 /* ExportableAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableAsset.swift; sourceTree = "<group>"; };
+		4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemarkExtension.swift; sourceTree = "<group>"; };
+		4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFetchedResultsControllerExtension.swift; sourceTree = "<group>"; };
+		4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtension.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42987365277368F10063A70D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
@@ -675,6 +683,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4270E0562AF6758300173FC3 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		4270E0592AF6762900173FC3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */,
+				4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		42999FEE2755176A0045E00D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1339,6 +1364,7 @@
 				A6F21712243E0C0000188C23 /* ObjcWakeable.swift */,
 				A6020D35244F244D00B6DA00 /* ObstructableView.swift */,
 				A6356CF52423537D00B46CDF /* Colorable.swift */,
+				4270E0542AF6750900173FC3 /* ExportableAsset.swift */,
 				A6DDD43224168C6E008E1703 /* BackgroundColor.swift */,
 				A6DDD43324168C6E008E1703 /* BindableType.swift */,
 				A6DDD43424168C6E008E1703 /* StoryboardLoadable.swift */,
@@ -1399,6 +1425,8 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4270E0592AF6762900173FC3 /* CoreData */,
+				4270E0562AF6758300173FC3 /* CoreLocation */,
 				A695D0D6254A7AB200DE403A /* WebKit */,
 				A6A0E0DF253932F600860AA3 /* AVFoundation */,
 				A6E85DAE2449734B00645A2D /* CoreGraphics */,
@@ -1690,6 +1718,7 @@
 				A66F3F382429ECDC0081D52F /* StringConverter.swift in Sources */,
 				A6020D36244F244D00B6DA00 /* ObstructableView.swift in Sources */,
 				A6DDD53324168D0A008E1703 /* CoreDataRepresentable.swift in Sources */,
+				4270E05B2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift in Sources */,
 				A6D40C0A2417B6B500A88B5B /* Countries.swift in Sources */,
 				A695D0C1254A444800DE403A /* Cacheable.swift in Sources */,
 				A60F77C42452E564007F3C61 /* Event.swift in Sources */,
@@ -1752,6 +1781,7 @@
 				A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */,
 				A6E15D3D255C4C8500FA667B /* EqualSpaceCollectionViewFlowLayout.swift in Sources */,
 				A6F21717243E0D2E00188C23 /* GlobalFunc.swift in Sources */,
+				4270E0582AF6759500173FC3 /* CLPlacemarkExtension.swift in Sources */,
 				A63D39482419298000937CCD /* UIImageView+Extensions.swift in Sources */,
 				A69310D72417100E004ADF4F /* StringExtension.swift in Sources */,
 				A6356D1C24245D8F00B46CDF /* MulticastDelegate.swift in Sources */,
@@ -1788,6 +1818,7 @@
 				A69310D32417100E004ADF4F /* NSArray+Extension.swift in Sources */,
 				A6E85DB624497DB400645A2D /* IndexPathExtension.swift in Sources */,
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
+				4270E0552AF6750900173FC3 /* ExportableAsset.swift in Sources */,
 				42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */,
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
 				A69B38B32532DF0E007D279D /* ExtensibleAsslckatedObject.swift in Sources */,
@@ -1911,6 +1942,7 @@
 				A69BC0CD2445849D00E600FB /* UITableView+Reusable.swift in Sources */,
 				A6DDD45D24168C6E008E1703 /* BottomSheet.swift in Sources */,
 				A69B38C12532F819007D279D /* UIControl+Closure.swift in Sources */,
+				4270E05D2AF6768800173FC3 /* NSManagedObjectExtension.swift in Sources */,
 				A6651FBF24378ECE00DCBF85 /* Identifier.swift in Sources */,
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
 				A6020D48245042F300B6DA00 /* HTTPConfiguration.swift in Sources */,
