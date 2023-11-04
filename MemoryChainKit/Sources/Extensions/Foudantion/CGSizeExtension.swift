@@ -10,8 +10,8 @@ import UIKit
 
 // MARK: - CGSize - ExpressibleByFloatLiteral
 
-public extension CGSize: ExpressibleByFloatLiteral {
-     init(floatLiteral value: FloatLiteralType) {
+extension CGSize: ExpressibleByFloatLiteral {
+    public init(floatLiteral value: FloatLiteralType) {
         let value = CGFloat(value)
         self = CGSize(width: value, height: value)
     }
@@ -19,8 +19,8 @@ public extension CGSize: ExpressibleByFloatLiteral {
 
 // MARK: - CGSize - ExpressibleByIntegerLiteral
 
-public extension CGSize: ExpressibleByIntegerLiteral {
-     init(integerLiteral value: IntegerLiteralType) {
+extension CGSize: ExpressibleByIntegerLiteral {
+    public init(integerLiteral value: IntegerLiteralType) {
         let value = CGFloat(value)
         self = CGSize(width: value, height: value)
     }

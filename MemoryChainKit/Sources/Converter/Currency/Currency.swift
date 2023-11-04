@@ -11,7 +11,7 @@ import Foundation
 
 // You can visit here about the currency  https://en.wikipedia.org/wiki/Currency
 
-enum Currency :String,CaseIterable {
+public enum Currency :String,CaseIterable {
    case USD = "USD"
    case EUR = "EUR"
     case JPY = "JPY"

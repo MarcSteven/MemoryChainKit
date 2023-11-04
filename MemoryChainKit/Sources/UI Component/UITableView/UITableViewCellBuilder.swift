@@ -9,18 +9,18 @@
 import UIKit
 
 
-public protocol UITableViewCellBuilder {
-    var cellType:UpdatableCell.Type {get}
-    var rowHeight:CGFloat {get}
-    func build(_ cell:UpdatableCell)
-    
-}
-
-public extension UITableViewCellBuilder {
-    var rowHeight:CGFloat {
-        return UITableView.automaticDimension
-    }
-    func build(_ cell:UpdatableCell) {
-        cell.update(self)
-    }
-}
+//public protocol UITableViewCellBuilder {
+//    var cellType:UpdatableCell.Type {get}
+//    var rowHeight:CGFloat {get}
+//    func build(_ cell:UpdatableCell)
+//    
+//}
+//
+//public extension UITableViewCellBuilder {
+//    var rowHeight:CGFloat {
+//        return UITableView.automaticDimension
+//    }
+//    func build(_ cell:UpdatableCell) {
+//        cell.update(self)
+//    }
+//}

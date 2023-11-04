@@ -13,6 +13,7 @@ import CoreData
 
 @available(iOS 8.4, watchOS 2.0, tvOS 9.0, *)
 public final class MCCoreDataStack {
+    public typealias CompletionHandler = () ->Void
    
     
     /// Until this is true, data store is not available.

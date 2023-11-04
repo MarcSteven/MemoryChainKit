@@ -9,7 +9,7 @@
 import UIKit
 
 
-public protocol Updatable where Self:UITableViewCell {
-    func update(_ builder:UITableViewCellBuilder)
-}
-
+//public protocol Updatable where Self:UITableViewCell {
+//    func update(_ builder:UITableViewCellBuilder)
+//}
+//
