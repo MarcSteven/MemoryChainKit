@@ -1,4 +1,4 @@
-//
+ //
 //  WaveformComponent.swift
 //  WaveformDemo
 //
@@ -9,9 +9,9 @@
 import UIKit
 
 let normalColor = UIColor.white
-let normalAlphaColor = UIColor.init(white: 1.0, alpha: 0.5)
-let highlightColor = UIColor.init(red: 163.0/255.0, green: 243.0/255.0, blue: 16.0/255.0, alpha: 1.0)
-let highlightAlphaColor = UIColor.init(red: 163.0/255.0, green: 243.0/255.0, blue: 16.0/255.0, alpha: 0.24)
+let normalAlphaColor = UIColor(white: 1.0, alpha: 0.5)
+let highlightColor = UIColor(red: 163.0/255.0, green: 243.0/255.0, blue: 16.0/255.0, alpha: 1.0)
+let highlightAlphaColor = UIColor(red: 163.0/255.0, green: 243.0/255.0, blue: 16.0/255.0, alpha: 0.24)
 let waveWidth = CGFloat(2.5)
 let waveSpace = CGFloat(0.5)
 let waveRadius = CGFloat(1.25)

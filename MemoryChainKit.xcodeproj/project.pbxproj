@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D31E32AF3889C00E1931C /* CallbackQueue.swift */; };
+		423D31E72AF5F35F00E1931C /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D31E62AF5F35F00E1931C /* Pulse.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42987366277368F10063A70D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987365277368F10063A70D /* PublisherExtension.swift */; };
@@ -339,6 +340,7 @@
 
 /* Begin PBXFileReference section */
 		423D31E32AF3889C00E1931C /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
+		423D31E62AF5F35F00E1931C /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42987365277368F10063A70D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
@@ -681,6 +683,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423D31E52AF5F34F00E1931C /* Pluse */ = {
+			isa = PBXGroup;
+			children = (
+				423D31E62AF5F35F00E1931C /* Pulse.swift */,
+			);
+			path = Pluse;
+			sourceTree = "<group>";
+		};
 		42999FEE2755176A0045E00D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,6 +1094,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				423D31E52AF5F34F00E1931C /* Pluse */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A69BC0CB2445848700E600FB /* UITableView */,
@@ -1967,6 +1978,7 @@
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
 				A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */,
 				A6F21711243DF01E00188C23 /* LocationService.swift in Sources */,
+				423D31E72AF5F35F00E1931C /* Pulse.swift in Sources */,
 				A63D396C2419298100937CCD /* UIBezierPath+Extension.swift in Sources */,
 				A6A0E0E9253957E600860AA3 /* UIViewExtension.swift in Sources */,
 				A6DDD46924168C6E008E1703 /* Styled.swift in Sources */,
