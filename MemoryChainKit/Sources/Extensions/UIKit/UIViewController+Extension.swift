@@ -348,3 +348,17 @@ public extension UIViewController {
         return false
     }
 }
+
+import ARKit
+
+public extension UIViewController {
+    var hasARView:Bool {
+        let views = self.view.subviews
+        for v in views {
+            if v is ARSCNView || v is ARSKView {
+                return true
+            }
+        }
+        return false
+    }
+}
