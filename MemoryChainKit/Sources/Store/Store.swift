@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol StoreListener:class {
+protocol StoreListener:AnyObject {
     func didUpdateStore()
 }
 class ListenerWrapper {
