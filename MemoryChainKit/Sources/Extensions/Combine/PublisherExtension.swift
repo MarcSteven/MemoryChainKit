@@ -8,7 +8,7 @@
 
 import Foundation
 import Combine
-
+import UIKit
 
 @available(iOS 13.0, *)
 extension Publisher where Failure == Never {
@@ -62,6 +62,17 @@ public extension Publisher where Output == URLSession.DataTaskPublisher.Output {
                 throw URLError(.badServerResponse)
             }
             return element.data
+        }
+    }
+}
+
+
+@available(iOS 13.0, *)
+public extension Publisher where Self.Output == String,Self.Failure == Never {
+    func setTitle(on button:UIButton,state:UIControl.State) ->AnyCancellable {
+        sink { title in
+            button.setTitle(title, for: state)
+            
         }
     }
 }

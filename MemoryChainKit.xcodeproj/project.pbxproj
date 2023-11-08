@@ -15,7 +15,6 @@
 		4270E05D2AF6768800173FC3 /* NSManagedObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
-		42987366277368F10063A70D /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987365277368F10063A70D /* PublisherExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
 		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
@@ -348,7 +347,6 @@
 		4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtension.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
-		42987365277368F10063A70D /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
@@ -876,7 +874,6 @@
 				A69B38A325319AFD007D279D /* WKWebsiteDataStoreExtension.swift */,
 				A63D39332419297B00937CCD /*  UIViewPropertyAnimator+Extension.swift */,
 				A63D39422419298000937CCD /* CAGradientLayer+AnimationChange.swift */,
-				42987365277368F10063A70D /* PublisherExtension.swift */,
 				A6A439A9241A3AFD009FC4E1 /* CALayerExtension.swift */,
 				A63D391D2419297800937CCD /* CGAffineTRansform+Extension.swift */,
 				A6E15C892558EF9500FA667B /* UIVisualEffectExtension.swift */,
@@ -1774,7 +1771,6 @@
 				A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */,
 				A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */,
 				A6020D4624503BFC00B6DA00 /* Result.swift in Sources */,
-				42987366277368F10063A70D /* PublisherExtension.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
