@@ -48,3 +48,20 @@ extension Publisher {
         }
     }
 }
+
+@available(iOS 13.0, *)
+
+//https://stackoverflow.com/questions/66010221/swift-extending-combine-operators
+public extension Publisher where Output == URLSession.DataTaskPublisher.Output {
+  
+    func processData() -> Publishers.TryMap<Self, Data> {
+        tryMap { element -> Data in
+            guard let httpResponse = element.response as? HTTPURLResponse,
+                  httpResponse.statusCode == 200
+            else {
+                throw URLError(.badServerResponse)
+            }
+            return element.data
+        }
+    }
+}
