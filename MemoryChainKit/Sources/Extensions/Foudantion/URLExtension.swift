@@ -88,3 +88,27 @@ extension URL.Scheme {
 }
 
 
+public struct MailToMetaData {
+    public let to:String
+    public let headers:[String:String]
+}
+public extension URL {
+    func mailToMetaData() ->MailToMetaData? {
+        guard scheme == "mailto",let components = URLComponents(url: self, resolvingAgainstBaseURL: false) else {
+            return nil
+        }
+        let toMail = components.path
+        let queryItems = components.queryItems
+        var headers = [String:String]()
+        guard let queryItems = queryItems else {
+            if toMail.isEmpty {
+                return nil
+            }
+            return MailToMetaData(to: toMail, headers: headers)
+        }
+        queryItems.forEach{ queryItem in guard let value = queryItem.value else {return}
+            headers[queryItem.name] = value
+        }
+        return MailToMetaData(to: toMail, headers: headers)
+    }
+}
