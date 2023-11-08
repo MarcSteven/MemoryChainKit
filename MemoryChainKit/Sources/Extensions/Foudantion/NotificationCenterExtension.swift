@@ -8,8 +8,13 @@
 
 import UIKit
 import Foundation
-
-
+public extension NotificationationCenter {
+func postOnMainThread(name: String, object anObject: Any? = nil, userInfo aUserInfo: [AnyHashable: Any]? = nil, second: Double = 0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + second) {
+            NotificationCenter.default.post(name: Notification.Name(rawValue: name), object: anObject, userInfo: aUserInfo)
+        }
+    }
+    }
 public extension NotificationCenter {
     func postOnMainThread(name: String, object anObject: Any? = nil, userInfo aUserInfo: [AnyHashable : Any]? = nil) {
         //        if UIApplication.shared.applicationState == .background {
