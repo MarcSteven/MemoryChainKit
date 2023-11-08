@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D31E32AF3889C00E1931C /* CallbackQueue.swift */; };
+		4260A1F92AFB86B90036C357 /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4260A1F82AFB86B90036C357 /* PublisherExtension.swift */; };
 		4270E0552AF6750900173FC3 /* ExportableAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0542AF6750900173FC3 /* ExportableAsset.swift */; };
 		4270E0582AF6759500173FC3 /* CLPlacemarkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */; };
 		4270E05B2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */; };
@@ -340,6 +341,7 @@
 
 /* Begin PBXFileReference section */
 		423D31E32AF3889C00E1931C /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
+		4260A1F82AFB86B90036C357 /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
 		4270E0542AF6750900173FC3 /* ExportableAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableAsset.swift; sourceTree = "<group>"; };
 		4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemarkExtension.swift; sourceTree = "<group>"; };
 		4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFetchedResultsControllerExtension.swift; sourceTree = "<group>"; };
@@ -683,6 +685,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4260A1F72AFB86A80036C357 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				4260A1F82AFB86B90036C357 /* PublisherExtension.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		4270E0562AF6758300173FC3 /* CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1425,6 +1435,7 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4260A1F72AFB86A80036C357 /* Combine */,
 				4270E0592AF6762900173FC3 /* CoreData */,
 				4270E0562AF6758300173FC3 /* CoreLocation */,
 				A695D0D6254A7AB200DE403A /* WebKit */,
@@ -1698,6 +1709,7 @@
 				A62C4CED255662CF00E861CC /* Validator.swift in Sources */,
 				A66F3F2F2429C9410081D52F /* LogAnalyticsProvider.swift in Sources */,
 				A6A439AE241A3E94009FC4E1 /* String+hasText.swift in Sources */,
+				4260A1F92AFB86B90036C357 /* PublisherExtension.swift in Sources */,
 				A6F21715243E0C8000188C23 /* LocalAtomic.swift in Sources */,
 				A6D40BE52417B6B500A88B5B /* HUD.swift in Sources */,
 				A6D40BFD2417B6B500A88B5B /* ThermostatSlider.swift in Sources */,
