@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D31E32AF3889C00E1931C /* CallbackQueue.swift */; };
 		4260A1F92AFB86B90036C357 /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4260A1F82AFB86B90036C357 /* PublisherExtension.swift */; };
+		4260A1FC2AFBA7900036C357 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4260A1FB2AFBA7900036C357 /* ViewExtension.swift */; };
+		4260A1FE2AFBAB8A0036C357 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4260A1FD2AFBAB8A0036C357 /* ImageExtension.swift */; };
 		4270E0552AF6750900173FC3 /* ExportableAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0542AF6750900173FC3 /* ExportableAsset.swift */; };
 		4270E0582AF6759500173FC3 /* CLPlacemarkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */; };
 		4270E05B2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */; };
@@ -341,6 +343,8 @@
 /* Begin PBXFileReference section */
 		423D31E32AF3889C00E1931C /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
 		4260A1F82AFB86B90036C357 /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
+		4260A1FB2AFBA7900036C357 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		4260A1FD2AFBAB8A0036C357 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		4270E0542AF6750900173FC3 /* ExportableAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportableAsset.swift; sourceTree = "<group>"; };
 		4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemarkExtension.swift; sourceTree = "<group>"; };
 		4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFetchedResultsControllerExtension.swift; sourceTree = "<group>"; };
@@ -689,6 +693,15 @@
 				4260A1F82AFB86B90036C357 /* PublisherExtension.swift */,
 			);
 			path = Combine;
+			sourceTree = "<group>";
+		};
+		4260A1FA2AFBA7780036C357 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				4260A1FB2AFBA7900036C357 /* ViewExtension.swift */,
+				4260A1FD2AFBAB8A0036C357 /* ImageExtension.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		4270E0562AF6758300173FC3 /* CoreLocation */ = {
@@ -1432,6 +1445,7 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4260A1FA2AFBA7780036C357 /* SwiftUI */,
 				4260A1F72AFB86A80036C357 /* Combine */,
 				4270E0592AF6762900173FC3 /* CoreData */,
 				4270E0562AF6758300173FC3 /* CoreLocation */,
@@ -1872,6 +1886,7 @@
 				A63D39502419298000937CCD /* CGAffineTRansform+Extension.swift in Sources */,
 				A69BC0D1244588A300E600FB /* Updatable.swift in Sources */,
 				A65417C32421F6A800077AD8 /* FatalReason.swift in Sources */,
+				4260A1FC2AFBA7900036C357 /* ViewExtension.swift in Sources */,
 				A6DDD53424168D0A008E1703 /* CoreDataError.swift in Sources */,
 				A6DDD46224168C6E008E1703 /* NotSignedInResponder.swift in Sources */,
 				A6651FB724378A3500DCBF85 /* Configurable.swift in Sources */,
@@ -1981,6 +1996,7 @@
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A6D40BE12417B6B500A88B5B /* NSCalendar+Extension.swift in Sources */,
 				A6DDD45324168C6E008E1703 /* StringRepresentable.swift in Sources */,
+				4260A1FE2AFBAB8A0036C357 /* ImageExtension.swift in Sources */,
 				A6D488652548FDAA005CA39E /* MarkupText.swift in Sources */,
 				A6DDD52324168C90008E1703 /* KeyChainSwift.swift in Sources */,
 				A63D3909241923ED00937CCD /* PopTransition.swift in Sources */,
