@@ -32,6 +32,15 @@
 		4279590F2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279590A2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift */; };
 		427959102AFFAD32000FE2F4 /* CBPeripheralExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279590B2AFFAD32000FE2F4 /* CBPeripheralExtension.swift */; };
 		427959112AFFAD32000FE2F4 /* CBServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279590C2AFFAD32000FE2F4 /* CBServiceExtension.swift */; };
+		4279591C2AFFB158000FE2F4 /* ARIScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959132AFFB158000FE2F4 /* ARIScanResult.swift */; };
+		4279591D2AFFB158000FE2F4 /* ARIScanView+GetScanRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959142AFFB158000FE2F4 /* ARIScanView+GetScanRect.swift */; };
+		4279591E2AFFB158000FE2F4 /* ARIScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959152AFFB158000FE2F4 /* ARIScanView.swift */; };
+		4279591F2AFFB158000FE2F4 /* ARIScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959162AFFB158000FE2F4 /* ARIScanLineAnimation.swift */; };
+		427959202AFFB158000FE2F4 /* ARIScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959172AFFB158000FE2F4 /* ARIScanViewStyle.swift */; };
+		427959212AFFB158000FE2F4 /* ARIScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959182AFFB158000FE2F4 /* ARIScanWrapper.swift */; };
+		427959222AFFB158000FE2F4 /* ARIPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959192AFFB158000FE2F4 /* ARIPermission.swift */; };
+		427959232AFFB158000FE2F4 /* ARIScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279591A2AFFB158000FE2F4 /* ARIScanNetAnimation.swift */; };
+		427959242AFFB158000FE2F4 /* ARIScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279591B2AFFB158000FE2F4 /* ARIScanViewController.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
@@ -383,6 +392,15 @@
 		4279590A2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCharacteristicExtension.swift; sourceTree = "<group>"; };
 		4279590B2AFFAD32000FE2F4 /* CBPeripheralExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPeripheralExtension.swift; sourceTree = "<group>"; };
 		4279590C2AFFAD32000FE2F4 /* CBServiceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBServiceExtension.swift; sourceTree = "<group>"; };
+		427959132AFFB158000FE2F4 /* ARIScanResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanResult.swift; sourceTree = "<group>"; };
+		427959142AFFB158000FE2F4 /* ARIScanView+GetScanRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARIScanView+GetScanRect.swift"; sourceTree = "<group>"; };
+		427959152AFFB158000FE2F4 /* ARIScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanView.swift; sourceTree = "<group>"; };
+		427959162AFFB158000FE2F4 /* ARIScanLineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanLineAnimation.swift; sourceTree = "<group>"; };
+		427959172AFFB158000FE2F4 /* ARIScanViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanViewStyle.swift; sourceTree = "<group>"; };
+		427959182AFFB158000FE2F4 /* ARIScanWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanWrapper.swift; sourceTree = "<group>"; };
+		427959192AFFB158000FE2F4 /* ARIPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIPermission.swift; sourceTree = "<group>"; };
+		4279591A2AFFB158000FE2F4 /* ARIScanNetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanNetAnimation.swift; sourceTree = "<group>"; };
+		4279591B2AFFB158000FE2F4 /* ARIScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARIScanViewController.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
@@ -792,6 +810,22 @@
 			path = CoreBluetooth;
 			sourceTree = "<group>";
 		};
+		427959122AFFB144000FE2F4 /* ScanQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				427959192AFFB158000FE2F4 /* ARIPermission.swift */,
+				427959162AFFB158000FE2F4 /* ARIScanLineAnimation.swift */,
+				4279591A2AFFB158000FE2F4 /* ARIScanNetAnimation.swift */,
+				427959132AFFB158000FE2F4 /* ARIScanResult.swift */,
+				427959152AFFB158000FE2F4 /* ARIScanView.swift */,
+				427959142AFFB158000FE2F4 /* ARIScanView+GetScanRect.swift */,
+				4279591B2AFFB158000FE2F4 /* ARIScanViewController.swift */,
+				427959172AFFB158000FE2F4 /* ARIScanViewStyle.swift */,
+				427959182AFFB158000FE2F4 /* ARIScanWrapper.swift */,
+			);
+			path = ScanQRCode;
+			sourceTree = "<group>";
+		};
 		42999FEE2755176A0045E00D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1186,6 +1220,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				427959122AFFB144000FE2F4 /* ScanQRCode */,
 				427958F12AFF44EF000FE2F4 /* PagingView */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4885D2548FD65005CA39E /* MarkDown */,
@@ -1786,6 +1821,7 @@
 				42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
 				A65417AF2421E5FE00077AD8 /* UIBarButtonItemExtension.swift in Sources */,
+				427959202AFFB158000FE2F4 /* ARIScanViewStyle.swift in Sources */,
 				A63D396A2419298000937CCD /* UIViewController+Extension.swift in Sources */,
 				A63D39652419298000937CCD /* UIAlertControllerExtension.swift in Sources */,
 				A6D40BF42417B6B500A88B5B /* LinearProgressBar.swift in Sources */,
@@ -1805,6 +1841,7 @@
 				A6E85DAD24496C0500645A2D /* Navigator.swift in Sources */,
 				A6651FBB24378E3D00DCBF85 /* PresentationContext.swift in Sources */,
 				A6652022243A186700DCBF85 /* ValidRules.swift in Sources */,
+				427959242AFFB158000FE2F4 /* ARIScanViewController.swift in Sources */,
 				A6D40BDA2417B6B500A88B5B /* RefreshView.swift in Sources */,
 				427959112AFFAD32000FE2F4 /* CBServiceExtension.swift in Sources */,
 				A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */,
@@ -1857,6 +1894,7 @@
 				A695CC5E2420A51C007C68DD /* UIWindowExtension.swift in Sources */,
 				A6D40C142417B6B500A88B5B /* TabBarDelegate.swift in Sources */,
 				A6E85DB22449753A00645A2D /* TimeZone+Identifier.swift in Sources */,
+				427959232AFFB158000FE2F4 /* ARIScanNetAnimation.swift in Sources */,
 				A6C3E35E2444339900132000 /* ZoomIn.swift in Sources */,
 				A6911B6226D8B12100D85AD9 /* WaveForm.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
@@ -1874,6 +1912,7 @@
 				A6020D502450481000B6DA00 /* ParameterEncoding.swift in Sources */,
 				A6D4886F254902B2005CA39E /* DimmableLayout.swift in Sources */,
 				A6D40C0E2417B6B500A88B5B /* CountriesViewControllerDelegate.swift in Sources */,
+				4279591C2AFFB158000FE2F4 /* ARIScanResult.swift in Sources */,
 				A6D40BF12417B6B500A88B5B /* CustomNavBar.swift in Sources */,
 				A6D40C102417B6B500A88B5B /* PageControl.swift in Sources */,
 				A69BC0D3244598FC00E600FB /* UINavigationBar+Style.swift in Sources */,
@@ -1903,6 +1942,7 @@
 				A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */,
 				4279590D2AFFAD32000FE2F4 /* CBManagerStateExtension.swift in Sources */,
 				A69B38B92532F0D6007D279D /* CGSizeExtension.swift in Sources */,
+				4279591D2AFFB158000FE2F4 /* ARIScanView+GetScanRect.swift in Sources */,
 				427958F72AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
@@ -1927,6 +1967,7 @@
 				42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */,
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
 				A69B38B32532DF0E007D279D /* ExtensibleAsslckatedObject.swift in Sources */,
+				4279591F2AFFB158000FE2F4 /* ARIScanLineAnimation.swift in Sources */,
 				A69B38BD2532F44B007D279D /* UIRectCornerExtension.swift in Sources */,
 				A69B38BF2532F6E3007D279D /* UIGestureRecognizer+Closure.swift in Sources */,
 				427959042AFF4936000FE2F4 /* MCPagingViewDelegate.swift in Sources */,
@@ -2083,12 +2124,14 @@
 				A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */,
 				A695D0D8254A7AC500DE403A /* WKWebViewExtension.swift in Sources */,
 				427959002AFF4829000FE2F4 /* MCPagingScrollView.swift in Sources */,
+				427959222AFFB158000FE2F4 /* ARIPermission.swift in Sources */,
 				A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */,
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A6D40BE12417B6B500A88B5B /* NSCalendar+Extension.swift in Sources */,
 				A6DDD45324168C6E008E1703 /* StringRepresentable.swift in Sources */,
 				4260A1FE2AFBAB8A0036C357 /* ImageExtension.swift in Sources */,
 				A6D488652548FDAA005CA39E /* MarkupText.swift in Sources */,
+				427959212AFFB158000FE2F4 /* ARIScanWrapper.swift in Sources */,
 				A6DDD52324168C90008E1703 /* KeyChainSwift.swift in Sources */,
 				A63D3909241923ED00937CCD /* PopTransition.swift in Sources */,
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
@@ -2102,6 +2145,7 @@
 				A6D40B772417AB5C00A88B5B /* TimeIntervalExtension.swift in Sources */,
 				A63D39602419298000937CCD /* UILayoutPriority+Extension.swift in Sources */,
 				A6DDD46824168C6E008E1703 /* KeyboardInfo.swift in Sources */,
+				4279591E2AFFB158000FE2F4 /* ARIScanView.swift in Sources */,
 				427958F02AFF308C000FE2F4 /* ScannerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
