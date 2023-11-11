@@ -51,41 +51,41 @@ extension NSMutableAttributedString {
         return self
     }
 
-    open func replaceAttribute(_ name: Key, value: Any, range: NSRange) {
+    public func replaceAttribute(_ name: Key, value: Any, range: NSRange) {
         removeAttribute(name, range: range)
         addAttribute(name, value: value, range: range)
     }
 }
 
 extension NSMutableAttributedString {
-    open func underline(_ text: String, style: NSUnderlineStyle = .single) -> Self {
+    public func underline(_ text: String, style: NSUnderlineStyle = .single) -> Self {
         addAttribute(.underlineStyle, value: style.rawValue, range: range(of: text))
         return self
     }
 
-    open func foregroundColor(_ color: UIColor, for text: String? = nil) -> Self {
+    public func foregroundColor(_ color: UIColor, for text: String? = nil) -> Self {
         addAttribute(.foregroundColor, value: color, range: range(of: text))
         return self
     }
 
-    open func backgroundColor(_ color: UIColor, for text: String? = nil) -> Self {
+    public func backgroundColor(_ color: UIColor, for text: String? = nil) -> Self {
         addAttribute(.backgroundColor, value: color, range: range(of: text))
         return self
     }
 
-    open func font(_ font: UIFont, for text: String? = nil) -> Self {
+    public func font(_ font: UIFont, for text: String? = nil) -> Self {
         addAttribute(.font, value: font, range: range(of: text))
         return self
     }
 
-    open func textAlignment(_ textAlignment: NSTextAlignment, for text: String? = nil) -> Self {
+    public func textAlignment(_ textAlignment: NSTextAlignment, for text: String? = nil) -> Self {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = textAlignment
         addAttribute(.paragraphStyle, value: paragraphStyle, range: range(of: text))
         return self
     }
 
-    open func link(url: URL?, text: String) -> Self {
+    public func link(url: URL?, text: String) -> Self {
         guard let url = url else {
             return self
         }
@@ -311,5 +311,35 @@ public extension NSAttributedString {
     func size(considering size:CGSize)->CGSize {
         let rect = self.boundingRect(with: size, options: [.usesLineFragmentOrigin,.usesFontLeading], context: nil)
         return rect.size
+    }
+}
+
+
+public extension NSAttributedString.Key {
+
+    /// Converts a collection of NSAttributedString Attributes, with 'NSAttributedStringKey' instances as 'Keys', into an
+    /// equivalent collection that uses regular 'String' instances as keys.
+    ///
+    static func convertToRaw(attributes: [NSAttributedString.Key: Any]) -> [String: Any] {
+        var output = [String: Any]()
+        for (key, value) in attributes {
+            output[key.rawValue] = value
+        }
+
+        return output
+    }
+
+
+    /// Converts a collection of NSAttributedString Attributes, with 'String' instances as 'Keys', into an equivalent
+    /// collection that uses the new 'NSAttributedStringKey' enum as keys.
+    ///
+    static func convertFromRaw(attributes: [String: Any]) -> [NSAttributedString.Key: Any] {
+        var output = [NSAttributedString.Key: Any]()
+        for (key, value) in attributes {
+            let wrappedKey = NSAttributedString.Key(key)
+            output[wrappedKey] = value
+        }
+
+        return output
     }
 }

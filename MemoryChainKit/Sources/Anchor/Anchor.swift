@@ -335,13 +335,13 @@ extension Anchor.YAxis {
 
 extension Anchor.DimensionAxis {
     @discardableResult
-    open func equalTo(_ value: CGFloat, file: StaticString = #file, line: UInt = #line) -> Modifier {
+    public func equalTo(_ value: CGFloat, file: StaticString = #file, line: UInt = #line) -> Modifier {
         equalTo(CGSize(value), file: file, line: line)
 
     }
 
     @discardableResult
-    open func equalTo(_ value: CGSize, file: StaticString = #file, line: UInt = #line) -> Modifier {
+    public func equalTo(_ value: CGSize, file: StaticString = #file, line: UInt = #line) -> Modifier {
         owningView.translatesAutoresizingMaskIntoConstraints = false
 
         var constraints: [NSLayoutConstraint] = []
@@ -364,12 +364,12 @@ extension Anchor.DimensionAxis {
 
 extension Anchor.DimensionAxis {
     @discardableResult
-    open func greaterThanOrEqualTo(_ value: CGFloat, file: StaticString = #file, line: UInt = #line) -> Modifier {
+    public func greaterThanOrEqualTo(_ value: CGFloat, file: StaticString = #file, line: UInt = #line) -> Modifier {
         greaterThanOrEqualTo(CGSize(value), file: file, line: line)
     }
 
     @discardableResult
-    open func greaterThanOrEqualTo(_ value: CGSize, file: StaticString = #file, line: UInt = #line) -> Modifier {
+    public func greaterThanOrEqualTo(_ value: CGSize, file: StaticString = #file, line: UInt = #line) -> Modifier {
         owningView.translatesAutoresizingMaskIntoConstraints = false
 
         var constraints: [NSLayoutConstraint] = []
@@ -392,12 +392,12 @@ extension Anchor.DimensionAxis {
 
 extension Anchor.DimensionAxis {
     @discardableResult
-    open func lessThanOrEqualTo(_ value: CGFloat, file: StaticString = #file, line: UInt = #line) -> Modifier {
+    public func lessThanOrEqualTo(_ value: CGFloat, file: StaticString = #file, line: UInt = #line) -> Modifier {
         greaterThanOrEqualTo(CGSize(value), file: file, line: line)
     }
 
     @discardableResult
-    open func lessThanOrEqualTo(_ value: CGSize, file: StaticString = #file, line: UInt = #line) -> Modifier {
+    public func lessThanOrEqualTo(_ value: CGSize, file: StaticString = #file, line: UInt = #line) -> Modifier {
         owningView.translatesAutoresizingMaskIntoConstraints = false
 
         var constraints: [NSLayoutConstraint] = []
