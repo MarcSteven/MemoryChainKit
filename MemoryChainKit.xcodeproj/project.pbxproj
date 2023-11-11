@@ -17,6 +17,16 @@
 		4270E05D2AF6768800173FC3 /* NSManagedObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */; };
 		427958EE2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958ED2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift */; };
 		427958F02AFF308C000FE2F4 /* ScannerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958EF2AFF308C000FE2F4 /* ScannerExtension.swift */; };
+		427958F32AFF4514000FE2F4 /* MCPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958F22AFF4514000FE2F4 /* MCPageTitleView.swift */; };
+		427958F52AFF4579000FE2F4 /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958F42AFF4579000FE2F4 /* IndicatorType.swift */; };
+		427958F72AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958F62AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift */; };
+		427958F92AFF45E4000FE2F4 /* IndicatorPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958F82AFF45E4000FE2F4 /* IndicatorPosition.swift */; };
+		427958FB2AFF460F000FE2F4 /* MCPagingTitleViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958FA2AFF460F000FE2F4 /* MCPagingTitleViewConfiguration.swift */; };
+		427958FE2AFF46EC000FE2F4 /* MCPagingContentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958FD2AFF46EC000FE2F4 /* MCPagingContentViewDelegate.swift */; };
+		427959002AFF4829000FE2F4 /* MCPagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958FF2AFF4829000FE2F4 /* MCPagingScrollView.swift */; };
+		427959022AFF486D000FE2F4 /* MCPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959012AFF486D000FE2F4 /* MCPagingView.swift */; };
+		427959042AFF4936000FE2F4 /* MCPagingViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959032AFF4936000FE2F4 /* MCPagingViewDelegate.swift */; };
+		427959062AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959052AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
@@ -353,6 +363,16 @@
 		4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtension.swift; sourceTree = "<group>"; };
 		427958ED2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
 		427958EF2AFF308C000FE2F4 /* ScannerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerExtension.swift; sourceTree = "<group>"; };
+		427958F22AFF4514000FE2F4 /* MCPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPageTitleView.swift; sourceTree = "<group>"; };
+		427958F42AFF4579000FE2F4 /* IndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorType.swift; sourceTree = "<group>"; };
+		427958F62AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorScrollableStyle.swift; sourceTree = "<group>"; };
+		427958F82AFF45E4000FE2F4 /* IndicatorPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPosition.swift; sourceTree = "<group>"; };
+		427958FA2AFF460F000FE2F4 /* MCPagingTitleViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingTitleViewConfiguration.swift; sourceTree = "<group>"; };
+		427958FD2AFF46EC000FE2F4 /* MCPagingContentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingContentViewDelegate.swift; sourceTree = "<group>"; };
+		427958FF2AFF4829000FE2F4 /* MCPagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingScrollView.swift; sourceTree = "<group>"; };
+		427959012AFF486D000FE2F4 /* MCPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingView.swift; sourceTree = "<group>"; };
+		427959032AFF4936000FE2F4 /* MCPagingViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingViewDelegate.swift; sourceTree = "<group>"; };
+		427959052AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingContainerCollectionView.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
@@ -723,6 +743,31 @@
 				4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		427958F12AFF44EF000FE2F4 /* PagingView */ = {
+			isa = PBXGroup;
+			children = (
+				427958FC2AFF46D8000FE2F4 /* Protocol */,
+				427958F22AFF4514000FE2F4 /* MCPageTitleView.swift */,
+				427959052AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift */,
+				427958FF2AFF4829000FE2F4 /* MCPagingScrollView.swift */,
+				427959012AFF486D000FE2F4 /* MCPagingView.swift */,
+				427958F42AFF4579000FE2F4 /* IndicatorType.swift */,
+				427958F62AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift */,
+				427958F82AFF45E4000FE2F4 /* IndicatorPosition.swift */,
+				427958FA2AFF460F000FE2F4 /* MCPagingTitleViewConfiguration.swift */,
+			);
+			path = PagingView;
+			sourceTree = "<group>";
+		};
+		427958FC2AFF46D8000FE2F4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				427958FD2AFF46EC000FE2F4 /* MCPagingContentViewDelegate.swift */,
+				427959032AFF4936000FE2F4 /* MCPagingViewDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		42999FEE2755176A0045E00D /* Utils */ = {
@@ -1119,6 +1164,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				427958F12AFF44EF000FE2F4 /* PagingView */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
 				A6D4885D2548FD65005CA39E /* MarkDown */,
 				A69BC0CB2445848700E600FB /* UITableView */,
@@ -1771,6 +1817,7 @@
 				A6DDD53724168D0A008E1703 /* ManagedObjectType.swift in Sources */,
 				A6F2171B243E175700188C23 /* KeyValueObservationInfo.swift in Sources */,
 				42987364277364790063A70D /* UIPressExtension.swift in Sources */,
+				427959062AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift in Sources */,
 				A6020D4E245047F400B6DA00 /* Route.swift in Sources */,
 				A695CC6C2420BF0B007C68DD /* MSAlertView.swift in Sources */,
 				A6356D252424931400B46CDF /* Options.swift in Sources */,
@@ -1790,8 +1837,10 @@
 				A6911B6226D8B12100D85AD9 /* WaveForm.swift in Sources */,
 				A69310D42417100E004ADF4F /* OperationQueue+Extension.swift in Sources */,
 				A6F21725243EEFFA00188C23 /* UIRefreshControlExtension.swift in Sources */,
+				427958F52AFF4579000FE2F4 /* IndicatorType.swift in Sources */,
 				A6AD5524242C88DD002DB4FE /* MCToolBar.swift in Sources */,
 				A6020D4624503BFC00B6DA00 /* Result.swift in Sources */,
+				427958FB2AFF460F000FE2F4 /* MCPagingTitleViewConfiguration.swift in Sources */,
 				A66F3F3D242A43DE0081D52F /* AVAssertExportSessionExtension.swift in Sources */,
 				A6652024243AC3F500DCBF85 /* ViewMaskable.swift in Sources */,
 				A695CC5424206EFF007C68DD /* AppDelegateExtension.swift in Sources */,
@@ -1829,6 +1878,7 @@
 				A63D39712419298100937CCD /* UIScrollView+Extension.swift in Sources */,
 				A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */,
 				A69B38B92532F0D6007D279D /* CGSizeExtension.swift in Sources */,
+				427958F72AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
 				A6D40BE02417B6B500A88B5B /* MCDropdownMenu+Animations.swift in Sources */,
 				A69B38B72532EBF5007D279D /* UIView+Anchor.swift in Sources */,
@@ -1853,6 +1903,7 @@
 				A69B38B32532DF0E007D279D /* ExtensibleAsslckatedObject.swift in Sources */,
 				A69B38BD2532F44B007D279D /* UIRectCornerExtension.swift in Sources */,
 				A69B38BF2532F6E3007D279D /* UIGestureRecognizer+Closure.swift in Sources */,
+				427959042AFF4936000FE2F4 /* MCPagingViewDelegate.swift in Sources */,
 				A6356D282424931400B46CDF /* Routerable.swift in Sources */,
 				A66F3F272429C4E80081D52F /* AnalyticsEvent.swift in Sources */,
 				A6E85DB02449736000645A2D /* CGContextExtension.swift in Sources */,
@@ -1865,6 +1916,7 @@
 				A6DDD52824168CC1008E1703 /* MD5.swift in Sources */,
 				A69310E024171507004ADF4F /* UIResponderExtension.swift in Sources */,
 				A695CC44241F635A007C68DD /* CharacterSet+URLQueryParameters.swift in Sources */,
+				427958F92AFF45E4000FE2F4 /* IndicatorPosition.swift in Sources */,
 				A6DDD45124168C6E008E1703 /* BindableType.swift in Sources */,
 				A69BC0C624445A6500E600FB /* TimeInterval+HasPassed.swift in Sources */,
 				A6A439AC241A3C9F009FC4E1 /* DispatchQueueExtension.swift in Sources */,
@@ -1918,8 +1970,10 @@
 				A6356D262424931400B46CDF /* Router.swift in Sources */,
 				A6D40C0F2417B6B500A88B5B /* IntroducationImageProtocol.swift in Sources */,
 				A695CC56242073F7007C68DD /* AVAssetExtension.swift in Sources */,
+				427958F32AFF4514000FE2F4 /* MCPageTitleView.swift in Sources */,
 				A6D488672548FDAA005CA39E /* MarkdownKit+MushParser.swift in Sources */,
 				A6A68033241754E0004C0C97 /* NSObjectExtension.swift in Sources */,
+				427959022AFF486D000FE2F4 /* MCPagingView.swift in Sources */,
 				A63D39612419298000937CCD /* UIViewController+URL.swift in Sources */,
 				A6DDD46124168C6E008E1703 /* Cancellable.swift in Sources */,
 				A6D40BD92417B6B500A88B5B /* RefreshItem.swift in Sources */,
@@ -1977,6 +2031,7 @@
 				A6A439B4241A40AC009FC4E1 /* UITextViewExtension.swift in Sources */,
 				A6020D48245042F300B6DA00 /* HTTPConfiguration.swift in Sources */,
 				A69BC0C824445BF900E600FB /* UserDefault.swift in Sources */,
+				427958FE2AFF46EC000FE2F4 /* MCPagingContentViewDelegate.swift in Sources */,
 				A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */,
 				A66F3F312429CA060081D52F /* CellOptions.swift in Sources */,
 				423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */,
@@ -1999,6 +2054,7 @@
 				A6020D4A245043D700B6DA00 /* SessionManager.swift in Sources */,
 				A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */,
 				A695D0D8254A7AC500DE403A /* WKWebViewExtension.swift in Sources */,
+				427959002AFF4829000FE2F4 /* MCPagingScrollView.swift in Sources */,
 				A66F3F3B2429EDA80081D52F /* JSONUtils.swift in Sources */,
 				A6D40C0C2417B6B500A88B5B /* CountiresViewController.swift in Sources */,
 				A6D40BE12417B6B500A88B5B /* NSCalendar+Extension.swift in Sources */,
