@@ -15,6 +15,7 @@
 		4270E0582AF6759500173FC3 /* CLPlacemarkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */; };
 		4270E05B2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */; };
 		4270E05D2AF6768800173FC3 /* NSManagedObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */; };
+		427958EE2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427958ED2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
@@ -349,6 +350,7 @@
 		4270E0572AF6759500173FC3 /* CLPlacemarkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemarkExtension.swift; sourceTree = "<group>"; };
 		4270E05A2AF6764400173FC3 /* NSFetchedResultsControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFetchedResultsControllerExtension.swift; sourceTree = "<group>"; };
 		4270E05C2AF6768800173FC3 /* NSManagedObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtension.swift; sourceTree = "<group>"; };
+		427958ED2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
@@ -938,6 +940,7 @@
 				A695CC4B241F91B4007C68DD /* NSAttributedStringExtension.swift */,
 				A66F3F342429E8E70081D52F /* ProcessInfoExtension.swift */,
 				A695CC43241F635A007C68DD /* CharacterSet+URLQueryParameters.swift */,
+				427958ED2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift */,
 				A695D0DD254A939200DE403A /* NSRegularExpressionExtension.swift */,
 				A69B38B42532E8F0007D279D /* UIEdgeInsetsExtension.swift */,
 				A62C4CF62556A40D00E861CC /* BundleExtension.swift */,
@@ -1702,6 +1705,7 @@
 				A6DDD45F24168C6E008E1703 /* SingleValueEncodingContainer.swift in Sources */,
 				A69B38A82531FD69007D279D /* NSLayoutAnchorExtension.swift in Sources */,
 				A63D394A2419298000937CCD /* UILabel+Extension.swift in Sources */,
+				427958EE2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift in Sources */,
 				A6020D522450484500B6DA00 /* MultipartForm.swift in Sources */,
 				A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */,
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
