@@ -831,4 +831,78 @@ public extension String {
         guard let message = data(using: .utf8) else { return nil }
         return message.hashed(type, output: output)
     }
+    
+    ///
+    /// Attempts to remove excessive whitespace in text by replacing multiple new lines with just 2.
+    /// This first trims whitespace and newlines from the ends
+    /// Then normalizes the newlines by replacing {Space}{Newline} with a single newline char
+    /// Then finally it looks for any newlines that are 3 or more and replaces them with 2 newlines.
+    ///
+    /// Example:
+    /// ```
+    /// This is the first line
+    ///
+    ///
+    ///
+    ///
+    /// This is the last line
+    /// ```
+    /// Turns into:
+    /// ```
+    /// This is the first line
+    ///
+    /// This is the last line
+    /// ```
+    ///
+    func condenseWhitespace() -> String {
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            .replacingOccurrences(of: "\\s\n", with: "\n", options: .regularExpression, range: nil)
+            .replacingOccurrences(of: "[\n]{3,}", with: "\n\n", options: .regularExpression, range: nil)
+    }
+}
+
+//MARK: - regex
+public extension String {
+    
+    /// Find all matches of the specified regex.
+    ///
+    /// - Parameters:
+    ///     - regex: the regex to use.
+    ///     - options: the regex options.
+    ///
+    /// - Returns: the requested matches.
+    ///
+    func matches(regex: String, options: NSRegularExpression.Options = []) -> [NSTextCheckingResult] {
+        let regex = try! NSRegularExpression(pattern: regex, options: options)
+        let fullRange = NSRange(location: 0, length: count)
+
+        return regex.matches(in: self, options: [], range: fullRange)
+    }
+
+    /// Replaces all matches of a given RegEx, with a template String.
+    ///
+    /// - Parameters:
+    ///     - regex: the regex to use.
+    ///     - template: the template string to use for the replacement.
+    ///     - options: the regex options.
+    ///
+    /// - Returns: a new string after replacing all matches with the specified template.
+    ///
+    func replacingMatches(of regex: String, with template: String, options: NSRegularExpression.Options = []) -> String {
+
+        let regex = try! NSRegularExpression(pattern: regex, options: options)
+        let fullRange = NSRange(location: 0, length: count)
+
+        return regex.stringByReplacingMatches(in: self,
+                                              options: [],
+                                              range: fullRange,
+                                              withTemplate: template)
+    }
+
+    
+    /// Returns a NSRange instance starting at position 0, with the entire String's Length
+    ///
+    var foundationRangeOfEntireString: NSRange {
+        return NSRange(location: 0, length: utf16.count)
+    }
 }
