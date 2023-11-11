@@ -10,25 +10,25 @@ import UIKit
 
 // MARK: TextColor
 
-extension UIBarButtonItem {
-    @objc open dynamic var textColor: UIColor? {
+public extension UIBarButtonItem {
+    @objc  dynamic var textColor: UIColor? {
         get { titleTextColor(for: .normal) }
         set { setTitleTextColor(newValue, for: .normal) }
     }
 
-    open func titleTextColor(for state: UIControl.State) -> UIColor? {
+   func titleTextColor(for state: UIControl.State) -> UIColor? {
         return titleTextAttribute(.foregroundColor, for: state)
     }
 
-    open func setTitleTextColor(_ color: UIColor?, for state: UIControl.State) {
+     func setTitleTextColor(_ color: UIColor?, for state: UIControl.State) {
         setTitleTextAttribute(.foregroundColor, value: color, for: state)
     }
 }
 
 // MARK: Font
 
-extension UIBarButtonItem {
-    @objc open dynamic var font: UIFont? {
+public extension UIBarButtonItem {
+    @objc dynamic var font: UIFont? {
         get { titleTextFont(for: .normal) }
         set {
             UIControl.State.applicationStates.forEach {
@@ -37,18 +37,18 @@ extension UIBarButtonItem {
         }
     }
 
-    open func titleTextFont(for state: UIControl.State) -> UIFont? {
+     func titleTextFont(for state: UIControl.State) -> UIFont? {
         titleTextAttribute(.font, for: state)
     }
 
-    open func setTitleTextFont(_ font: UIFont?, for state: UIControl.State) {
+     func setTitleTextFont(_ font: UIFont?, for state: UIControl.State) {
         setTitleTextAttribute(.font, value: font, for: state)
     }
 }
 
 // MARK: Helpers
 
-extension UIBarButtonItem {
+public extension UIBarButtonItem {
     private func titleTextAttribute<T>(_ key: NSAttributedString.Key, for state: UIControl.State) -> T? {
         titleTextAttributes(for: state)?[key] as? T
     }
