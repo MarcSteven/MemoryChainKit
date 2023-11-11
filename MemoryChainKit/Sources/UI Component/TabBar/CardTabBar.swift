@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CardTabBarDelegate:class {
+protocol CardTabBarDelegate:AnyObject {
     func cardTabBar(_ sender:CardTabBar,
                     didSelectItemAt index:Int)
 }

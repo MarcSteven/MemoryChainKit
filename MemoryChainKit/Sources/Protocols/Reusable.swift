@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol Reusable :class{
+public protocol Reusable :AnyObject{
     static var reuseIdentifier:String {get}
     static var nib:UINib? { get }
 }

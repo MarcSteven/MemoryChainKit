@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol EquatableByPointer:class, Equatable {}
+public protocol EquatableByPointer:AnyObject, Equatable {}
 
 extension EquatableByPointer {
     public static func ==(lhs:Self,rhs:Self) ->Bool {

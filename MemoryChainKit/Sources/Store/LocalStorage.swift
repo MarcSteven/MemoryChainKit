@@ -9,7 +9,7 @@
 import Foundation
 
 
-public protocol LocalStorage:class {
+public protocol LocalStorage:AnyObject {
     var isLoggedIn:Bool { get }
     func clear()
 }

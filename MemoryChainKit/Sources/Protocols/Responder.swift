@@ -7,7 +7,7 @@
 //
 
 import UIKit
-public protocol Responder:class {
+public protocol Responder:AnyObject {
     
 }
 public protocol Dispatcher {
