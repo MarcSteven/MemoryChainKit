@@ -85,51 +85,51 @@ public extension UIButton {
         }
     }
 }
-extension UIButton {
+public extension UIButton {
     /// The image used for the normal state.
-       open var image: UIImage? {
+    var image: UIImage? {
            get { image(for: .normal) }
            set { setImage(newValue, for: .normal) }
        }
 
        /// The image used for the highlighted state.
-       open var highlightedImage: UIImage? {
+      var highlightedImage: UIImage? {
            get { image(for: .highlighted) }
            set { setImage(newValue, for: .highlighted) }
        }
 
        /// The text used for the normal state.
-       open var text: String? {
+        var text: String? {
            get { title(for: .normal) }
            set { setTitle(newValue, for: .normal) }
        }
 
        /// The text used for the highlighted state.
-       open var highlightedText: String? {
+    var highlightedText: String? {
            get { title(for: .highlighted) }
            set { setTitle(newValue, for: .highlighted) }
        }
 
        /// The attributed text used for the normal state.
-       open var attributedText: NSAttributedString? {
+        var attributedText: NSAttributedString? {
            get { attributedTitle(for: .normal) }
            set { setAttributedTitle(newValue, for: .normal) }
        }
 
        /// The attributed text used for the highlighted state.
-       open var highlightedAttributedText: NSAttributedString? {
+        var highlightedAttributedText: NSAttributedString? {
            get { attributedTitle(for: .highlighted) }
            set { setAttributedTitle(newValue, for: .highlighted) }
        }
 
        /// The color of the title used for the normal state.
-       open var textColor: UIColor? {
+        var textColor: UIColor? {
            get { titleColor(for: .normal) }
            set { setTitleColor(newValue, for: .normal) }
        }
 
        /// The color of the title used for the highlighted state.
-       open var highlightedTextColor: UIColor? {
+        var highlightedTextColor: UIColor? {
            get { titleColor(for: .highlighted) }
            set { setTitleColor(newValue, for: .highlighted) }
        }
@@ -137,7 +137,7 @@ extension UIButton {
 
        /// Add space between `text` and `image` while preserving the `intrinsicContentSize` and respecting `sizeToFit`.
        @IBInspectable
-       public var textImageSpacing: CGFloat {
+    var textImageSpacing: CGFloat {
            get {
                let (left, right) = (imageEdgeInsets.left, imageEdgeInsets.right)
 
@@ -158,7 +158,7 @@ extension UIButton {
      
        // MARK: Underline
 
-       @objc open func underline() {
+       func underline() {
            if let attributedText = titleLabel?.attributedText {
                setAttributedTitle(NSMutableAttributedString(attributedString: attributedText).underline(attributedText.string), for: .normal)
            } else if let text = titleLabel?.text {
@@ -168,13 +168,13 @@ extension UIButton {
 
        // MARK: Reset
 
-       @objc open func removeInsets() {
+    func removeInsets() {
            contentEdgeInsets = 0
            titleEdgeInsets = 0
            imageEdgeInsets = 0
        }
 
-       @objc open dynamic var contentTintColor: UIColor {
+       @objc  dynamic var contentTintColor: UIColor {
            get { tintColor }
            set {
                tintColor = newValue
@@ -473,7 +473,7 @@ public extension UIButton {
        }
 
             /// Time of repeated clicks Property settings
-      open var eventInterval: TimeInterval {
+     public var eventInterval: TimeInterval {
            get {
                if let interval = objc_getAssociatedObject(self, &AssociatedKeys.eventInterval) as? TimeInterval {
                    return interval
@@ -499,7 +499,7 @@ public extension UIButton {
        }
 
            
-      open class func initializeMethod() {
+     public class func initializeMethod() {
            let selector = #selector(UIButton.sendAction(_:to:for:))
            let newSelector = #selector(ms_sendAction(_:to:for:))
            
@@ -557,6 +557,71 @@ public extension UIButton {
                 indicator.stopAnimating()
                 indicator.removeFromSuperview()
             }
+        }
+    }
+}
+
+@objc public enum ImagePosition: Int {
+    case left, right, top, bottom
+}
+
+public extension UIButton {
+    /// Set image location
+    ///
+    /// Image and title must be set before this method will work, It is recommended to set it inside the block
+    ///
+    /// - parameter location: location of image relative to title
+    /// - parameter space: space between image and title
+    /// - parameter completion: set image and title
+    @objc func setImage(location: ImagePosition, space: CGFloat, completion: (UIButton) -> ()) {
+        completion(self)
+        setImage(location: location, space: space)
+    }
+    
+    /// Set image location
+    ///
+    /// Image and title must be set before this method will work
+    ///
+    /// - parameter location: Location of image relative to title
+    /// - parameter space: Space between image and title
+    @objc func setImage(location: ImagePosition, space: CGFloat) {
+        
+        let imageView_Width = imageView?.frame.size.width
+        let imageView_Height = imageView?.frame.size.height
+        let titleLabel_iCSWidth = titleLabel?.intrinsicContentSize.width
+        let titleLabel_iCSHeight = titleLabel?.intrinsicContentSize.height
+        
+        switch location {
+        case .left:
+            if contentHorizontalAlignment == .left {
+                titleEdgeInsets = UIEdgeInsets.init(top: 0, left: space, bottom: 0, right: 0)
+            } else if contentHorizontalAlignment == .right {
+                imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: space)
+            } else {
+                let spacing_half = 0.5 * space;
+                imageEdgeInsets = UIEdgeInsets.init(top: 0, left: -spacing_half, bottom: 0, right: spacing_half)
+                titleEdgeInsets = UIEdgeInsets.init(top: 0, left: spacing_half, bottom: 0, right: -spacing_half)
+            }
+        case .right:
+            let titleLabelWidth = titleLabel?.frame.size.width
+            if contentHorizontalAlignment == .left {
+                imageEdgeInsets = UIEdgeInsets.init(top: 0, left: titleLabelWidth! + space, bottom: 0, right: 0)
+                titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -imageView_Width!, bottom: 0, right: 0)
+            } else if contentHorizontalAlignment == .right {
+                imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: -titleLabelWidth!)
+                titleEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: imageView_Width! + space)
+            } else {
+                let imageOffset = titleLabelWidth! + 0.5 * space
+                let titleOffset = imageView_Width! + 0.5 * space
+                imageEdgeInsets = UIEdgeInsets.init(top: 0, left: imageOffset, bottom: 0, right: -imageOffset)
+                titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -titleOffset, bottom: 0, right: titleOffset)
+            }
+        case .top:
+            imageEdgeInsets = UIEdgeInsets.init(top: -(titleLabel_iCSHeight! + space), left: 0, bottom: 0, right: -titleLabel_iCSWidth!)
+            titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -imageView_Width!, bottom: -(imageView_Height! + space), right: 0)
+        case .bottom:
+            imageEdgeInsets = UIEdgeInsets.init(top: titleLabel_iCSHeight! + space, left: 0, bottom: 0, right: -titleLabel_iCSWidth!)
+            titleEdgeInsets = UIEdgeInsets.init(top: 0, left: -imageView_Width!, bottom: imageView_Height! + space, right: 0)
         }
     }
 }

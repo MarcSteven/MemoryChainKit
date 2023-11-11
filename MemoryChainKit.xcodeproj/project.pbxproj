@@ -27,6 +27,11 @@
 		427959022AFF486D000FE2F4 /* MCPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959012AFF486D000FE2F4 /* MCPagingView.swift */; };
 		427959042AFF4936000FE2F4 /* MCPagingViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959032AFF4936000FE2F4 /* MCPagingViewDelegate.swift */; };
 		427959062AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959052AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift */; };
+		4279590D2AFFAD32000FE2F4 /* CBManagerStateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959082AFFAD32000FE2F4 /* CBManagerStateExtension.swift */; };
+		4279590E2AFFAD32000FE2F4 /* CBPeripheralStateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427959092AFFAD32000FE2F4 /* CBPeripheralStateExtension.swift */; };
+		4279590F2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279590A2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift */; };
+		427959102AFFAD32000FE2F4 /* CBPeripheralExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279590B2AFFAD32000FE2F4 /* CBPeripheralExtension.swift */; };
+		427959112AFFAD32000FE2F4 /* CBServiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279590C2AFFAD32000FE2F4 /* CBServiceExtension.swift */; };
 		42987362277361C70063A70D /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987361277361C70063A70D /* EncodableExtension.swift */; };
 		42987364277364790063A70D /* UIPressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42987363277364790063A70D /* UIPressExtension.swift */; };
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
@@ -373,6 +378,11 @@
 		427959012AFF486D000FE2F4 /* MCPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingView.swift; sourceTree = "<group>"; };
 		427959032AFF4936000FE2F4 /* MCPagingViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingViewDelegate.swift; sourceTree = "<group>"; };
 		427959052AFF49C0000FE2F4 /* MCPagingContainerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPagingContainerCollectionView.swift; sourceTree = "<group>"; };
+		427959082AFFAD32000FE2F4 /* CBManagerStateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBManagerStateExtension.swift; sourceTree = "<group>"; };
+		427959092AFFAD32000FE2F4 /* CBPeripheralStateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPeripheralStateExtension.swift; sourceTree = "<group>"; };
+		4279590A2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCharacteristicExtension.swift; sourceTree = "<group>"; };
+		4279590B2AFFAD32000FE2F4 /* CBPeripheralExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBPeripheralExtension.swift; sourceTree = "<group>"; };
+		4279590C2AFFAD32000FE2F4 /* CBServiceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBServiceExtension.swift; sourceTree = "<group>"; };
 		42987361277361C70063A70D /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		42987363277364790063A70D /* UIPressExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPressExtension.swift; sourceTree = "<group>"; };
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
@@ -768,6 +778,18 @@
 				427959032AFF4936000FE2F4 /* MCPagingViewDelegate.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		427959072AFFAD14000FE2F4 /* CoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				4279590A2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift */,
+				427959082AFFAD32000FE2F4 /* CBManagerStateExtension.swift */,
+				4279590B2AFFAD32000FE2F4 /* CBPeripheralExtension.swift */,
+				427959092AFFAD32000FE2F4 /* CBPeripheralStateExtension.swift */,
+				4279590C2AFFAD32000FE2F4 /* CBServiceExtension.swift */,
+			);
+			path = CoreBluetooth;
 			sourceTree = "<group>";
 		};
 		42999FEE2755176A0045E00D /* Utils */ = {
@@ -1497,6 +1519,7 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				427959072AFFAD14000FE2F4 /* CoreBluetooth */,
 				4260A1FA2AFBA7780036C357 /* SwiftUI */,
 				4260A1F72AFB86A80036C357 /* Combine */,
 				4270E0592AF6762900173FC3 /* CoreData */,
@@ -1783,6 +1806,7 @@
 				A6651FBB24378E3D00DCBF85 /* PresentationContext.swift in Sources */,
 				A6652022243A186700DCBF85 /* ValidRules.swift in Sources */,
 				A6D40BDA2417B6B500A88B5B /* RefreshView.swift in Sources */,
+				427959112AFFAD32000FE2F4 /* CBServiceExtension.swift in Sources */,
 				A6D40BFC2417B6B500A88B5B /* MCInformationTipView.swift in Sources */,
 				A6E85DA52449685600645A2D /* Coordinator.swift in Sources */,
 				A6DDD46624168C6E008E1703 /* AlertPresenting.swift in Sources */,
@@ -1877,6 +1901,7 @@
 				A6F2171F243ED46F00188C23 /* URLExtension.swift in Sources */,
 				A63D39712419298100937CCD /* UIScrollView+Extension.swift in Sources */,
 				A6020D3D244FE90200B6DA00 /* PropertyStoring.swift in Sources */,
+				4279590D2AFFAD32000FE2F4 /* CBManagerStateExtension.swift in Sources */,
 				A69B38B92532F0D6007D279D /* CGSizeExtension.swift in Sources */,
 				427958F72AFF45B2000FE2F4 /* IndicatorScrollableStyle.swift in Sources */,
 				A69310BE2417100E004ADF4F /* Timer+Extension.swift in Sources */,
@@ -1897,6 +1922,7 @@
 				A69310D32417100E004ADF4F /* NSArray+Extension.swift in Sources */,
 				A6E85DB624497DB400645A2D /* IndexPathExtension.swift in Sources */,
 				A65417B62421EAF900077AD8 /* Environment.swift in Sources */,
+				4279590F2AFFAD32000FE2F4 /* CBCharacteristicExtension.swift in Sources */,
 				4270E0552AF6750900173FC3 /* ExportableAsset.swift in Sources */,
 				42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */,
 				A6DDD52924168CC1008E1703 /* String+HMAC.swift in Sources */,
@@ -1951,6 +1977,7 @@
 				A6651FB724378A3500DCBF85 /* Configurable.swift in Sources */,
 				A6F21719243E13AC00188C23 /* UIViewController+ObjcWakeable.swift in Sources */,
 				A6D40BDE2417B6B500A88B5B /* MCDropDownDirection.swift in Sources */,
+				427959102AFFAD32000FE2F4 /* CBPeripheralExtension.swift in Sources */,
 				A6D40BF22417B6B500A88B5B /* PopingNavigationController.swift in Sources */,
 				A63D39462419298000937CCD /* UIButton+Extension.swift in Sources */,
 				A69310CE2417100E004ADF4F /* DataExtension.swift in Sources */,
@@ -2016,6 +2043,7 @@
 				A6C3E3242440CCCE00132000 /* SceneCoordinatorType.swift in Sources */,
 				A6A0E0E3253933F700860AA3 /* AVAudioSessionPortDescriptionExtension.swift in Sources */,
 				A6F21721243EE89B00188C23 /* UIFont+Loader.swift in Sources */,
+				4279590E2AFFAD32000FE2F4 /* CBPeripheralStateExtension.swift in Sources */,
 				A6D40C062417B6B500A88B5B /* RoundedView.swift in Sources */,
 				A6356D292424931400B46CDF /* Router+Route.swift in Sources */,
 				A69B38B12532DC64007D279D /* SafeAreaGuideOption.swift in Sources */,
