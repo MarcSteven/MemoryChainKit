@@ -46,6 +46,7 @@
 		42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE42754D0CE0045E00D /* LocaleExtension.swift */; };
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
 		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
+		42B83CC72B006C3F001F39CA /* PHPhotoLibraryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B83CC62B006C3F001F39CA /* PHPhotoLibraryExtension.swift */; };
 		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
 		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
 		42FB01962774A2D9001106C6 /* MCUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB01952774A2D9001106C6 /* MCUIHelper.swift */; };
@@ -406,6 +407,7 @@
 		42999FE42754D0CE0045E00D /* LocaleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		42B83CC62B006C3F001F39CA /* PHPhotoLibraryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPhotoLibraryExtension.swift; sourceTree = "<group>"; };
 		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		42FB01952774A2D9001106C6 /* MCUIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUIHelper.swift; sourceTree = "<group>"; };
@@ -833,6 +835,14 @@
 				423D31E32AF3889C00E1931C /* CallbackQueue.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		42B83CC52B006C25001F39CA /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				42B83CC62B006C3F001F39CA /* PHPhotoLibraryExtension.swift */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 		42D7998627521FDA008A7D25 /* Currency */ = {
@@ -1554,6 +1564,7 @@
 		A6DDD46F24168C88008E1703 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				42B83CC52B006C25001F39CA /* Photos */,
 				427959072AFFAD14000FE2F4 /* CoreBluetooth */,
 				4260A1FA2AFBA7780036C357 /* SwiftUI */,
 				4260A1F72AFB86A80036C357 /* Combine */,
@@ -1817,6 +1828,7 @@
 				A6DDD561241694AB008E1703 /* UIApplicationExtension.swift in Sources */,
 				A63D39682419298000937CCD /* UIControl+Extension.swift in Sources */,
 				A66F3F42242A7D980081D52F /* SwizzleManager.swift in Sources */,
+				42B83CC72B006C3F001F39CA /* PHPhotoLibraryExtension.swift in Sources */,
 				A6356D182423B7CE00B46CDF /* QueueQuality.swift in Sources */,
 				42999FE52754D0CE0045E00D /* LocaleExtension.swift in Sources */,
 				A6DDD53924168D0A008E1703 /* LocalStorageImpl.swift in Sources */,
