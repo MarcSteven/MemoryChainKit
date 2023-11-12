@@ -137,8 +137,8 @@ extension UIPopoverPresentationController {
         }
     }
 }
-extension UIAlertController {
-    open func show(presentingViewController:UIViewController? = nil) {
+public extension UIAlertController {
+     func show(presentingViewController:UIViewController? = nil) {
         guard let presentingViewController = presentingViewController ?? UIApplication.sharedOrNil?.keyWindow?.topViewController() else {
             return
         }

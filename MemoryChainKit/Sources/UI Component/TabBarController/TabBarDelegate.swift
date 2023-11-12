@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
-public protocol TabBarDelegate: class {
+public protocol TabBarDelegate: AnyObject {
     
     /// This function is called after `didMoveToTabAtIndex` is called. In order for this function to work you must override the var `childViewControllerForStatusBarStyle` in the root controller to return this instance of AZTabBarController.
     ///
