@@ -47,6 +47,7 @@
 		42999FE72754D2120045E00D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FE62754D2120045E00D /* NSDateExtension.swift */; };
 		42999FF0275517790045E00D /* BindableTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */; };
 		42B83CC72B006C3F001F39CA /* PHPhotoLibraryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B83CC62B006C3F001F39CA /* PHPhotoLibraryExtension.swift */; };
+		42B83CC92B00F89E001F39CA /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B83CC82B00F89E001F39CA /* DataConvertible.swift */; };
 		42D7998827521FF7008A7D25 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7998727521FF7008A7D25 /* Currency.swift */; };
 		42D7998A2752239F008A7D25 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D799892752239F008A7D25 /* CurrencyConverter.swift */; };
 		42FB01962774A2D9001106C6 /* MCUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FB01952774A2D9001106C6 /* MCUIHelper.swift */; };
@@ -407,6 +408,7 @@
 		42999FE62754D2120045E00D /* NSDateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		42999FEF275517790045E00D /* BindableTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		42B83CC62B006C3F001F39CA /* PHPhotoLibraryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPhotoLibraryExtension.swift; sourceTree = "<group>"; };
+		42B83CC82B00F89E001F39CA /* DataConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
 		42D7998727521FF7008A7D25 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		42D799892752239F008A7D25 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		42FB01952774A2D9001106C6 /* MCUIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCUIHelper.swift; sourceTree = "<group>"; };
@@ -1503,6 +1505,7 @@
 				4270E0542AF6750900173FC3 /* ExportableAsset.swift */,
 				A6DDD43224168C6E008E1703 /* BackgroundColor.swift */,
 				A6DDD43324168C6E008E1703 /* BindableType.swift */,
+				42B83CC82B00F89E001F39CA /* DataConvertible.swift */,
 				A6DDD43424168C6E008E1703 /* StoryboardLoadable.swift */,
 				A6DDD43524168C6E008E1703 /* StringRepresentable.swift */,
 				A6652023243AC3F400DCBF85 /* ViewMaskable.swift */,
@@ -2115,6 +2118,7 @@
 				423D31E42AF3889C00E1931C /* CallbackQueue.swift in Sources */,
 				A69310C82417100E004ADF4F /* DispathQueueExtension.swift in Sources */,
 				A69310D82417100E004ADF4F /* Notification+Extension.swift in Sources */,
+				42B83CC92B00F89E001F39CA /* DataConvertible.swift in Sources */,
 				A65417C52421FB2800077AD8 /* Console.swift in Sources */,
 				A6E15D39255C4B2000FA667B /* LeftAlignCollectionViewFlowLayout.swift in Sources */,
 				A6E15C8A2558EF9500FA667B /* UIVisualEffectExtension.swift in Sources */,

@@ -169,3 +169,20 @@ public extension Data {
         }
     }
 }
+public extension Data {
+    
+    /// Converts the required number of bytes, starting from `offset`
+    /// to the value of return type.
+    ///
+    /// - parameter offset: The offset from where the bytes are to be read.
+    /// - returns: The value of type of the return type.
+    func asValue<R>(offset: Int = 0) -> R {
+        let length = MemoryLayout<R>.size
+        
+        #if swift(>=5.0)
+        return subdata(in: offset ..< offset + length).withUnsafeBytes { $0.load(as: R.self) }
+        #else
+        return subdata(in: offset ..< offset + length).withUnsafeBytes { $0.pointee }
+        #endif
+    }
+}
