@@ -72,7 +72,6 @@
 		A60F77CC2452F3CE007F3C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60F77CB2452F3CE007F3C61 /* Logger.swift */; };
 		A62C4CED255662CF00E861CC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C4CEC255662CF00E861CC /* Validator.swift */; };
 		A62C4CF1255668ED00E861CC /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C4CF0255668ED00E861CC /* UserDefaultsExtension.swift */; };
-		A62C4CF72556A40D00E861CC /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62C4CF62556A40D00E861CC /* BundleExtension.swift */; };
 		A6356CE9242345E000B46CDF /* CAtranscationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */; };
 		A6356CEB2423475A00B46CDF /* CGColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEA2423475A00B46CDF /* CGColorExtension.swift */; };
 		A6356CED2423479700B46CDF /* CALayer+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6356CEC2423479700B46CDF /* CALayer+Color.swift */; };
@@ -433,7 +432,6 @@
 		A60F77CB2452F3CE007F3C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		A62C4CEC255662CF00E861CC /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		A62C4CF0255668ED00E861CC /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
-		A62C4CF62556A40D00E861CC /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAtranscationExtension.swift; sourceTree = "<group>"; };
 		A6356CEA2423475A00B46CDF /* CGColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorExtension.swift; sourceTree = "<group>"; };
 		A6356CEC2423479700B46CDF /* CALayer+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Color.swift"; sourceTree = "<group>"; };
@@ -1056,7 +1054,6 @@
 				427958ED2AFF2CB3000FE2F4 /* JSONDecoderExtension.swift */,
 				A695D0DD254A939200DE403A /* NSRegularExpressionExtension.swift */,
 				A69B38B42532E8F0007D279D /* UIEdgeInsetsExtension.swift */,
-				A62C4CF62556A40D00E861CC /* BundleExtension.swift */,
 				427958EF2AFF308C000FE2F4 /* ScannerExtension.swift */,
 				A695CC4D241F9930007C68DD /* CGRect+Layout.swift */,
 				A6356CE8242345E000B46CDF /* CAtranscationExtension.swift */,
@@ -2130,7 +2127,6 @@
 				A66F3F2D2429C8350081D52F /* NavigationController.swift in Sources */,
 				A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */,
 				A60F77C62452E683007F3C61 /* EventHandler.swift in Sources */,
-				A62C4CF72556A40D00E861CC /* BundleExtension.swift in Sources */,
 				A6D40BDB2417B6B500A88B5B /* MemoryChainEmptyStateView.swift in Sources */,
 				A6020D4A245043D700B6DA00 /* SessionManager.swift in Sources */,
 				A6356D142423B43700B46CDF /* ExecutableQueue.swift in Sources */,
