@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -283,6 +283,7 @@
 		A6D488662548FDAA005CA39E /* MarkdownKit+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D488632548FDAA005CA39E /* MarkdownKit+UIKit.swift */; };
 		A6D488672548FDAA005CA39E /* MarkdownKit+MushParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D488642548FDAA005CA39E /* MarkdownKit+MushParser.swift */; };
 		A6D4886F254902B2005CA39E /* DimmableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D4886E254902B2005CA39E /* DimmableLayout.swift */; };
+		A6D6CC9E2B7632770061B1A3 /* CaptchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6CC9D2B7632760061B1A3 /* CaptchaView.swift */; };
 		A6DC036825498501001F3E64 /* MCTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DC036725498501001F3E64 /* MCTabBarButton.swift */; };
 		A6DDD44E24168C6E008E1703 /* Scrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43024168C6E008E1703 /* Scrollable.swift */; };
 		A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DDD43224168C6E008E1703 /* BackgroundColor.swift */; };
@@ -645,6 +646,7 @@
 		A6D488632548FDAA005CA39E /* MarkdownKit+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarkdownKit+UIKit.swift"; sourceTree = "<group>"; };
 		A6D488642548FDAA005CA39E /* MarkdownKit+MushParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarkdownKit+MushParser.swift"; sourceTree = "<group>"; };
 		A6D4886E254902B2005CA39E /* DimmableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmableLayout.swift; sourceTree = "<group>"; };
+		A6D6CC9D2B7632760061B1A3 /* CaptchaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaView.swift; sourceTree = "<group>"; };
 		A6DC036725498501001F3E64 /* MCTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTabBarButton.swift; sourceTree = "<group>"; };
 		A6DDD43024168C6E008E1703 /* Scrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrollable.swift; sourceTree = "<group>"; };
 		A6DDD43224168C6E008E1703 /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
@@ -1229,6 +1231,7 @@
 		A6D40B782417B6B400A88B5B /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				A6D6CC9C2B7632390061B1A3 /* CaptchaView */,
 				427959122AFFB144000FE2F4 /* ScanQRCode */,
 				427958F12AFF44EF000FE2F4 /* PagingView */,
 				A6DC0362254984D5001F3E64 /* TabBar */,
@@ -1437,6 +1440,14 @@
 				A6D488622548FDAA005CA39E /* MarkupText.swift */,
 			);
 			path = MarkDown;
+			sourceTree = "<group>";
+		};
+		A6D6CC9C2B7632390061B1A3 /* CaptchaView */ = {
+			isa = PBXGroup;
+			children = (
+				A6D6CC9D2B7632760061B1A3 /* CaptchaView.swift */,
+			);
+			path = CaptchaView;
 			sourceTree = "<group>";
 		};
 		A6DC0362254984D5001F3E64 /* TabBar */ = {
@@ -2145,6 +2156,7 @@
 				A6D488652548FDAA005CA39E /* MarkupText.swift in Sources */,
 				427959212AFFB158000FE2F4 /* ARIScanWrapper.swift in Sources */,
 				A6DDD52324168C90008E1703 /* KeyChainSwift.swift in Sources */,
+				A6D6CC9E2B7632770061B1A3 /* CaptchaView.swift in Sources */,
 				A63D3909241923ED00937CCD /* PopTransition.swift in Sources */,
 				A6DDD45024168C6E008E1703 /* BackgroundColor.swift in Sources */,
 				A69310C22417100E004ADF4F /* Range+Extension.swift in Sources */,
