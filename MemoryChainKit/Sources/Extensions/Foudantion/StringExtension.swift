@@ -423,9 +423,9 @@ public extension String {
     }
 }
 
-extension String {
+public extension String {
     
-    public   var queryStringParameters: Dictionary<String, String> {
+    var queryStringParameters: Dictionary<String, String> {
         var parameters = Dictionary<String, String>()
         let scanner = Scanner(string: self)
         var key: NSString?
@@ -444,7 +444,7 @@ extension String {
         return parameters
     }
     
-    public func urlEncodedString(_ encodeAll: Bool = false) -> String {
+    func urlEncodedString(_ encodeAll: Bool = false) -> String {
         var allowedCharacterSet: CharacterSet = .urlQueryAllowed
         allowedCharacterSet.remove(charactersIn: "\n:#/?@!$&'()*+,;=")
         if !encodeAll {
@@ -483,8 +483,8 @@ extension String {
 }
 
 
-extension String {
-   public  mutating func removeFirstLetterIfDash() {
+public extension String {
+     mutating func removeFirstLetterIfDash() {
         let initialCharacter = String(self[..<index(after: startIndex)])
         if initialCharacter == "/" {
             if count > 1 {
@@ -494,7 +494,7 @@ extension String {
             }
         }
     }
-   public  mutating func removeLastLetterIfDash() {
+     mutating func removeLastLetterIfDash() {
         let initialCharacter:String
         if count > 1 {
                 initialCharacter = String(self[index(endIndex, offsetBy: -1)...])
@@ -513,8 +513,8 @@ extension String {
 }
 //MARK- encode
 
-extension String {
-  public   func encodeUTF8() -> String? {
+public extension String {
+     func encodeUTF8() -> String? {
                if let _ = URL(string: self) {
                    return self
                }
@@ -532,7 +532,7 @@ extension String {
 
 // MARK: - Convenience Extension
 
-extension String {
+public extension String {
     /// Returns a boolean value indicating whether the `self` matches the conditions
     /// specified by the `rule`.
     ///
@@ -544,7 +544,7 @@ extension String {
     /// - Parameter rule: The rule against which to evaluate `self`.
     /// - Returns: `true` if `self` matches the conditions specified by the given
     ///            `rule`, otherwise `false`.
-    public func validate(rule: ValidationRule<String>) -> Bool {
+     func validate(rule: ValidationRule<String>) -> Bool {
         rule.validate(self)
     }
 }
